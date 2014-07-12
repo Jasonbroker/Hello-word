@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class ViewController;
+@class ZCWords;
 
 @protocol ZCViewControllerDelegate <NSObject>
 
@@ -24,7 +25,9 @@
 
 @property (nonatomic, strong)NSDictionary *wordLines;
 
-@property (nonatomic, weak) id<ZCViewControllerDelegate> myDelete;
+@property (nonatomic, strong)ZCWords *words;
+
+//@property (nonatomic, weak) id<ZCViewControllerDelegate> myDelete;
 
 
 @end

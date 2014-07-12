@@ -13,7 +13,6 @@
 
 
 @interface ZCVocListTableViewController ()<ZCViewControllerDelegate>
-@property (strong, nonatomic) IBOutlet UITableView *mytableView;
 
 @property (nonatomic, strong) NSMutableArray *unknownWords;
 
@@ -31,6 +30,8 @@
     }
     return _filePath;
 }
+
+
 
 - (NSMutableArray *)unknownWords
 {
@@ -56,9 +57,29 @@
 
 - (void)viewDidLoad
 {
-[super viewDidLoad];
- NSLog(@" wordlist....%s", __func__);
+    [super viewDidLoad];
+    NSLog(@" wordlist....%s", __func__);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addCell:) name:@"add" object:nil];
 
+}
+
+//  transfer
+-(void)addCell:(NSNotification *)aNotification
+{
+    
+//        NSNotification *anotification
+    NSLog(@"recieved!!!!");
+    
+    NSDictionary *info = [aNotification userInfo];
+    NSString *word = [info objectForKey:@"word"];
+    if (![self.unknownWords containsObject:word]) {
+        
+        [self.unknownWords addObject:word];
+        
+        [self.tableView reloadData];
+    }
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -97,6 +118,11 @@
     cell.textLabel.text = self.unknownWords[indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 
