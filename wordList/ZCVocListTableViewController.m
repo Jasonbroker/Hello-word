@@ -31,8 +31,6 @@
     return _filePath;
 }
 
-
-
 - (NSMutableArray *)unknownWords
 {
     if (!_unknownWords) {
@@ -44,24 +42,13 @@
     return _unknownWords;
 }
 
-
-- (instancetype)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSLog(@" wordlist....%s", __func__);
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addCell:) name:@"add" object:nil];
-
+    
 }
 
 //  transfer
