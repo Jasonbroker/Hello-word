@@ -7,6 +7,9 @@
 //
 
 #import "ZCSettingsViewController.h"
+#import "ZCFilePathManager.h"
+#import "MBProgressHUD.h"
+#import "Common.h"
 
 @interface ZCSettingsViewController ()<UIActionSheetDelegate>
 
@@ -27,17 +30,34 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIActionSheet *reset = [[UIActionSheet alloc] initWithTitle:@"RESET will wipe all your data!" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:@"RESET" otherButtonTitles:nil];
-
-    [reset showInView:self.view];
+    if (indexPath.section == 1) {
+        UIActionSheet *reset = [[UIActionSheet alloc] initWithTitle:@"RESET will wipe all your data!" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:@"RESET" otherButtonTitles:nil];
+        
+        [reset showInView:self.view];
+    }
 
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex == 0) {
+    if (buttonIndex == 0 /**&& [[NSFileManager defaultManager] fileExistsAtPath:[ZCFilePathManager unknownWordFilePath]]*/) {
+        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+        
+        [self.view addSubview:hud];
+        [hud showAnimated:YES whileExecutingBlock:^{
+          
+//            LogObj(hud);
+            NSLog(@"%@", hud);
+            [[NSFileManager defaultManager] removeItemAtPath:[ZCFilePathManager unknownWordFilePath] error:nil];
+            sleep(2);
+        } completionBlock:^{
+            
+            [hud removeFromSuperview];
+        }];
+    
         
     }
+    
 }
 
 @end

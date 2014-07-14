@@ -8,9 +8,10 @@
 
 #import "ZCScheduleTableViewController.h"
 
+
 @interface ZCScheduleTableViewController ()
 
-@property (nonatomic, weak) NSDictionary *wordLines;
+@property (nonatomic, strong)NSDictionary *wordLines;
 
 @end
 
@@ -35,11 +36,9 @@
 - (NSDictionary *)wordLines
 {
     if (!_wordLines) {
-        
-        NSString *dirpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-        
-        NSString *path = [dirpath stringByAppendingPathComponent:@"words.plist"];
-        
+                NSLog(@"%s.....", __func__);
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"words.plist" ofType:nil];
+
         if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
             
             NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -48,8 +47,10 @@
             NSLog(@"ERROR at %@.....", path);
         }
     }
+
     return _wordLines;
 }
+
 
 
 - (void)didReceiveMemoryWarning

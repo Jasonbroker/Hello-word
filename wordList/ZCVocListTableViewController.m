@@ -10,68 +10,80 @@
 #import "ViewController.h"
 #import "NSString+Path.h"
 #import "ZCDetailViewController.h"
+#import "ZCFilePathManager.h"
+#import "ZCDataCenter.h"
 
-
-@interface ZCVocListTableViewController ()<ZCViewControllerDelegate>
+@interface ZCVocListTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *unknownWords;
 
-@property (nonatomic, strong) NSString *filePath;
+@property (nonatomic, strong) ZCDataCenter *dataCenter;
+//@property (nonatomic, strong) NSString *filePath;
 
 @end
 
 @implementation ZCVocListTableViewController
 
 #pragma mark - load filepath
-- (NSString *)filePath
-{
-    if (!_filePath) {
-        _filePath = [@"unKonwnWords.plist" appendDocumentPath];
-    }
-    return _filePath;
-}
 
 - (NSMutableArray *)unknownWords
 {
+//    if (!_unknownWords) {
+//        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+//        if (_unknownWords == nil) {
+//            _unknownWords = [NSMutableArray array];
+//        }
+//    }
+    
     if (!_unknownWords) {
-        _unknownWords = [NSMutableArray arrayWithContentsOfFile:self.filePath];
-        if (_unknownWords == nil) {
-            _unknownWords = [NSMutableArray array];
-        }
+        _unknownWords = self.dataCenter.unknownWords;
     }
     return _unknownWords;
 }
+
+
+- (instancetype)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSLog(@" wordlist....%s", __func__);
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addCell:) name:@"add" object:nil];
-    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addCell:) name:@"add" object:nil];
+
 }
 
-//  transfer
--(void)addCell:(NSNotification *)aNotification
-{
-    
-//        NSNotification *anotification
-    NSLog(@"recieved!!!!");
-    
-    NSDictionary *info = [aNotification userInfo];
-    NSString *word = [info objectForKey:@"word"];
-    if (![self.unknownWords containsObject:word]) {
-        
-        [self.unknownWords addObject:word];
-        
-        [self.tableView reloadData];
-    }
-    
-}
+//#pragma mark - method for notification
+//-(void)addCell:(NSNotification *)aNotification
+//{
+//    
+////        NSNotification *anotification
+//    NSLog(@"recieved!!!!");
+//    
+//    NSDictionary *info = [aNotification userInfo];
+//    NSString *word = [info objectForKey:@"word"];
+//    if (![self.unknownWords containsObject:word]) {
+//        
+//        [self.unknownWords addObject:word];
+//        
+//        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+//        
+//        [self.tableView reloadData];
+//    }
+//    
+//}
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    NSLog(@"%d", self.unknownWords.count);
+    NSLog(@"%d_________viewdidappear", self.unknownWords.count);
     [self.tableView reloadData];
 }
 
@@ -113,69 +125,11 @@
 }
 
 
-#pragma mark - implementation of delegate method
-- (void)viewController:(ViewController *)viewController AddNewWord:(NSString *)word
+- (void)dealloc
 {
-    NSLog(@"list%@", word);
-    if (![self.unknownWords containsObject:word]) {
-        
-        [self.unknownWords addObject:word];
-        NSLog(@"%d",self.unknownWords.count);
-
-        [self.tableView reloadData];
-        
-        [self.unknownWords writeToFile:self.filePath atomically:YES];
-        
-    }
+    NSLog(@"%s", __func__);
     
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
