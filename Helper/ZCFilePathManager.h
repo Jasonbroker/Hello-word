@@ -15,4 +15,8 @@
 
 + (NSString *)unknownWordFilePath;
 
+/** dictionary path */
++ (NSString *)wordsFilePath;
+
+
 @end

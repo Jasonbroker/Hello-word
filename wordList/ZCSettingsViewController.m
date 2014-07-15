@@ -38,24 +38,26 @@
 
 }
 
+#pragma mark - reset data
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex == 0 /**&& [[NSFileManager defaultManager] fileExistsAtPath:[ZCFilePathManager unknownWordFilePath]]*/) {
-        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+    if (buttonIndex == 0) {
         
-        [self.view addSubview:hud];
-        [hud showAnimated:YES whileExecutingBlock:^{
-          
-//            LogObj(hud);
-            NSLog(@"%@", hud);
-            [[NSFileManager defaultManager] removeItemAtPath:[ZCFilePathManager unknownWordFilePath] error:nil];
-            sleep(2);
-        } completionBlock:^{
-            
-            [hud removeFromSuperview];
-        }];
+        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+        [self.navigationController.view addSubview:hud];
+        
+        // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
+        // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
+        hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+        
+        // Set custom view mode
+        hud.mode = MBProgressHUDModeCustomView;
+        
+        hud.labelText = @"Data Reset !";
+        
+        [hud show:YES];
+        [hud hide:YES afterDelay:3];
     
-        
     }
     
 }

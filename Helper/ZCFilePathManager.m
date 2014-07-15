@@ -20,5 +20,9 @@
 }
 
 
++ (NSString *)wordsFilePath
+{
+        return [[NSBundle mainBundle] pathForResource:@"words.plist" ofType:nil];
+}
 
 @end

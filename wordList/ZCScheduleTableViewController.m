@@ -7,6 +7,8 @@
 //
 
 #import "ZCScheduleTableViewController.h"
+#import "ZCFilePathManager.h"
+#import "Common.h"
 
 
 @interface ZCScheduleTableViewController ()
@@ -29,15 +31,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    
+//    self.tabBarController.tabBar.hidden = NO;
+}
 
+#pragma mark - lazy~
 - (NSDictionary *)wordLines
 {
     if (!_wordLines) {
                 NSLog(@"%s.....", __func__);
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"words.plist" ofType:nil];
+        NSString *path = [ZCFilePathManager wordsFilePath];
 
         if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
             
@@ -65,13 +74,13 @@
 {
 
     // Return the number of sections.
-    return 1;
+    return self.wordLines.count/KwordInSection + 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [[self.wordLines allValues] count];
+    return 1;
 }
 
 
@@ -81,7 +90,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat: @"%d", indexPath.row]];
+    cell.textLabel.text = [NSString stringWithFormat: @"Section No:%d", indexPath.section];
     // Configure the cell...
     return cell;
 }

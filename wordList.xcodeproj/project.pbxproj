@@ -19,6 +19,11 @@
 		96D2BE5C19686A5F0071E548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D2BE5A19686A5F0071E548 /* Main.storyboard */; };
 		96D2BE5E19686A5F0071E548 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2BE5D19686A5F0071E548 /* Images.xcassets */; };
 		96D2BE6A19686A5F0071E548 /* wordListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE6919686A5F0071E548 /* wordListTests.m */; };
+		96D858661973F16E0070226F /* ZCScheduleDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858651973F16E0070226F /* ZCScheduleDetailController.m */; };
+		96DAFF941973C1CF006C5183 /* Dictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96DAFF921973C1CF006C5183 /* Dictionary.xcdatamodeld */; };
+		96DAFFCA1973C59A006C5183 /* 48.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96DAFFC91973C59A006C5183 /* 48.gif */; };
+		96DAFFCE1973CBD2006C5183 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DAFFCD1973CBD2006C5183 /* Word.m */; };
+		96DAFFD11973CBD3006C5183 /* Words.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DAFFD01973CBD3006C5183 /* Words.m */; };
 		96DD4FEF196A999D00362D3B /* read@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DD4FEB196A999D00362D3B /* read@2x.png */; };
 		96DD4FF2196A999D00362D3B /* vocList@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DD4FEE196A999D00362D3B /* vocList@2x.png */; };
 		96DD5000196A9F8100362D3B /* schedule@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96DD4FFF196A9F8100362D3B /* schedule@2x.png */; };
@@ -28,7 +33,6 @@
 		96EC5EDE19714DE800978262 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5EDD19714DE800978262 /* words.plist */; };
 		96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5EE3197158FB00978262 /* ZCFilePathManager.m */; };
 		96EC5EE919721F7700978262 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5EE819721F7700978262 /* MBProgressHUD.m */; };
-		96EC5EEC1972319300978262 /* ZCProgressNCompleteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5EEB1972319300978262 /* ZCProgressNCompleteView.m */; };
 		96EC5F331972795300978262 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5F321972795300978262 /* about.jpg */; };
 		96EC5F361972820F00978262 /* ZCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5F351972820F00978262 /* ZCDataCenter.m */; };
 /* End PBXBuildFile section */
@@ -186,6 +190,14 @@
 		96D2BE6319686A5F0071E548 /* wordListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2BE6819686A5F0071E548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D2BE6919686A5F0071E548 /* wordListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wordListTests.m; sourceTree = "<group>"; };
+		96D858641973F16E0070226F /* ZCScheduleDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCScheduleDetailController.h; sourceTree = "<group>"; };
+		96D858651973F16E0070226F /* ZCScheduleDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCScheduleDetailController.m; sourceTree = "<group>"; };
+		96DAFF931973C1CF006C5183 /* Dictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dictionary.xcdatamodel; sourceTree = "<group>"; };
+		96DAFFC91973C59A006C5183 /* 48.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 48.gif; sourceTree = "<group>"; };
+		96DAFFCC1973CBD2006C5183 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		96DAFFCD1973CBD2006C5183 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		96DAFFCF1973CBD3006C5183 /* Words.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Words.h; sourceTree = "<group>"; };
+		96DAFFD01973CBD3006C5183 /* Words.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Words.m; sourceTree = "<group>"; };
 		96DD4FEB196A999D00362D3B /* read@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "read@2x.png"; sourceTree = "<group>"; };
 		96DD4FEE196A999D00362D3B /* vocList@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vocList@2x.png"; sourceTree = "<group>"; };
 		96DD4FFF196A9F8100362D3B /* schedule@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "schedule@2x.png"; sourceTree = "<group>"; };
@@ -199,8 +211,6 @@
 		96EC5EE51971678300978262 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Helper/Common.h; sourceTree = "<group>"; };
 		96EC5EE719721F7700978262 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		96EC5EE819721F7700978262 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		96EC5EEA1972319300978262 /* ZCProgressNCompleteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCProgressNCompleteView.h; sourceTree = "<group>"; };
-		96EC5EEB1972319300978262 /* ZCProgressNCompleteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCProgressNCompleteView.m; sourceTree = "<group>"; };
 		96EC5F321972795300978262 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
 		96EC5F341972820F00978262 /* ZCDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCDataCenter.h; sourceTree = "<group>"; };
 		96EC5F351972820F00978262 /* ZCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDataCenter.m; sourceTree = "<group>"; };
@@ -231,9 +241,8 @@
 				96B3B9D1196FF85D00B765AF /* ZCRootController.m */,
 				96D2BE5719686A5F0071E548 /* ViewController.h */,
 				96D2BE5819686A5F0071E548 /* ViewController.m */,
-				96B3B9D3196FF87900B765AF /* Vocabulary List */,
-				96A2C552196A3D6E005AFA9C /* ZCScheduleTableViewController.h */,
-				96A2C553196A3D6E005AFA9C /* ZCScheduleTableViewController.m */,
+				96B3B9D3196FF87900B765AF /* Vocabulary List 生词表 */,
+				96D858631973F1240070226F /* Schedule Controllers */,
 				96B3B9C5196F5C7900B765AF /* ZCSettingsViewController.h */,
 				96B3B9C6196F5C7900B765AF /* ZCSettingsViewController.m */,
 			);
@@ -257,6 +266,7 @@
 		96B3B9CB196FAB1D00B765AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				96D858671973FF320070226F /* core data */,
 				96EC5F341972820F00978262 /* ZCDataCenter.h */,
 				96EC5F351972820F00978262 /* ZCDataCenter.m */,
 			);
@@ -264,7 +274,7 @@
 			path = wordList;
 			sourceTree = "<group>";
 		};
-		96B3B9D3196FF87900B765AF /* Vocabulary List */ = {
+		96B3B9D3196FF87900B765AF /* Vocabulary List 生词表 */ = {
 			isa = PBXGroup;
 			children = (
 				96A2C556196A41F3005AFA9C /* ZCVocListTableViewController.h */,
@@ -272,7 +282,7 @@
 				96B3B9C2196ED43B00B765AF /* ZCDetailViewController.h */,
 				96B3B9C3196ED43B00B765AF /* ZCDetailViewController.m */,
 			);
-			name = "Vocabulary List";
+			name = "Vocabulary List 生词表";
 			sourceTree = "<group>";
 		};
 		96D2BE4419686A5F0071E548 = {
@@ -284,6 +294,7 @@
 				96D2BE4E19686A5F0071E548 /* Products */,
 				96EC5EDD19714DE800978262 /* words.plist */,
 				96EC5F321972795300978262 /* about.jpg */,
+				96DAFFC91973C59A006C5183 /* 48.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,13 +353,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		96D858631973F1240070226F /* Schedule Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96A2C552196A3D6E005AFA9C /* ZCScheduleTableViewController.h */,
+				96A2C553196A3D6E005AFA9C /* ZCScheduleTableViewController.m */,
+				96D858641973F16E0070226F /* ZCScheduleDetailController.h */,
+				96D858651973F16E0070226F /* ZCScheduleDetailController.m */,
+			);
+			name = "Schedule Controllers";
+			sourceTree = "<group>";
+		};
+		96D858671973FF320070226F /* core data */ = {
+			isa = PBXGroup;
+			children = (
+				96DAFF921973C1CF006C5183 /* Dictionary.xcdatamodeld */,
+				96DAFFCF1973CBD3006C5183 /* Words.h */,
+				96DAFFD01973CBD3006C5183 /* Words.m */,
+				96DAFFCC1973CBD2006C5183 /* Word.h */,
+				96DAFFCD1973CBD2006C5183 /* Word.m */,
+			);
+			name = "core data";
+			sourceTree = "<group>";
+		};
 		96EC5EE619721F7700978262 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
 				96EC5EE719721F7700978262 /* MBProgressHUD.h */,
 				96EC5EE819721F7700978262 /* MBProgressHUD.m */,
-				96EC5EEA1972319300978262 /* ZCProgressNCompleteView.h */,
-				96EC5EEB1972319300978262 /* ZCProgressNCompleteView.m */,
 			);
 			path = MBProgressHUD;
 			sourceTree = "<group>";
@@ -459,6 +491,7 @@
 				9612A8F7196A6BBF00BED3DD /* 48.gif in Resources */,
 				96D2BE5E19686A5F0071E548 /* Images.xcassets in Resources */,
 				96EC5EDE19714DE800978262 /* words.plist in Resources */,
+				96DAFFCA1973C59A006C5183 /* 48.gif in Resources */,
 				96DD4FF2196A999D00362D3B /* vocList@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,14 +511,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D2BE5919686A5F0071E548 /* ViewController.m in Sources */,
+				96DAFFD11973CBD3006C5183 /* Words.m in Sources */,
+				96DAFF941973C1CF006C5183 /* Dictionary.xcdatamodeld in Sources */,
 				96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */,
 				96D2BE5619686A5F0071E548 /* AppDelegate.m in Sources */,
 				96B3B9C4196ED43B00B765AF /* ZCDetailViewController.m in Sources */,
+				96DAFFCE1973CBD2006C5183 /* Word.m in Sources */,
 				96EC5F361972820F00978262 /* ZCDataCenter.m in Sources */,
+				96D858661973F16E0070226F /* ZCScheduleDetailController.m in Sources */,
 				96EC5ED21971489E00978262 /* NSString+Path.m in Sources */,
 				96D2BE5319686A5F0071E548 /* main.m in Sources */,
 				96EC5EE919721F7700978262 /* MBProgressHUD.m in Sources */,
-				96EC5EEC1972319300978262 /* ZCProgressNCompleteView.m in Sources */,
 				96B3B9D2196FF85D00B765AF /* ZCRootController.m in Sources */,
 				96B3B9C7196F5C7900B765AF /* ZCSettingsViewController.m in Sources */,
 				96A2C554196A3D6E005AFA9C /* ZCScheduleTableViewController.m in Sources */,
@@ -691,10 +727,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = wordList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wordList/wordList-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -703,10 +742,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = wordList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wordList/wordList-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -777,6 +818,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96DAFF921973C1CF006C5183 /* Dictionary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96DAFF931973C1CF006C5183 /* Dictionary.xcdatamodel */,
+			);
+			currentVersion = 96DAFF931973C1CF006C5183 /* Dictionary.xcdatamodel */;
+			path = Dictionary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 96D2BE4519686A5F0071E548 /* Project object */;
 }

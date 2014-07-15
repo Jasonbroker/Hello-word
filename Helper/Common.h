@@ -2,6 +2,8 @@
 * customed logout
 */
 
+#define KwordInSection 15
+
 #ifdef DEBUG
 #define Mylog(...)      NSlog(__VA_ARGS__)
 #elif

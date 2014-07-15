@@ -19,13 +19,12 @@
             _unknownWords = [NSMutableArray array];
         }
     }
-    
         return _unknownWords;
 }
-
 
 - (void)dealloc
 {
     NSLog(@"dealloc");
 }
+
 @end

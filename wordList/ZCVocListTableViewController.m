@@ -15,9 +15,10 @@
 
 @interface ZCVocListTableViewController ()
 
-@property (nonatomic, strong) NSMutableArray *unknownWords;
+//@property (nonatomic, strong) NSMutableArray *unknownWords;
 
-@property (nonatomic, strong) ZCDataCenter *dataCenter;
+//@property (nonatomic, strong) ZCDataCenter *dataCenter;
+
 //@property (nonatomic, strong) NSString *filePath;
 
 @end
@@ -26,20 +27,20 @@
 
 #pragma mark - load filepath
 
-- (NSMutableArray *)unknownWords
-{
+//- (NSMutableArray *)unknownWords
+//{
 //    if (!_unknownWords) {
 //        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
 //        if (_unknownWords == nil) {
 //            _unknownWords = [NSMutableArray array];
 //        }
 //    }
-    
-    if (!_unknownWords) {
-        _unknownWords = self.dataCenter.unknownWords;
-    }
-    return _unknownWords;
-}
+//    
+//    if (!_unknownWords) {
+//        _unknownWords = self.dataCenter.unknownWords;
+//    }
+//    return _unknownWords;
+//}
 
 
 - (instancetype)initWithStyle:(UITableViewStyle)style
@@ -81,9 +82,18 @@
 //    
 //}
 
+- (ZCDataCenter *)dataCenter
+{
+    if (!_dataCenter) {
+        _dataCenter = [[ZCDataCenter alloc] init];
+    }
+    return _dataCenter;
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
-    NSLog(@"%d_________viewdidappear", self.unknownWords.count);
+    
+    NSLog(@"%p_________viewdidappear", self.dataCenter);
     [self.tableView reloadData];
 }
 
@@ -105,7 +115,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.unknownWords.count;
+    return self.dataCenter.unknownWords.count;
 }
 
 
@@ -114,7 +124,7 @@
     static NSString *ID = @"wordCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
-    cell.textLabel.text = self.unknownWords[indexPath.row];
+    cell.textLabel.text = self.dataCenter.unknownWords[indexPath.row];
     
     return cell;
 }

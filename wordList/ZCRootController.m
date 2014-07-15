@@ -28,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"%s", __func__);
+    NSLog(@"%p", self);
     
 }
 

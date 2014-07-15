@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6198" systemVersion="14A283o" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Word" representedClassName="Word" syncable="YES">
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spelling" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="words" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Words" inverseName="word" inverseEntity="Words" syncable="YES"/>
+    </entity>
+    <entity name="Words" representedClassName="Words" syncable="YES">
+        <attribute name="unknownWordsNum" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="wordsReadNum" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="word" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Word" inverseName="words" inverseEntity="Word" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Word" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Words" positionX="-288" positionY="-61" width="128" height="88"/>
+    </elements>
+</model>

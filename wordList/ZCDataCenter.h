@@ -12,4 +12,10 @@
 
 @property (nonatomic, strong) NSMutableArray *unknownWords;
 
+@property (nonatomic, assign) int sectionsLearned;
+
+@property (nonatomic, assign) int wordsLearned;
+
+
+
 @end

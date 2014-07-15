@@ -11,6 +11,11 @@
 #import "ZCVocListTableViewController.h"
 #import "Common.h"
 #import "ZCDataCenter.h"
+#import "ZCFilePathManager.h"
+#import <CoreData/CoreData.h>
+#import "Word.h"
+#import "Words.h"
+
 
 @interface ViewController ()
 
@@ -30,16 +35,23 @@
             
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (ZCDataCenter *)dataCenter
+{
+    if (!_dataCenter) {
+        ZCDataCenter *dataCenter = [[ZCDataCenter alloc] init];
+        
+        _dataCenter = dataCenter;
+    }
     
-    _dataCenter = [[ZCDataCenter alloc] init];
+    return _dataCenter;
 }
 
 - (NSDictionary *)wordLines
 {
     if (!_wordLines) {
-
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"words.plist" ofType:nil];
-        
+        NSString *path = [ZCFilePathManager wordsFilePath];
         if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
             
             NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
@@ -79,10 +91,10 @@
         
         NSLog(@"%@", self.wordLabel.text);
         _count ++;
-        if (_count%15 == 0 ) {
+        if (_count%KwordInSection == 0 ) {
             self.addBtn.enabled = NO;
             [alertRight show];
-            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _count/15+1];
+            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _count/KwordInSection+1];
         }
     }else if(offsetX> 1 || offsetY > 1){
         if (_count == 0) {
@@ -109,9 +121,17 @@
 //    notification
 //    [[NSNotificationCenter defaultCenter] postNotificationName:@"add" object:nil userInfo:[NSDictionary dictionaryWithObject: self.wordLabel.text forKey:@"word"]];
     
-    [self.dataCenter.unknownWords addObject:self.wordLabel.text];
+    if (![self.dataCenter.unknownWords containsObject:self.wordLabel.text]) {
+    
+        [self.dataCenter.unknownWords addObject:self.wordLabel.text];
+    }
+    
+    
     
     NSLog(@"%d", self.dataCenter.unknownWords.count);
+    
+//    Word *word = [NSEntityDescription insertNewObjectForEntityForName:@"spelling" inManagedObjectContext:self.wordLabel.text];
+////    Words *unknownWords = [NSEntityDescription insertNewObjectForEntityForName:<#(NSString *)#> inManagedObjectContext:<#(NSManagedObjectContext *)#>]
 }
 
 - (void)didReceiveMemoryWarning {

@@ -58,7 +58,20 @@ bug fixed:
 
 5. selected every row will show alert view. fixed.
 
-new features added
+20140713
+
+version 0.93
+
+new features added:
+
+trying to add core data to manage the model.
+
+1. use hud after data reset.
+
+
+
+
+
 
 
 

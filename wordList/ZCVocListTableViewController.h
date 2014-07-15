@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZCDataCenter.h"
 
 @interface ZCVocListTableViewController : UITableViewController
+
+@property (nonatomic, strong) ZCDataCenter *dataCenter;
 
 
 @end
