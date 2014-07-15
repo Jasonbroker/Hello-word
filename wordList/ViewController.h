@@ -25,7 +25,7 @@
 
 @property (nonatomic, strong)NSDictionary *wordLines;
 
-@property (nonatomic, strong)ZCWords *words;
+//@property (nonatomic, strong)ZCWords *words;
 
 //@property (nonatomic, weak) id<ZCViewControllerDelegate> myDelete;
 

@@ -10,18 +10,16 @@
 #import "ZCScheduleTableViewController.h"
 #import "ZCVocListTableViewController.h"
 #import "Common.h"
-#import "ZCDataCenter.h"
 #import "ZCFilePathManager.h"
-#import <CoreData/CoreData.h>
-#import "Word.h"
-#import "Words.h"
-
+#import "ZCMessageSoundEffect.h"
+// shimmering
+#import "FBShimmeringView.h"
 
 @interface ViewController ()
 
 //  data model:
 
-@property (nonatomic, strong) ZCDataCenter *dataCenter;
+@property (nonatomic, strong)NSMutableArray *unknownWords;
 
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 
@@ -35,18 +33,41 @@
             
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+//    NSLog(@"%@", [ZCFilePathManager unknownWordFilePath]);
+    
+    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
+    
+    [self.view addSubview:shimmeringView];
+    
+    [self.wordLabel removeFromSuperview];
+    [shimmeringView addSubview:_wordLabel];
+    
+    _wordLabel.textAlignment = NSTextAlignmentCenter;
+    shimmeringView.contentView = _wordLabel;
+    shimmeringView.shimmeringOpacity = 0.5;
+    
+    shimmeringView.shimmering = YES;
+    
 }
 
-- (ZCDataCenter *)dataCenter
+// getter
+
+- (NSMutableArray *)unknownWords
 {
-    if (!_dataCenter) {
-        ZCDataCenter *dataCenter = [[ZCDataCenter alloc] init];
+    if (_unknownWords == nil) {
+//        NSString *path = [ZCFilePathManager unknownWordFilePath];
         
-        _dataCenter = dataCenter;
+        _unknownWords = [[NSMutableArray alloc] init];
+        
+       NSMutableArray *arrayM = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+        
+        _unknownWords = arrayM ;
     }
     
-    return _dataCenter;
+    return _unknownWords;
 }
+
 
 - (NSDictionary *)wordLines
 {
@@ -65,6 +86,9 @@
 
 
 #pragma mark - touch method
+/**
+  if right move, words back.  left move or tap, word move forword.
+ */
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = touches.anyObject;
@@ -111,32 +135,23 @@
             NSLog(@"%@", self.wordLabel.text);
         }
     }
-
-    
 }
 
 
 - (IBAction)AddVList:(UIBarButtonItem *)sender {
     
-//    notification
-//    [[NSNotificationCenter defaultCenter] postNotificationName:@"add" object:nil userInfo:[NSDictionary dictionaryWithObject: self.wordLabel.text forKey:@"word"]];
     
-    if (![self.dataCenter.unknownWords containsObject:self.wordLabel.text]) {
-    
-        [self.dataCenter.unknownWords addObject:self.wordLabel.text];
+    if (![self.unknownWords containsObject:self.wordLabel.text]) {
+        NSLog(@"%@", _unknownWords);
+        [ZCMessageSoundEffect playMessageSentSound];
+        [self.unknownWords addObject:self.wordLabel.text];
+        
+        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+    }else{
+        [ZCMessageSoundEffect playAlertSound];
     }
     
-    
-    
-    NSLog(@"%d", self.dataCenter.unknownWords.count);
-    
-//    Word *word = [NSEntityDescription insertNewObjectForEntityForName:@"spelling" inManagedObjectContext:self.wordLabel.text];
-////    Words *unknownWords = [NSEntityDescription insertNewObjectForEntityForName:<#(NSString *)#> inManagedObjectContext:<#(NSManagedObjectContext *)#>]
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"%d", self.unknownWords.count);
 }
 
 

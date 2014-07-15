@@ -26,6 +26,8 @@ features needed:
 
 5 settings for every day review member;
 
+6. customable wall paper;
+
 20140708
 
 little bug fixed;

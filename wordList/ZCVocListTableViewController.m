@@ -11,11 +11,11 @@
 #import "NSString+Path.h"
 #import "ZCDetailViewController.h"
 #import "ZCFilePathManager.h"
-#import "ZCDataCenter.h"
+
 
 @interface ZCVocListTableViewController ()
 
-//@property (nonatomic, strong) NSMutableArray *unknownWords;
+@property (nonatomic, strong) NSMutableArray *unknownWords;
 
 //@property (nonatomic, strong) ZCDataCenter *dataCenter;
 
@@ -25,32 +25,6 @@
 
 @implementation ZCVocListTableViewController
 
-#pragma mark - load filepath
-
-//- (NSMutableArray *)unknownWords
-//{
-//    if (!_unknownWords) {
-//        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
-//        if (_unknownWords == nil) {
-//            _unknownWords = [NSMutableArray array];
-//        }
-//    }
-//    
-//    if (!_unknownWords) {
-//        _unknownWords = self.dataCenter.unknownWords;
-//    }
-//    return _unknownWords;
-//}
-
-
-- (instancetype)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 
 - (void)viewDidLoad
@@ -58,51 +32,28 @@
     [super viewDidLoad];
     NSLog(@" wordlist....%s", __func__);
     
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addCell:) name:@"add" object:nil];
-
 }
 
-//#pragma mark - method for notification
-//-(void)addCell:(NSNotification *)aNotification
-//{
-//    
-////        NSNotification *anotification
-//    NSLog(@"recieved!!!!");
-//    
-//    NSDictionary *info = [aNotification userInfo];
-//    NSString *word = [info objectForKey:@"word"];
-//    if (![self.unknownWords containsObject:word]) {
-//        
-//        [self.unknownWords addObject:word];
-//        
-//        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
-//        
-//        [self.tableView reloadData];
-//    }
-//    
-//}
-
-- (ZCDataCenter *)dataCenter
-{
-    if (!_dataCenter) {
-        _dataCenter = [[ZCDataCenter alloc] init];
-    }
-    return _dataCenter;
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    
-    NSLog(@"%p_________viewdidappear", self.dataCenter);
     [self.tableView reloadData];
 }
 
 
-- (void)didReceiveMemoryWarning
+#pragma mark - load filepath
+
+- (NSMutableArray *)unknownWords
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//    if (_unknownWords) {
+        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+        if (_unknownWords == nil) {
+            _unknownWords = [NSMutableArray array];
+//        }
+    }
+    return _unknownWords;
 }
+
 
 #pragma mark - Table view data source
 
@@ -115,7 +66,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.dataCenter.unknownWords.count;
+    return self.unknownWords.count;
 }
 
 
@@ -124,10 +75,12 @@
     static NSString *ID = @"wordCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
-    cell.textLabel.text = self.dataCenter.unknownWords[indexPath.row];
+    cell.textLabel.text = self.unknownWords[indexPath.row];
     
     return cell;
 }
+
+#pragma mark - table view delegate method
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -135,11 +88,5 @@
 }
 
 
-- (void)dealloc
-{
-    NSLog(@"%s", __func__);
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
 
 @end
