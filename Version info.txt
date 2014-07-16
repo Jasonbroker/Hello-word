@@ -70,9 +70,19 @@ trying to add core data to manage the model.
 
 1. use hud after data reset.
 
+20140715
 
+new feature added
 
+1. word shimmering
 
+2. background change
+
+20140716
+
+new feature added 
+
+swipe and tap gesture added and replaced the touch method
 
 
 

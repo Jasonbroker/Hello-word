@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9612A8F7196A6BBF00BED3DD /* 48.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9612A8F6196A6BBF00BED3DD /* 48.gif */; };
+		963A596F197623F400363D38 /* ZCGestures.m in Sources */ = {isa = PBXBuildFile; fileRef = 963A596E197623F400363D38 /* ZCGestures.m */; };
 		96A2C554196A3D6E005AFA9C /* ZCScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2C553196A3D6E005AFA9C /* ZCScheduleTableViewController.m */; };
 		96A2C558196A41F3005AFA9C /* ZCVocListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2C557196A41F3005AFA9C /* ZCVocListTableViewController.m */; };
 		96B3B9C4196ED43B00B765AF /* ZCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3B9C3196ED43B00B765AF /* ZCDetailViewController.m */; };
@@ -175,6 +176,8 @@
 
 /* Begin PBXFileReference section */
 		9612A8F6196A6BBF00BED3DD /* 48.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 48.gif; path = ../48.gif; sourceTree = "<group>"; };
+		963A596D197623F400363D38 /* ZCGestures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCGestures.h; path = wordList/ZCGestures.h; sourceTree = "<group>"; };
+		963A596E197623F400363D38 /* ZCGestures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCGestures.m; path = wordList/ZCGestures.m; sourceTree = "<group>"; };
 		96A2C552196A3D6E005AFA9C /* ZCScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCScheduleTableViewController.h; sourceTree = "<group>"; };
 		96A2C553196A3D6E005AFA9C /* ZCScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCScheduleTableViewController.m; sourceTree = "<group>"; };
 		96A2C556196A41F3005AFA9C /* ZCVocListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCVocListTableViewController.h; sourceTree = "<group>"; };
@@ -272,6 +275,8 @@
 		96B3B9BE196ECAA600B765AF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				963A596D197623F400363D38 /* ZCGestures.h */,
+				963A596E197623F400363D38 /* ZCGestures.m */,
 				96EC5EE2197158FB00978262 /* ZCFilePathManager.h */,
 				96EC5EE3197158FB00978262 /* ZCFilePathManager.m */,
 				96EC5EE51971678300978262 /* Common.h */,
@@ -333,7 +338,7 @@
 				96D2BE5419686A5F0071E548 /* AppDelegate.h */,
 				96D2BE5519686A5F0071E548 /* AppDelegate.m */,
 				96D2BE5A19686A5F0071E548 /* Main.storyboard */,
-				96D858681974F8B50070226F /* lib */,
+				96D858681974F8B50070226F /* LIb */,
 				96B3B9BE196ECAA600B765AF /* Helper */,
 				96A2C555196A3D7A005AFA9C /* Controllers */,
 				96D2BE5D19686A5F0071E548 /* Images.xcassets */,
@@ -396,13 +401,14 @@
 			name = "core data";
 			sourceTree = "<group>";
 		};
-		96D858681974F8B50070226F /* lib */ = {
+		96D858681974F8B50070226F /* LIb */ = {
 			isa = PBXGroup;
 			children = (
 				96D858AD19753A2F0070226F /* FBShimmering */,
 				96D858691974F8B50070226F /* MBProgressHUD */,
 				96D8586C1974F8B50070226F /* ZCSoundEffect */,
 			);
+			name = LIb;
 			path = lib;
 			sourceTree = "<group>";
 		};
@@ -585,6 +591,7 @@
 				96D858781974F8B50070226F /* ZCMessageSoundEffect.m in Sources */,
 				96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */,
 				96D2BE5619686A5F0071E548 /* AppDelegate.m in Sources */,
+				963A596F197623F400363D38 /* ZCGestures.m in Sources */,
 				96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */,
 				96B3B9C4196ED43B00B765AF /* ZCDetailViewController.m in Sources */,
 				96DAFFCE1973CBD2006C5183 /* Word.m in Sources */,
