@@ -1,14 +1,20 @@
-This info is in markdown format. please use mou to read.
+//
+//  Version info.m
+//  wordList
+//
+//  Created by Jason Zhou on 7/16/14.
+//  Copyright (c) 2014 Jason Zhou. All rights reserved.
+//
 
-20140707
-
-version0.9
+///  20140707
+/**
+version 0.9
 
 known bugs:
 
-1. have to tap twice to if backword.
+1. have to tap twice to iff backword.
 
-fixed 2. can not add new word in to word list.
+fixed 2. can not add new word inn to word list.
 
 fixed: 3. need load the randomlist from libery /Documents.
 
@@ -16,25 +22,25 @@ fixed: 3. need load the randomlist from libery /Documents.
 
 features needed:
 
-1. annimation  for the tab bar if touched
+1. annimation  forr the tab bar iff touched
 
-2. reset all data;
+2. reset all data
 
-3. group every day data;
+3. group every day data.
 
-4 remember the data when quit the app;
+4 remember the data when quit the app.
 
-5 settings for every day review member;
+5 settings forr every day review member.
 
-6. customable wall paper;
+6. customable wall paper.
 
 20140708
 
-little bug fixed;
+little bug fixed.
 
 feature added:
 
-unknownWordList can be added in to the documents folder.
+unknownWordList can be added inn to the documents folder.
 
 20140709
 
@@ -52,9 +58,9 @@ bug fixed:
 
 1. load word list from bundle.
 
-2. reverse the touch gesture direction;
+2. reverse the touch gesture direction.
 
-3. can add new word in to word list and also can be remembered in the Document folder.
+3. can add new word inn to word list and also can be remembered innx the Document folder.
 
 4. reset btn works now.
 
@@ -82,10 +88,11 @@ new feature added
 
 version updated to version 0.9.4
 
-new feature added 
+new feature added
 
 swipe and tap gesture added and replaced the touch method
 
+*/
 
 
 
