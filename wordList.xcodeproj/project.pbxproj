@@ -323,7 +323,7 @@
 				96D2BE5419686A5F0071E548 /* AppDelegate.h */,
 				96D2BE5519686A5F0071E548 /* AppDelegate.m */,
 				96D2BE5A19686A5F0071E548 /* Main.storyboard */,
-				96D858681974F8B50070226F /* LIb */,
+				96D858681974F8B50070226F /* Lib */,
 				96B3B9BE196ECAA600B765AF /* Helper */,
 				96A2C555196A3D7A005AFA9C /* Controllers */,
 				96D2BE5D19686A5F0071E548 /* Images.xcassets */,
@@ -381,14 +381,14 @@
 			name = "core data";
 			sourceTree = "<group>";
 		};
-		96D858681974F8B50070226F /* LIb */ = {
+		96D858681974F8B50070226F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 				96D858AD19753A2F0070226F /* FBShimmering */,
 				96D858691974F8B50070226F /* MBProgressHUD */,
 				96D8586C1974F8B50070226F /* ZCSoundEffect */,
 			);
-			name = LIb;
+			name = Lib;
 			path = lib;
 			sourceTree = "<group>";
 		};

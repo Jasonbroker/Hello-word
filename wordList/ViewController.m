@@ -32,10 +32,11 @@
 @implementation ViewController
 
 #pragma mark - lifetime cycle
-
+///**************************************    life circle    **************************************
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // shimmering view
     FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
     
     [self.view addSubview:shimmeringView];
@@ -73,8 +74,8 @@
             _unknownWords = arrayM;
             
         }else{
-            // create the file
-            NSLog(@"no file~~");
+            // create the file  22222222 :(
+            NSLog(@"no file~ ~");
             [_unknownWords writeToFile:path atomically:YES];
         
         }
@@ -97,8 +98,8 @@
     }
     return _wordLines;
 }
-////****************************************    end    ****************************************
 
+///**************************************    gestures    **************************************
 #pragma mark - gestures swipe  left anf right ... tap to move forward
 - (void)addSwipeGesture
 {
@@ -111,7 +112,7 @@
     swipeLeft.direction = UISwipeGestureRecognizerDirectionRight;
     /**  swip down to reveal words meaning */
     UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown2Reveal:)];
-    swipeLeft.direction = UISwipeGestureRecognizerDirectionDown;
+    swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
 
     
     [self.view addGestureRecognizer:swipeLeft];
@@ -128,13 +129,14 @@
     UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
     
     if (swipeRecognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
+        _count ++;
         self.addBtn.enabled = YES;
         self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
         [self.wordLabel sizeToFit];
         self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
         
         NSLog(@"%@", self.wordLabel.text);
-        _count ++;
+        
         if (_count%KwordInSection == 0 ) {
             self.addBtn.enabled = NO;
             [alertRight show];
@@ -143,6 +145,8 @@
     }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
         if (_count == 0) {
             //            show alert here
+            NSLog(@" right swipe...");
+            
             [alertLeft show];
             
         }else{
@@ -178,13 +182,13 @@
 {
     UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
     
+    _count ++;
     self.addBtn.enabled = YES;
     self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
     [self.wordLabel sizeToFit];
     self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
 
     NSLog(@"%@", self.wordLabel.text);
-    _count ++;
     if (_count%KwordInSection == 0 ) {
         self.addBtn.enabled = NO;
         [alertRight show];

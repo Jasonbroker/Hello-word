@@ -18,11 +18,11 @@ features needed:
 
 1. annimation  for the tab bar if touched
 
-2. reset all data;
+added 2. reset all data;
 
-3. group every day data;
+added 3. group every day data;
 
-4 remember the data when quit the app;
+4 remember the data before quiting the app;
 
 5 settings for every day review member;
 
@@ -86,9 +86,19 @@ new feature added
 
 swipe and tap gesture added and replaced the touch method
 
+20140717
+
+version updated to Ver 0.9.5
+
+feature added:
+1. all 4 tab feature works now
+
+2. revise the all table view
 
 
+bug fixed:
 
+1. right and left swipe function well.
 
 
 
