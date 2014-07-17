@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ZCVocListTableViewController.h"
+#import "ZCRootController.h"
+
 @interface AppDelegate ()
             
 
@@ -19,12 +20,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+//    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
+    
+//    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"root"]];
+//    [rootVC.view addSubview:imageView];
+//    [rootVC.view sendSubviewToBack:imageView];
+
+    
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+//    UIApplication *app = [UIApplication sharedApplication];
+//    NSLog(@"%@", [application.windows[0] rootViewController]);
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

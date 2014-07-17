@@ -8,7 +8,11 @@
 
 #import "ZCScheduleDetailController.h"
 #import "Common.h"
+#import "ZCFilePathManager.h"
 @interface ZCScheduleDetailController ()
+
+
+@property (nonatomic, strong) NSDictionary *words;
 
 @end
 
@@ -17,89 +21,68 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"%p", self.tabBarController);
+    NSLog(@"%@", NSStringFromCGRect(self.tabBarController.tabBar.frame));
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
 
 //    self.tabBarController.tabBar.hidden =YES;
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (NSDictionary *)words
+{
+    if (!_words) {
+        NSString *path = [ZCFilePathManager wordsFilePath];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            
+            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+            _words = dict;
+        }else{
+            NSLog(@"ERROR at %@.....", path);
+        }
+    }
+    return _words;
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    return 1;
 }
 
-//#pragma mark - Table view data source
-//
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 1;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return KwordInSection;
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    // Return the number of rows in the section. defined in common.m
+    return KwordInSection;
+}
 
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *ID = @"wordCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row + self.sectionNum *15 ];
+    cell.textLabel.text = [self.words valueForKey:key];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+#pragma mark - controller will pop
+///********************************   pop    *******************************//
+#warning Frankly, I do not like this. Wont pop again this time..
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+//    ZCDetailViewController *detailVC = segue.destinationViewController;
+//    
+//    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//    
+//    // at this time the view has not been created yet.
+//    //    detailVC.wordLabel.text = self.unknownWords[indexPath.row];
+//    
+//    detailVC.word = self.wordsInSection[indexPath.row];
+    
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

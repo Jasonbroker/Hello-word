@@ -11,11 +11,11 @@
 #import "NSString+Path.h"
 #import "ZCDetailViewController.h"
 #import "ZCFilePathManager.h"
-#import "ZCDataCenter.h"
+
 
 @interface ZCVocListTableViewController ()
 
-//@property (nonatomic, strong) NSMutableArray *unknownWords;
+@property (nonatomic, strong) NSMutableArray *unknownWords;
 
 //@property (nonatomic, strong) ZCDataCenter *dataCenter;
 
@@ -25,85 +25,92 @@
 
 @implementation ZCVocListTableViewController
 
-#pragma mark - load filepath
+/**
+ 
+ reminder:
+ ===========================================
+ life cycle:
+ 
+ blank app:
+ 
+ when new word btn pressed:
+ 
+ the word will be added to the documents. At this time, view for voc list havnt init yet;
+ 
+ 
+ 
+ 
+ 
+ 
+ the view did load
+ 
+ getter will be called and load the file data;
+ 
+ and the user come back to the first page to learn more words 
+ 
+ 
+ if  click the add btn:
+        
+            when the voca list view appears, it should load the new data now.
 
-//- (NSMutableArray *)unknownWords
-//{
-//    if (!_unknownWords) {
-//        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
-//        if (_unknownWords == nil) {
-//            _unknownWords = [NSMutableArray array];
-//        }
-//    }
-//    
-//    if (!_unknownWords) {
-//        _unknownWords = self.dataCenter.unknownWords;
-//    }
-//    return _unknownWords;
-//}
+ else do nothing and come back to this view:
+            
+            the view comtroller need to do nothing.
+ 
+ As a result:
+
+ another tippppp:    while in this time the delegate can be used now.
+ 
+ use
+ 
+ */
 
 
-- (instancetype)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-
+///**************************************    life circle    **************************************
+#pragma mark - life cycle
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    NSLog(@" wordlist....%s", __func__);
     
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addCell:) name:@"add" object:nil];
-
+    [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(add) name:@"click" object:nil];
+    
 }
 
-//#pragma mark - method for notification
-//-(void)addCell:(NSNotification *)aNotification
-//{
-//    
-////        NSNotification *anotification
-//    NSLog(@"recieved!!!!");
-//    
-//    NSDictionary *info = [aNotification userInfo];
-//    NSString *word = [info objectForKey:@"word"];
-//    if (![self.unknownWords containsObject:word]) {
-//        
-//        [self.unknownWords addObject:word];
-//        
-//        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
-//        
-//        [self.tableView reloadData];
-//    }
-//    
-//}
-
-- (ZCDataCenter *)dataCenter
+- (void)add
 {
-    if (!_dataCenter) {
-        _dataCenter = [[ZCDataCenter alloc] init];
-    }
-    return _dataCenter;
+    NSLog(@"recieved!!!!");
+    self.unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+    
+    [self.tableView reloadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    
-    NSLog(@"%p_________viewdidappear", self.dataCenter);
-    [self.tableView reloadData];
+
 }
 
-
-- (void)didReceiveMemoryWarning
+- (void)dealloc
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+///**************************************    getter    **************************************
+#pragma mark - load filepath
+
+- (NSMutableArray *)unknownWords
+{
+    
+    if (!_unknownWords) {
+        
+        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+        NSLog(@"111111");
+    }
+
+    return _unknownWords;
+}
+
+///**************************************        **************************************
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -115,31 +122,45 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.dataCenter.unknownWords.count;
+    return self.unknownWords.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"wordCell";
+    static NSString *ID = @"unknownWordsCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
-    cell.textLabel.text = self.dataCenter.unknownWords[indexPath.row];
+    cell.textLabel.text = self.unknownWords[indexPath.row];
     
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - controller will pop
+///********************************   pop    *******************************//
+#warning Frankly, I do not like this kind of pop. user only want to know a little bit detail of the word, however poping to another controller will make them think that the word is really a big case. I will try to fix this part by adding a pull detail view instead, which takes more time to design.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    ZCDetailViewController *detailVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    // at this time the view has not been created yet.
+//    detailVC.wordLabel.text = self.unknownWords[indexPath.row];
+    
+    detailVC.word = self.unknownWords[indexPath.row];
     
 }
 
-
-- (void)dealloc
-{
-    NSLog(@"%s", __func__);
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
 
 @end
+
+
+
+
+
+
+
+
+
+

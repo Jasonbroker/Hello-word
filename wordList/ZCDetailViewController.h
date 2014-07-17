@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ZCDetailViewController : UIViewController
+/** will be updated into a model */
+@property (nonatomic ,strong) NSString *word;
+
+@property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 
 @end

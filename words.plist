@@ -3,779 +3,779 @@
 <plist version="1.0">
 <dict>
 	<key>0</key>
-	<string>bitmap ['bɪtmæp]位元图 位图 </string>
+	<string>bitmap [&apos;bɪtmæp]位元图 位图 </string>
 	<key>1</key>
-	<string>overloaded ['əuvə'ləudid] function 多载化函式 重载的函数 </string>
+	<string>overloaded [&apos;əuvə&apos;ləudid] function 多载化函式 重载的函数 </string>
 	<key>10</key>
-	<string>robust [rəu'bʌst] 强固、稳健 健壮 </string>
+	<string>robust [rəu&apos;bʌst] 强固、稳健 健壮 </string>
 	<key>100</key>
-	<string>document ['dɔkjumənt]文件 文档 </string>
+	<string>document [&apos;dɔkjumənt]文件 文档 </string>
 	<key>101</key>
-	<string>console [kən'səul]主控台 控制台 </string>
+	<string>console [kən&apos;səul]主控台 控制台 </string>
 	<key>102</key>
-	<string>divide [di'vaid] division[di'viʒən] 分开除除法</string>
+	<string>divide [di&apos;vaid] division[di&apos;viʒən] 分开除除法</string>
 	<key>103</key>
-	<string>optimized ['ɔptimaizd] 尽量充分利用</string>
+	<string>optimized [&apos;ɔptimaizd] 尽量充分利用</string>
 	<key>104</key>
-	<string>concrete [kən'kri:t]具象的 实在的 </string>
+	<string>concrete [kən&apos;kri:t]具象的 实在的 </string>
 	<key>105</key>
 	<string>smart[smɑ:t] pointer 灵巧指标、精灵指标 智能指针 </string>
 	<key>106</key>
-	<string>initialization [i,niʃəlai'zeiʃən] 初始化（动作） 初始化 </string>
+	<string>initialization [i,niʃəlai&apos;zeiʃən] 初始化（动作） 初始化 </string>
 	<key>107</key>
-	<string>influence ['influəns]有影响的</string>
+	<string>influence [&apos;influəns]有影响的</string>
 	<key>108</key>
-	<string>procedural [prə'si:dʒərəl]程序性的、程序式的 过程式的、过程化的 </string>
+	<string>procedural [prə&apos;si:dʒərəl]程序性的、程序式的 过程式的、过程化的 </string>
 	<key>109</key>
 	<string>page fault [fɔ:lt] 页面失效</string>
 	<key>11</key>
 	<string>BFS(breadth [bredθ] first search [sə:tʃ]) 广度优先搜索法</string>
 	<key>110</key>
-	<string>benchmark ['bentʃmɑ:k]基准测试程序</string>
+	<string>benchmark [&apos;bentʃmɑ:k]基准测试程序</string>
 	<key>111</key>
-	<string>prototype ['prəutətaip] 原型样板</string>
+	<string>prototype [&apos;prəutətaip] 原型样板</string>
 	<key>112</key>
-	<string>assume [ə'sju:m] 假设</string>
+	<string>assume [ə&apos;sju:m] 假设</string>
 	<key>113</key>
 	<string>load [ləud] 载入 装载 </string>
 	<key>114</key>
-	<string>attribute [ə'trɪbjuːt]属性 属性、特性 </string>
+	<string>attribute [ə&apos;trɪbjuːt]属性 属性、特性 </string>
 	<key>115</key>
-	<string>transport [træns'pɔ:t] layer ['leiə] session ['seʃən] layer 传输层会话层</string>
+	<string>transport [træns&apos;pɔ:t] layer [&apos;leiə] session [&apos;seʃən] layer 传输层会话层</string>
 	<key>116</key>
-	<string>adjacency[ə'dʒeisənsi] list method ['meθəd]邻接表表示法</string>
+	<string>adjacency[ə&apos;dʒeisənsi] list method [&apos;meθəd]邻接表表示法</string>
 	<key>117</key>
-	<string>allocate ['æləukeit] 留下分配</string>
+	<string>allocate [&apos;æləukeit] 留下分配</string>
 	<key>118</key>
-	<string>explicit [iks'plisit]明白的、明显的、显式 显式 </string>
+	<string>explicit [iks&apos;plisit]明白的、明显的、显式 显式 </string>
 	<key>119</key>
-	<string>proficient [prəu'fiʃənt]精通</string>
+	<string>proficient [prəu&apos;fiʃənt]精通</string>
 	<key>12</key>
-	<string>unit ['ju:nit] system acceptance [ək'septəns] testing 单元测试系统测试确认测试</string>
+	<string>unit [&apos;ju:nit] system acceptance [ək&apos;septəns] testing 单元测试系统测试确认测试</string>
 	<key>120</key>
 	<string>white [hwait] noise [nɔiz] 白噪声</string>
 	<key>121</key>
-	<string>multiplication [,mʌltipli'keiʃən]乘法</string>
+	<string>multiplication [,mʌltipli&apos;keiʃən]乘法</string>
 	<key>122</key>
 	<string>standard template library 标准模板程式库 </string>
 	<key>123</key>
-	<string>getter ['ɡetə] (相对於 setter) 取值函式 </string>
+	<string>getter [&apos;ɡetə] (相对於 setter) 取值函式 </string>
 	<key>124</key>
-	<string>constrain [kən'strein]约束</string>
+	<string>constrain [kən&apos;strein]约束</string>
 	<key>125</key>
 	<string>PCB(process control block) 进程控制块</string>
 	<key>126</key>
-	<string>VSAM: (Virtual ['vɜːtjʊəl] Storage ['stɔːrɪdʒ] Access Method)</string>
+	<string>VSAM: (Virtual [&apos;vɜːtjʊəl] Storage [&apos;stɔːrɪdʒ] Access Method)</string>
 	<key>127</key>
-	<string>best [best] viable ['vaiəbl] function ['fʌŋ(k)ʃ(ə)n]最佳可行函式 最佳可行函式 （从 viable functions 中挑出的最佳吻合者） </string>
+	<string>best [best] viable [&apos;vaiəbl] function [&apos;fʌŋ(k)ʃ(ə)n]最佳可行函式 最佳可行函式 （从 viable functions 中挑出的最佳吻合者） </string>
 	<key>128</key>
-	<string>boundary ['baundəri]界线分界</string>
+	<string>boundary [&apos;baundəri]界线分界</string>
 	<key>129</key>
-	<string>partial ['pɑ:ʃəl] specialization [,speʃəlai'zeiʃən] 偏特化（ref. C++ Primer 3/e, 16.10） 局部特化 （ref. full specialization） </string>
+	<string>partial [&apos;pɑ:ʃəl] specialization [,speʃəlai&apos;zeiʃən] 偏特化（ref. C++ Primer 3/e, 16.10） 局部特化 （ref. full specialization） </string>
 	<key>13</key>
 	<string>cell [sel]信元</string>
 	<key>130</key>
-	<string>pass by address [ə'dres]传址（函式引数的传递方式）（非正式用语）传地址 </string>
+	<string>pass by address [ə&apos;dres]传址（函式引数的传递方式）（非正式用语）传地址 </string>
 	<key>131</key>
-	<string>combination [,kɔmbi'neiʃən]联合配合</string>
+	<string>combination [,kɔmbi&apos;neiʃən]联合配合</string>
 	<key>132</key>
 	<string>oom: information object message class 信息对象消息类</string>
 	<key>133</key>
-	<string>floppy ['flɔpi] 活动盘片(软盘)</string>
+	<string>floppy [&apos;flɔpi] 活动盘片(软盘)</string>
 	<key>134</key>
-	<string>event [i'vent]事件 事件 </string>
+	<string>event [i&apos;vent]事件 事件 </string>
 	<key>135</key>
-	<string>virtual memory ['meməri]虚拟记忆体 虚内存, 虚存 </string>
+	<string>virtual memory [&apos;meməri]虚拟记忆体 虚内存, 虚存 </string>
 	<key>136</key>
-	<string>operation [,ɔpə'reiʃən] 操作、操作行为 操作 </string>
+	<string>operation [,ɔpə&apos;reiʃən] 操作、操作行为 操作 </string>
 	<key>137</key>
-	<string>generic algorithm ['ælɡəriðəm]泛型演算法 通用算法 </string>
+	<string>generic algorithm [&apos;ælɡəriðəm]泛型演算法 通用算法 </string>
 	<key>138</key>
-	<string>assurance [ə'ʃuərəns]确信信任</string>
+	<string>assurance [ə&apos;ʃuərəns]确信信任</string>
 	<key>139</key>
-	<string>estimate ['estimeit] 估计判断</string>
+	<string>estimate [&apos;estimeit] 估计判断</string>
 	<key>14</key>
-	<string>equal ['i:kwəl] 相等 相等 </string>
+	<string>equal [&apos;i:kwəl] 相等 相等 </string>
 	<key>140</key>
-	<string>pseudo ['psju:dəu] -code 伪码(又称程序设计语言PDL)</string>
+	<string>pseudo [&apos;psju:dəu] -code 伪码(又称程序设计语言PDL)</string>
 	<key>141</key>
-	<string>increment ['inkrimənt] operator ['ɔpəreitə] 累加运算子 ++ 增加操作符 </string>
+	<string>increment [&apos;inkrimənt] operator [&apos;ɔpəreitə] 累加运算子 ++ 增加操作符 </string>
 	<key>142</key>
-	<string>feature ['fi:tʃə]特性 </string>
+	<string>feature [&apos;fi:tʃə]特性 </string>
 	<key>143</key>
 	<string>sort [sɔ:t] 种类方式分类排序</string>
 	<key>144</key>
-	<string>subset['sʌbset] 子集子设备</string>
+	<string>subset[&apos;sʌbset] 子集子设备</string>
 	<key>145</key>
-	<string>program debugging [di:'bʌɡiŋ] 程序排错</string>
+	<string>program debugging [di:&apos;bʌɡiŋ] 程序排错</string>
 	<key>146</key>
 	<string>object oriented databases 面向对象数据库</string>
 	<key>147</key>
 	<string>user interface 使用者介面、用户介面、人机介面 用户界面 </string>
 	<key>148</key>
-	<string>delegate ['deliɡeit]委派、委托、委任 委托 </string>
+	<string>delegate [&apos;deliɡeit]委派、委托、委任 委托 </string>
 	<key>149</key>
-	<string>constructor[kɔn'strʌktə]（ctor） 建构式 构造函数 （与class 同名的一种 member functions） </string>
+	<string>constructor[kɔn&apos;strʌktə]（ctor） 建构式 构造函数 （与class 同名的一种 member functions） </string>
 	<key>15</key>
 	<string>member access operator 成员取用运算子（有 dot 和 arrow 两种） 成员存取操作符 </string>
 	<key>150</key>
 	<string>underflow 下溢</string>
 	<key>151</key>
-	<string>gather ['ɡæðə] 聚集采集推测</string>
+	<string>gather [&apos;ɡæðə] 聚集采集推测</string>
 	<key>152</key>
-	<string>FIFO replacement [ri'pleismənt]policy ['pɔlisi] 先进先出替换算法</string>
+	<string>FIFO replacement [ri&apos;pleismənt]policy [&apos;pɔlisi] 先进先出替换算法</string>
 	<key>153</key>
-	<string>option ['ɔpʃən]选项，可选方案 选项 </string>
+	<string>option [&apos;ɔpʃən]选项，可选方案 选项 </string>
 	<key>154</key>
-	<string>hyperlink ['haipəliŋk] 超链结 超链接 </string>
+	<string>hyperlink [&apos;haipəliŋk] 超链结 超链接 </string>
 	<key>155</key>
-	<string>sequence ['si:kwəns] 序列顺序</string>
+	<string>sequence [&apos;si:kwəns] 序列顺序</string>
 	<key>156</key>
 	<string>stream [stri:m]资料流、串流 流 </string>
 	<key>157</key>
-	<string>standard ['stændəd library ['laibrəri] 标准程式库 </string>
+	<string>standard [&apos;stændəd library [&apos;laibrəri] 标准程式库 </string>
 	<key>158</key>
 	<string>software 软体 软件 </string>
 	<key>159</key>
-	<string>candidate ['kændideit] key 候选键(辅键)</string>
+	<string>candidate [&apos;kændideit] key 候选键(辅键)</string>
 	<key>16</key>
-	<string>operator ['ɔpəreitə]运算子 操作符、运算符 </string>
+	<string>operator [&apos;ɔpəreitə]运算子 操作符、运算符 </string>
 	<key>160</key>
 	<string>CASE(commputer aided software engineering) 计算机辅助软件工程</string>
 	<key>161</key>
-	<string>package ['pækidʒ]套件 包 </string>
+	<string>package [&apos;pækidʒ]套件 包 </string>
 	<key>162</key>
-	<string>period['piəriəd] 时期周期</string>
+	<string>period[&apos;piəriəd] 时期周期</string>
 	<key>163</key>
-	<string>component [kəm'pəunənt] 成分</string>
+	<string>component [kəm&apos;pəunənt] 成分</string>
 	<key>164</key>
 	<string>form [fɔ:m]形状形式</string>
 	<key>165</key>
-	<string>radian ['reidiən] 径度 弧度 </string>
+	<string>radian [&apos;reidiən] 径度 弧度 </string>
 	<key>166</key>
 	<string>frame page frame 帧结构页结构</string>
 	<key>167</key>
-	<string>access ['ækses]访问存取通路进入</string>
+	<string>access [&apos;ækses]访问存取通路进入</string>
 	<key>168</key>
-	<string>regularly ['reɡjələli]定期的常规的</string>
+	<string>regularly [&apos;reɡjələli]定期的常规的</string>
 	<key>169</key>
-	<string>transmit  [træns'mɪt]传送</string>
+	<string>transmit  [træns&apos;mɪt]传送</string>
 	<key>17</key>
-	<string>multi－tasking ['mʌlti] ['tɑ:skiŋ]多工 多任务 </string>
+	<string>multi－tasking [&apos;mʌlti] [&apos;tɑ:skiŋ]多工 多任务 </string>
 	<key>170</key>
-	<string>projection [prəu'dʒekʃən] selection [si'lekʃən] join [dʒɔin] 投影选择连接</string>
+	<string>projection [prəu&apos;dʒekʃən] selection [si&apos;lekʃən] join [dʒɔin] 投影选择连接</string>
 	<key>171</key>
 	<string>mouse [maus]滑鼠 鼠标 </string>
 	<key>172</key>
-	<string>unique [ju:'ni:k] 唯一的</string>
+	<string>unique [ju:&apos;ni:k] 唯一的</string>
 	<key>173</key>
-	<string>final ['fainl]最后的最终的</string>
+	<string>final [&apos;fainl]最后的最终的</string>
 	<key>174</key>
-	<string>exhibit [iɡ'zibit]表现展示陈列</string>
+	<string>exhibit [iɡ&apos;zibit]表现展示陈列</string>
 	<key>175</key>
-	<string>short [ʃɔ:t] path critical ['kritikəl] path 最短路径关键路径</string>
+	<string>short [ʃɔ:t] path critical [&apos;kritikəl] path 最短路径关键路径</string>
 	<key>176</key>
-	<string>interpreter [in'tə:pritə]直译器 解释器 </string>
+	<string>interpreter [in&apos;tə:pritə]直译器 解释器 </string>
 	<key>177</key>
 	<string>copy (n) 复件, 副本 </string>
 	<key>178</key>
 	<string>pair [pεə]对组 </string>
 	<key>179</key>
-	<string>function template ['templit]函式模板、函式范本 函数模板 </string>
+	<string>function template [&apos;templit]函式模板、函式范本 函数模板 </string>
 	<key>18</key>
-	<string>video ['vidiəu]视讯 视频 </string>
+	<string>video [&apos;vidiəu]视讯 视频 </string>
 	<key>180</key>
-	<string>overload [,əuvə'ləud] 多载化、多载化、重载 重载 </string>
+	<string>overload [,əuvə&apos;ləud] 多载化、多载化、重载 重载 </string>
 	<key>181</key>
-	<string>element ['elimənt]元素要素</string>
+	<string>element [&apos;elimənt]元素要素</string>
 	<key>182</key>
-	<string>punctuation [,pʌŋktju'eiʃən] 标点</string>
+	<string>punctuation [,pʌŋktju&apos;eiʃən] 标点</string>
 	<key>183</key>
-	<string>multiple-term formula ['fɔ:mjulə] 多项式</string>
+	<string>multiple-term formula [&apos;fɔ:mjulə] 多项式</string>
 	<key>184</key>
 	<string>demarshal 反编列 散集 </string>
 	<key>185</key>
-	<string>hand shaking ['ʃeikiŋ]握手协商 </string>
+	<string>hand shaking [&apos;ʃeikiŋ]握手协商 </string>
 	<key>186</key>
-	<string>robustness [rəʊ'bʌstnɪs]强固性、稳健性 健壮性 </string>
+	<string>robustness [rəʊ&apos;bʌstnɪs]强固性、稳健性 健壮性 </string>
 	<key>187</key>
-	<string>MFLOP(million ['miljən] floating point operate ['ɔpəreit] p s 每秒百万次浮点运算</string>
+	<string>MFLOP(million [&apos;miljən] floating point operate [&apos;ɔpəreit] p s 每秒百万次浮点运算</string>
 	<key>188</key>
-	<string>dispatch [dis'pætʃ] 分派 分派 </string>
+	<string>dispatch [dis&apos;pætʃ] 分派 分派 </string>
 	<key>189</key>
-	<string>qualifier ['kwɔlifaiə]资格修饰词、饰词 限定修饰词 </string>
+	<string>qualifier [&apos;kwɔlifaiə]资格修饰词、饰词 限定修饰词 </string>
 	<key>19</key>
 	<string>stack [stæk](d)堆叠 栈 </string>
 	<key>190</key>
-	<string>prefix [,pri:'fiks ](Polish ['pɔliʃ] form) 前缀(波兰表达式)</string>
+	<string>prefix [,pri:&apos;fiks ](Polish [&apos;pɔliʃ] form) 前缀(波兰表达式)</string>
 	<key>191</key>
 	<string>peer entites 对等实体</string>
 	<key>192</key>
 	<string>refactoring 重构、重整 重构 </string>
 	<key>193</key>
-	<string>icon ['aikɔn]图示、图标 图标 </string>
+	<string>icon [&apos;aikɔn]图示、图标 图标 </string>
 	<key>194</key>
-	<string>achieve [ə'tʃi:v]实现完成</string>
+	<string>achieve [ə&apos;tʃi:v]实现完成</string>
 	<key>195</key>
-	<string>syntax ['sintæks]语法 语法 </string>
+	<string>syntax [&apos;sintæks]语法 语法 </string>
 	<key>196</key>
-	<string>target ['tɑ:ɡit]标的（例 target pointer ['pɔintə]：标的指标） 目标 </string>
+	<string>target [&apos;tɑ:ɡit]标的（例 target pointer [&apos;pɔintə]：标的指标） 目标 </string>
 	<key>197</key>
-	<string>invoke [in'vəuk]唤起 调用 </string>
+	<string>invoke [in&apos;vəuk]唤起 调用 </string>
 	<key>198</key>
-	<string>A.I. 人工智慧 人工智能（artificial[ɑ:ti'fiʃəl]intelligence [ɪn'telɪdʒ(ə)ns]）</string>
+	<string>A.I. 人工智慧 人工智能（artificial[ɑ:ti&apos;fiʃəl]intelligence [ɪn&apos;telɪdʒ(ə)ns]）</string>
 	<key>199</key>
-	<string>via ['vaiə] 经过</string>
+	<string>via [&apos;vaiə] 经过</string>
 	<key>2</key>
-	<string>immediate derived [di'raivd]直接的（紧临的）下层 derived class。 直接下层派生类 </string>
+	<string>immediate derived [di&apos;raivd]直接的（紧临的）下层 derived class。 直接下层派生类 </string>
 	<key>20</key>
 	<string>loop [lu:p] 回圈 循环 </string>
 	<key>200</key>
-	<string>exception specification [,spesifi'keiʃən]异常规格（ref. C++ Primer 3/e, 11.4） 异常规范 </string>
+	<string>exception specification [,spesifi&apos;keiʃən]异常规格（ref. C++ Primer 3/e, 11.4） 异常规范 </string>
 	<key>201</key>
-	<string>construct [kən'strʌkt]构件 构件 </string>
+	<string>construct [kən&apos;strʌkt]构件 构件 </string>
 	<key>202</key>
-	<string>const ['kɔnstənt]常数（constant 的缩写，C++ 关键字）  </string>
+	<string>const [&apos;kɔnstənt]常数（constant 的缩写，C++ 关键字）  </string>
 	<key>203</key>
-	<string>reference ['refərəns] （C++ 中类似指标的东西，相当於 "化身"） 引用、叁考址叁器, see pointer </string>
+	<string>reference [&apos;refərəns] （C++ 中类似指标的东西，相当於 &quot;化身&quot;） 引用、叁考址叁器, see pointer </string>
 	<key>204</key>
 	<string>overloaded operator 多载化运算子 被重载的操作符 </string>
 	<key>205</key>
-	<string>Ethernet ['i:θə,net] 以太网</string>
+	<string>Ethernet [&apos;i:θə,net] 以太网</string>
 	<key>206</key>
 	<string>base [beis] class [klɑːs]基础类别 基类 </string>
 	<key>207</key>
-	<string>illustrate ['iləstreit] 举例说明</string>
+	<string>illustrate [&apos;iləstreit] 举例说明</string>
 	<key>208</key>
-	<string>file ['fail]档案 文件 </string>
+	<string>file [&apos;fail]档案 文件 </string>
 	<key>209</key>
-	<string>record [ri'kɔ:d] 记录 记录 </string>
+	<string>record [ri&apos;kɔ:d] 记录 记录 </string>
 	<key>21</key>
 	<string>IPC 工业过程控制（Information Processing Center）；</string>
 	<key>210</key>
-	<string>opaque [əu'peik]不透明的 </string>
+	<string>opaque [əu&apos;peik]不透明的 </string>
 	<key>211</key>
-	<string>identifier [ai'dentifaiə]识别字、识别符号 标识符 </string>
+	<string>identifier [ai&apos;dentifaiə]识别字、识别符号 标识符 </string>
 	<key>212</key>
-	<string>scope resolution [,rezə'lu:ʃən ]operator 生存空间决议运算子 生存空间解析操作符 （与scope operator同） </string>
+	<string>scope resolution [,rezə&apos;lu:ʃən ]operator 生存空间决议运算子 生存空间解析操作符 （与scope operator同） </string>
 	<key>213</key>
 	<string>part 零件 部件 </string>
 	<key>214</key>
 	<string>platform 平台 平台 </string>
 	<key>215</key>
-	<string>analog ['ænəlɔɡ]推论</string>
+	<string>analog [&apos;ænəlɔɡ]推论</string>
 	<key>216</key>
 	<string>buttons [bʌtəns]按钮 按钮 </string>
 	<key>217</key>
-	<string>condition [kən'diʃən]情况状况</string>
+	<string>condition [kən&apos;diʃən]情况状况</string>
 	<key>218</key>
-	<string>existence [iɡ'zistəns]存在发生</string>
+	<string>existence [iɡ&apos;zistəns]存在发生</string>
 	<key>219</key>
-	<string>member ['membə]成员 成员 </string>
+	<string>member [&apos;membə]成员 成员 </string>
 	<key>22</key>
-	<string>represent [,repri'zent]表述，表现 表述，表现 </string>
+	<string>represent [,repri&apos;zent]表述，表现 表述，表现 </string>
 	<key>220</key>
-	<string>modeling language ['læŋɡwidʒ]塑模语言，建模语言 </string>
+	<string>modeling language [&apos;læŋɡwidʒ]塑模语言，建模语言 </string>
 	<key>221</key>
-	<string>modifier ['mɔdifaiə] 饰词 修饰符 </string>
+	<string>modifier [&apos;mɔdifaiə] 饰词 修饰符 </string>
 	<key>222</key>
 	<string>table 表表格桌子</string>
 	<key>223</key>
-	<string>object model ['mɔdəl]物件模型 对象模型 </string>
+	<string>object model [&apos;mɔdəl]物件模型 对象模型 </string>
 	<key>224</key>
-	<string>reflection [re'flekʃən] 反射 反射、映像 </string>
+	<string>reflection [re&apos;flekʃən] 反射 反射、映像 </string>
 	<key>225</key>
-	<string>software engineering [,endʒi'niəriŋ] 软件工程</string>
+	<string>software engineering [,endʒi&apos;niəriŋ] 软件工程</string>
 	<key>226</key>
-	<string>entity ['entəti] 物体 实体、物体 </string>
+	<string>entity [&apos;entəti] 物体 实体、物体 </string>
 	<key>227</key>
-	<string>subgroup ['sʌbɡru:p] 循环的</string>
+	<string>subgroup [&apos;sʌbɡru:p] 循环的</string>
 	<key>228</key>
-	<string>programmer ['prəuɡræmə]程式员 程序员 </string>
+	<string>programmer [&apos;prəuɡræmə]程式员 程序员 </string>
 	<key>229</key>
-	<string>library ['laibrəri] 程式库、函式库 库、函数库 </string>
+	<string>library [&apos;laibrəri] 程式库、函式库 库、函数库 </string>
 	<key>23</key>
-	<string>quality ['kwɔləti]品质 质量 </string>
+	<string>quality [&apos;kwɔləti]品质 质量 </string>
 	<key>230</key>
-	<string>trigger ['triɡə]触发 触发 </string>
+	<string>trigger [&apos;triɡə]触发 触发 </string>
 	<key>231</key>
-	<string>enum (enumeration [i,nju:mə'reiʃən]) 列举（一种 C++ 资料型别） 枚举 </string>
+	<string>enum (enumeration [i,nju:mə&apos;reiʃən]) 列举（一种 C++ 资料型别） 枚举 </string>
 	<key>232</key>
 	<string>CPETT 计算机性能评价工具与技术</string>
 	<key>233</key>
-	<string>elevator['eliveitə] (scan[skæn]) algorithm ['ælɡəriðəm]电梯算法又称扫描算法</string>
+	<string>elevator[&apos;eliveitə] (scan[skæn]) algorithm [&apos;ælɡəriðəm]电梯算法又称扫描算法</string>
 	<key>234</key>
-	<string>Manchester ['mæntʃistə]曼彻斯特</string>
+	<string>Manchester [&apos;mæntʃistə]曼彻斯特</string>
 	<key>235</key>
-	<string>programming ['prəuɡræmiŋ]编程、程式设计、程式化 编程 </string>
+	<string>programming [&apos;prəuɡræmiŋ]编程、程式设计、程式化 编程 </string>
 	<key>236</key>
-	<string>pass by reference ['refərəns]传址（函式引数的一种传递方式） 传地址, 按引用传递 </string>
+	<string>pass by reference [&apos;refərəns]传址（函式引数的一种传递方式） 传地址, 按引用传递 </string>
 	<key>237</key>
-	<string>iterator [ɪtə'reɪtə]迭代器（一种泛型指标） 迭代器 </string>
+	<string>iterator [ɪtə&apos;reɪtə]迭代器（一种泛型指标） 迭代器 </string>
 	<key>238</key>
-	<string>FDM(frequency ['frikwənsi]division [di'viʒən] multiplexing ['mʌltipleksiŋ]频分多路复用</string>
+	<string>FDM(frequency [&apos;frikwənsi]division [di&apos;viʒən] multiplexing [&apos;mʌltipleksiŋ]频分多路复用</string>
 	<key>239</key>
 	<string>pane [pein]窗格 窗格 有时为嵌板之意，例 Java Content Pane） </string>
 	<key>24</key>
-	<string>profiler ['prəufailə]效能（效率）评测器 效能（性能）评测器 </string>
+	<string>profiler [&apos;prəufailə]效能（效率）评测器 效能（性能）评测器 </string>
 	<key>240</key>
-	<string>contain [kən'tein]包含</string>
+	<string>contain [kən&apos;tein]包含</string>
 	<key>241</key>
-	<string>subtype ['sʌbtaip]子型别 子类型 </string>
+	<string>subtype [&apos;sʌbtaip]子型别 子类型 </string>
 	<key>242</key>
-	<string>permit [pə'mit] 许可准许</string>
+	<string>permit [pə&apos;mit] 许可准许</string>
 	<key>243</key>
-	<string>fractal ['fræktəl]碎形 分形 </string>
+	<string>fractal [&apos;fræktəl]碎形 分形 </string>
 	<key>244</key>
-	<string>associative [ə'səʊʃɪətɪv] container [kən'teɪnə]关联式容器（对应 sequential container） 关联式容器 //atomic [ə'tɔmik]不可分割的 原子的 </string>
+	<string>associative [ə&apos;səʊʃɪətɪv] container [kən&apos;teɪnə]关联式容器（对应 sequential container） 关联式容器 //atomic [ə&apos;tɔmik]不可分割的 原子的 </string>
 	<key>245</key>
-	<string>update [ʌp'deit] 更新</string>
+	<string>update [ʌp&apos;deit] 更新</string>
 	<key>246</key>
-	<string>storage ['stɔridʒ] 贮藏库</string>
+	<string>storage [&apos;stɔridʒ] 贮藏库</string>
 	<key>247</key>
 	<string>clone [kləun]复制 克隆 </string>
 	<key>248</key>
-	<string>class declaration [,deklə'reiʃən]类别宣告、类别宣告式 类声明 </string>
+	<string>class declaration [,deklə&apos;reiʃən]类别宣告、类别宣告式 类声明 </string>
 	<key>249</key>
-	<string>starvation [stɑ:'veiʃən] 饥饿匮乏</string>
+	<string>starvation [stɑ:&apos;veiʃən] 饥饿匮乏</string>
 	<key>25</key>
-	<string>information [,infə'meiʃən]资讯 信息 </string>
+	<string>information [,infə&apos;meiʃən]资讯 信息 </string>
 	<key>250</key>
 	<string>dead [ded] lock [lɔk]死结 死锁 </string>
 	<key>251</key>
-	<string>escape [i'skeip] code 转义码 转义码 </string>
+	<string>escape [i&apos;skeip] code 转义码 转义码 </string>
 	<key>252</key>
-	<string>support [sə'pɔ:t]支援 支持 </string>
+	<string>support [sə&apos;pɔ:t]支援 支持 </string>
 	<key>253</key>
-	<string>pixel ['piksəl] 图素、像素 像素 </string>
+	<string>pixel [&apos;piksəl] 图素、像素 像素 </string>
 	<key>254</key>
-	<string>exceed [ik'si:d]超过</string>
+	<string>exceed [ik&apos;si:d]超过</string>
 	<key>255</key>
-	<string>predicate ['predikeit]谓语</string>
+	<string>predicate [&apos;predikeit]谓语</string>
 	<key>256</key>
 	<string>search [sə:tʃ]搜寻 查找 </string>
 	<key>257</key>
-	<string>marshal ['mɑ:ʃəl]编列 列集 叁考 demarshal </string>
+	<string>marshal [&apos;mɑ:ʃəl]编列 列集 叁考 demarshal </string>
 	<key>258</key>
-	<string>equality operator ['ɔpəreitə] equality（等号）运算子 == 等号操作符 </string>
+	<string>equality operator [&apos;ɔpəreitə] equality（等号）运算子 == 等号操作符 </string>
 	<key>259</key>
-	<string>replacement [ri'pleismənt] 替换</string>
+	<string>replacement [ri&apos;pleismənt] 替换</string>
 	<key>26</key>
 	<string>guard [ɡɑ:d] clause [klɔ:z]卫述句 (Refactoring, p250) 卫语句 </string>
 	<key>260</key>
-	<string>encapsulation [in,-kæpsə'leiʃən] 封装 封装 </string>
+	<string>encapsulation [in,-kæpsə&apos;leiʃən] 封装 封装 </string>
 	<key>261</key>
 	<string>scheduler 排程器 调度程序 </string>
 	<key>262</key>
-	<string>process ['prəuses] 过程加工处理</string>
+	<string>process [&apos;prəuses] 过程加工处理</string>
 	<key>263</key>
-	<string>binary operator ['ɒpəreɪtə]二元运算子 二元操作符 </string>
+	<string>binary operator [&apos;ɒpəreɪtə]二元运算子 二元操作符 </string>
 	<key>264</key>
-	<string>foundation [faun'deiʃən]基础根据基金</string>
+	<string>foundation [faun&apos;deiʃən]基础根据基金</string>
 	<key>265</key>
-	<string>iteration [,itə'reiʃən]迭代（回圈每次轮回称为一个 iteration） 迭代 </string>
+	<string>iteration [,itə&apos;reiʃən]迭代（回圈每次轮回称为一个 iteration） 迭代 </string>
 	<key>266</key>
-	<string>encode [en'kəud]译成密码</string>
+	<string>encode [en&apos;kəud]译成密码</string>
 	<key>267</key>
-	<string>loader ['ləudə]载入器 装载器、载入器 </string>
+	<string>loader [&apos;ləudə]载入器 装载器、载入器 </string>
 	<key>268</key>
-	<string>copy['kɔpi] (v) 复制、拷贝 拷贝 </string>
+	<string>copy[&apos;kɔpi] (v) 复制、拷贝 拷贝 </string>
 	<key>269</key>
-	<string>item ['aitəm] 项目、条款 项、条款、项目 </string>
+	<string>item [&apos;aitəm] 项目、条款 项、条款、项目 </string>
 	<key>27</key>
-	<string>recordset ['rekɔdset]记录集 记录集 </string>
+	<string>recordset [&apos;rekɔdset]记录集 记录集 </string>
 	<key>270</key>
-	<string>mutable ['mju:təbl] 可变的 可变的 </string>
+	<string>mutable [&apos;mju:təbl] 可变的 可变的 </string>
 	<key>271</key>
-	<string>property ['prɔpəti]属性 </string>
+	<string>property [&apos;prɔpəti]属性 </string>
 	<key>272</key>
-	<string>physical ['fizikəl] data link network layer 物理层数据链路层网络层</string>
+	<string>physical [&apos;fizikəl] data link network layer 物理层数据链路层网络层</string>
 	<key>273</key>
-	<string>signature ['signətʃə]标记式、签名式、署名式 签名 </string>
+	<string>signature [&apos;signətʃə]标记式、签名式、署名式 签名 </string>
 	<key>274</key>
-	<string>field ['fi:ld]栏位,资料栏（Java） 字段, 值域（Java） </string>
+	<string>field [&apos;fi:ld]栏位,资料栏（Java） 字段, 值域（Java） </string>
 	<key>275</key>
-	<string>application [ˌæplɪ'keɪʃ(ə)n]应用程式 应用、应用程序 </string>
+	<string>application [ˌæplɪ&apos;keɪʃ(ə)n]应用程式 应用、应用程序 </string>
 	<key>276</key>
-	<string>network ['netwə:k]网路 网络 </string>
+	<string>network [&apos;netwə:k]网路 网络 </string>
 	<key>277</key>
 	<string>raise [reiz]引发（常用来表示发出一个 exception） 引起、引发 </string>
 	<key>278</key>
-	<string>volatile ['vɔlətail]易挥发的、易变的 </string>
+	<string>volatile [&apos;vɔlətail]易挥发的、易变的 </string>
 	<key>279</key>
-	<string>declaration [,deklə'reiʃən]宣告、宣告式 声明 </string>
+	<string>declaration [,deklə&apos;reiʃən]宣告、宣告式 声明 </string>
 	<key>28</key>
-	<string>exchange [iks'tʃeindʒ] sort 交换排序</string>
+	<string>exchange [iks&apos;tʃeindʒ] sort 交换排序</string>
 	<key>280</key>
-	<string>message switching ['switʃiŋ]报文交换</string>
+	<string>message switching [&apos;switʃiŋ]报文交换</string>
 	<key>281</key>
-	<string>precedence ['presidəns]优先序（通常用於运算子的优先执行次序） </string>
+	<string>precedence [&apos;presidəns]优先序（通常用於运算子的优先执行次序） </string>
 	<key>282</key>
-	<string>most derived [di'raivd] class 最末层衍生类别 最底层的派生类 </string>
+	<string>most derived [di&apos;raivd] class 最末层衍生类别 最底层的派生类 </string>
 	<key>283</key>
 	<string>build [bild]建造、构筑、建置（MS 用语） </string>
 	<key>284</key>
-	<string>memory reference ['refərəns] 存储器参量</string>
+	<string>memory reference [&apos;refərəns] 存储器参量</string>
 	<key>285</key>
-	<string>default [di'fɔ:lt]预设 缺省、默认 </string>
+	<string>default [di&apos;fɔ:lt]预设 缺省、默认 </string>
 	<key>286</key>
-	<string>LAN(local area ['εəriə] network) 局域网</string>
+	<string>LAN(local area [&apos;εəriə] network) 局域网</string>
 	<key>287</key>
-	<string>redirected [ri:dɪ'rekt]重定向</string>
+	<string>redirected [ri:dɪ&apos;rekt]重定向</string>
 	<key>288</key>
-	<string>TDM(time division [di'viʒən] multiplexing ['mʌltipleksiŋ]) 时分多路复用</string>
+	<string>TDM(time division [di&apos;viʒən] multiplexing [&apos;mʌltipleksiŋ]) 时分多路复用</string>
 	<key>289</key>
-	<string>defer [di'fə:] 延缓 推迟 </string>
+	<string>defer [di&apos;fə:] 延缓 推迟 </string>
 	<key>29</key>
-	<string>bandwidth ['bændwidθ]带宽</string>
+	<string>bandwidth [&apos;bændwidθ]带宽</string>
 	<key>290</key>
-	<string>suppose [sə'pəuz] 假定</string>
+	<string>suppose [sə&apos;pəuz] 假定</string>
 	<key>291</key>
-	<string>debug [di:'bʌɡ]除错 调试 </string>
+	<string>debug [di:&apos;bʌɡ]除错 调试 </string>
 	<key>292</key>
-	<string>micro ['maikrəu]微 微 </string>
+	<string>micro [&apos;maikrəu]微 微 </string>
 	<key>293</key>
-	<string>class definition [,defi'niʃən]类别定义、类别定义式 类定义 </string>
+	<string>class definition [,defi&apos;niʃən]类别定义、类别定义式 类定义 </string>
 	<key>294</key>
-	<string>internal [in'tə:nəl] 内部的内在的</string>
+	<string>internal [in&apos;tə:nəl] 内部的内在的</string>
 	<key>295</key>
-	<string>window procedure [prə'si:dʒə] 视窗函式 窗口过程 </string>
+	<string>window procedure [prə&apos;si:dʒə] 视窗函式 窗口过程 </string>
 	<key>296</key>
-	<string>cursor ['kə:sə]游标 光标 </string>
+	<string>cursor [&apos;kə:sə]游标 光标 </string>
 	<key>297</key>
 	<string>first normal form 第一范式 </string>
 	<key>298</key>
-	<string>global object ['ɔbdʒikt]全域物件 全局对象 </string>
+	<string>global object [&apos;ɔbdʒikt]全域物件 全局对象 </string>
 	<key>299</key>
-	<string>control [kən'trəul]控制元件、控件 控件 </string>
+	<string>control [kən&apos;trəul]控制元件、控件 控件 </string>
 	<key>3</key>
 	<string>MIPS(millions of instructions per second 每秒百万条指令</string>
 	<key>30</key>
 	<string>thread [θred] 执行绪 线程 </string>
 	<key>300</key>
-	<string>assembly language ['læŋgwɪdʒ]组合语言 汇编语言 </string>
+	<string>assembly language [&apos;læŋgwɪdʒ]组合语言 汇编语言 </string>
 	<key>301</key>
 	<string>development phase 开发阶段</string>
 	<key>302</key>
-	<string>class hierarchy ['haiərɑ:ki]类别继承体系, 类别阶层 类层次体系 </string>
+	<string>class hierarchy [&apos;haiərɑ:ki]类别继承体系, 类别阶层 类层次体系 </string>
 	<key>303</key>
 	<string>class head [hed]类别表头 类头 </string>
 	<key>304</key>
-	<string>definition [,defi'niʃən]定义、定义区、定义式 定义 </string>
+	<string>definition [,defi&apos;niʃən]定义、定义区、定义式 定义 </string>
 	<key>305</key>
-	<string>purpose ['pə:pəs]目的意图</string>
+	<string>purpose [&apos;pə:pəs]目的意图</string>
 	<key>306</key>
-	<string>overlapping [,əuvə'læpiŋ] register ['redʒistə] windows 重叠寄存器窗口</string>
+	<string>overlapping [,əuvə&apos;læpiŋ] register [&apos;redʒistə] windows 重叠寄存器窗口</string>
 	<key>307</key>
-	<string>request indication [,indi'keiʃən] response [ri'spɔns] confirm [kən'fə:m] 请求指示响应确认</string>
+	<string>request indication [,indi&apos;keiʃən] response [ri&apos;spɔns] confirm [kən&apos;fə:m] 请求指示响应确认</string>
 	<key>308</key>
-	<string>coaxial ['kəu'æksəl] cable ['keibl] 同轴电缆</string>
+	<string>coaxial [&apos;kəu&apos;æksəl] cable [&apos;keibl] 同轴电缆</string>
 	<key>309</key>
-	<string>override [,əuvə'raid] 改写、覆写 重载、改写、重新定义 （在 derived class 中重新定义虚拟函式 </string>
+	<string>override [,əuvə&apos;raid] 改写、覆写 重载、改写、重新定义 （在 derived class 中重新定义虚拟函式 </string>
 	<key>31</key>
-	<string>resolution [,rezə'lu:ʃən]决议程序、决议过程 解析过程 </string>
+	<string>resolution [,rezə&apos;lu:ʃən]决议程序、决议过程 解析过程 </string>
 	<key>310</key>
-	<string>Illinois [,ili'nɔi(z)]伊利诺 伊利诺斯 </string>
+	<string>Illinois [,ili&apos;nɔi(z)]伊利诺 伊利诺斯 </string>
 	<key>311</key>
-	<string>prototyping method (model ['mɔdəl]) 原型化周期(模型)</string>
+	<string>prototyping method (model [&apos;mɔdəl]) 原型化周期(模型)</string>
 	<key>312</key>
-	<string>pipeline ['paip,lain] 管道</string>
+	<string>pipeline [&apos;paip,lain] 管道</string>
 	<key>313</key>
-	<string>entity integrity [in'teɡrəti] rule [ru:l] 实体完整性规则 </string>
+	<string>entity integrity [in&apos;teɡrəti] rule [ru:l] 实体完整性规则 </string>
 	<key>314</key>
 	<string>Nyquist 奈奎斯特</string>
 	<key>315</key>
-	<string>online ['ɔnlain]线上 在线 </string>
+	<string>online [&apos;ɔnlain]线上 在线 </string>
 	<key>316</key>
 	<string>binary tree [triː]二元树 二叉树 </string>
 	<key>317</key>
-	<string>kernels ['kə:nəlz] 核心程序</string>
+	<string>kernels [&apos;kə:nəlz] 核心程序</string>
 	<key>318</key>
-	<string>MAN(metropolitan [ˌmetrə'pɒlɪtən] area network) 城域网</string>
+	<string>MAN(metropolitan [ˌmetrə&apos;pɒlɪtən] area network) 城域网</string>
 	<key>319</key>
 	<string>class 类</string>
 	<key>32</key>
-	<string>presentation [,prezən'teiʃən] application [,æpli'keiʃən] layer 表示层应用层</string>
+	<string>presentation [,prezən&apos;teiʃən] application [,æpli&apos;keiʃən] layer 表示层应用层</string>
 	<key>320</key>
 	<string>game [ɡeim]游戏 游戏 </string>
 	<key>321</key>
-	<string>maintain [mein'tein]维护 维护 </string>
+	<string>maintain [mein&apos;tein]维护 维护 </string>
 	<key>322</key>
-	<string>assert(ion) [ə'sɜːt] [ə'sɜːʃ(ə)n]断言 </string>
+	<string>assert(ion) [ə&apos;sɜːt] [ə&apos;sɜːʃ(ə)n]断言 </string>
 	<key>323</key>
 	<string>event driven [drivən]事件驱动的 事件驱动的 </string>
 	<key>324</key>
-	<string>recursive [ri'kə:siv] 递回 递归 </string>
+	<string>recursive [ri&apos;kə:siv] 递回 递归 </string>
 	<key>325</key>
-	<string>serial ['siəriəl] 串行 </string>
+	<string>serial [&apos;siəriəl] 串行 </string>
 	<key>326</key>
 	<string>perform 表演执行</string>
 	<key>327</key>
 	<string>styles [stails] 文体风格</string>
 	<key>328</key>
-	<string>object oriented implementation [,implimen'teiʃən]面向对象的实现</string>
+	<string>object oriented implementation [,implimen&apos;teiʃən]面向对象的实现</string>
 	<key>329</key>
 	<string>scheme [ski:m] 计划图表</string>
 	<key>33</key>
-	<string>formula ['fɔ:mjulə]公式表达式</string>
+	<string>formula [&apos;fɔ:mjulə]公式表达式</string>
 	<key>330</key>
 	<string>rank [ræŋk]等级、分等（ref. C++Primer 3/e 9,15章） 等级 </string>
 	<key>331</key>
-	<string>sequential [si'kwenʃəl] container [kən'teinə]序列式容器 顺序式容器 （对应於 associative [ə'səuʃjətiv] container） </string>
+	<string>sequential [si&apos;kwenʃəl] container [kən&apos;teinə]序列式容器 顺序式容器 （对应於 associative [ə&apos;səuʃjətiv] container） </string>
 	<key>332</key>
 	<string>thread safe [seif]多绪安全 多线程安全 </string>
 	<key>333</key>
-	<string>deduction [di'dʌkʃən]推导（例：template argument deduction） 推导、推断 </string>
+	<string>deduction [di&apos;dʌkʃən]推导（例：template argument deduction） 推导、推断 </string>
 	<key>334</key>
-	<string>traverse ['trævəs]巡访（来回走动） 遍历 </string>
+	<string>traverse [&apos;trævəs]巡访（来回走动） 遍历 </string>
 	<key>335</key>
-	<string>theta['θi:tə] select [si'lekt] project theta join [dʒɔin] θ选择投影θ连接</string>
+	<string>theta[&apos;θi:tə] select [si&apos;lekt] project theta join [dʒɔin] θ选择投影θ连接</string>
 	<key>336</key>
 	<string>if and only if 若且唯若 当且仅当 </string>
 	<key>337</key>
-	<string>snapshot ['snæpʃɔt] 萤幕快照（图） 屏幕截图 </string>
+	<string>snapshot [&apos;snæpʃɔt] 萤幕快照（图） 屏幕截图 </string>
 	<key>338</key>
 	<string>dereference operator dereference（提领）运算子 * 解叁考操作符 </string>
 	<key>339</key>
-	<string>expression [ik'spreʃən]运算式、算式 表达式 </string>
+	<string>expression [ik&apos;spreʃən]运算式、算式 表达式 </string>
 	<key>34</key>
-	<string>one-dimensional [di'menʃənəl] array 一维数组</string>
+	<string>one-dimensional [di&apos;menʃənəl] array 一维数组</string>
 	<key>340</key>
-	<string>flexibility [,fleksi'biliti]弹性 灵活性 </string>
+	<string>flexibility [,fleksi&apos;biliti]弹性 灵活性 </string>
 	<key>341</key>
-	<string>firmware ['fə:mwεə]韧体 固件 </string>
+	<string>firmware [&apos;fə:mwεə]韧体 固件 </string>
 	<key>342</key>
-	<string>database schema ['ski:mə] 数据库结构纲目 </string>
+	<string>database schema [&apos;ski:mə] 数据库结构纲目 </string>
 	<key>343</key>
-	<string>export [ik'spɔ:t]汇出 引出、导出 </string>
+	<string>export [ik&apos;spɔ:t]汇出 引出、导出 </string>
 	<key>344</key>
-	<string>member initialization [i,niʃəlai'zeiʃən] list 成员初值列 成员初始值列表 </string>
+	<string>member initialization [i,niʃəlai&apos;zeiʃən] list 成员初值列 成员初始值列表 </string>
 	<key>345</key>
-	<string>re－direction [di'rekʃən] 重导向 重定向 </string>
+	<string>re－direction [di&apos;rekʃən] 重导向 重定向 </string>
 	<key>346</key>
-	<string>correspond [,kɔ:ri'spɔnd] (corresponding) 相符合(相应的一致的)</string>
+	<string>correspond [,kɔ:ri&apos;spɔnd] (corresponding) 相符合(相应的一致的)</string>
 	<key>347</key>
-	<string>relay ['ri:lei] 中继</string>
+	<string>relay [&apos;ri:lei] 中继</string>
 	<key>348</key>
 	<string>system testing 系统测试</string>
 	<key>349</key>
-	<string>modeling ['mɔdəliŋ] 模塑 </string>
+	<string>modeling [&apos;mɔdəliŋ] 模塑 </string>
 	<key>35</key>
-	<string>register ['redʒistə]暂存器 寄存器 </string>
+	<string>register [&apos;redʒistə]暂存器 寄存器 </string>
 	<key>350</key>
-	<string>indirect [,indi'rekt]间接的</string>
+	<string>indirect [,indi&apos;rekt]间接的</string>
 	<key>351</key>
-	<string>child [tʃaild] class 子类别（或称为derived [di'raivd] class, subtype ['sʌbtaip] 图表类型） 子类 </string>
+	<string>child [tʃaild] class 子类别（或称为derived [di&apos;raivd] class, subtype [&apos;sʌbtaip] 图表类型） 子类 </string>
 	<key>352</key>
 	<string>class body 类别本体 类体 </string>
 	<key>353</key>
-	<string>multiplexing ['mʌltipleksiŋ] 多路复用技术</string>
+	<string>multiplexing [&apos;mʌltipleksiŋ] 多路复用技术</string>
 	<key>354</key>
-	<string>enclosing [in'kləuz] class 外围类别（与巢状类别 nested ['nestid]( 嵌套的) class 有关）外围类 </string>
+	<string>enclosing [in&apos;kləuz] class 外围类别（与巢状类别 nested [&apos;nestid]( 嵌套的) class 有关）外围类 </string>
 	<key>355</key>
-	<string>capacity [kə'pæsəti] 容量</string>
+	<string>capacity [kə&apos;pæsəti] 容量</string>
 	<key>356</key>
-	<string>object oriented ['ɔ:rientid] 对象趋向的使适应的</string>
+	<string>object oriented [&apos;ɔ:rientid] 对象趋向的使适应的</string>
 	<key>357</key>
-	<string>lifetime ['laiftaim]生命期、寿命 生命期、寿命 </string>
+	<string>lifetime [&apos;laiftaim]生命期、寿命 生命期、寿命 </string>
 	<key>358</key>
-	<string>HDLC（High [haɪ] - level ['lev(ə)l] Data Link Control）面向比特型数据链路层协议</string>
+	<string>HDLC（High [haɪ] - level [&apos;lev(ə)l] Data Link Control）面向比特型数据链路层协议</string>
 	<key>359</key>
-	<string>operand ['ɔpərænd] 操作数</string>
+	<string>operand [&apos;ɔpərænd] 操作数</string>
 	<key>36</key>
-	<string>document['dɔkjumənt] 文件文档</string>
+	<string>document[&apos;dɔkjumənt] 文件文档</string>
 	<key>360</key>
-	<string>composition[,kɔmpə'ziʃən]  复合、合成、组合 组合 </string>
+	<string>composition[,kɔmpə&apos;ziʃən]  复合、合成、组合 组合 </string>
 	<key>361</key>
-	<string>assembly [ə'semblɪ]装配件 </string>
+	<string>assembly [ə&apos;semblɪ]装配件 </string>
 	<key>362</key>
-	<string>inline ['in,lain]行内 内联 </string>
+	<string>inline [&apos;in,lain]行内 内联 </string>
 	<key>363</key>
-	<string>circuit ['sə:kit] switching ['switʃiŋ] 线路交换</string>
+	<string>circuit [&apos;sə:kit] switching [&apos;switʃiŋ] 线路交换</string>
 	<key>364</key>
-	<string>creation [kri:'eiʃən]产生、生成 创建 </string>
+	<string>creation [kri:&apos;eiʃən]产生、生成 创建 </string>
 	<key>365</key>
-	<string>longitudinal [lɔndʒi'tju:dinl]水平的</string>
+	<string>longitudinal [lɔndʒi&apos;tju:dinl]水平的</string>
 	<key>366</key>
 	<string>flag [flæɡ]旗标 标记 </string>
 	<key>367</key>
-	<string>fiber ['faibə] optic ['ɔptik] cable ['keibl] 光缆</string>
+	<string>fiber [&apos;faibə] optic [&apos;ɔptik] cable [&apos;keibl] 光缆</string>
 	<key>368</key>
-	<string>boolean ['bu:li:ən]布林值（真假值，true 或 false） 布尔值 </string>
+	<string>boolean [&apos;bu:li:ən]布林值（真假值，true 或 false） 布尔值 </string>
 	<key>369</key>
-	<string>cohesion [kəu'hi:ʒən] coupling ['kʌpliŋ] 内聚耦合</string>
+	<string>cohesion [kəu&apos;hi:ʒən] coupling [&apos;kʌpliŋ] 内聚耦合</string>
 	<key>37</key>
 	<string>save 储存 存储 </string>
 	<key>370</key>
-	<string>array [ə'reɪ] 阵列 数组 </string>
+	<string>array [ə&apos;reɪ] 阵列 数组 </string>
 	<key>371</key>
-	<string>forwarding function ['fʌŋkʃən]转呼叫函式,转发函式 转发函数 </string>
+	<string>forwarding function [&apos;fʌŋkʃən]转呼叫函式,转发函式 转发函数 </string>
 	<key>372</key>
-	<string>Token ['təukən] Bus 令牌总线</string>
+	<string>Token [&apos;təukən] Bus 令牌总线</string>
 	<key>373</key>
-	<string>definition [,defi'niʃən] 定义</string>
+	<string>definition [,defi&apos;niʃən] 定义</string>
 	<key>374</key>
-	<string>terminal ['tə:minəl] 终端</string>
+	<string>terminal [&apos;tə:minəl] 终端</string>
 	<key>375</key>
-	<string>mechanism ['mekənizəm]机制 机制 </string>
+	<string>mechanism [&apos;mekənizəm]机制 机制 </string>
 	<key>376</key>
-	<string>infinite recursive [ri'kə:siv] 无穷递回 无限递归 </string>
+	<string>infinite recursive [ri&apos;kə:siv] 无穷递回 无限递归 </string>
 	<key>377</key>
-	<string>hash [hæʃ] table ['teibl] 杂凑表 哈希表、散列表 </string>
+	<string>hash [hæʃ] table [&apos;teibl] 杂凑表 哈希表、散列表 </string>
 	<key>378</key>
-	<string>reliability [ri,laiə'biləti] 可信赖的</string>
+	<string>reliability [ri,laiə&apos;biləti] 可信赖的</string>
 	<key>379</key>
-	<string>universe ['ju:nivə:s] 宇宙全世界</string>
+	<string>universe [&apos;ju:nivə:s] 宇宙全世界</string>
 	<key>38</key>
-	<string>iterate ['itəreit]迭代（回圈一个轮回一个轮回地进行） 迭代  </string>
+	<string>iterate [&apos;itəreit]迭代（回圈一个轮回一个轮回地进行） 迭代  </string>
 	<key>380</key>
-	<string>parallel ['pærəlel]平行 并行 </string>
+	<string>parallel [&apos;pærəlel]平行 并行 </string>
 	<key>381</key>
-	<string>interacts [ɪntər'ækt]交谈、互动 交互 </string>
+	<string>interacts [ɪntər&apos;ækt]交谈、互动 交互 </string>
 	<key>382</key>
-	<string>destructor [di'strʌktə] 解构式 析构函数 </string>
+	<string>destructor [di&apos;strʌktə] 解构式 析构函数 </string>
 	<key>383</key>
-	<string>splitter ['splitə]分裂视窗 切分窗口 </string>
+	<string>splitter [&apos;splitə]分裂视窗 切分窗口 </string>
 	<key>384</key>
 	<string>DFS(depth[depθ] first[fə:st]search[sə:tʃ]) 深度优先搜索法</string>
 	<key>385</key>
-	<string>class template partial ['pɑ:ʃəl] specializations ['speʃəlaiz]类别模板偏特化 类模板部分特化 </string>
+	<string>class template partial [&apos;pɑ:ʃəl] specializations [&apos;speʃəlaiz]类别模板偏特化 类模板部分特化 </string>
 	<key>386</key>
-	<string>toy [tɔi] benchmark ['bentʃmɑ:k] 简单基准程序</string>
+	<string>toy [tɔi] benchmark [&apos;bentʃmɑ:k] 简单基准程序</string>
 	<key>387</key>
 	<string>memberwise [waiz] 以 member 为单元┅、members 逐一┅ 以成员为单位 </string>
 	<key>388</key>
-	<string>semantics [si'mæntiks] 语意 语义 </string>
+	<string>semantics [si&apos;mæntiks] 语意 语义 </string>
 	<key>389</key>
-	<string>candidate ['kændideit] functions 中挑出者</string>
+	<string>candidate [&apos;kændideit] functions 中挑出者</string>
 	<key>39</key>
-	<string>global scope [skəup] resolution [,rezə'lu:ʃən] operator ['ɔpəreitə]全域生存空间（范围决议）运算子 :: 全局范围解析操作符 </string>
+	<string>global scope [skəup] resolution [,rezə&apos;lu:ʃən] operator [&apos;ɔpəreitə]全域生存空间（范围决议）运算子 :: 全局范围解析操作符 </string>
 	<key>390</key>
-	<string>namespace ['neimspeis]命名空间 名字空间、命名空间 </string>
+	<string>namespace [&apos;neimspeis]命名空间 名字空间、命名空间 </string>
 	<key>391</key>
-	<string>determine [di'tə:min]限定</string>
+	<string>determine [di&apos;tə:min]限定</string>
 	<key>392</key>
-	<string>bus 汇流排 总线 //business ['bɪznɪs]商务,业务 业务 </string>
+	<string>bus 汇流排 总线 //business [&apos;bɪznɪs]商务,业务 业务 </string>
 	<key>393</key>
-	<string>register ['redʒistə] (registry ['redʒistri]) 寄存器登记注册挂号</string>
+	<string>register [&apos;redʒistə] (registry [&apos;redʒistri]) 寄存器登记注册挂号</string>
 	<key>394</key>
 	<string>slot [slɔt]条孔、槽 槽  </string>
 	<key>395</key>
-	<string>pattern ['pætən]范式、样式 模式 </string>
+	<string>pattern [&apos;pætən]范式、样式 模式 </string>
 	<key>396</key>
-	<string>entity ['entəti] 实体</string>
+	<string>entity [&apos;entəti] 实体</string>
 	<key>397</key>
 	<string>bit [bɪt](发音为beit)位元 位 </string>
 	<key>398</key>
-	<string>class template ['templit]类别模板、类别范本 类模板 </string>
+	<string>class template [&apos;templit]类别模板、类别范本 类模板 </string>
 	<key>399</key>
-	<string>traversal ['trævə:səl] method 遍历方法</string>
+	<string>traversal [&apos;trævə:səl] method 遍历方法</string>
 	<key>4</key>
-	<string>implementation [,implimen'teiʃən]实作品、实作体、实作码、实件 实现 </string>
+	<string>implementation [,implimen&apos;teiʃən]实作品、实作体、实作码、实件 实现 </string>
 	<key>40</key>
-	<string>host language statement ['steitmənt]主语言语句</string>
+	<string>host language statement [&apos;steitmənt]主语言语句</string>
 	<key>400</key>
-	<string>packet ['pækit] switching ['switʃiŋ] 报文分组交换</string>
+	<string>packet [&apos;pækit] switching [&apos;switʃiŋ] 报文分组交换</string>
 	<key>401</key>
-	<string>facility [fə'siliti]设施、设备 设施、设备 </string>
+	<string>facility [fə&apos;siliti]设施、设备 设施、设备 </string>
 	<key>402</key>
 	<string>exception 异常情况 异常 </string>
 	<key>403</key>
-	<string>object oriented analysis [ə'næləsis] 面向对象的分析</string>
+	<string>object oriented analysis [ə&apos;næləsis] 面向对象的分析</string>
 	<key>404</key>
-	<string>dot [dɔt] operator ['ɔpəreitə] dot（句点）运算子 . (圆)点操作符 </string>
+	<string>dot [dɔt] operator [&apos;ɔpəreitə] dot（句点）运算子 . (圆)点操作符 </string>
 	<key>405</key>
 	<string>message based [beist] 以讯息为基础的 基於消息的 </string>
 	<key>406</key>
-	<string>collection [kə'lekʃən]群集 集合 </string>
+	<string>collection [kə&apos;lekʃən]群集 集合 </string>
 	<key>407</key>
-	<string>integrate ['intiɡreit]整合 集成 </string>
+	<string>integrate [&apos;intiɡreit]整合 集成 </string>
 	<key>408</key>
-	<string>functor ['fʌŋktə]仿函式 仿函式、函子 </string>
+	<string>functor [&apos;fʌŋktə]仿函式 仿函式、函子 </string>
 	<key>409</key>
-	<string>stack [stæk] strategy ['strætidʒi] non-stack strategy 堆栈型非堆栈型</string>
+	<string>stack [stæk] strategy [&apos;strætidʒi] non-stack strategy 堆栈型非堆栈型</string>
 	<key>41</key>
 	<string>task [tɑ:sk] switch [switʃ]工作切换 任务切换 </string>
 	<key>410</key>
-	<string>optional ['ɔpʃənəl]任选的非强制的</string>
+	<string>optional [&apos;ɔpʃənəl]任选的非强制的</string>
 	<key>411</key>
-	<string>organize ['ɔ:ɡənaiz]组织</string>
+	<string>organize [&apos;ɔ:ɡənaiz]组织</string>
 	<key>412</key>
 	<string>hard disk [disk]硬碟 硬盘 </string>
 	<key>413</key>
-	<string>occupy ['ɔkjupai] 占有居住于</string>
+	<string>occupy [&apos;ɔkjupai] 占有居住于</string>
 	<key>414</key>
-	<string>quality ['kwɔləti]质量品质</string>
+	<string>quality [&apos;kwɔləti]质量品质</string>
 	<key>415</key>
-	<string>equivalent [i'kwivələnt]等价、等同、对等 等价 </string>
+	<string>equivalent [i&apos;kwivələnt]等价、等同、对等 等价 </string>
 	<key>416</key>
-	<string>forwarding ['fɔ:wədiŋ]转呼叫,转发 转发 </string>
+	<string>forwarding [&apos;fɔ:wədiŋ]转呼叫,转发 转发 </string>
 	<key>417</key>
-	<string>directed[di'rektid] graph[ɡræf] undirected[,ʌndi'rektid] graph 有向图无向图</string>
+	<string>directed[di&apos;rektid] graph[ɡræf] undirected[,ʌndi&apos;rektid] graph 有向图无向图</string>
 	<key>418</key>
 	<string>OOM(object oriented method) 面向对象的方法</string>
 	<key>419</key>
-	<string>graph [ɡrɑ:f, ɡræf] (graphic ['ɡræfik]) 图</string>
+	<string>graph [ɡrɑ:f, ɡræf] (graphic [&apos;ɡræfik]) 图</string>
 	<key>42</key>
-	<string>principle ['prinsəpl] 原则方法</string>
+	<string>principle [&apos;prinsəpl] 原则方法</string>
 	<key>420</key>
-	<string>evaluate [i'væljueit] 评估、求值、核定 评估 </string>
+	<string>evaluate [i&apos;væljueit] 评估、求值、核定 评估 </string>
 	<key>421</key>
-	<string>dereference [di'refərəns]提领（取出指标所指物体的内容） 解叁考 </string>
+	<string>dereference [di&apos;refərəns]提领（取出指标所指物体的内容） 解叁考 </string>
 	<key>422</key>
-	<string>WAN(wide area ['εəriə] network) 广域网</string>
+	<string>WAN(wide area [&apos;εəriə] network) 广域网</string>
 	<key>423</key>
 	<string>strict [strikt] 严密的</string>
 	<key>424</key>
-	<string>refer [ri'fə:]取用 叁考 </string>
+	<string>refer [ri&apos;fə:]取用 叁考 </string>
 	<key>425</key>
 	<string>function 函式、函数 函数 </string>
 	<key>426</key>
-	<string>index ['indeks]索引</string>
+	<string>index [&apos;indeks]索引</string>
 	<key>427</key>
-	<string>evolution [,i:və'lu:ʃən] 发展演化</string>
+	<string>evolution [,i:və&apos;lu:ʃən] 发展演化</string>
 	<key>428</key>
 	<string>function 函数</string>
 	<key>429</key>
-	<string>unary operator ['ɔpəreitə] 一元运算子 一元操作符 </string>
+	<string>unary operator [&apos;ɔpəreitə] 一元运算子 一元操作符 </string>
 	<key>43</key>
-	<string>form [fɔ:m]表单（programming ['prəuɡræmiŋ] 用语） 窗体 </string>
+	<string>form [fɔ:m]表单（programming [&apos;prəuɡræmiŋ] 用语） 窗体 </string>
 	<key>430</key>
-	<string>FDDI(fiber ['faibə]  distributed [di'stribjutid]  data interface) 光纤分布式数据接口</string>
+	<string>FDDI(fiber [&apos;faibə]  distributed [di&apos;stribjutid]  data interface) 光纤分布式数据接口</string>
 	<key>431</key>
 	<string>testing phase [feiz] 测试阶段</string>
 	<key>432</key>
-	<string>decomposition [,di:kɔmpə'ziʃən]双重的混合的</string>
+	<string>decomposition [,di:kɔmpə&apos;ziʃən]双重的混合的</string>
 	<key>433</key>
 	<string>raw [rɔ:]生鲜的、未经处理的 未经处理的 </string>
 	<key>434</key>
-	<string>interface ['intəfeis]介面 接口 </string>
+	<string>interface [&apos;intəfeis]介面 接口 </string>
 	<key>435</key>
-	<string>invariants [in'vɛəriənt]恒常性,约束条件 约束条件 </string>
+	<string>invariants [in&apos;vɛəriənt]恒常性,约束条件 约束条件 </string>
 	<key>436</key>
-	<string>CCP(communication [kə,mju:ni'keiʃən] control [kən'trəul] processor ['prəusesə]) 通信控制处理机</string>
+	<string>CCP(communication [kə,mju:ni&apos;keiʃən] control [kən&apos;trəul] processor [&apos;prəusesə]) 通信控制处理机</string>
 	<key>437</key>
-	<string>project ['prɔdʒekt]专案 项目、工程 </string>
+	<string>project [&apos;prɔdʒekt]专案 项目、工程 </string>
 	<key>438</key>
 	<string>block [英][blɔk] [美][blɑk] 区块,区段 块、区块、语句块 </string>
 	<key>439</key>
-	<string>infrastructure ['infrə,strʌktʃə]公共基础建设 </string>
+	<string>infrastructure [&apos;infrə,strʌktʃə]公共基础建设 </string>
 	<key>44</key>
 	<string>binary function 二元函式 双叁函数 </string>
 	<key>440</key>
-	<string>signal ['siɡnəl]信号 </string>
+	<string>signal [&apos;siɡnəl]信号 </string>
 	<key>441</key>
-	<string>variable ['vεəriəbl] 变量</string>
+	<string>variable [&apos;vεəriəbl] 变量</string>
 	<key>442</key>
-	<string>sector ['sektə] head cylinder ['silində] 扇区磁头柱面</string>
+	<string>sector [&apos;sektə] head cylinder [&apos;silində] 扇区磁头柱面</string>
 	<key>443</key>
-	<string>enumerators [i'nju:məreitə]列举元（enum 型别中的成员） 枚举成员、枚举器 </string>
+	<string>enumerators [i&apos;nju:məreitə]列举元（enum 型别中的成员） 枚举成员、枚举器 </string>
 	<key>444</key>
-	<string>class derivation [,deri'veiʃən] list 类别衍化列 类继承列表 </string>
+	<string>class derivation [,deri&apos;veiʃən] list 类别衍化列 类继承列表 </string>
 	<key>445</key>
-	<string>design[di'zain] phase [feiz] 设计阶段</string>
+	<string>design[di&apos;zain] phase [feiz] 设计阶段</string>
 	<key>446</key>
-	<string>cartesian [kɑ:'tiziən] product ['prɔdəkt] 笛卡尔积</string>
+	<string>cartesian [kɑ:&apos;tiziən] product [&apos;prɔdəkt] 笛卡尔积</string>
 	<key>447</key>
 	<string>list 串列（linked－list） 列表、表、链表 </string>
 	<key>448</key>
@@ -785,59 +785,59 @@
 	<key>45</key>
 	<string>CSMA/CD 带冲突检测的载波监听多路访问</string>
 	<key>450</key>
-	<string>linker ['liŋkə] 联结器、连结器 连接器 </string>
+	<string>linker [&apos;liŋkə] 联结器、连结器 连接器 </string>
 	<key>451</key>
-	<string>callback ['kɔ:lbæk]回呼 回调 </string>
+	<string>callback [&apos;kɔ:lbæk]回呼 回调 </string>
 	<key>452</key>
-	<string>distributed[di'stribjutid] system 分布式系统</string>
+	<string>distributed[di&apos;stribjutid] system 分布式系统</string>
 	<key>453</key>
-	<string>immediate [i'mi:diət] base [beis]直接的（紧临的）上层 base class。 直接上层基类 </string>
+	<string>immediate [i&apos;mi:diət] base [beis]直接的（紧临的）上层 base class。 直接上层基类 </string>
 	<key>454</key>
 	<string>null 零空</string>
 	<key>455</key>
-	<string>concurrent [kən'kʌrənt]并行 并发 </string>
+	<string>concurrent [kən&apos;kʌrənt]并行 并发 </string>
 	<key>456</key>
-	<string>hypertext ['haipətekst] 超级文本</string>
+	<string>hypertext [&apos;haipətekst] 超级文本</string>
 	<key>457</key>
 	<string>phase [feiz]阶段局面状态</string>
 	<key>458</key>
-	<string>virtual machine [mə'ʃi:n] 虚拟机器 虚拟机 </string>
+	<string>virtual machine [mə&apos;ʃi:n] 虚拟机器 虚拟机 </string>
 	<key>459</key>
-	<string>runtime [rʌn'taim] 执行期 运行期、运行时 </string>
+	<string>runtime [rʌn&apos;taim] 执行期 运行期、运行时 </string>
 	<key>46</key>
-	<string>external [ik'stə:nəl] (internal [in'tə:nəl]) fragmentation [,fræɡmen'teiʃən] 外(内)碎片</string>
+	<string>external [ik&apos;stə:nəl] (internal [in&apos;tə:nəl]) fragmentation [,fræɡmen&apos;teiʃən] 外(内)碎片</string>
 	<key>460</key>
-	<string>image ['imidʒ]影像 图象 </string>
+	<string>image [&apos;imidʒ]影像 图象 </string>
 	<key>461</key>
-	<string>delegation [,deli'ɡeiʃən] （同上） </string>
+	<string>delegation [,deli&apos;ɡeiʃən] （同上） </string>
 	<key>462</key>
-	<string>speedup ['spi:dʌp] 加速比</string>
+	<string>speedup [&apos;spi:dʌp] 加速比</string>
 	<key>463</key>
-	<string>dialog ['daiəlɔɡ]对话窗、对话盒 对话框 </string>
+	<string>dialog [&apos;daiəlɔɡ]对话窗、对话盒 对话框 </string>
 	<key>464</key>
-	<string>cyclic ['saiklik] redundancy [rɪ'dʌnd(ə)nsɪ] check [tʃek] 循环冗余校验</string>
+	<string>cyclic [&apos;saiklik] redundancy [rɪ&apos;dʌnd(ə)nsɪ] check [tʃek] 循环冗余校验</string>
 	<key>465</key>
 	<string>port [pɔ:t]埠 端口 </string>
 	<key>466</key>
 	<string>word [wə:d]字 单词 </string>
 	<key>467</key>
-	<string>signal ['siɡnəl] 信号</string>
+	<string>signal [&apos;siɡnəl] 信号</string>
 	<key>468</key>
-	<string>characteristic [,kærəktə'ristik]特征特性</string>
+	<string>characteristic [,kærəktə&apos;ristik]特征特性</string>
 	<key>469</key>
-	<string>connection [kə'nekʃən]连接，连线（网络,资料库） 连接 </string>
+	<string>connection [kə&apos;nekʃən]连接，连线（网络,资料库） 连接 </string>
 	<key>47</key>
 	<string>return 传回、回返 返回 </string>
 	<key>470</key>
-	<string>efficiency [i'fiʃənsi] 效率 效率 </string>
+	<string>efficiency [i&apos;fiʃənsi] 效率 效率 </string>
 	<key>471</key>
 	<string>SISD SIMD MISD MIMD * 指令流* 数据流</string>
 	<key>472</key>
-	<string>deadlock ['dedlɔk]: mutual ['mju:tʃuəl] exclusion [ik'sklu:ʒən]死锁条件: 互斥</string>
+	<string>deadlock [&apos;dedlɔk]: mutual [&apos;mju:tʃuəl] exclusion [ik&apos;sklu:ʒən]死锁条件: 互斥</string>
 	<key>473</key>
-	<string>exception handling ['hændliŋ]异常处理、异常处理机制 异常处理、异常处理机制 </string>
+	<string>exception handling [&apos;hændliŋ]异常处理、异常处理机制 异常处理、异常处理机制 </string>
 	<key>474</key>
-	<string>inline expansion [ik'spænʃən]行内展开 内联展开 </string>
+	<string>inline expansion [ik&apos;spænʃən]行内展开 内联展开 </string>
 	<key>475</key>
 	<string>return type 回返型别 返回类型 </string>
 	<key>476</key>
@@ -845,227 +845,227 @@
 	<key>477</key>
 	<string>black [blæk] -box white [hwait] -box 黑盒白盒</string>
 	<key>478</key>
-	<string>hard [hɑ:d]－coded ['kəudid] 编死的 硬编码的 </string>
+	<string>hard [hɑ:d]－coded [&apos;kəudid] 编死的 硬编码的 </string>
 	<key>479</key>
-	<string>relational [ri'leiʃənəl] database 关联式资料库 关系数据库 </string>
+	<string>relational [ri&apos;leiʃənəl] database 关联式资料库 关系数据库 </string>
 	<key>48</key>
-	<string>temporary ['tempərəri] object 暂时物件 临时对象 </string>
+	<string>temporary [&apos;tempərəri] object 暂时物件 临时对象 </string>
 	<key>480</key>
 	<string>Token Ring [riŋ] 令牌环</string>
 	<key>481</key>
-	<string>primary ['praiməri] key attributes 主码属性</string>
+	<string>primary [&apos;praiməri] key attributes 主码属性</string>
 	<key>482</key>
 	<string>meta－ 超－ 元－ 	例 meta－programming 超编程 元编程 </string>
 	<key>483</key>
-	<string>restriction [ri'strikʃən]局限 </string>
+	<string>restriction [ri&apos;strikʃən]局限 </string>
 	<key>484</key>
-	<string>deadlock: circular ['sə:kjulə] wait no preemption [pri'empʃən]死锁条件: 循环等待狗熊先权</string>
+	<string>deadlock: circular [&apos;sə:kjulə] wait no preemption [pri&apos;empʃən]死锁条件: 循环等待狗熊先权</string>
 	<key>485</key>
-	<string>symbol ['simbəl]符号 记号 </string>
+	<string>symbol [&apos;simbəl]符号 记号 </string>
 	<key>486</key>
-	<string>printer ['printə]印表机 打印机 </string>
+	<string>printer [&apos;printə]印表机 打印机 </string>
 	<key>487</key>
 	<string>open system 开放系统</string>
 	<key>488</key>
-	<string>template ['templit]模板、范本 模板 </string>
+	<string>template [&apos;templit]模板、范本 模板 </string>
 	<key>489</key>
 	<string>resolution 解析度 分辨率 </string>
 	<key>49</key>
-	<string>obtain [əb'tein] 获得</string>
+	<string>obtain [əb&apos;tein] 获得</string>
 	<key>490</key>
 	<string>host [həust] 主计算机</string>
 	<key>491</key>
-	<string>wrapper ['ræpə] 外覆、外包 包装absence 缺席</string>
+	<string>wrapper [&apos;ræpə] 外覆、外包 包装absence 缺席</string>
 	<key>492</key>
 	<string>superclass subclass abstract class 超类子类抽象类</string>
 	<key>493</key>
-	<string>text file ['fail]程式本文档（放置程式原始码的档案） 文本文件 </string>
+	<string>text file [&apos;fail]程式本文档（放置程式原始码的档案） 文本文件 </string>
 	<key>494</key>
-	<string>synthetic [sin'θetik] benchmark ['bentʃmɑ:k]复合基准程序</string>
+	<string>synthetic [sin&apos;θetik] benchmark [&apos;bentʃmɑ:k]复合基准程序</string>
 	<key>495</key>
-	<string>waterfall ['wɔ:təfɔ:l] model ['mɔdəl] 瀑布模型</string>
+	<string>waterfall [&apos;wɔ:təfɔ:l] model [&apos;mɔdəl] 瀑布模型</string>
 	<key>496</key>
-	<string>compile [kəm'pail]time 编译期 编译期、编译时 </string>
+	<string>compile [kəm&apos;pail]time 编译期 编译期、编译时 </string>
 	<key>497</key>
 	<string>flush [flʌʃ]清理、扫清 刷新 </string>
 	<key>498</key>
-	<string>decrease [di'kri:s] 减少</string>
+	<string>decrease [di&apos;kri:s] 减少</string>
 	<key>499</key>
-	<string>magic ['mædʒik] number 魔术数字 魔法数 </string>
+	<string>magic [&apos;mædʒik] number 魔术数字 魔法数 </string>
 	<key>5</key>
-	<string>object oriented ['ɔ:rientid]物件导向的 面向对象的 </string>
+	<string>object oriented [&apos;ɔ:rientid]物件导向的 面向对象的 </string>
 	<key>50</key>
 	<string>cache [kæʃ]快取 高速缓存 </string>
 	<key>500</key>
-	<string>compatible [kəm'pætəbl]相容 兼容 </string>
+	<string>compatible [kəm&apos;pætəbl]相容 兼容 </string>
 	<key>501</key>
-	<string>hard－copy ['kɔpi]硬拷图 屏幕截图 </string>
+	<string>hard－copy [&apos;kɔpi]硬拷图 屏幕截图 </string>
 	<key>502</key>
 	<string>blocked [blɔkt] 阻塞(等待状态也称阻塞或封锁状态)</string>
 	<key>503</key>
 	<string>throw [θrəu] 丢掷（常指发出一个 exception） 丢掷、引发 </string>
 	<key>504</key>
-	<string>non-key attributes [ə'tribju:t] 非码属性</string>
+	<string>non-key attributes [ə&apos;tribju:t] 非码属性</string>
 	<key>505</key>
 	<string>object 物件 对象 </string>
 	<key>506</key>
-	<string>matrix ['meitriks]矩阵点阵</string>
+	<string>matrix [&apos;meitriks]矩阵点阵</string>
 	<key>507</key>
 	<string>bitwise 以 bit 为单元逐一┅ </string>
 	<key>508</key>
-	<string>Gopher ['gəʊfə]将用户的请求自动转换成</string>
+	<string>Gopher [&apos;gəʊfə]将用户的请求自动转换成</string>
 	<key>509</key>
-	<string>directory [di'rektəri] 目录 目录 </string>
+	<string>directory [di&apos;rektəri] 目录 目录 </string>
 	<key>51</key>
-	<string>array [ə'rei] 数组</string>
+	<string>array [ə&apos;rei] 数组</string>
 	<key>510</key>
-	<string>cleanup ['kli:nʌp]清理、善後 清理、清除 </string>
+	<string>cleanup [&apos;kli:nʌp]清理、善後 清理、清除 </string>
 	<key>511</key>
-	<string>clock [klɔk] cycle ['saikl] clock rate [reit] 时钟周期时钟频率</string>
+	<string>clock [klɔk] cycle [&apos;saikl] clock rate [reit] 时钟周期时钟频率</string>
 	<key>512</key>
 	<string>bitwise copy 以 bit 为单元进行复制；位元逐一复制 位拷贝 </string>
 	<key>513</key>
 	<string>class [klɑ:s]类别 类 </string>
 	<key>514</key>
-	<string>suspend [sə'spend]虚悬 挂起 </string>
+	<string>suspend [sə&apos;spend]虚悬 挂起 </string>
 	<key>515</key>
-	<string>equivalence [i'kwivələns] 等价性、等同性、对等性 等价性 </string>
+	<string>equivalence [i&apos;kwivələns] 等价性、等同性、对等性 等价性 </string>
 	<key>516</key>
-	<string>multilevel [,mʌlti'levəl] data flow [fləu] chart [tʃɑ:t] 分层数据流图</string>
+	<string>multilevel [,mʌlti&apos;levəl] data flow [fləu] chart [tʃɑ:t] 分层数据流图</string>
 	<key>517</key>
 	<string>group [ɡru:p]群组 </string>
 	<key>518</key>
-	<string>device [di'vais] 装置、设备 设备 </string>
+	<string>device [di&apos;vais] 装置、设备 设备 </string>
 	<key>519</key>
-	<string>figure ['fiɡə]数字图形</string>
+	<string>figure [&apos;fiɡə]数字图形</string>
 	<key>52</key>
 	<string>list box 列表方块、列表框 列表框 </string>
 	<key>520</key>
-	<string>persistence [pə'sistəns]永续性 持久性 </string>
+	<string>persistence [pə&apos;sistəns]永续性 持久性 </string>
 	<key>521</key>
-	<string>frequency ['frikwənsi]频率</string>
+	<string>frequency [&apos;frikwənsi]频率</string>
 	<key>522</key>
-	<string>Systolic [si'stɔlik] 脉动阵列</string>
+	<string>Systolic [si&apos;stɔlik] 脉动阵列</string>
 	<key>523</key>
-	<string>capability [,keipə'biləti] 能力才能</string>
+	<string>capability [,keipə&apos;biləti] 能力才能</string>
 	<key>524</key>
-	<string>efficient [i'fiʃənt]高效 高效 </string>
+	<string>efficient [i&apos;fiʃənt]高效 高效 </string>
 	<key>525</key>
-	<string>profile ['prəufail]评测 评测 </string>
+	<string>profile [&apos;prəufail]评测 评测 </string>
 	<key>526</key>
-	<string>modem ['məudem] 数据机 调制解调器 </string>
+	<string>modem [&apos;məudem] 数据机 调制解调器 </string>
 	<key>527</key>
-	<string>hierarchy ['haiə,rɑ:ki]阶层体系 层次结构（体系） </string>
+	<string>hierarchy [&apos;haiə,rɑ:ki]阶层体系 层次结构（体系） </string>
 	<key>528</key>
 	<string>refer to 指向、指涉、指代 </string>
 	<key>529</key>
-	<string>for GUI （Graphical ['ɡræfikəl] User Interface）介面 界面 </string>
+	<string>for GUI （Graphical [&apos;ɡræfikəl] User Interface）介面 界面 </string>
 	<key>53</key>
-	<string>odd [ɔd] 奇数的 even['i:vən]偶数</string>
+	<string>odd [ɔd] 奇数的 even[&apos;i:vən]偶数</string>
 	<key>530</key>
-	<string>arrow['ærəʊ]  operator['ɔpəreitə] arrow（箭头）运算子 箭头操作符 </string>
+	<string>arrow[&apos;ærəʊ]  operator[&apos;ɔpəreitə] arrow（箭头）运算子 箭头操作符 </string>
 	<key>531</key>
-	<string>candidate ['kændidit] function 候选函式 候选函数 （在函式多载决议程序中出现的候选函式） </string>
+	<string>candidate [&apos;kændidit] function 候选函式 候选函数 （在函式多载决议程序中出现的候选函式） </string>
 	<key>532</key>
-	<string>parentheses [pə'renθəsɪz]小括弧、小括号 圆括弧、圆括号 </string>
+	<string>parentheses [pə&apos;renθəsɪz]小括弧、小括号 圆括弧、圆括号 </string>
 	<key>533</key>
-	<string>database ['deitəbeis]资料库 数据库 </string>
+	<string>database [&apos;deitəbeis]资料库 数据库 </string>
 	<key>534</key>
-	<string>strategy ['strætidʒi] 战略兵法计划</string>
+	<string>strategy [&apos;strætidʒi] 战略兵法计划</string>
 	<key>535</key>
 	<string>return value 回返值 返回值 </string>
 	<key>536</key>
-	<string>qualified ['kwɔlifaid]经过资格修饰（例如加上 scope 运算子） 限定 </string>
+	<string>qualified [&apos;kwɔlifaid]经过资格修饰（例如加上 scope 运算子） 限定 </string>
 	<key>537</key>
-	<string>signal-to-noise ratio ['reiʃiəu] 信噪比B/N</string>
+	<string>signal-to-noise ratio [&apos;reiʃiəu] 信噪比B/N</string>
 	<key>538</key>
 	<string>member function 成员函式 成员函数 </string>
 	<key>539</key>
-	<string>foreign key domain [dəu'mein] tuple ['tʌpl] 外来键值域元组</string>
+	<string>foreign key domain [dəu&apos;mein] tuple [&apos;tʌpl] 外来键值域元组</string>
 	<key>54</key>
-	<string>palette ['pælit]调色盘、组件盘、工具箱 </string>
+	<string>palette [&apos;pælit]调色盘、组件盘、工具箱 </string>
 	<key>540</key>
-	<string>vertice ['və:tisi:z] edge [edʒ] 顶点(结点) 边</string>
+	<string>vertice [&apos;və:tisi:z] edge [edʒ] 顶点(结点) 边</string>
 	<key>541</key>
-	<string>general ['dʒenərəl]-purose registers 通用寄存器</string>
+	<string>general [&apos;dʒenərəl]-purose registers 通用寄存器</string>
 	<key>542</key>
-	<string>schedule ['skedʒu:əl]排程 调度 </string>
+	<string>schedule [&apos;skedʒu:əl]排程 调度 </string>
 	<key>543</key>
-	<string>FTP(File Transfer[træns'fə:] Protocol ['prəʊtəkɒl])</string>
+	<string>FTP(File Transfer[træns&apos;fə:] Protocol [&apos;prəʊtəkɒl])</string>
 	<key>544</key>
-	<string>logical ['lɔdʒikəl] functional ['fʌŋkʃənl]逻辑内聚功能内聚</string>
+	<string>logical [&apos;lɔdʒikəl] functional [&apos;fʌŋkʃənl]逻辑内聚功能内聚</string>
 	<key>545</key>
-	<string>GUI 图形介面 图形界面（Graphical ['ɡræfikəl] User Interface）</string>
+	<string>GUI 图形介面 图形界面（Graphical [&apos;ɡræfikəl] User Interface）</string>
 	<key>546</key>
 	<string>screen [skri:n] 萤幕 屏幕 </string>
 	<key>547</key>
-	<string>dual ['dju:əl]二元的双的</string>
+	<string>dual [&apos;dju:əl]二元的双的</string>
 	<key>548</key>
-	<string>timestamping ['taɪmstæmpɪŋ]时标技术</string>
+	<string>timestamping [&apos;taɪmstæmpɪŋ]时标技术</string>
 	<key>549</key>
-	<string>breakpoint ['breikpɔint]中断点 断点 </string>
+	<string>breakpoint [&apos;breikpɔint]中断点 断点 </string>
 	<key>55</key>
-	<string>unary ['ju:nəri] function 一元函式 单叁函数 </string>
+	<string>unary [&apos;ju:nəri] function 一元函式 单叁函数 </string>
 	<key>550</key>
-	<string>coincidental [kəu,insi'dentəl] logical ['lɔdʒikəl] procedural [prə'si:dʒərəl] functional ['fʌŋkʃənl]偶然内聚逻辑内聚过程内聚功能内聚</string>
+	<string>coincidental [kəu,insi&apos;dentəl] logical [&apos;lɔdʒikəl] procedural [prə&apos;si:dʒərəl] functional [&apos;fʌŋkʃənl]偶然内聚逻辑内聚过程内聚功能内聚</string>
 	<key>551</key>
-	<string>inner ['inə] class 内隐类别 内嵌类 </string>
+	<string>inner [&apos;inə] class 内隐类别 内嵌类 </string>
 	<key>552</key>
-	<string>gateway ['ɡeitwei] 网间连接器</string>
+	<string>gateway [&apos;ɡeitwei] 网间连接器</string>
 	<key>553</key>
 	<string>print[print] 列印 打印 </string>
 	<key>554</key>
-	<string>menu ['menju]表单、选单 菜单 </string>
+	<string>menu [&apos;menju]表单、选单 菜单 </string>
 	<key>555</key>
-	<string>vertical ['və:tikəl] 垂直的</string>
+	<string>vertical [&apos;və:tikəl] 垂直的</string>
 	<key>556</key>
-	<string>key comparison [kəm'pærisən] 键(码)值比较</string>
+	<string>key comparison [kəm&apos;pærisən] 键(码)值比较</string>
 	<key>557</key>
 	<string>viable function 可行函式 可行函数 </string>
 	<key>558</key>
-	<string>specialization [,speʃəlai'zeiʃən] 特殊化、特殊化定义、特殊化宣告 特化 </string>
+	<string>specialization [,speʃəlai&apos;zeiʃən] 特殊化、特殊化定义、特殊化宣告 特化 </string>
 	<key>559</key>
-	<string>equation [i'kweiʒən] 方程式等式</string>
+	<string>equation [i&apos;kweiʒən] 方程式等式</string>
 	<key>56</key>
-	<string>protocol ['prəutəkɔl]协定 协议 </string>
+	<string>protocol [&apos;prəutəkɔl]协定 协议 </string>
 	<key>560</key>
 	<string>text[tekst] 文字 文本 </string>
 	<key>561</key>
-	<string>slider ['slaidə] 滚轴 滑块 </string>
+	<string>slider [&apos;slaidə] 滚轴 滑块 </string>
 	<key>562</key>
 	<string>batch [bætʃ]批次（意思是整批作业） 批处理 </string>
 	<key>563</key>
-	<string>maintain [mein'tein]维护保养供给</string>
+	<string>maintain [mein&apos;tein]维护保养供给</string>
 	<key>564</key>
-	<string>insertion [in'sə:ʃən] sort [sɔ:t] 插入排序</string>
+	<string>insertion [in&apos;sə:ʃən] sort [sɔ:t] 插入排序</string>
 	<key>565</key>
-	<string>statement ['steitmənt]陈述</string>
+	<string>statement [&apos;steitmənt]陈述</string>
 	<key>566</key>
 	<string>Shanon 香农</string>
 	<key>567</key>
-	<string>handle ['hændl]识别码、识别号、号码牌、权柄 句柄 </string>
+	<string>handle [&apos;hændl]识别码、识别号、号码牌、权柄 句柄 </string>
 	<key>568</key>
 	<string>bit field [fiːld]位元栏 位域 </string>
 	<key>569</key>
 	<string>poll [pəul]轮询 轮询 </string>
 	<key>57</key>
-	<string>router ['rautə] 路由器</string>
+	<string>router [&apos;rautə] 路由器</string>
 	<key>570</key>
-	<string>containment [kən'teinmənt]内含 包容 </string>
+	<string>containment [kən&apos;teinmənt]内含 包容 </string>
 	<key>571</key>
-	<string>pointer ['pɔintə]指标 指针 址位器（和址叁器 reference 形成对映，满好） </string>
+	<string>pointer [&apos;pɔintə]指标 指针 址位器（和址叁器 reference 形成对映，满好） </string>
 	<key>572</key>
 	<string>check [tʃek] box 核取方块 (i.e. check button) 复选框 </string>
 	<key>573</key>
-	<string>join natural ['nætʃərəl] join semi ['semɪ] join 连接自然连接半连接</string>
+	<string>join natural [&apos;nætʃərəl] join semi [&apos;semɪ] join 连接自然连接半连接</string>
 	<key>574</key>
-	<string>mutual ['mju:tʃuəl] exclusion [ik'sklu:ʒən] 互相排斥</string>
+	<string>mutual [&apos;mju:tʃuəl] exclusion [ik&apos;sklu:ʒən] 互相排斥</string>
 	<key>575</key>
-	<string>procedural [prə'si:dʒərəl] coincidental [kəu,insi'dentəl]过程内聚偶然内聚</string>
+	<string>procedural [prə&apos;si:dʒərəl] coincidental [kəu,insi&apos;dentəl]过程内聚偶然内聚</string>
 	<key>576</key>
-	<string>assign [ə'saɪn]指派、指定、设值、赋值 赋值 </string>
+	<string>assign [ə&apos;saɪn]指派、指定、设值、赋值 赋值 </string>
 	<key>577</key>
-	<string>triggers ['trigəz] store [stɔ:] procedures[prə'si:dʒə] 触发器存储过程</string>
+	<string>triggers [&apos;trigəz] store [stɔ:] procedures[prə&apos;si:dʒə] 触发器存储过程</string>
 	<key>578</key>
 	<string>user 使用者、用户 用户 </string>
 	<key>579</key>
@@ -1073,175 +1073,175 @@
 	<key>58</key>
 	<string>decision 决定判断</string>
 	<key>580</key>
-	<string>IDE 整合开发环境 集成开发环境（integrated ['intiɡreitid] development [di'veləpmənt] environment [in'vaiərənmənt]）</string>
+	<string>IDE 整合开发环境 集成开发环境（integrated [&apos;intiɡreitid] development [di&apos;veləpmənt] environment [in&apos;vaiərənmənt]）</string>
 	<key>581</key>
-	<string>instruction [in'strʌkʃən] format ['fɔ:mæt] 指令格式</string>
+	<string>instruction [in&apos;strʌkʃən] format [&apos;fɔ:mæt] 指令格式</string>
 	<key>582</key>
-	<string>distinguish[dis'tiŋɡwiʃ] 辩认区别</string>
+	<string>distinguish[dis&apos;tiŋɡwiʃ] 辩认区别</string>
 	<key>583</key>
-	<string>import [im'pɔ:t]汇入 导入 </string>
+	<string>import [im&apos;pɔ:t]汇入 导入 </string>
 	<key>584</key>
 	<string>call [kɔ:l]呼叫、叫用 调用 </string>
 	<key>585</key>
-	<string>balance ['bæləns] 平衡</string>
+	<string>balance [&apos;bæləns] 平衡</string>
 	<key>586</key>
-	<string>archive ['ɑ:kaiv] 档案归档</string>
+	<string>archive [&apos;ɑ:kaiv] 档案归档</string>
 	<key>587</key>
-	<string>binding ['baɪndɪŋ]系结 绑定 </string>
+	<string>binding [&apos;baɪndɪŋ]系结 绑定 </string>
 	<key>588</key>
-	<string>append [ə'pend] 添加</string>
+	<string>append [ə&apos;pend] 添加</string>
 	<key>589</key>
-	<string>technology [tek'nɔlədʒi] 工艺技术</string>
+	<string>technology [tek&apos;nɔlədʒi] 工艺技术</string>
 	<key>59</key>
-	<string>referred [ri'fəd] to as 把.....当作</string>
+	<string>referred [ri&apos;fəd] to as 把.....当作</string>
 	<key>590</key>
-	<string>object oriented design [di'zain] 面向对象的设计</string>
+	<string>object oriented design [di&apos;zain] 面向对象的设计</string>
 	<key>591</key>
 	<string>hook [huk]挂钩 钩子 </string>
 	<key>592</key>
-	<string>call operator ['ɔpəreitə] call（函式呼叫）运算子调用操作符 （同 function call operator） </string>
+	<string>call operator [&apos;ɔpəreitə] call（函式呼叫）运算子调用操作符 （同 function call operator） </string>
 	<key>593</key>
-	<string>adjacency matrix ['meitriks] method 邻接矩阵表示法</string>
+	<string>adjacency matrix [&apos;meitriks] method 邻接矩阵表示法</string>
 	<key>594</key>
-	<string>unwinding [ʌn'waindiʃ] ref [ref]. stack [stæk] unwinding [ʌn'waindiʃ]</string>
+	<string>unwinding [ʌn&apos;waindiʃ] ref [ref]. stack [stæk] unwinding [ʌn&apos;waindiʃ]</string>
 	<key>595</key>
-	<string>platter ['plætə] track [træk] cluster ['klʌstə]面磁道簇</string>
+	<string>platter [&apos;plætə] track [træk] cluster [&apos;klʌstə]面磁道簇</string>
 	<key>596</key>
-	<string>virtual ['və:tʃuəl] memory ['meməri] system 虚拟存储系统</string>
+	<string>virtual [&apos;və:tʃuəl] memory [&apos;meməri] system 虚拟存储系统</string>
 	<key>597</key>
-	<string>character ['kærəktə]字元 字符 </string>
+	<string>character [&apos;kærəktə]字元 字符 </string>
 	<key>598</key>
-	<string>template parameter [pə'ræmitə] 模板叁数 模板叁数 </string>
+	<string>template parameter [pə&apos;ræmitə] 模板叁数 模板叁数 </string>
 	<key>599</key>
-	<string>assignment operator ['ɒpəreɪtə]指派（赋值）运算子 = 赋值操作符 </string>
+	<string>assignment operator [&apos;ɒpəreɪtə]指派（赋值）运算子 = 赋值操作符 </string>
 	<key>6</key>
-	<string>stack unwinding [ʌn'waindiʃ]堆叠辗转开解（此词用於 exception 主题） 栈辗转开解 * </string>
+	<string>stack unwinding [ʌn&apos;waindiʃ]堆叠辗转开解（此词用於 exception 主题） 栈辗转开解 * </string>
 	<key>60</key>
-	<string>handler ['hændlə]处理常式 处理函数 </string>
+	<string>handler [&apos;hændlə]处理常式 处理函数 </string>
 	<key>600</key>
 	<string>font [fɔnt]字型 字体 </string>
 	<key>601</key>
-	<string>background ['bækgraʊnd]背景 背景（用於图形着色） 後台（用於行程） </string>
+	<string>background [&apos;bækgraʊnd]背景 背景（用於图形着色） 後台（用於行程） </string>
 	<key>602</key>
-	<string>full [ful] specialization [,speʃəlai'zeiʃən]全特化（ref. partial ['pɑ:ʃəl] specialization） </string>
+	<string>full [ful] specialization [,speʃəlai&apos;zeiʃən]全特化（ref. partial [&apos;pɑ:ʃəl] specialization） </string>
 	<key>603</key>
 	<string>rvalue 右值 右值 </string>
 	<key>604</key>
-	<string>configuration [kən,fiɡju'reiʃən]组态 配置 </string>
+	<string>configuration [kən,fiɡju&apos;reiʃən]组态 配置 </string>
 	<key>605</key>
-	<string>subroutine [sʌbru:'ti:n] 子程序调用序列</string>
+	<string>subroutine [sʌbru:&apos;ti:n] 子程序调用序列</string>
 	<key>606</key>
 	<string>build－in 内建 内置 </string>
 	<key>607</key>
 	<string>class template specializations 类别模板特化 类模板特化 </string>
 	<key>608</key>
-	<string>global ['ɡləubəl]全域的（对应於 local） 全局的 </string>
+	<string>global [&apos;ɡləubəl]全域的（对应於 local） 全局的 </string>
 	<key>609</key>
-	<string>OODB(object oriented ['ɔ:rientid] data base) 面向对象数据库</string>
+	<string>OODB(object oriented [&apos;ɔ:rientid] data base) 面向对象数据库</string>
 	<key>61</key>
 	<string>WWW(world [wə:ld] wide [waid] web [web]) 万维网</string>
 	<key>610</key>
-	<string>checked [tʃekt] exception [ik'sepʃən]可控式异常(Java) </string>
+	<string>checked [tʃekt] exception [ik&apos;sepʃən]可控式异常(Java) </string>
 	<key>611</key>
 	<string>type [taip]型别 类型 </string>
 	<key>612</key>
 	<string>binary tree 二叉树</string>
 	<key>613</key>
-	<string>solution [sə'lju:ʃən] 解法,解决方案 方案 </string>
+	<string>solution [sə&apos;lju:ʃən] 解法,解决方案 方案 </string>
 	<key>614</key>
-	<string>represent [,repri'zent]代表象征</string>
+	<string>represent [,repri&apos;zent]代表象征</string>
 	<key>615</key>
-	<string>software requirements [ri'kwaiəmənt] specification [,spesifi'keiʃən] 软件需求说明书</string>
+	<string>software requirements [ri&apos;kwaiəmənt] specification [,spesifi&apos;keiʃən] 软件需求说明书</string>
 	<key>616</key>
-	<string>constraint[kən'streint]  约束（条件） </string>
+	<string>constraint[kən&apos;streint]  约束（条件） </string>
 	<key>617</key>
-	<string>binary relation [ri'leiʃən]二元关系</string>
+	<string>binary relation [ri&apos;leiʃən]二元关系</string>
 	<key>618</key>
-	<string>repeater [ri'pi:tə] 中继器</string>
+	<string>repeater [ri&apos;pi:tə] 中继器</string>
 	<key>619</key>
-	<string>transaction [træn'zækʃən] 事务记录</string>
+	<string>transaction [træn&apos;zækʃən] 事务记录</string>
 	<key>62</key>
-	<string>response [rɪ'spɒns]回答响应</string>
+	<string>response [rɪ&apos;spɒns]回答响应</string>
 	<key>620</key>
-	<string>execute ['eksikju:t] 实现执行</string>
+	<string>execute [&apos;eksikju:t] 实现执行</string>
 	<key>621</key>
-	<string>functionally dependent [di'pendənt]函数依赖</string>
+	<string>functionally dependent [di&apos;pendənt]函数依赖</string>
 	<key>622</key>
-	<string>dynamic[dai'næmik] design[di'zain] process['prəuses] 动态定义过程</string>
+	<string>dynamic[dai&apos;næmik] design[di&apos;zain] process[&apos;prəuses] 动态定义过程</string>
 	<key>623</key>
-	<string>generate ['dʒenəreit]生成 </string>
+	<string>generate [&apos;dʒenəreit]生成 </string>
 	<key>624</key>
-	<string>concept ['kɔnsept]概念 概念 </string>
+	<string>concept [&apos;kɔnsept]概念 概念 </string>
 	<key>625</key>
-	<string>maintanence [meɪn'teɪnəns] phase [feiz] 维护(保养)阶段</string>
+	<string>maintanence [meɪn&apos;teɪnəns] phase [feiz] 维护(保养)阶段</string>
 	<key>626</key>
-	<string>underflow ['ʌndəfləu] 下限溢位（相对於 overflow） 下溢 </string>
+	<string>underflow [&apos;ʌndəfləu] 下限溢位（相对於 overflow） 下溢 </string>
 	<key>627</key>
-	<string>framework ['freimwə:k]框架 框架 </string>
+	<string>framework [&apos;freimwə:k]框架 框架 </string>
 	<key>628</key>
-	<string>flash [flæʃ] memory ['meməri]快闪记忆体 闪存 </string>
+	<string>flash [flæʃ] memory [&apos;meməri]快闪记忆体 闪存 </string>
 	<key>629</key>
 	<string>definition phase [feiz] 定义阶段</string>
 	<key>63</key>
-	<string>overflow [,əuvə'fləu] 溢出</string>
+	<string>overflow [,əuvə&apos;fləu] 溢出</string>
 	<key>630</key>
-	<string>judgment ['dʒʌdʒmənt]判断</string>
+	<string>judgment [&apos;dʒʌdʒmənt]判断</string>
 	<key>631</key>
-	<string>polymorphism [pɔli'mɔ:fizəm]多型 多态 </string>
+	<string>polymorphism [pɔli&apos;mɔ:fizəm]多型 多态 </string>
 	<key>632</key>
-	<string>bubble ['bʌbl] sort [sɔ:t]冒泡排序</string>
+	<string>bubble [&apos;bʌbl] sort [sɔ:t]冒泡排序</string>
 	<key>633</key>
 	<string>message loop [lu:p] 讯息回圈 消息环 </string>
 	<key>634</key>
-	<string>hash [hæʃ] table hash function collision [kə'liʒən] 哈希表哈希函数(散列函数) 碰撞</string>
+	<string>hash [hæʃ] table hash function collision [kə&apos;liʒən] 哈希表哈希函数(散列函数) 碰撞</string>
 	<key>635</key>
-	<string>unqualified [,ʌn'kwɔlifaid]未经资格修饰（而直接取用） </string>
+	<string>unqualified [,ʌn&apos;kwɔlifaid]未经资格修饰（而直接取用） </string>
 	<key>636</key>
-	<string>resource [ri'sɔ:s] 资源</string>
+	<string>resource [ri&apos;sɔ:s] 资源</string>
 	<key>637</key>
-	<string>header ['hedə] file ['fail]表头档、标头档 头文件 </string>
+	<string>header [&apos;hedə] file [&apos;fail]表头档、标头档 头文件 </string>
 	<key>638</key>
 	<string>solve [sɔlv] 解决</string>
 	<key>639</key>
-	<string>random ['rændəm] number ['nʌmbə]随机数、乱数 随机数 </string>
+	<string>random [&apos;rændəm] number [&apos;nʌmbə]随机数、乱数 随机数 </string>
 	<key>64</key>
-	<string>check button ['bʌtən]方钮 (i.e. check box) 复选按钮 </string>
+	<string>check button [&apos;bʌtən]方钮 (i.e. check box) 复选按钮 </string>
 	<key>640</key>
-	<string>pseudo ['psju:dəu] code [kəud]假码、虚拟码、伪码 伪码 </string>
+	<string>pseudo [&apos;psju:dəu] code [kəud]假码、虚拟码、伪码 伪码 </string>
 	<key>641</key>
-	<string>algorithm ['ælɡəriðəm] 算法</string>
+	<string>algorithm [&apos;ælɡəriðəm] 算法</string>
 	<key>642</key>
-	<string>oom: instance method message passing ['pɑ:siŋ] 实例方法消息传递</string>
+	<string>oom: instance method message passing [&apos;pɑ:siŋ] 实例方法消息传递</string>
 	<key>643</key>
-	<string>distributed [di'stribjutid] computing [kəm'pju:tiŋ] 分布式计算 (分布式电算) 分布式计算 分散式计算 (分散式电算) </string>
+	<string>distributed [di&apos;stribjutid] computing [kəm&apos;pju:tiŋ] 分布式计算 (分布式电算) 分布式计算 分散式计算 (分散式电算) </string>
 	<key>644</key>
-	<string>ATM(asynchronous [ei'siŋkrənəs] transfer [træns'fə:] mode [məud]) 异步传输模式</string>
+	<string>ATM(asynchronous [ei&apos;siŋkrənəs] transfer [træns&apos;fə:] mode [məud]) 异步传输模式</string>
 	<key>645</key>
-	<string>instance ['instəns]实体 实例 （根据某种表述而实际产生的「东西」） </string>
+	<string>instance [&apos;instəns]实体 实例 （根据某种表述而实际产生的「东西」） </string>
 	<key>646</key>
 	<string>loop [lu:p] 圈环状</string>
 	<key>647</key>
-	<string>decimal ['desiməl] 十进位的</string>
+	<string>decimal [&apos;desiməl] 十进位的</string>
 	<key>648</key>
 	<string>server 伺服器、伺服端 服务器、服务端 </string>
 	<key>649</key>
 	<string>setter (相对於 getter) 设值函式 </string>
 	<key>65</key>
-	<string>define [di'fain]定义 预定义</string>
+	<string>define [di&apos;fain]定义 预定义</string>
 	<key>650</key>
-	<string>token ['təukən]语汇单元 符号、标记 </string>
+	<string>token [&apos;təukən]语汇单元 符号、标记 </string>
 	<key>651</key>
-	<string>common ['kɔmən]公用的共同的</string>
+	<string>common [&apos;kɔmən]公用的共同的</string>
 	<key>652</key>
 	<string>network card 网路卡 网卡 </string>
 	<key>653</key>
 	<string>block miss [mis] 块失效</string>
 	<key>654</key>
-	<string>assign [ə'sain]分配</string>
+	<string>assign [ə&apos;sain]分配</string>
 	<key>655</key>
 	<string>prime [praim]质数 素数 </string>
 	<key>656</key>
-	<string>bracket['brækit] (square [skwεə]brakcet) 中括弧、中括号 方括弧、方括号 </string>
+	<string>bracket[&apos;brækit] (square [skwεə]brakcet) 中括弧、中括号 方括弧、方括号 </string>
 	<key>657</key>
 	<string>load 负载载入</string>
 	<key>658</key>
@@ -1251,109 +1251,109 @@
 	<key>66</key>
 	<string>ORACLE 系统</string>
 	<key>660</key>
-	<string>datagram ['deitəɡræm]资料元 数据报文 </string>
+	<string>datagram [&apos;deitəɡræm]资料元 数据报文 </string>
 	<key>661</key>
 	<string>ready blocked running 就绪阻塞(等待) 运行</string>
 	<key>662</key>
-	<string>macro ['mækrəu]巨集 宏 </string>
+	<string>macro [&apos;mækrəu]巨集 宏 </string>
 	<key>663</key>
-	<string>command [kə'mɑ:nd] line [lain]命令列 命令行 (系统文字模式下的整行执行命令) </string>
+	<string>command [kə&apos;mɑ:nd] line [lain]命令列 命令行 (系统文字模式下的整行执行命令) </string>
 	<key>664</key>
-	<string>laser ['leizə]雷射 激光 </string>
+	<string>laser [&apos;leizə]雷射 激光 </string>
 	<key>665</key>
 	<string>batch [bætʃ]一批一组</string>
 	<key>666</key>
-	<string>unchecked [ʌn'tʃekt] exception 不可控异常(Java) </string>
+	<string>unchecked [ʌn&apos;tʃekt] exception 不可控异常(Java) </string>
 	<key>667</key>
 	<string>map [mæp]地图映射图</string>
 	<key>668</key>
 	<string>share [ʃεə] locks 共享锁(简记为S 锁)</string>
 	<key>669</key>
-	<string>store procedures [prə'si:dʒə] 存储过程</string>
+	<string>store procedures [prə&apos;si:dʒə] 存储过程</string>
 	<key>67</key>
-	<string>postfix['pəustfiks] 後置式、後序式 後置式 </string>
+	<string>postfix[&apos;pəustfiks] 後置式、後序式 後置式 </string>
 	<key>670</key>
-	<string>backward ['bækwəd] compatible [kəm'pætɪb(ə)l]回溯相容 向下兼容 </string>
+	<string>backward [&apos;bækwəd] compatible [kəm&apos;pætɪb(ə)l]回溯相容 向下兼容 </string>
 	<key>671</key>
-	<string>combo ['kɔmbəu] box [bɔks]复合方块、复合框 组合框 </string>
+	<string>combo [&apos;kɔmbəu] box [bɔks]复合方块、复合框 组合框 </string>
 	<key>672</key>
-	<string>(serialize) ['siəriəlaiz]</string>
+	<string>(serialize) [&apos;siəriəlaiz]</string>
 	<key>673</key>
-	<string>circular ['sə:kjulə] wait [weit] 循环等待</string>
+	<string>circular [&apos;sə:kjulə] wait [weit] 循环等待</string>
 	<key>674</key>
-	<string>divide union['ju:niən] intersection[,intə'sekʃən] difference 除并交差</string>
+	<string>divide union[&apos;ju:niən] intersection[,intə&apos;sekʃən] difference 除并交差</string>
 	<key>675</key>
-	<string>selection [si'lekʃən] sort [sɔ:t] 选择排序</string>
+	<string>selection [si&apos;lekʃən] sort [sɔ:t] 选择排序</string>
 	<key>676</key>
-	<string>client－server ['sə:və]主从架构 客户/服务器 </string>
+	<string>client－server [&apos;sə:və]主从架构 客户/服务器 </string>
 	<key>677</key>
-	<string>integer ['intidʒə] (integral ['intiɡrəl]) 整数（的） 整型（的） </string>
+	<string>integer [&apos;intidʒə] (integral [&apos;intiɡrəl]) 整数（的） 整型（的） </string>
 	<key>678</key>
-	<string>operating ['ɔpəreitiŋ] system ['sistəm] (OS) 作业系统 操作系统 </string>
+	<string>operating [&apos;ɔpəreitiŋ] system [&apos;sistəm] (OS) 作业系统 操作系统 </string>
 	<key>679</key>
 	<string>initialization list 初值列 初始值列表 </string>
 	<key>68</key>
-	<string>kernel ['kə:nəl] executive [iɡ'zekjutiv] supervisor ['sju:pəvaizə] user 核心执行管理用户</string>
+	<string>kernel [&apos;kə:nəl] executive [iɡ&apos;zekjutiv] supervisor [&apos;sju:pəvaizə] user 核心执行管理用户</string>
 	<key>680</key>
-	<string>radio ['reidiəu] button 圆钮 单选按钮 </string>
+	<string>radio [&apos;reidiəu] button 圆钮 单选按钮 </string>
 	<key>681</key>
-	<string>initialize [i'niʃəlaiz] 初始化 初始化 </string>
+	<string>initialize [i&apos;niʃəlaiz] 初始化 初始化 </string>
 	<key>682</key>
-	<string>bandwidth ['bændwidθ]频宽 带宽</string>
+	<string>bandwidth [&apos;bændwidθ]频宽 带宽</string>
 	<key>683</key>
-	<string>binary ['bainəri]二进制</string>
+	<string>binary [&apos;bainəri]二进制</string>
 	<key>684</key>
-	<string>module ['mɔdju:l]单位基准</string>
+	<string>module [&apos;mɔdju:l]单位基准</string>
 	<key>685</key>
-	<string>status ['steitəs ]bar 状态列、状态栏 状态条 </string>
+	<string>status [&apos;steitəs ]bar 状态列、状态栏 状态条 </string>
 	<key>686</key>
 	<string>SMDS 交换多兆位数据服务</string>
 	<key>687</key>
-	<string>equality [i:'kwɔləti]相等性 相等性 </string>
+	<string>equality [i:&apos;kwɔləti]相等性 相等性 </string>
 	<key>688</key>
-	<string>best-fit algorithm ['ælɡəriðəm] 最佳适应算法</string>
+	<string>best-fit algorithm [&apos;ælɡəriðəm] 最佳适应算法</string>
 	<key>689</key>
-	<string>STL 见 standard ['stændəd] template ['templit] library ['laibrəri] </string>
+	<string>STL 见 standard [&apos;stændəd] template [&apos;templit] library [&apos;laibrəri] </string>
 	<key>69</key>
-	<string>guarantee [,ɡærən'ti:]保证确定</string>
+	<string>guarantee [,ɡærən&apos;ti:]保证确定</string>
 	<key>690</key>
-	<string>implement ['implimənt] 实作、实现 实现 </string>
+	<string>implement [&apos;implimənt] 实作、实现 实现 </string>
 	<key>691</key>
-	<string>message ['mesidʒ]讯息 消息 </string>
+	<string>message [&apos;mesidʒ]讯息 消息 </string>
 	<key>692</key>
-	<string>functionality [,fʌŋkʃə'næliti]功能、机能 功能 </string>
+	<string>functionality [,fʌŋkʃə&apos;næliti]功能、机能 功能 </string>
 	<key>693</key>
-	<string>demonstrate ['demənstreit]证明</string>
+	<string>demonstrate [&apos;demənstreit]证明</string>
 	<key>694</key>
 	<string>tag [tæɡ] 标签 标记 索引标签,页签 </string>
 	<key>695</key>
-	<string>nested ['nestid] class 巢状类别 嵌套类 </string>
+	<string>nested [&apos;nestid] class 巢状类别 嵌套类 </string>
 	<key>696</key>
-	<string>redundency  [rɪ'dʌndənsi]冗余</string>
+	<string>redundency  [rɪ&apos;dʌndənsi]冗余</string>
 	<key>697</key>
-	<string>toy [tɔi] benchmark ['bentʃmɑ:k] synthetic [sin'θetik] benchmark 简单基准程序复合基准程序</string>
+	<string>toy [tɔi] benchmark [&apos;bentʃmɑ:k] synthetic [sin&apos;θetik] benchmark 简单基准程序复合基准程序</string>
 	<key>698</key>
-	<string>minimum ['miniməm] 最小的</string>
+	<string>minimum [&apos;miniməm] 最小的</string>
 	<key>699</key>
-	<string>paged segments['seɡmənt] 段页式管理</string>
+	<string>paged segments[&apos;seɡmənt] 段页式管理</string>
 	<key>7</key>
-	<string>context['kɔntekst] 背景关系、周遭环境、上下脉络 环境、上下文 </string>
+	<string>context[&apos;kɔntekst] 背景关系、周遭环境、上下脉络 环境、上下文 </string>
 	<key>70</key>
-	<string>associated [ə'soʃɪetɪd]相应的、相关的 相关的、关联、相应的 </string>
+	<string>associated [ə&apos;soʃɪetɪd]相应的、相关的 相关的、关联、相应的 </string>
 	<key>700</key>
-	<string>encapsulation [in,-kæpsə'leiʃən] inheritance[in'heritəns]  封装(压缩) 继承(遗传)</string>
+	<string>encapsulation [in,-kæpsə&apos;leiʃən] inheritance[in&apos;heritəns]  封装(压缩) 继承(遗传)</string>
 	<key>701</key>
-	<string>native ['neitiv]原生的 本地的、固有的 </string>
+	<string>native [&apos;neitiv]原生的 本地的、固有的 </string>
 	<key>702</key>
-	<string>specify ['spesəfai] 指定说明</string>
+	<string>specify [&apos;spesəfai] 指定说明</string>
 	<key>703</key>
 	<string>FTP 文件传送服务</string>
 	<key>704</key>
-	<string>Difference['difərəns] Manchester['mæntʃistə] 差分曼彻斯特</string>
+	<string>Difference[&apos;difərəns] Manchester[&apos;mæntʃistə] 差分曼彻斯特</string>
 	<key>705</key>
-	<string>forward ['fɔ:wəd] declaration [,deklə'reiʃən]前置宣告 前置声明 </string>
+	<string>forward [&apos;fɔ:wəd] declaration [,deklə&apos;reiʃən]前置宣告 前置声明 </string>
 	<key>706</key>
-	<string>specification [,spesifi'keiʃən]规格 规格、规范 </string>
+	<string>specification [,spesifi&apos;keiʃən]规格 规格、规范 </string>
 	<key>707</key>
 	<string>overloaded set 多载集合 重载集合 </string>
 	<key>708</key>
@@ -1361,345 +1361,345 @@
 	<key>709</key>
 	<string>scope [skəup] 生存空间、生存范围、范畴、作用域 生存空间 </string>
 	<key>71</key>
-	<string>scope operator ['ɔpəreitə] 生存空间（范围决议）运算子 :: 生存空间操作符 </string>
+	<string>scope operator [&apos;ɔpəreitə] 生存空间（范围决议）运算子 :: 生存空间操作符 </string>
 	<key>710</key>
-	<string>create [kri'eit]创建、建立、产生、生成 创建 </string>
+	<string>create [kri&apos;eit]创建、建立、产生、生成 创建 </string>
 	<key>711</key>
-	<string>infinite ['infinət] loop [lu:p]无穷回圈 无限循环 </string>
+	<string>infinite [&apos;infinət] loop [lu:p]无穷回圈 无限循环 </string>
 	<key>712</key>
-	<string>hardware ['hɑ:dwεə]硬体 硬件 </string>
+	<string>hardware [&apos;hɑ:dwεə]硬体 硬件 </string>
 	<key>713</key>
-	<string>procedure [prə'si:dʒə]程序 过程 </string>
+	<string>procedure [prə&apos;si:dʒə]程序 过程 </string>
 	<key>714</key>
 	<string>driver [draivə]驱动程式 驱动（程序） </string>
 	<key>715</key>
 	<string>placement new ref. C++ Primer 3/e, 15.8.2 </string>
 	<key>716</key>
-	<string>brace[breis] (curly ['kə:li] brace) 大括弧、大括号 花括弧、花括号 </string>
+	<string>brace[breis] (curly [&apos;kə:li] brace) 大括弧、大括号 花括弧、花括号 </string>
 	<key>717</key>
 	<string>software development phase [feiz] 软件开发阶段</string>
 	<key>718</key>
 	<string>real page number 实页数</string>
 	<key>719</key>
-	<string>module ['mɔdju:l]模组 模块 </string>
+	<string>module [&apos;mɔdju:l]模组 模块 </string>
 	<key>72</key>
-	<string>conform [kən'fɔ:m]符合</string>
+	<string>conform [kən&apos;fɔ:m]符合</string>
 	<key>720</key>
-	<string>immutability [i,mjuitə'biləti]不变性 </string>
+	<string>immutability [i,mjuitə&apos;biləti]不变性 </string>
 	<key>721</key>
-	<string>occurrence [ə'kə:rəns] 事件</string>
+	<string>occurrence [ə&apos;kə:rəns] 事件</string>
 	<key>722</key>
-	<string>class library ['laibrəri]类别程式库、类别库 类库 </string>
+	<string>class library [&apos;laibrəri]类别程式库、类别库 类库 </string>
 	<key>723</key>
-	<string>operand ['ɔpərænd] 运算元 操作数 </string>
+	<string>operand [&apos;ɔpərænd] 运算元 操作数 </string>
 	<key>724</key>
-	<string>monitor ['mɔnitə] (model ['mɔdəl] benchmark ['bentʃmɑ:k] physcal['fɪzɪkl]) method 监视(模型基准物理)法</string>
+	<string>monitor [&apos;mɔnitə] (model [&apos;mɔdəl] benchmark [&apos;bentʃmɑ:k] physcal[&apos;fɪzɪkl]) method 监视(模型基准物理)法</string>
 	<key>725</key>
 	<string>disk [disk] 碟 盘 </string>
 	<key>726</key>
-	<string>symbolic [sim'bɔlik] 象征的符号的</string>
+	<string>symbolic [sim&apos;bɔlik] 象征的符号的</string>
 	<key>727</key>
-	<string>word processor ['prəusesə] 文书处理器 字处理器 </string>
+	<string>word processor [&apos;prəusesə] 文书处理器 字处理器 </string>
 	<key>728</key>
-	<string>UML unified ['ju:nifaid] modeling ['mɒdəlɪŋ] language ['læŋgwɪdʒ] 统一建模语言 </string>
+	<string>UML unified [&apos;ju:nifaid] modeling [&apos;mɒdəlɪŋ] language [&apos;læŋgwɪdʒ] 统一建模语言 </string>
 	<key>729</key>
-	<string>preprocessor [pri:'prəusesə]前处理器 预处理器 </string>
+	<string>preprocessor [pri:&apos;prəusesə]前处理器 预处理器 </string>
 	<key>73</key>
 	<string>pop[pɔp] up [ʌp]冒起式、弹出式 弹出式 </string>
 	<key>730</key>
-	<string>statement ['steitmənt]述句 语句、声明 </string>
+	<string>statement [&apos;steitmənt]述句 语句、声明 </string>
 	<key>731</key>
-	<string>generic [dʒi'nerik]泛型、一般化的 一般化的、通用的、泛化 </string>
+	<string>generic [dʒi&apos;nerik]泛型、一般化的 一般化的、通用的、泛化 </string>
 	<key>732</key>
 	<string>queue [kju:]队列</string>
 	<key>733</key>
 	<string>instantiated 具现化、实体化（常应用於 template） 实例化 </string>
 	<key>734</key>
-	<string>data structure ['strʌktʃə]资料结构 数据结构 </string>
+	<string>data structure [&apos;strʌktʃə]资料结构 数据结构 </string>
 	<key>735</key>
-	<string>SSTF(shortest ['ʃɔ:tist] -seek [si:k] -time-first) 最短寻道时间优先(磁盘调度算法)</string>
+	<string>SSTF(shortest [&apos;ʃɔ:tist] -seek [si:k] -time-first) 最短寻道时间优先(磁盘调度算法)</string>
 	<key>736</key>
-	<string>communication [kə,mju:ni'keiʃən]通讯 通讯 </string>
+	<string>communication [kə,mju:ni&apos;keiʃən]通讯 通讯 </string>
 	<key>737</key>
-	<string>clipboard ['klipbɔ:d]剪贴簿 剪贴板 </string>
+	<string>clipboard [&apos;klipbɔ:d]剪贴簿 剪贴板 </string>
 	<key>738</key>
-	<string>component [kəm'pəunənt]组件 组件 </string>
+	<string>component [kəm&apos;pəunənt]组件 组件 </string>
 	<key>739</key>
-	<string>progress ['prəuɡres bar [bɑ:]进度指示器 进度指示器 </string>
+	<string>progress [&apos;prəuɡres bar [bɑ:]进度指示器 进度指示器 </string>
 	<key>74</key>
-	<string>vowel ['vauəl]母音 元音字母 </string>
+	<string>vowel [&apos;vauəl]母音 元音字母 </string>
 	<key>740</key>
-	<string>bit series ['siəri:z] 比特序列</string>
+	<string>bit series [&apos;siəri:z] 比特序列</string>
 	<key>741</key>
-	<string>robustness [rəʊ'bʌstnɪs] 健壮性</string>
+	<string>robustness [rəʊ&apos;bʌstnɪs] 健壮性</string>
 	<key>742</key>
 	<string>overhead 额外负担、额外开销 额外开销 </string>
 	<key>743</key>
-	<string>equal ['i:kwəl]相等的</string>
+	<string>equal [&apos;i:kwəl]相等的</string>
 	<key>744</key>
 	<string>heap [hi:p] 堆积 堆 </string>
 	<key>745</key>
-	<string>architecture['ɑːkɪtektʃə] 架构、系统架构 体系结构 </string>
+	<string>architecture[&apos;ɑːkɪtektʃə] 架构、系统架构 体系结构 </string>
 	<key>746</key>
-	<string>literal ['litərəl] constant ['kɔnstənt]字面常数（例 3.14 或 "hi" 这等常数值） 字面常数 </string>
+	<string>literal [&apos;litərəl] constant [&apos;kɔnstənt]字面常数（例 3.14 或 &quot;hi&quot; 这等常数值） 字面常数 </string>
 	<key>747</key>
-	<string>computer [kəm'pju:tə]电脑、计算机 计算机、电脑 </string>
+	<string>computer [kəm&apos;pju:tə]电脑、计算机 计算机、电脑 </string>
 	<key>748</key>
 	<string>Client/Server 客户机/服务器</string>
 	<key>749</key>
-	<string>virtual ['və:tʃuəl] function 虚拟函式 虚函数 </string>
+	<string>virtual [&apos;və:tʃuəl] function 虚拟函式 虚函数 </string>
 	<key>75</key>
 	<string>string [stri:m]字串 字符串 </string>
 	<key>750</key>
-	<string>priority [prai'ɔrəti]优先权 (通常用於执行绪获得 CPU 时间的优先次序） </string>
+	<string>priority [prai&apos;ɔrəti]优先权 (通常用於执行绪获得 CPU 时间的优先次序） </string>
 	<key>751</key>
-	<string>spanning ['spæniŋ] tree 跨越树(生成树)</string>
+	<string>spanning [&apos;spæniŋ] tree 跨越树(生成树)</string>
 	<key>752</key>
 	<string>scroll [skrəul] bar 卷轴 滚动条 </string>
 	<key>753</key>
-	<string>design [di'zain] by contract [kən'trækt]契约式设计 </string>
+	<string>design [di&apos;zain] by contract [kən&apos;trækt]契约式设计 </string>
 	<key>754</key>
 	<string>local object 区域物件 局部对象 </string>
 	<key>755</key>
-	<string>dynamic [dai'næmik] binding ['baindiŋ] 动态系结 动态绑定 </string>
+	<string>dynamic [dai&apos;næmik] binding [&apos;baindiŋ] 动态系结 动态绑定 </string>
 	<key>756</key>
-	<string>border ['bɔ:də]边框、框线 边框 </string>
+	<string>border [&apos;bɔ:də]边框、框线 边框 </string>
 	<key>757</key>
 	<string>parse [pɑ:z]解析 解析 </string>
 	<key>758</key>
-	<string>local ['ləukəl]区域的（对应於 global） 局部的 </string>
+	<string>local [&apos;ləukəl]区域的（对应於 global） 局部的 </string>
 	<key>759</key>
-	<string>ordinary ['ɔ:dinəri]常规的 常规的 </string>
+	<string>ordinary [&apos;ɔ:dinəri]常规的 常规的 </string>
 	<key>76</key>
 	<string>lvalue 左值 左值 </string>
 	<key>760</key>
 	<string>CPI 每条指令需要的周期数</string>
 	<key>761</key>
-	<string>subscript ['sʌbskript] operator 下标运算子 [ ] 下标操作符 </string>
+	<string>subscript [&apos;sʌbskript] operator 下标运算子 [ ] 下标操作符 </string>
 	<key>762</key>
-	<string>protocal ['prəʊtəkɒl]协议</string>
+	<string>protocal [&apos;prəʊtəkɒl]协议</string>
 	<key>763</key>
 	<string>instruction set 指令集</string>
 	<key>764</key>
-	<string>manipulator [mə'nipjuleitə] 操纵器（iostream [stri:m]预先定义的一种东西） 操纵器 </string>
+	<string>manipulator [mə&apos;nipjuleitə] 操纵器（iostream [stri:m]预先定义的一种东西） 操纵器 </string>
 	<key>765</key>
 	<string>queue [kju:]伫列 队列 </string>
 	<key>766</key>
-	<string>middleware ['midlweə]中介层 中间件 </string>
+	<string>middleware [&apos;midlweə]中介层 中间件 </string>
 	<key>767</key>
-	<string>compiler [kəm'pailə]编译器 编译器 </string>
+	<string>compiler [kəm&apos;pailə]编译器 编译器 </string>
 	<key>768</key>
-	<string>data member ['membə] 资料成员、成员变数 数据成员、成员变量 </string>
+	<string>data member [&apos;membə] 资料成员、成员变数 数据成员、成员变量 </string>
 	<key>769</key>
 	<string>instantiation [in,stænʃieiʃən] 具现体、具现化实体（常应用於 template） 实例 </string>
 	<key>77</key>
-	<string>function call operator ['ɔpəreitə]同 call operator </string>
+	<string>function call operator [&apos;ɔpəreitə]同 call operator </string>
 	<key>770</key>
-	<string>proposition [,prɔpə'ziʃən]主张建议陈述</string>
+	<string>proposition [,prɔpə&apos;ziʃən]主张建议陈述</string>
 	<key>771</key>
 	<string>overflow 上限溢位（相对於 underflow） 溢出（underflow:下溢） </string>
 	<key>772</key>
-	<string>ISAM: （Index Sequential [sɪ'kwenʃ(ə)l] Access Mode [məʊd]）</string>
+	<string>ISAM: （Index Sequential [sɪ&apos;kwenʃ(ə)l] Access Mode [məʊd]）</string>
 	<key>773</key>
-	<string>assignment [ə'saɪnm(ə)nt]指派、指定 赋值、分配 </string>
+	<string>assignment [ə&apos;saɪnm(ə)nt]指派、指定 赋值、分配 </string>
 	<key>774</key>
-	<string>implicit [im'plisit] 隐喻的、暗自的、隐式 隐式 </string>
+	<string>implicit [im&apos;plisit] 隐喻的、暗自的、隐式 隐式 </string>
 	<key>775</key>
 	<string>scheme [ski:m] 结构纲目、组织纲目 </string>
 	<key>776</key>
-	<string>reference ['refərəns] integrity [in'teɡrəti] rule [ru:l]引用完整性规则</string>
+	<string>reference [&apos;refərəns] integrity [in&apos;teɡrəti] rule [ru:l]引用完整性规则</string>
 	<key>777</key>
-	<string>real ['riəl] programs kernels ['kə:nəlz] 实程序核心程序</string>
+	<string>real [&apos;riəl] programs kernels [&apos;kə:nəlz] 实程序核心程序</string>
 	<key>778</key>
-	<string>transaction [træn'zækʃən]交易 事务 </string>
+	<string>transaction [træn&apos;zækʃən]交易 事务 </string>
 	<key>779</key>
-	<string>serialization [,siəriəlai'zeiʃən] 次第读写,序列化 序列化 </string>
+	<string>serialization [,siəriəlai&apos;zeiʃən] 次第读写,序列化 序列化 </string>
 	<key>78</key>
 	<string>source 原始码 源码、源代码 </string>
 	<key>780</key>
-	<string>directive [di'rektiv] 指令（例：using directive） (编译)指示符 </string>
+	<string>directive [di&apos;rektiv] 指令（例：using directive） (编译)指示符 </string>
 	<key>781</key>
-	<string>constant['kɔnstənt]  常数（相对於 variable） 常量 </string>
+	<string>constant[&apos;kɔnstənt]  常数（相对於 variable） 常量 </string>
 	<key>782</key>
-	<string>concept ['kɔnsept]概念观念</string>
+	<string>concept [&apos;kɔnsept]概念观念</string>
 	<key>783</key>
-	<string>common ['kɔmən] language ['læŋɡwidʒ] runtime (CLR) 译为「通用语言执行层」 </string>
+	<string>common [&apos;kɔmən] language [&apos;læŋɡwidʒ] runtime (CLR) 译为「通用语言执行层」 </string>
 	<key>784</key>
-	<string>performance [pə'fɔ:məns]效率、性能兼而有之 性能 </string>
+	<string>performance [pə&apos;fɔ:məns]效率、性能兼而有之 性能 </string>
 	<key>785</key>
-	<string>parent ['pεərənt] class 父类别（或称 base class） 父类 </string>
+	<string>parent [&apos;pεərənt] class 父类别（或称 base class） 父类 </string>
 	<key>786</key>
-	<string>process ['prəuses]行程 进程 </string>
+	<string>process [&apos;prəuses]行程 进程 </string>
 	<key>787</key>
 	<string>memberwise copy 以 members 为单元逐一复制 </string>
 	<key>788</key>
 	<string>group box 群组方块 分组框 </string>
 	<key>789</key>
-	<string>custom ['kʌstəm] 订制、自定 定制 </string>
+	<string>custom [&apos;kʌstəm] 订制、自定 定制 </string>
 	<key>79</key>
 	<string>interface 接口分界面连接体</string>
 	<key>790</key>
-	<string>variable ['vεəriəbl] 变数（相对於常数 const） 变量 </string>
+	<string>variable [&apos;vεəriəbl] 变数（相对於常数 const） 变量 </string>
 	<key>791</key>
-	<string>client ['klaiənt]客端、客户端、客户 客户 </string>
+	<string>client [&apos;klaiənt]客端、客户端、客户 客户 </string>
 	<key>792</key>
-	<string>argument ['ɑːgjʊm(ə)nt]引数（传给函式的值）。叁见 parameter 叁数、实质叁数、实叁、自变量 </string>
+	<string>argument [&apos;ɑːgjʊm(ə)nt]引数（传给函式的值）。叁见 parameter 叁数、实质叁数、实叁、自变量 </string>
 	<key>793</key>
-	<string>immutable [i'mju:təbl] 不可变（的） </string>
+	<string>immutable [i&apos;mju:təbl] 不可变（的） </string>
 	<key>794</key>
 	<string>ISAM VSAM 索引顺序存取方法虚拟存储存取方法</string>
 	<key>795</key>
-	<string>inheritance [in'heritəns]继承、继承机制 继承、继承机制 </string>
+	<string>inheritance [in&apos;heritəns]继承、继承机制 继承、继承机制 </string>
 	<key>796</key>
 	<string>object based[beist] 以物件为基础的 基於对象的 </string>
 	<key>797</key>
-	<string>object file ['fail]目的档 目标文件 </string>
+	<string>object file [&apos;fail]目的档 目标文件 </string>
 	<key>798</key>
-	<string>time complexity [kəm'pleksiti] 时间复杂度</string>
+	<string>time complexity [kəm&apos;pleksiti] 时间复杂度</string>
 	<key>799</key>
-	<string>interrupt [,intə'rʌpt]中断</string>
+	<string>interrupt [,intə&apos;rʌpt]中断</string>
 	<key>8</key>
-	<string>similar ['similə] 相似的</string>
+	<string>similar [&apos;similə] 相似的</string>
 	<key>80</key>
-	<string>independent [,indi'pendənt] 独立的</string>
+	<string>independent [,indi&apos;pendənt] 独立的</string>
 	<key>800</key>
-	<string>iterative ['itərətiv] 反覆的，迭代的 </string>
+	<string>iterative [&apos;itərətiv] 反覆的，迭代的 </string>
 	<key>801</key>
-	<string>container [kən'teinə]容器 容器 （存放资料的某种结构如 list, vector...） </string>
+	<string>container [kən&apos;teinə]容器 容器 （存放资料的某种结构如 list, vector...） </string>
 	<key>802</key>
-	<string>vector ['vektə]向量（一种容器，有点类似 array） 向量、矢量 </string>
+	<string>vector [&apos;vektə]向量（一种容器，有点类似 array） 向量、矢量 </string>
 	<key>803</key>
 	<string>range [reindʒ]范围、区间（用於 STL 时） 范围、区间 </string>
 	<key>804</key>
 	<string>bridge [bridʒ]网桥</string>
 	<key>805</key>
-	<string>page replacement [ri'pleismənt] algorithm ['ælɡəriðəm] 页替换算法</string>
+	<string>page replacement [ri&apos;pleismənt] algorithm [&apos;ælɡəriðəm] 页替换算法</string>
 	<key>806</key>
-	<string>database: security [si'kjuəriti] efficiency [i'fiʃənsi] 数据库设计的目标: 安全性效率</string>
+	<string>database: security [si&apos;kjuəriti] efficiency [i&apos;fiʃənsi] 数据库设计的目标: 安全性效率</string>
 	<key>807</key>
-	<string>benefit ['benɪfɪt]利益 收益</string>
+	<string>benefit [&apos;benɪfɪt]利益 收益</string>
 	<key>808</key>
 	<string>calculation [,kælkju:leiʃən] 计算</string>
 	<key>809</key>
-	<string>application framework['freɪmwɜːk] 应用程式框架、应用框架 应用程序框架 </string>
+	<string>application framework[&apos;freɪmwɜːk] 应用程式框架、应用框架 应用程序框架 </string>
 	<key>81</key>
 	<string>pass by value 传值（函式引数的一种传递方式） 按值传递 </string>
 	<key>810</key>
-	<string>primitive['primitiv] type 基本型别 (不同於 base class,基础类别) </string>
+	<string>primitive[&apos;primitiv] type 基本型别 (不同於 base class,基础类别) </string>
 	<key>811</key>
-	<string>design [di'zain] pattern ['pætən] 设计范式、设计样式 设计模式  最近我比较喜欢「设计范式」一词 </string>
+	<string>design [di&apos;zain] pattern [&apos;pætən] 设计范式、设计样式 设计模式  最近我比较喜欢「设计范式」一词 </string>
 	<key>812</key>
-	<string>binary ['baɪnərɪ] search [sɜːtʃ]二分搜寻法 二分查找 </string>
+	<string>binary [&apos;baɪnərɪ] search [sɜːtʃ]二分搜寻法 二分查找 </string>
 	<key>813</key>
-	<string>prefix [,pri:'fiks]前置式、前序式 前置式 </string>
+	<string>prefix [,pri:&apos;fiks]前置式、前序式 前置式 </string>
 	<key>814</key>
 	<string>method (java) 方法、行为、函式 方法 </string>
 	<key>815</key>
-	<string>exception declaration [,deklə'reiʃən]异常宣告（ref. C++ Primer 3/e, 11.3） 异常声明 </string>
+	<string>exception declaration [,deklə&apos;reiʃən]异常宣告（ref. C++ Primer 3/e, 11.3） 异常声明 </string>
 	<key>816</key>
-	<string>memory ['meməri] 记忆体 内存 </string>
+	<string>memory [&apos;meməri] 记忆体 内存 </string>
 	<key>817</key>
 	<string>write-through(store-through) [stɔ:] 写直达法</string>
 	<key>818</key>
-	<string>DQDB(distributed[di'stribjutid] queue[kju:] dual['dju:əl] bus) 分布队列双总线</string>
+	<string>DQDB(distributed[di&apos;stribjutid] queue[kju:] dual[&apos;dju:əl] bus) 分布队列双总线</string>
 	<key>819</key>
-	<string>template explicit [ik'splisit] specialization [,speʃəlai'zeiʃən]模板显式特化（版本） 模板显式特化 </string>
+	<string>template explicit [ik&apos;splisit] specialization [,speʃəlai&apos;zeiʃən]模板显式特化（版本） 模板显式特化 </string>
 	<key>82</key>
-	<string>CISC(complex ['kɔmpleks] instruction [in'strʌkʃən] set computer [kəm'pju:tə]) 复杂指令集计算机</string>
+	<string>CISC(complex [&apos;kɔmpleks] instruction [in&apos;strʌkʃən] set computer [kəm&apos;pju:tə]) 复杂指令集计算机</string>
 	<key>820</key>
-	<string>cursor ['kə:sə] 游标</string>
+	<string>cursor [&apos;kə:sə] 游标</string>
 	<key>821</key>
-	<string>end [end] user ['ju:zə]终端用户 </string>
+	<string>end [end] user [&apos;ju:zə]终端用户 </string>
 	<key>822</key>
-	<string>multiple ['mʌltipl] 复合的多样的</string>
+	<string>multiple [&apos;mʌltipl] 复合的多样的</string>
 	<key>823</key>
 	<string>fault [fɔ:lt] page fault 中断过错页中断</string>
 	<key>824</key>
-	<string>regard [rɪ'ɡɑːd]关于</string>
+	<string>regard [rɪ&apos;ɡɑːd]关于</string>
 	<key>825</key>
-	<string>level ['levəl]阶 层 (级) 例 high level 高阶 高层 </string>
+	<string>level [&apos;levəl]阶 层 (级) 例 high level 高阶 高层 </string>
 	<key>826</key>
 	<string>byte [bait]位元组（由 8 bits 组成） 字节 </string>
 	<key>827</key>
 	<string>parameter list 叁数列 叁数列表 </string>
 	<key>828</key>
-	<string>debugger [di:'bʌɡə]除错器 调试器 </string>
+	<string>debugger [di:&apos;bʌɡə]除错器 调试器 </string>
 	<key>829</key>
-	<string>derived [di'raivd] class 衍生类别 派生类 </string>
+	<string>derived [di&apos;raivd] class 衍生类别 派生类 </string>
 	<key>83</key>
 	<string>link [liŋk] 联结、连结 连接,链接 </string>
 	<key>830</key>
-	<string>template argument deduction [di'dʌkʃən]模板引数推导 模板叁数推导</string>
+	<string>template argument deduction [di&apos;dʌkʃən]模板引数推导 模板叁数推导</string>
 	<key>831</key>
-	<string>viable ['vaiəbl]可实行的、可行的 可行的 </string>
+	<string>viable [&apos;vaiəbl]可实行的、可行的 可行的 </string>
 	<key>832</key>
 	<string>method 方法技巧</string>
 	<key>833</key>
-	<string>exclusive [ik'sklu:siv] locks 排它锁(简记为X 锁)</string>
+	<string>exclusive [ik&apos;sklu:siv] locks 排它锁(简记为X 锁)</string>
 	<key>834</key>
-	<string>consist [kən'sist] 组成存在</string>
+	<string>consist [kən&apos;sist] 组成存在</string>
 	<key>835</key>
-	<string>diagram['daiəɡræm] 图表</string>
+	<string>diagram[&apos;daiəɡræm] 图表</string>
 	<key>836</key>
-	<string>generate ['dʒenəreit] 产生</string>
+	<string>generate [&apos;dʒenəreit] 产生</string>
 	<key>837</key>
-	<string>exit ['eksit]退离（指离开函式时的那一个执行点） 退出 </string>
+	<string>exit [&apos;eksit]退离（指离开函式时的那一个执行点） 退出 </string>
 	<key>838</key>
-	<string>complement ['kɔmplimənt] number 补码</string>
+	<string>complement [&apos;kɔmplimənt] number 补码</string>
 	<key>839</key>
-	<string>value ['vælju:] [数]值</string>
+	<string>value [&apos;vælju:] [数]值</string>
 	<key>84</key>
-	<string>function overloaded ['əuvə'ləudid] resolution [,rezə'lu:ʃən]函式多载决议程序 函数重载解决（方案） </string>
+	<string>function overloaded [&apos;əuvə&apos;ləudid] resolution [,rezə&apos;lu:ʃən]函式多载决议程序 函数重载解决（方案） </string>
 	<key>840</key>
-	<string>window ['windəu] 视窗 窗口 </string>
+	<string>window [&apos;windəu] 视窗 窗口 </string>
 	<key>841</key>
 	<string>placement delete ref [ref]. C++ Primer 3/e, 15.8.2  </string>
 	<key>842</key>
-	<string>expertise [,ekspə:'ti:z]专门技术</string>
+	<string>expertise [,ekspə:&apos;ti:z]专门技术</string>
 	<key>843</key>
-	<string>routine [ru:'ti:n] 常式 例程 </string>
+	<string>routine [ru:&apos;ti:n] 常式 例程 </string>
 	<key>844</key>
-	<string>transparent(ly) [træns'pærənt] 透通的(地) </string>
+	<string>transparent(ly) [træns&apos;pærənt] 透通的(地) </string>
 	<key>845</key>
-	<string>relation [ri'leiʃən] 关系</string>
+	<string>relation [ri&apos;leiʃən] 关系</string>
 	<key>846</key>
-	<string>destroy [di'strɔi] 摧毁、销毁 </string>
+	<string>destroy [di&apos;strɔi] 摧毁、销毁 </string>
 	<key>847</key>
 	<string>chain [tʃein]串链（例 chain of function calls） 链 </string>
 	<key>848</key>
-	<string>database: integrity [in'teɡrəti] consistency [kən'sistənsi] restory 完整性一致性可恢复性</string>
+	<string>database: integrity [in&apos;teɡrəti] consistency [kən&apos;sistənsi] restory 完整性一致性可恢复性</string>
 	<key>849</key>
-	<string>acquire [ə'kwaiə]获得</string>
+	<string>acquire [ə&apos;kwaiə]获得</string>
 	<key>85</key>
-	<string>initially [i'niʃəli] 最初开头</string>
+	<string>initially [i&apos;niʃəli] 最初开头</string>
 	<key>86</key>
-	<string>audio ['ɔːdɪəʊ]音讯 音频 </string>
+	<string>audio [&apos;ɔːdɪəʊ]音讯 音频 </string>
 	<key>87</key>
-	<string>software portability [,pɔ:tə'biləti] 软件可移植性</string>
+	<string>software portability [,pɔ:tə&apos;biləti] 软件可移植性</string>
 	<key>88</key>
-	<string>formal ['fɔ:məl] parameter [pə'ræmitə]形式叁数 形式叁数 </string>
+	<string>formal [&apos;fɔ:məl] parameter [pə&apos;ræmitə]形式叁数 形式叁数 </string>
 	<key>89</key>
-	<string>resolve [ri'zɔlv]决议（为算式中的符号名称寻找 解析对应之宣告式的过程） </string>
+	<string>resolve [ri&apos;zɔlv]决议（为算式中的符号名称寻找 解析对应之宣告式的过程） </string>
 	<key>9</key>
-	<string>preemption [pri'empʃən] 有优先权的</string>
+	<string>preemption [pri&apos;empʃən] 有优先权的</string>
 	<key>90</key>
-	<string>data ['deitə]资料 数据 </string>
+	<string>data [&apos;deitə]资料 数据 </string>
 	<key>91</key>
-	<string>preorder [pri:'ɔ:də] inorder postorder 前序中序后序</string>
+	<string>preorder [pri:&apos;ɔ:də] inorder postorder 前序中序后序</string>
 	<key>92</key>
-	<string>semaphores['semə,fɔ:] 信号</string>
+	<string>semaphores[&apos;semə,fɔ:] 信号</string>
 	<key>93</key>
-	<string>function object['ɔbdʒikt] 函式物件（ref. C++ Primer 3/e, 12.3） 函数对象 </string>
+	<string>function object[&apos;ɔbdʒikt] 函式物件（ref. C++ Primer 3/e, 12.3） 函数对象 </string>
 	<key>94</key>
-	<string>parameter [pə'ræmitə]叁数（函式叁数列上的变数） 叁数、形式叁数、形叁 </string>
+	<string>parameter [pə&apos;ræmitə]叁数（函式叁数列上的变数） 叁数、形式叁数、形叁 </string>
 	<key>95</key>
 	<string>lock [lɔk] 机锁 </string>
 	<key>96</key>
-	<string>cover ['kʌvə] 涵盖 覆盖 </string>
+	<string>cover [&apos;kʌvə] 涵盖 覆盖 </string>
 	<key>97</key>
 	<string>base type [taip]基础型别 (等同於 base class) </string>
 	<key>98</key>
-	<string>communication [kə,mju:ni'keiʃən] 通信</string>
+	<string>communication [kə,mju:ni&apos;keiʃən] 通信</string>
 	<key>99</key>
 	<string>RISC(reduced instruction set computer) 精简指令集计算机</string>
 </dict>
