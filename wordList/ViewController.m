@@ -23,6 +23,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
 
+@property (nonatomic, strong)NSDictionary *wordsInSection;
+
 - (IBAction)AddVList:(UIBarButtonItem *)sender;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addBtn;
@@ -49,6 +51,8 @@
     shimmeringView.shimmeringOpacity = 0.5;
     
     shimmeringView.shimmering = YES;
+    
+    _count = -1;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -99,6 +103,7 @@
     return _wordLines;
 }
 
+
 ///**************************************    gestures    **************************************
 #pragma mark - gestures swipe  left anf right ... tap to move forward
 - (void)addSwipeGesture
@@ -106,10 +111,10 @@
     
     /** swipe */
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
-    swipeRight.direction = UISwipeGestureRecognizerDirectionLeft;
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
-    swipeLeft.direction = UISwipeGestureRecognizerDirectionRight;
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
     /**  swip down to reveal words meaning */
     UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown2Reveal:)];
     swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
@@ -117,9 +122,10 @@
     
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
-    [self.view addGestureRecognizer:swipeDown];
+//    [self.view addGestureRecognizer:swipeDown];
 }
 /**  swipe  */
+
 - (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer
 {
     NSLog(@"%d", swipeRecognizer.direction);
@@ -131,25 +137,26 @@
     if (swipeRecognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
         _count ++;
         self.addBtn.enabled = YES;
-        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count ]];
+        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
         [self.wordLabel sizeToFit];
-        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count ]];
+        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
         
         NSLog(@"%@", self.wordLabel.text);
         
-        if (_count%KwordInSection == 0 ) {
+        if ((_count + 1)%KwordInSection == 0) {
+            
             self.addBtn.enabled = NO;
-            [alertRight show];
-            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _count/KwordInSection+1];
-        }
-    }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
-        if (_count == 0) {
+            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nSlide to Start", _count/KwordInSection+1];
+            }
+        }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
+            
+            if (_count == 0) {
             //            show alert here
             NSLog(@" right swipe...");
             
             [alertLeft show];
             
-        }else{
+            }else{
             
             _count --;
             NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
@@ -157,9 +164,56 @@
             [self.wordLabel sizeToFit];
             self.wordLabel.text = word;
             NSLog(@"%@", self.wordLabel.text);
+            NSLog(@"%d", _count);
         }
     }
+    
+    
 }
+///**************************************    swipe    **************************************
+
+//- (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer
+//{
+//    NSLog(@"%d", swipeRecognizer.direction);
+//    
+//#warning  not good enough ...considering to change this part to a more comfortable implementation
+//    UIAlertView *alertLeft = [[UIAlertView alloc] initWithTitle:@"warning" message:@"已到达起始点！" delegate:self cancelButtonTitle: @"OK" otherButtonTitles: nil];
+//    UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
+//    
+//    if (swipeRecognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
+//        _count ++;
+//        self.addBtn.enabled = YES;
+//        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+//        [self.wordLabel sizeToFit];
+//        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+//        
+//        NSLog(@"%@", self.wordLabel.text);
+//        
+//        if (_count%KwordInSection == 0 ) {
+//            self.addBtn.enabled = NO;
+//            [alertRight show];
+//            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _count/KwordInSection+1];
+//        }
+//    }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
+//        if (_count == 0) {
+//            //            show alert here
+//            NSLog(@" right swipe...");
+//            
+//            [alertLeft show];
+//            
+//        }else{
+//            
+//            _count --;
+//            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+//            self.wordLabel.text = word;
+//            [self.wordLabel sizeToFit];
+//            self.wordLabel.text = word;
+//            NSLog(@"%@", self.wordLabel.text);
+//        }
+//    }
+//    
+//    
+//}
 
 #warning  ZZC - reserve for updating the new dict!
 
@@ -196,61 +250,6 @@
     }
 }
 
-#pragma mark - touch method ---------- Deprecated
-/**
-  if right move, words back.  left move or tap, word move forword.
- */
-/**
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    UITouch *touch = touches.anyObject;
-    
-    CGPoint location = [touch locationInView:self.view];
-    
-    CGPoint preLocation = [touch previousLocationInView:self.view];
-    
-    CGFloat offsetX = location.x - preLocation.x;
-    
-    CGFloat offsetY  = location.y - preLocation.y;
-    
-    NSLog(@"%f", offsetX);
-    
-    UIAlertView *alertLeft = [[UIAlertView alloc] initWithTitle:@"warning" message:@"已到达起始点！" delegate:self cancelButtonTitle: @"cancel" otherButtonTitles: nil];
-    UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
-    
-    
-    if (offsetX < - 1 || offsetY < - 1 || (offsetX == 0 && offsetY == 0 )) {
-        self.addBtn.enabled = YES;
-        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-        [self.wordLabel sizeToFit];
-        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-        
-        NSLog(@"%@", self.wordLabel.text);
-        _count ++;
-        if (_count%KwordInSection == 0 ) {
-            self.addBtn.enabled = NO;
-            [alertRight show];
-            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _count/KwordInSection+1];
-        }
-    }else if(offsetX> 1 || offsetY > 1){
-        if (_count == 0) {
-            //            show alert here
-            [alertLeft show];
-            
-        }else{
-            
-            _count --;
-            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-            self.wordLabel.text = word;
-            [self.wordLabel sizeToFit];
-            self.wordLabel.text = word;
-            NSLog(@"%@", self.wordLabel.text);
-        }
-    }
-}
-
-*/
-
 #pragma mark - click button to  add unknown words to the vocabulary list ^ _ ^
 - (IBAction)AddVList:(UIBarButtonItem *)sender {
   
@@ -269,6 +268,7 @@
 //        NSLog(@"%@", self.unknownWords);
         
     }else{
+//        alert
         [ZCMessageSoundEffect playAlertSound];
     }
     
