@@ -65,6 +65,8 @@
  
  */
 
+
+///**************************************    life circle    **************************************
 #pragma mark - life cycle
 - (void)viewDidLoad
 {
@@ -93,7 +95,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-///**************************************        **************************************
+///**************************************    getter    **************************************
 #pragma mark - load filepath
 
 - (NSMutableArray *)unknownWords
@@ -108,7 +110,7 @@
     return _unknownWords;
 }
 
-
+///**************************************        **************************************
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -126,7 +128,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"wordCell";
+    static NSString *ID = @"unknownWordsCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
     cell.textLabel.text = self.unknownWords[indexPath.row];
@@ -134,13 +136,31 @@
     return cell;
 }
 
-#pragma mark - table view delegate method
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+#pragma mark - controller will pop
+///********************************   pop    *******************************//
+#warning Frankly, I do not like this kind of pop. user only want to know a little bit detail of the word, however poping to another controller will make them think that the word is really a big case. I will try to fix this part by adding a pull detail view instead, which takes more time to design.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    ZCDetailViewController *detailVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    // at this time the view has not been created yet.
+//    detailVC.wordLabel.text = self.unknownWords[indexPath.row];
+    
+    detailVC.word = self.unknownWords[indexPath.row];
     
 }
 
 
-
 @end
+
+
+
+
+
+
+
+
+
+
