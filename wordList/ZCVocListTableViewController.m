@@ -25,32 +25,86 @@
 
 @implementation ZCVocListTableViewController
 
+/**
+ 
+ reminder:
+ ===========================================
+ life cycle:
+ 
+ blank app:
+ 
+ when new word btn pressed:
+ 
+ the word will be added to the documents. At this time, view for voc list havnt init yet;
+ 
+ 
+ 
+ 
+ 
+ 
+ the view did load
+ 
+ getter will be called and load the file data;
+ 
+ and the user come back to the first page to learn more words 
+ 
+ 
+ if  click the add btn:
+        
+            when the voca list view appears, it should load the new data now.
 
+ else do nothing and come back to this view:
+            
+            the view comtroller need to do nothing.
+ 
+ As a result:
 
+ another tippppp:    while in this time the delegate can be used now.
+ 
+ use
+ 
+ */
+
+#pragma mark - life cycle
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
-    NSLog(@" wordlist....%s", __func__);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(add) name:@"click" object:nil];
     
 }
 
-
-- (void)viewWillAppear:(BOOL)animated
+- (void)add
 {
+    NSLog(@"recieved!!!!");
+    self.unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+    
     [self.tableView reloadData];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
 
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+///**************************************        **************************************
 #pragma mark - load filepath
 
 - (NSMutableArray *)unknownWords
 {
-//    if (_unknownWords) {
+    
+    if (!_unknownWords) {
+        
         _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
-        if (_unknownWords == nil) {
-            _unknownWords = [NSMutableArray array];
-//        }
+        NSLog(@"111111");
     }
+
     return _unknownWords;
 }
 

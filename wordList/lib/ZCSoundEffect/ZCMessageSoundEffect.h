@@ -10,10 +10,13 @@
 
 @interface ZCMessageSoundEffect : NSObject
 
+
+/** unknown word added  */
 +(void)playMessageSentSound;
 
 + (void)playMessageReceivedSound;
 
+/** if there is a unknownword exist */
 +(void)playAlertSound;
 
 @end

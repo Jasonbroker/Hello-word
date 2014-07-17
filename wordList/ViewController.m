@@ -35,8 +35,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    NSLog(@"%@", [ZCFilePathManager unknownWordFilePath]);
     
     FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
     
@@ -52,7 +50,6 @@
     shimmeringView.shimmering = YES;
 }
 
-#warning ddddddddddooooooooo continue here!!!!!!
 - (void)viewDidAppear:(BOOL)animated
 {
     
@@ -60,22 +57,31 @@
     [self addTapGesture];
 }
 
-////****************************************    getter   ****************************************
+////****************************************    getter   setter ****************************************
+#pragma mark - setter getter
 - (NSMutableArray *)unknownWords
 {
     if (_unknownWords == nil) {
-//        NSString *path = [ZCFilePathManager unknownWordFilePath];
         
         _unknownWords = [[NSMutableArray alloc] init];
         
-       NSMutableArray *arrayM = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+        NSString *path = [ZCFilePathManager unknownWordFilePath];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            
+            NSMutableArray *arrayM = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+            
+            _unknownWords = arrayM;
+            
+        }else{
+            // create the file
+            NSLog(@"no file~~");
+            [_unknownWords writeToFile:path atomically:YES];
         
-        _unknownWords = arrayM ;
+        }
     }
     
     return _unknownWords;
 }
-
 
 - (NSDictionary *)wordLines
 {
@@ -93,7 +99,7 @@
 }
 ////****************************************    end    ****************************************
 
-#pragma mark - gestures swipe and tap
+#pragma mark - gestures swipe  left anf right ... tap to move forward
 - (void)addSwipeGesture
 {
     
@@ -103,18 +109,21 @@
     
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionRight;
+    /**  swip down to reveal words meaning */
+    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown2Reveal:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionDown;
 
+    
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
-    
-    
+    [self.view addGestureRecognizer:swipeDown];
 }
 
 - (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer
 {
     NSLog(@"%d", swipeRecognizer.direction);
     
-#warning  not good enough ...considering change this part
+#warning  not good enough ...considering to change this part to a more comfortable implementation
     UIAlertView *alertLeft = [[UIAlertView alloc] initWithTitle:@"warning" message:@"已到达起始点！" delegate:self cancelButtonTitle: @"OK" otherButtonTitles: nil];
     UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
     
@@ -147,6 +156,14 @@
         }
     }
 }
+
+#warning  ZZC - reserve for updating the new dict!
+
+- (void)swipeDown2Reveal:(UIGestureRecognizer *)swipeDownRecognizer
+{
+    
+}
+
 
 /** tap */
 - (void)addTapGesture
@@ -230,20 +247,31 @@
 
 */
 
-#pragma mark - add button ^ _ ^
+#pragma mark - click button to  add unknown words to the vocabulary list ^ _ ^
 - (IBAction)AddVList:(UIBarButtonItem *)sender {
-    
-    
+  
     if (![self.unknownWords containsObject:self.wordLabel.text]) {
-        NSLog(@"%@", _unknownWords);
+        
         [ZCMessageSoundEffect playMessageSentSound];
+        
         [self.unknownWords addObject:self.wordLabel.text];
         
         [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+        
+        //    send notification
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"click" object:nil];
+        
+//        NSLog(@"%@", self.unknownWords);
+        
     }else{
         [ZCMessageSoundEffect playAlertSound];
     }
+    
+
 }
+
+
 
 
 @end
