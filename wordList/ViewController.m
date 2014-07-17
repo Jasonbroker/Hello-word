@@ -119,7 +119,7 @@
     [self.view addGestureRecognizer:swipeRight];
     [self.view addGestureRecognizer:swipeDown];
 }
-
+/**  swipe  */
 - (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer
 {
     NSLog(@"%d", swipeRecognizer.direction);
@@ -131,9 +131,9 @@
     if (swipeRecognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
         _count ++;
         self.addBtn.enabled = YES;
-        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count ]];
         [self.wordLabel sizeToFit];
-        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count ]];
         
         NSLog(@"%@", self.wordLabel.text);
         
