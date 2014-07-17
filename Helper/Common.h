@@ -18,3 +18,6 @@
 #define LogObj(obj)         MyLog(@"%@", obj);
 #define LogFrame(view)      MyLog(@"%@", NSStringFromCGRect(view.frame))
 #define LogBounds(view)     MyLog(@"%@", NSStringFromCGRect(view.bounds))
+
+#define KUserReadingProgressMarkerKey @"userReadingProgressMarker"
+

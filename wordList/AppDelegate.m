@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ZCRootController.h"
+#import "ZCFilePathManager.h"
+#import "Common.h"
 
 @interface AppDelegate ()
             
@@ -53,6 +55,21 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+#warning 我了个去，死活写不进去了。。。
+    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
+    NSUserDefaults *readingProgress = [NSUserDefaults standardUserDefaults];
+    
+    [readingProgress setObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+    NSLog(@"%@。。。。。。。", @(rootVC.userReadingProgressMarker));
+    
+    [readingProgress synchronize];
+    
+#warning 我是真的不想这么干的。。。
+    
+    NSDictionary *wordCount = [NSDictionary dictionaryWithObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+    
+    [wordCount writeToFile:[ZCFilePathManager userProgressPath] atomically:YES];
+
     
 }
 

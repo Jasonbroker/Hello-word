@@ -77,13 +77,6 @@
     
 }
 
-- (void)add
-{
-    NSLog(@"recieved!!!!");
-    self.unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
-    
-    [self.tableView reloadData];
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -93,6 +86,16 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+///**************************************   notification     **************************************///
+
+- (void)add
+{
+    NSLog(@"recieved!!!!");
+    self.unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+    
+    [self.tableView reloadData];
 }
 
 ///**************************************    getter    **************************************
@@ -110,7 +113,7 @@
     return _unknownWords;
 }
 
-///**************************************        **************************************
+///**************************************    data source    **************************************
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

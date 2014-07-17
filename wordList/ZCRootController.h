@@ -10,4 +10,6 @@
 
 @interface ZCRootController : UITabBarController
 
+@property (nonatomic, assign) int userReadingProgressMarker;
+
 @end
