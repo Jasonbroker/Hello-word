@@ -21,13 +21,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+//    
 //    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
-    
+//    NSLog(@"%@", application.windows);
+//
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"root"]];
 //    [rootVC.view addSubview:imageView];
 //    [rootVC.view sendSubviewToBack:imageView];
 
+    
     
     return YES;
 }
@@ -55,7 +57,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-#warning 我了个去，死活写不进去了。。。
+#warning 我了个去，死活写不进去。。。
     ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
     NSUserDefaults *readingProgress = [NSUserDefaults standardUserDefaults];
     
@@ -64,7 +66,7 @@
     
     [readingProgress synchronize];
     
-#warning 我是真的不想这么干的。。。
+#warning anyway, 我是不想这么干的。。。
     
     NSDictionary *wordCount = [NSDictionary dictionaryWithObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
     

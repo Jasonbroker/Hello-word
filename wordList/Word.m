@@ -13,5 +13,9 @@
 
 @dynamic spelling;
 @dynamic meaning;
+@dynamic derivatives;
+@dynamic usage;
+
+
 
 @end

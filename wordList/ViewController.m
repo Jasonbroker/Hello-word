@@ -28,6 +28,8 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addBtn;
 
+@property (nonatomic, strong)ZCRootController *rootVC;
+
 @end
 
 @implementation ViewController
@@ -110,6 +112,13 @@
     return _wordLines;
 }
 
+- (ZCRootController *)rootVC
+{
+    if (_rootVC == nil) {
+        _rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
+    }
+    return _rootVC;
+}
 
 ///**************************************    gestures    **************************************
 #pragma mark - gestures swipe  left anf right ... tap to move forward
@@ -193,11 +202,10 @@
         
         _count ++;
         
-        ZCRootController *rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
         //        to remember the max word index which the user read
         
-        if (_count > rootVC.userReadingProgressMarker) {
-            rootVC.userReadingProgressMarker = _count;
+        if (_count > self.rootVC.userReadingProgressMarker) {
+            self.rootVC.userReadingProgressMarker = _count;
         }
         
         self.addBtn.enabled = YES;
@@ -254,6 +262,11 @@
     UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
     
     _count ++;
+//    record the user progress.
+    if (_count > self.rootVC.userReadingProgressMarker) {
+        self.rootVC.userReadingProgressMarker = _count;
+    }
+
     self.addBtn.enabled = YES;
     self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
     [self.wordLabel sizeToFit];

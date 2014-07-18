@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ZCDataCenter.h"
+#import "ZCbBaiscViewController.h"
 
 @interface ZCVocListTableViewController : UITableViewController
 

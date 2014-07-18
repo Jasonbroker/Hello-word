@@ -14,5 +14,9 @@
 
 @property (nonatomic, retain) NSString * spelling;
 @property (nonatomic, retain) NSString * meaning;
+@property (nonatomic, retain) NSString * derivatives;
+@property (nonatomic, retain) NSString * usage;
+
+//+(instancetype)wordWithSpellin
 
 @end

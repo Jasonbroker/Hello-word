@@ -138,10 +138,35 @@
     
     return cell;
 }
+///**************************************    delegate    **************************************
 
-#pragma mark - controller will pop
-///********************************   pop    *******************************//
-#warning Frankly, I do not like this kind of pop. user only want to know a little bit detail of the word, however poping to another controller will make them think that the word is really a big case. I will try to fix this part by adding a pull detail view instead, which takes more time to design.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    if (editingStyle == UITableViewCellEditingStyleDelete) {
+    
+       NSLog(@"delete .. %d", indexPath.row);
+    
+    [self.unknownWords removeObjectAtIndex:indexPath.row];
+        
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+    
+//    }
+}
+
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return UITableViewCellEditingStyleDelete;
+//}
+
+#pragma mark - controller will push
+///********************************   push    *******************************//
+#warning Frankly, I do not like this kind of push. user only want to know a little bit detail of the word, however poping to another controller will make them think that the word is really a big case. I will try to fix this part by adding a pull detail view instead, which takes more time to design.
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     ZCDetailViewController *detailVC = segue.destinationViewController;

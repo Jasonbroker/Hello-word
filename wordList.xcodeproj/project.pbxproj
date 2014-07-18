@@ -13,6 +13,7 @@
 		96B3B9C4196ED43B00B765AF /* ZCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3B9C3196ED43B00B765AF /* ZCDetailViewController.m */; };
 		96B3B9C7196F5C7900B765AF /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3B9C6196F5C7900B765AF /* ZCSettingsViewController.m */; };
 		96B3B9D2196FF85D00B765AF /* ZCRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3B9D1196FF85D00B765AF /* ZCRootController.m */; };
+		96BDFC2E1978E38300F60322 /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BDFC2D1978E38300F60322 /* ZCbBaiscViewController.m */; };
 		96D2BE5319686A5F0071E548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE5219686A5F0071E548 /* main.m */; };
 		96D2BE5619686A5F0071E548 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE5519686A5F0071E548 /* AppDelegate.m */; };
 		96D2BE5919686A5F0071E548 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE5819686A5F0071E548 /* ViewController.m */; };
@@ -180,6 +181,8 @@
 		96B3B9C6196F5C7900B765AF /* ZCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSettingsViewController.m; sourceTree = "<group>"; };
 		96B3B9D0196FF85D00B765AF /* ZCRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCRootController.h; sourceTree = "<group>"; };
 		96B3B9D1196FF85D00B765AF /* ZCRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRootController.m; sourceTree = "<group>"; };
+		96BDFC2C1978E38300F60322 /* ZCbBaiscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCbBaiscViewController.h; sourceTree = "<group>"; };
+		96BDFC2D1978E38300F60322 /* ZCbBaiscViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCbBaiscViewController.m; sourceTree = "<group>"; };
 		96D2BE4D19686A5F0071E548 /* wordList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2BE5119686A5F0071E548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D2BE5219686A5F0071E548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 		96A2C555196A3D7A005AFA9C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				96BDFC2C1978E38300F60322 /* ZCbBaiscViewController.h */,
+				96BDFC2D1978E38300F60322 /* ZCbBaiscViewController.m */,
 				96B3B9D0196FF85D00B765AF /* ZCRootController.h */,
 				96B3B9D1196FF85D00B765AF /* ZCRootController.m */,
 				96D2BE5719686A5F0071E548 /* ViewController.h */,
@@ -561,6 +566,7 @@
 				96D2BE5919686A5F0071E548 /* ViewController.m in Sources */,
 				96DAFFD11973CBD3006C5183 /* Words.m in Sources */,
 				96DAFF941973C1CF006C5183 /* Dictionary.xcdatamodeld in Sources */,
+				96BDFC2E1978E38300F60322 /* ZCbBaiscViewController.m in Sources */,
 				96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */,
 				96D858781974F8B50070226F /* ZCMessageSoundEffect.m in Sources */,
 				96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */,
