@@ -258,8 +258,7 @@
 				96D2BE5819686A5F0071E548 /* ViewController.m */,
 				96B3B9D3196FF87900B765AF /* Vocabulary List 生词表 */,
 				96D858631973F1240070226F /* Schedule Controllers */,
-				96B3B9C5196F5C7900B765AF /* ZCSettingsViewController.h */,
-				96B3B9C6196F5C7900B765AF /* ZCSettingsViewController.m */,
+				96BDFC5E197985DB00F60322 /* setting controller */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,7 +271,6 @@
 				96EC5EE51971678300978262 /* Common.h */,
 				96EC5ED01971489E00978262 /* NSString+Path.h */,
 				96EC5ED11971489E00978262 /* NSString+Path.m */,
-				96B3B9CB196FAB1D00B765AF /* Model */,
 			);
 			name = Helper;
 			path = ..;
@@ -286,7 +284,6 @@
 				96EC5F351972820F00978262 /* ZCDataCenter.m */,
 			);
 			name = Model;
-			path = wordList;
 			sourceTree = "<group>";
 		};
 		96B3B9D3196FF87900B765AF /* Vocabulary List 生词表 */ = {
@@ -298,6 +295,15 @@
 				96B3B9C3196ED43B00B765AF /* ZCDetailViewController.m */,
 			);
 			name = "Vocabulary List 生词表";
+			sourceTree = "<group>";
+		};
+		96BDFC5E197985DB00F60322 /* setting controller */ = {
+			isa = PBXGroup;
+			children = (
+				96B3B9C5196F5C7900B765AF /* ZCSettingsViewController.h */,
+				96B3B9C6196F5C7900B765AF /* ZCSettingsViewController.m */,
+			);
+			name = "setting controller";
 			sourceTree = "<group>";
 		};
 		96D2BE4419686A5F0071E548 = {
@@ -328,8 +334,9 @@
 				96D2BE5419686A5F0071E548 /* AppDelegate.h */,
 				96D2BE5519686A5F0071E548 /* AppDelegate.m */,
 				96D2BE5A19686A5F0071E548 /* Main.storyboard */,
-				96D858681974F8B50070226F /* Lib */,
 				96B3B9BE196ECAA600B765AF /* Helper */,
+				96D858681974F8B50070226F /* Lib */,
+				96B3B9CB196FAB1D00B765AF /* Model */,
 				96A2C555196A3D7A005AFA9C /* Controllers */,
 				96D2BE5D19686A5F0071E548 /* Images.xcassets */,
 				96D2BE5019686A5F0071E548 /* Supporting Files */,

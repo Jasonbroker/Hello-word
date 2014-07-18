@@ -62,15 +62,19 @@
     NSUserDefaults *readingProgress = [NSUserDefaults standardUserDefaults];
     
     [readingProgress setObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
-    NSLog(@"%@。。。。。。。", @(rootVC.userReadingProgressMarker));
+    
     
     [readingProgress synchronize];
     
 #warning anyway, 我是不想这么干的。。。
     
-    NSDictionary *wordCount = [NSDictionary dictionaryWithObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+//    NSDictionary *wordCount = [NSDictionary dictionaryWithObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+    
+    NSDictionary *wordCount = [NSDictionary dictionaryWithObjectsAndKeys:@(rootVC.userReadingProgressMarker),KUserReadingProgressMarkerKey,@(rootVC.userMaxReadingProgressMarker), KUserMaxReadingProgressMarker, nil];
     
     [wordCount writeToFile:[ZCFilePathManager userProgressPath] atomically:YES];
+
+    NSLog(@"%@。。。。。%d。。", @(rootVC.userReadingProgressMarker), rootVC.userMaxReadingProgressMarker);
 
     
 }

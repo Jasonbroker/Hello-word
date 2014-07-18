@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign) int userReadingProgressMarker;
 
+@property (nonatomic, assign) int userMaxReadingProgressMarker;
+
 @end

@@ -20,6 +20,7 @@
 #define LogBounds(view)     MyLog(@"%@", NSStringFromCGRect(view.bounds))
 
 #define KUserReadingProgressMarkerKey @"userReadingProgressMarker"
+#define KUserMaxReadingProgressMarker @"userMaxReadingProgressMarker"
 
 /** import */
 

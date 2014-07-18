@@ -59,7 +59,7 @@
     
     NSDictionary *userProgress = [NSDictionary dictionaryWithContentsOfFile:path];
     
-    self.count = [[userProgress valueForKeyPath:@"userReadingProgressMarker"] integerValue];
+    self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
     
     NSLog(@"%d...", _count);
 }
@@ -204,8 +204,8 @@
         
         //        to remember the max word index which the user read
         
-        if (_count > self.rootVC.userReadingProgressMarker) {
-            self.rootVC.userReadingProgressMarker = _count;
+        if (_count > _rootVC.userMaxReadingProgressMarker) {
+            _rootVC.userMaxReadingProgressMarker = _count;
         }
         
         self.addBtn.enabled = YES;
@@ -237,7 +237,7 @@
         }
     }
     
-    
+    self.rootVC.userReadingProgressMarker = _count;
 }
 
 #warning  ZZC - reserve for updating the new dict!
@@ -263,9 +263,10 @@
     
     _count ++;
 //    record the user progress.
-    if (_count > self.rootVC.userReadingProgressMarker) {
-        self.rootVC.userReadingProgressMarker = _count;
+    if (_count > _rootVC.userMaxReadingProgressMarker) {
+        _rootVC.userMaxReadingProgressMarker = _count;
     }
+        self.rootVC.userReadingProgressMarker = _count;
 
     self.addBtn.enabled = YES;
     self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];

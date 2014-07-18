@@ -10,29 +10,26 @@
 #import "ZCScheduleDetailController.h"
 #import "ZCFilePathManager.h"
 #import "Common.h"
-
+#import "ZCRootController.h"
 
 @interface ZCScheduleTableViewController ()
 
 @property (nonatomic, strong)NSDictionary *wordLines;
 
+@property (nonatomic, strong)ZCRootController *rootVC;
+
+@property (nonatomic, assign)int userMaxReadProgressNum;
+
 @end
 
 @implementation ZCScheduleTableViewController
 
-- (instancetype)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
+///**************************************   life cricle     **************************************
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    _userMaxReadProgressNum = self.rootVC.userMaxReadingProgressMarker;
     
 }
 
@@ -40,9 +37,17 @@
 {
     
 //    self.tabBarController.tabBar.hidden = NO;
+    
+    if (_userMaxReadProgressNum != self.rootVC.userMaxReadingProgressMarker) {
+        _userMaxReadProgressNum = self.rootVC.userMaxReadingProgressMarker;
+        NSLog(@"reload data");
+        [self.tableView reloadData];
+    }
+    
 }
 
-#pragma mark - lazy~
+
+///**************************************   getter     **************************************
 - (NSDictionary *)wordLines
 {
     if (!_wordLines) {
@@ -61,14 +66,15 @@
     return _wordLines;
 }
 
-
-
-- (void)didReceiveMemoryWarning
+- (ZCRootController *)rootVC
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (!_rootVC) {
+        _rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
+    }
+    return _rootVC;
 }
 
+///**************************************   data source     **************************************
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -87,16 +93,34 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
     static NSString *identifier = @"scheduleCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
-    cell.textLabel.text = @"Section";
+    cell.textLabel.text = [NSString stringWithFormat: @"Section %d", indexPath.section +1];;
     
-    cell.detailTextLabel.text = [NSString stringWithFormat: @"No: %d", indexPath.section +1];
+//    (_userMaxReadProgressNum/KwordInSection > indexPath.section) ? (cell.detailTextLabel.text = @"已读完") : (cell.detailTextLabel.text = @"未读");
     // Configure the cell...
+    if(_userMaxReadProgressNum/KwordInSection < indexPath.section)
+    {
+        cell.detailTextLabel.text = @"未读";
+    }else if(_userMaxReadProgressNum/KwordInSection == indexPath.section){
+        cell.detailTextLabel.text = @"Reading";
+    }else{
+        cell.detailTextLabel.text = @"已读";
+
+    }
+    
+    
     return cell;
 }
+
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    
+//}
 
 ///**************************************        **************************************
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
