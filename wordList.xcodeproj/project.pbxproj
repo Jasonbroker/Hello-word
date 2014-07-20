@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962BD7A6197C1B8C00FD0156 /* Dictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 962BD79E197C1B8C00FD0156 /* Dictionary.xcdatamodeld */; };
+		962BD7A7197C1B8C00FD0156 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A1197C1B8C00FD0156 /* Word.m */; };
+		962BD7A8197C1B8C00FD0156 /* Words.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A3197C1B8C00FD0156 /* Words.m */; };
+		962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */; };
 		963A5997197649B800363D38 /* Version info.m in Sources */ = {isa = PBXBuildFile; fileRef = 963A5996197649B800363D38 /* Version info.m */; };
 		965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965929DD197A7BDC002CB5D2 /* Reveal.framework */; };
 		96738E38197C027D00592764 /* ZCNoHighLightBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E2F197C027D00592764 /* ZCNoHighLightBtn.m */; };
@@ -25,7 +29,6 @@
 		96738E5D197C049000592764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E59197C049000592764 /* main.m */; };
 		96CBD205197B69DD00BE42CA /* UIERealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBD202197B69DD00BE42CA /* UIERealTimeBlurView.m */; };
 		96CBD206197B69DD00BE42CA /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBD204197B69DD00BE42CA /* UIImage+BoxBlur.m */; };
-		96D2BE5619686A5F0071E548 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE5519686A5F0071E548 /* AppDelegate.m */; };
 		96D2BE5C19686A5F0071E548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D2BE5A19686A5F0071E548 /* Main.storyboard */; };
 		96D2BE5E19686A5F0071E548 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D2BE5D19686A5F0071E548 /* Images.xcassets */; };
 		96D2BE6A19686A5F0071E548 /* wordListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE6919686A5F0071E548 /* wordListTests.m */; };
@@ -37,7 +40,6 @@
 		96D8587A1974FA9E0070226F /* alert.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 96D858791974FA9E0070226F /* alert.aiff */; };
 		96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B119753A2F0070226F /* FBShimmeringLayer.m */; };
 		96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B319753A2F0070226F /* FBShimmeringView.m */; };
-		96DAFF941973C1CF006C5183 /* Dictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96DAFF921973C1CF006C5183 /* Dictionary.xcdatamodeld */; };
 		96EC5ECD197141A200978262 /* Version info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5ECC197141A200978262 /* Version info.txt */; };
 		96EC5ED21971489E00978262 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5ED11971489E00978262 /* NSString+Path.m */; };
 		96EC5EDE19714DE800978262 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5EDD19714DE800978262 /* words.plist */; };
@@ -175,6 +177,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		962BD79F197C1B8C00FD0156 /* Dictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dictionary.xcdatamodel; sourceTree = "<group>"; };
+		962BD7A0197C1B8C00FD0156 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		962BD7A1197C1B8C00FD0156 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		962BD7A2197C1B8C00FD0156 /* Words.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Words.h; sourceTree = "<group>"; };
+		962BD7A3197C1B8C00FD0156 /* Words.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Words.m; sourceTree = "<group>"; };
+		962BD7A4197C1B8C00FD0156 /* ZCDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCDataCenter.h; sourceTree = "<group>"; };
+		962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDataCenter.m; sourceTree = "<group>"; };
 		963A5996197649B800363D38 /* Version info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Version info.m"; sourceTree = "<group>"; };
 		965929DD197A7BDC002CB5D2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		96738E2E197C027D00592764 /* ZCNoHighLightBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNoHighLightBtn.h; sourceTree = "<group>"; };
@@ -210,8 +219,6 @@
 		96CBD203197B69DD00BE42CA /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
 		96CBD204197B69DD00BE42CA /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
 		96D2BE4D19686A5F0071E548 /* wordList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		96D2BE5419686A5F0071E548 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		96D2BE5519686A5F0071E548 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		96D2BE5B19686A5F0071E548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96D2BE5D19686A5F0071E548 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96D2BE6319686A5F0071E548 /* wordListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wordListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,7 +239,6 @@
 		96D858B119753A2F0070226F /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 		96D858B219753A2F0070226F /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
 		96D858B319753A2F0070226F /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
-		96DAFF931973C1CF006C5183 /* Dictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dictionary.xcdatamodel; sourceTree = "<group>"; };
 		96EC5ECC197141A200978262 /* Version info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Version info.txt"; sourceTree = "<group>"; };
 		96EC5ED01971489E00978262 /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Path.h"; path = "Helper/NSString+Path.h"; sourceTree = "<group>"; };
 		96EC5ED11971489E00978262 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Path.m"; path = "Helper/NSString+Path.m"; sourceTree = "<group>"; };
@@ -262,6 +268,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		962BD79D197C1B8C00FD0156 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				962BD79E197C1B8C00FD0156 /* Dictionary.xcdatamodeld */,
+				962BD7A0197C1B8C00FD0156 /* Word.h */,
+				962BD7A1197C1B8C00FD0156 /* Word.m */,
+				962BD7A2197C1B8C00FD0156 /* Words.h */,
+				962BD7A3197C1B8C00FD0156 /* Words.m */,
+				962BD7A4197C1B8C00FD0156 /* ZCDataCenter.h */,
+				962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */,
+			);
+			name = model;
+			path = Classes/model;
+			sourceTree = "<group>";
+		};
 		96738E2C197C027D00592764 /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,14 +400,6 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		96B3B9CB196FAB1D00B765AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				96D858671973FF320070226F /* core data */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		96CBD200197B69DD00BE42CA /* ZCRealtimeBlur */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,12 +436,10 @@
 		96D2BE4F19686A5F0071E548 /* wordList */ = {
 			isa = PBXGroup;
 			children = (
-				96D2BE5419686A5F0071E548 /* AppDelegate.h */,
-				96D2BE5519686A5F0071E548 /* AppDelegate.m */,
 				96D2BE5A19686A5F0071E548 /* Main.storyboard */,
 				96B3B9BE196ECAA600B765AF /* Helper */,
 				96D858681974F8B50070226F /* Lib */,
-				96B3B9CB196FAB1D00B765AF /* Model */,
+				962BD79D197C1B8C00FD0156 /* model */,
 				96A2C555196A3D7A005AFA9C /* Classes */,
 				96738E51197C040800592764 /* self center */,
 				96D2BE5D19686A5F0071E548 /* Images.xcassets */,
@@ -461,14 +472,6 @@
 				96D2BE6819686A5F0071E548 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		96D858671973FF320070226F /* core data */ = {
-			isa = PBXGroup;
-			children = (
-				96DAFF921973C1CF006C5183 /* Dictionary.xcdatamodeld */,
-			);
-			name = "core data";
 			sourceTree = "<group>";
 		};
 		96D858681974F8B50070226F /* Lib */ = {
@@ -650,11 +653,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962BD7A8197C1B8C00FD0156 /* Words.m in Sources */,
 				96738E3A197C027D00592764 /* ZCbBaiscViewController.m in Sources */,
 				96738E49197C036300592764 /* ZCScheduleTableViewController.m in Sources */,
-				96DAFF941973C1CF006C5183 /* Dictionary.xcdatamodeld in Sources */,
 				96738E3C197C027D00592764 /* ZCRootController.m in Sources */,
 				96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */,
+				962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */,
 				96738E54197C040800592764 /* ZCSettingsViewController.m in Sources */,
 				96D858781974F8B50070226F /* ZCMessageSoundEffect.m in Sources */,
 				96738E3B197C027D00592764 /* ZCNaviController.m in Sources */,
@@ -663,10 +667,11 @@
 				96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */,
 				96738E40197C031F00592764 /* ViewController.m in Sources */,
 				96738E50197C03D000592764 /* ZCVocListTableViewController.m in Sources */,
-				96D2BE5619686A5F0071E548 /* AppDelegate.m in Sources */,
+				962BD7A7197C1B8C00FD0156 /* Word.m in Sources */,
 				96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */,
 				96738E5D197C049000592764 /* main.m in Sources */,
 				963A5997197649B800363D38 /* Version info.m in Sources */,
+				962BD7A6197C1B8C00FD0156 /* Dictionary.xcdatamodeld in Sources */,
 				96738E38197C027D00592764 /* ZCNoHighLightBtn.m in Sources */,
 				96CBD206197B69DD00BE42CA /* UIImage+BoxBlur.m in Sources */,
 				96EC5ED21971489E00978262 /* NSString+Path.m in Sources */,
@@ -979,12 +984,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		96DAFF921973C1CF006C5183 /* Dictionary.xcdatamodeld */ = {
+		962BD79E197C1B8C00FD0156 /* Dictionary.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				96DAFF931973C1CF006C5183 /* Dictionary.xcdatamodel */,
+				962BD79F197C1B8C00FD0156 /* Dictionary.xcdatamodel */,
 			);
-			currentVersion = 96DAFF931973C1CF006C5183 /* Dictionary.xcdatamodel */;
+			currentVersion = 962BD79F197C1B8C00FD0156 /* Dictionary.xcdatamodel */;
 			path = Dictionary.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
