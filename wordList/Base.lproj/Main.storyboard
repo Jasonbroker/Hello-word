@@ -526,7 +526,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7VO-2X-CAg"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="HXL-mA-6bH">
-                        <rect key="frame" x="0.0" y="64" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Slide to start" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-hC-N5v">
@@ -568,7 +568,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vQe-Ls-zJf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="g1P-g1-FHl" kind="relationship" relationship="viewControllers" id="BXg-4Z-upu"/>

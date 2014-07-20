@@ -27,7 +27,7 @@
     CGRect frame = self.tabBar.frame;
 #warning refine here~~
     
-//    self.tabBar.center = CGPointMake(0, self.view.bounds.size.height/2);
+//    self.tabBar.center = CGPointMake(0, 64);
 //    self.tabBar.layer.anchorPoint = CGPointMake(0, 0);
 //    self.tabBar.barTintColor = [UIColor redColor];
 //    self.tabBar.backgroundColor = [UIColor redColor];
