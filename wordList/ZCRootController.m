@@ -26,11 +26,13 @@
     // Do any additional setup after loading the view.
     CGRect frame = self.tabBar.frame;
 #warning refine here~~
-#warning need hide the tabbar!
+    
 //    self.tabBar.center = CGPointMake(0, self.view.bounds.size.height/2);
 //    self.tabBar.layer.anchorPoint = CGPointMake(0, 0);
 //    self.tabBar.barTintColor = [UIColor redColor];
-    self.tabBar.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.0f];
+//    self.tabBar.backgroundColor = [UIColor redColor];
+//    self.tabBar.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.0f];
+    
     
     
     
@@ -38,17 +40,22 @@
     
     ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
     
-    customTabBar.center = CGPointMake(0, self.view.bounds.size.height);
-    customTabBar.layer.anchorPoint = CGPointMake(0, 1);
+    customTabBar.center = CGPointMake(0, 0);
+    customTabBar.layer.anchorPoint = CGPointMake(0, 0);
     
     customTabBar.delegate = self;
     
-    [self.view addSubview:customTabBar];
+    [self.tabBar addSubview:customTabBar];
     
     
-//    [self addObserver:self.viewControllers forKeyPath:@"self.tabBarController.tabBar.frame" options:NSKeyValueObservingOptionOld context:nil];
+    [self addObserver:self.viewControllers forKeyPath:@"self.frame" options:NSKeyValueObservingOptionOld context:nil];
     
 //    self.tabBarController.tabBar.frame
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"%s............", __func__);
 }
 
 ///**************************************    getter setter    **************************************

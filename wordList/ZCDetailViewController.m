@@ -23,8 +23,6 @@
     
     self.wordLabel.text = self.word;
     
-    
-//    self.navigationController.hidesBottomBarWhenPushed = YES;
 }
 
 

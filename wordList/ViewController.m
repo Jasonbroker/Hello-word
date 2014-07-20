@@ -12,8 +12,12 @@
 #import "Common.h"
 #import "ZCFilePathManager.h"
 #import "ZCMessageSoundEffect.h"
+
+
 // shimmering
 #import "FBShimmeringView.h"
+//test
+#import "UIERealTimeBlurView.h"
 
 @interface ViewController ()
 
@@ -61,7 +65,12 @@
     
     self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
     
-    NSLog(@"%d...", _count);
+//    NSLog(@"%d...", _count);
+    
+//    pinch test
+//    self.tabBarController.tabBar.layer.position = CGPointMake(0, self.view.bounds.size.height);
+//    self.tabBarController.tabBar.layer.anchorPoint = CGPointMake(0, 1);
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -69,7 +78,10 @@
     
     [self addSwipeGesture];
     [self addTapGesture];
+// test
+    [self addPinchGesture];
 }
+
 
 ////****************************************    getter   setter ****************************************
 #pragma mark - setter getter
@@ -278,6 +290,37 @@
         self.addBtn.enabled = NO;
         [alertRight show];
         self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _count/KwordInSection+1];
+    }
+}
+
+/// test..... pinch
+
+- (void)addPinchGesture
+{
+    UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action: @selector(pinch:)];
+    
+    [self.view addGestureRecognizer:pinchGesture];
+}
+
+- (void)pinch:(UIPinchGestureRecognizer *)pinchRecognizer
+{
+    if (pinchRecognizer.scale > 1.3f) {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        
+        [UIView animateWithDuration:0.25 animations:^{
+            
+            self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 49);
+        }];
+        
+    }else if(pinchRecognizer.scale < 0.7f){
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+        
+        [UIView animateWithDuration:0.25 animations:^{
+
+            self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 0);
+        }];
+        
+
     }
 }
 

@@ -12,6 +12,10 @@
 #import "Common.h"
 #import "ZCRootController.h"
 
+//test
+#import "UIERealTimeBlurView.h"
+
+
 @interface ZCScheduleTableViewController ()
 
 @property (nonatomic, strong)NSDictionary *wordLines;
@@ -32,6 +36,10 @@
     _userMaxReadProgressNum = self.rootVC.userMaxReadingProgressMarker;
     
     [self addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+    
+//    UIERealTimeBlurView *blurView = [[UIERealTimeBlurView alloc] initWithFrame:CGRectMake(0, 110, 200, 200)];
+//    
+//    [self.navigationController.view addSubview:blurView];
 
 }
 

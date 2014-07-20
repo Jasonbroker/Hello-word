@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UNL-1x-GNG">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
         <!--Settings-->
         <scene sceneID="MNc-jc-GTt">
             <objects>
-                <navigationController id="KrQ-7q-mtG" sceneMemberID="viewController">
+                <navigationController id="KrQ-7q-mtG" customClass="ZCNaviController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="mime" id="Sd3-Nb-Sv0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wfd-3m-KOn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -390,7 +389,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dx6-56-9h5">
-                        <barButtonItem key="rightBarButtonItem" image="tab_me_nor" style="plain" id="Ak3-xY-2D9">
+                        <barButtonItem key="rightBarButtonItem" image="mime" style="plain" id="Ak3-xY-2D9">
                             <connections>
                                 <segue destination="znl-U7-Oqr" kind="show" id="Vzh-by-Gqb"/>
                             </connections>
@@ -454,7 +453,7 @@
         <!--Vocabulary List-->
         <scene sceneID="Mkq-dw-PpQ">
             <objects>
-                <navigationController id="6az-Zo-qmy" sceneMemberID="viewController">
+                <navigationController id="6az-Zo-qmy" customClass="ZCNaviController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Vocabulary List" image="vocList" id="JnN-lq-PMa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OXr-Jo-rRD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -474,7 +473,7 @@
         <!--schedule-->
         <scene sceneID="zFe-c6-Lcp">
             <objects>
-                <navigationController title="schedule" id="E3Y-dA-cEL" sceneMemberID="viewController">
+                <navigationController title="schedule" id="E3Y-dA-cEL" customClass="ZCNaviController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="schedule" id="5eF-26-Ebr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VAj-qp-g8f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -497,7 +496,7 @@
         <!--Study-->
         <scene sceneID="okl-HN-y9H">
             <objects>
-                <navigationController id="g1P-g1-FHl" sceneMemberID="viewController">
+                <navigationController id="g1P-g1-FHl" customClass="ZCNaviController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Study" image="read" id="q9f-ww-MTJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SFB-7W-E7S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -532,7 +531,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1800126_10152272440319357_261758585_o" translatesAutoresizingMaskIntoConstraints="NO" id="005-OI-fTc">
                                 <rect key="frame" x="0.0" y="0.0" width="487" height="480"/>
                             </imageView>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Day1 Slide to start" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-hC-N5v">
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Slide to start" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-hC-N5v">
                                 <rect key="frame" x="60" y="377" width="360" height="23.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -591,7 +590,6 @@
         <image name="mime" width="28" height="28"/>
         <image name="read" width="28" height="28"/>
         <image name="schedule" width="28" height="28"/>
-        <image name="tab_me_nor" width="28" height="28"/>
         <image name="vocList" width="28" height="28"/>
     </resources>
 </document>

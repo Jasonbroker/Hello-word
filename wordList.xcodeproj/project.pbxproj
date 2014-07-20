@@ -17,6 +17,9 @@
 		96B3B9C7196F5C7900B765AF /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3B9C6196F5C7900B765AF /* ZCSettingsViewController.m */; };
 		96B3B9D2196FF85D00B765AF /* ZCRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3B9D1196FF85D00B765AF /* ZCRootController.m */; };
 		96BDFC2E1978E38300F60322 /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BDFC2D1978E38300F60322 /* ZCbBaiscViewController.m */; };
+		96CBD1FF197B63D100BE42CA /* ZCNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBD1FE197B63D100BE42CA /* ZCNaviController.m */; };
+		96CBD205197B69DD00BE42CA /* UIERealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBD202197B69DD00BE42CA /* UIERealTimeBlurView.m */; };
+		96CBD206197B69DD00BE42CA /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBD204197B69DD00BE42CA /* UIImage+BoxBlur.m */; };
 		96D2BE5319686A5F0071E548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE5219686A5F0071E548 /* main.m */; };
 		96D2BE5619686A5F0071E548 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE5519686A5F0071E548 /* AppDelegate.m */; };
 		96D2BE5919686A5F0071E548 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2BE5819686A5F0071E548 /* ViewController.m */; };
@@ -191,6 +194,12 @@
 		96B3B9D1196FF85D00B765AF /* ZCRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCRootController.m; sourceTree = "<group>"; };
 		96BDFC2C1978E38300F60322 /* ZCbBaiscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCbBaiscViewController.h; sourceTree = "<group>"; };
 		96BDFC2D1978E38300F60322 /* ZCbBaiscViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCbBaiscViewController.m; sourceTree = "<group>"; };
+		96CBD1FD197B63D100BE42CA /* ZCNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNaviController.h; sourceTree = "<group>"; };
+		96CBD1FE197B63D100BE42CA /* ZCNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNaviController.m; sourceTree = "<group>"; };
+		96CBD201197B69DD00BE42CA /* UIERealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIERealTimeBlurView.h; sourceTree = "<group>"; };
+		96CBD202197B69DD00BE42CA /* UIERealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIERealTimeBlurView.m; sourceTree = "<group>"; };
+		96CBD203197B69DD00BE42CA /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		96CBD204197B69DD00BE42CA /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
 		96D2BE4D19686A5F0071E548 /* wordList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D2BE5119686A5F0071E548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D2BE5219686A5F0071E548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -263,10 +272,9 @@
 				96BDFC2D1978E38300F60322 /* ZCbBaiscViewController.m */,
 				96B3B9D0196FF85D00B765AF /* ZCRootController.h */,
 				96B3B9D1196FF85D00B765AF /* ZCRootController.m */,
-				965929D4197A3EFB002CB5D2 /* ZCTabBarView.h */,
-				965929D5197A3EFB002CB5D2 /* ZCTabBarView.m */,
-				965929D7197A3F7E002CB5D2 /* ZCNoHighLightBtn.h */,
-				965929D8197A3F7E002CB5D2 /* ZCNoHighLightBtn.m */,
+				96CBD1FD197B63D100BE42CA /* ZCNaviController.h */,
+				96CBD1FE197B63D100BE42CA /* ZCNaviController.m */,
+				96CBD1FC197B620100BE42CA /* views */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -275,8 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				965929D3197A3263002CB5D2 /* main */,
-				96D2BE5719686A5F0071E548 /* ViewController.h */,
-				96D2BE5819686A5F0071E548 /* ViewController.m */,
+				96CBD207197B70B700BE42CA /* reading */,
 				96D858631973F1240070226F /* Schedule Controllers */,
 				96B3B9D3196FF87900B765AF /* Vocabulary List 生词表 */,
 				96BDFC5E197985DB00F60322 /* setting controller */,
@@ -325,6 +332,37 @@
 				96B3B9C6196F5C7900B765AF /* ZCSettingsViewController.m */,
 			);
 			name = "setting controller";
+			sourceTree = "<group>";
+		};
+		96CBD1FC197B620100BE42CA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				965929D4197A3EFB002CB5D2 /* ZCTabBarView.h */,
+				965929D5197A3EFB002CB5D2 /* ZCTabBarView.m */,
+				965929D7197A3F7E002CB5D2 /* ZCNoHighLightBtn.h */,
+				965929D8197A3F7E002CB5D2 /* ZCNoHighLightBtn.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		96CBD200197B69DD00BE42CA /* ZCRealtimeBlur */ = {
+			isa = PBXGroup;
+			children = (
+				96CBD201197B69DD00BE42CA /* UIERealTimeBlurView.h */,
+				96CBD202197B69DD00BE42CA /* UIERealTimeBlurView.m */,
+				96CBD203197B69DD00BE42CA /* UIImage+BoxBlur.h */,
+				96CBD204197B69DD00BE42CA /* UIImage+BoxBlur.m */,
+			);
+			path = ZCRealtimeBlur;
+			sourceTree = "<group>";
+		};
+		96CBD207197B70B700BE42CA /* reading */ = {
+			isa = PBXGroup;
+			children = (
+				96D2BE5719686A5F0071E548 /* ViewController.h */,
+				96D2BE5819686A5F0071E548 /* ViewController.m */,
+			);
+			name = reading;
 			sourceTree = "<group>";
 		};
 		96D2BE4419686A5F0071E548 = {
@@ -418,6 +456,7 @@
 		96D858681974F8B50070226F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				96CBD200197B69DD00BE42CA /* ZCRealtimeBlur */,
 				96D858AD19753A2F0070226F /* FBShimmering */,
 				96D858691974F8B50070226F /* MBProgressHUD */,
 				96D8586C1974F8B50070226F /* ZCSoundEffect */,
@@ -606,6 +645,8 @@
 				96DAFFCE1973CBD2006C5183 /* Word.m in Sources */,
 				96EC5F361972820F00978262 /* ZCDataCenter.m in Sources */,
 				96D858661973F16E0070226F /* ZCScheduleDetailController.m in Sources */,
+				96CBD1FF197B63D100BE42CA /* ZCNaviController.m in Sources */,
+				96CBD206197B69DD00BE42CA /* UIImage+BoxBlur.m in Sources */,
 				96EC5ED21971489E00978262 /* NSString+Path.m in Sources */,
 				96D2BE5319686A5F0071E548 /* main.m in Sources */,
 				96B3B9D2196FF85D00B765AF /* ZCRootController.m in Sources */,
@@ -615,6 +656,7 @@
 				96B3B9C7196F5C7900B765AF /* ZCSettingsViewController.m in Sources */,
 				96A2C554196A3D6E005AFA9C /* ZCScheduleTableViewController.m in Sources */,
 				96A2C558196A41F3005AFA9C /* ZCVocListTableViewController.m in Sources */,
+				96CBD205197B69DD00BE42CA /* UIERealTimeBlurView.m in Sources */,
 				96D858741974F8B50070226F /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

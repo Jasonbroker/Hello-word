@@ -21,7 +21,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    
+//    [application.windows[0] ba];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+//
 //    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
 //    NSLog(@"%@", application.windows);
 //
