@@ -182,6 +182,7 @@
 		965929D7197A3F7E002CB5D2 /* ZCNoHighLightBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNoHighLightBtn.h; sourceTree = "<group>"; };
 		965929D8197A3F7E002CB5D2 /* ZCNoHighLightBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNoHighLightBtn.m; sourceTree = "<group>"; };
 		965929DD197A7BDC002CB5D2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		96738DF9197BB78600592764 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96A2C552196A3D6E005AFA9C /* ZCScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCScheduleTableViewController.h; sourceTree = "<group>"; };
 		96A2C553196A3D6E005AFA9C /* ZCScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCScheduleTableViewController.m; sourceTree = "<group>"; };
 		96A2C556196A41F3005AFA9C /* ZCVocListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCVocListTableViewController.h; sourceTree = "<group>"; };
@@ -361,6 +362,7 @@
 			children = (
 				96D2BE5719686A5F0071E548 /* ViewController.h */,
 				96D2BE5819686A5F0071E548 /* ViewController.m */,
+				96738DF9197BB78600592764 /* PrefixHeader.pch */,
 			);
 			name = reading;
 			sourceTree = "<group>";

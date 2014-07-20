@@ -13,7 +13,7 @@
 #import "ZCFilePathManager.h"
 #import "ZCMessageSoundEffect.h"
 
-
+#warning ios shipei!!!!!!!!!!!!!!!
 // shimmering
 #import "FBShimmeringView.h"
 //test
@@ -34,6 +34,8 @@
 
 @property (nonatomic, strong)ZCRootController *rootVC;
 
+@property (nonatomic, assign)BOOL isFirstLoaded;
+
 @end
 
 @implementation ViewController
@@ -44,6 +46,19 @@
     [super viewDidLoad];
     
 //    NSLog(@"%@", [ZCFilePathManager unknownWordFilePath]);
+//    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
+//    background image
+    if (iPhone4inch) {
+        UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reading_bg_4"]];
+        
+        [self.view addSubview:bg];
+//
+    }else{
+        UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reading_bg_3"]];
+        
+        [self.view addSubview:bg];
+    }
+    
     
     // shimmering view
     FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
@@ -65,11 +80,8 @@
     
     self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
     
-//    NSLog(@"%d...", _count);
+    self.isFirstLoaded = YES;
     
-//    pinch test
-//    self.tabBarController.tabBar.layer.position = CGPointMake(0, self.view.bounds.size.height);
-//    self.tabBarController.tabBar.layer.anchorPoint = CGPointMake(0, 1);
     
 }
 
@@ -80,6 +92,21 @@
     [self addTapGesture];
 // test
     [self addPinchGesture];
+    
+    //    hide bars
+    if (self.isFirstLoaded) {
+        sleep(0.5);
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        
+        [UIView animateWithDuration:0.2 animations:^{
+            
+            self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 49);
+        }];
+        
+        self.isFirstLoaded = NO;
+    }
+
+    
 }
 
 
@@ -315,7 +342,7 @@
     }else if(pinchRecognizer.scale < 0.7f){
         [self.navigationController setNavigationBarHidden:NO animated:YES];
         
-        [UIView animateWithDuration:0.25 animations:^{
+        [UIView animateWithDuration:0.2 animations:^{
 
             self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 0);
         }];

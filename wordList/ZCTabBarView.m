@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) NSArray *selectedImageNames;
 
-
+@property (nonatomic, weak) ZCNoHighLightBtn *selectedBtn;
 @end
 
 @implementation ZCTabBarView
@@ -60,7 +60,7 @@
 //        sett background
                     [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.imageNames[i]] forState:UIControlStateNormal];
         
-                    [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.selectedImageNames[i]] forState:UIControlStateHighlighted];
+                    [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.selectedImageNames[i]] forState:UIControlStateSelected];
         
         btn.tag = i;
         
@@ -94,10 +94,31 @@
 ///**************************************        **************************************
 - (void)press:(ZCNoHighLightBtn *)button
 {
+    if(self.selectedBtn == button) return;
+    
     NSLog(@"%s", __func__);
     if ([self.delegate respondsToSelector:@selector(tabBarView:didSelectedButton:)]) {
         [self.delegate tabBarView:self didSelectedButton:button];
     }
+    
+    self.selectedBtn.selected = NO;
+    
+    button.selected = YES;
+    
+    self.selectedBtn = button;
 }
 
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+

@@ -64,10 +64,10 @@
     if (_imageSet == nil) {
         
         _imageSet = [NSArray arrayWithObjects:
-                     @"read",
-                     @"schedule",
-                     @"vocList",
-                     @"mime",
+                     @"tabBar1",
+                     @"tabBar2",
+                     @"tabBar3",
+                     @"tabBar4",
                      nil];
     }
     
@@ -78,10 +78,10 @@
 {
     if (_selectedImageSet == nil) {
         _selectedImageSet =[NSArray arrayWithObjects:
-                            @"read",
-                            @"schedule",
-                            @"vocList",
-                            @"mime",
+                            @"tabBar1Highlight",
+                            @"tabBar2Highlight",
+                            @"tabBar3Highlight",
+                            @"tabBar4Highlight",
                             nil];
 
     }

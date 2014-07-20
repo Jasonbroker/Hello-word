@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UNL-1x-GNG">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--Navi Controller-->
         <scene sceneID="MNc-jc-GTt">
             <objects>
                 <navigationController id="KrQ-7q-mtG" customClass="ZCNaviController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="mime" id="Sd3-Nb-Sv0"/>
+                    <tabBarItem key="tabBarItem" title="" id="Sd3-Nb-Sv0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wfd-3m-KOn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -450,11 +451,11 @@
             </objects>
             <point key="canvasLocation" x="1299" y="2396"/>
         </scene>
-        <!--Vocabulary List-->
+        <!--Navi Controller-->
         <scene sceneID="Mkq-dw-PpQ">
             <objects>
                 <navigationController id="6az-Zo-qmy" customClass="ZCNaviController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Vocabulary List" image="vocList" id="JnN-lq-PMa"/>
+                    <tabBarItem key="tabBarItem" title="" id="JnN-lq-PMa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OXr-Jo-rRD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -474,7 +475,7 @@
         <scene sceneID="zFe-c6-Lcp">
             <objects>
                 <navigationController title="schedule" id="E3Y-dA-cEL" customClass="ZCNaviController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule" id="5eF-26-Ebr"/>
+                    <tabBarItem key="tabBarItem" title="" id="5eF-26-Ebr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VAj-qp-g8f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -493,11 +494,11 @@
             </objects>
             <point key="canvasLocation" x="15" y="1106"/>
         </scene>
-        <!--Study-->
+        <!--Navi Controller-->
         <scene sceneID="okl-HN-y9H">
             <objects>
                 <navigationController id="g1P-g1-FHl" customClass="ZCNaviController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Study" image="read" id="q9f-ww-MTJ"/>
+                    <tabBarItem key="tabBarItem" title="" id="q9f-ww-MTJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SFB-7W-E7S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -528,9 +529,6 @@
                         <rect key="frame" x="0.0" y="64" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1800126_10152272440319357_261758585_o" translatesAutoresizingMaskIntoConstraints="NO" id="005-OI-fTc">
-                                <rect key="frame" x="0.0" y="0.0" width="487" height="480"/>
-                            </imageView>
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Slide to start" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-hC-N5v">
                                 <rect key="frame" x="60" y="377" width="360" height="23.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
@@ -585,11 +583,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1800126_10152272440319357_261758585_o" width="2048" height="1536"/>
         <image name="about.jpg" width="524" height="642"/>
         <image name="mime" width="28" height="28"/>
-        <image name="read" width="28" height="28"/>
-        <image name="schedule" width="28" height="28"/>
-        <image name="vocList" width="28" height="28"/>
     </resources>
 </document>

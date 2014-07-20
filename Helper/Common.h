@@ -26,3 +26,8 @@
 
 #import "ZCbBaiscViewController.h"
 
+#define iOS7    ([UIDevice currentDevice].systemVersion.floatValue >= 7.0)
+
+#define iPhone4inch ([NSStringFromCGRect([UIScreen mainScreen].bounds) isEqualToString: @"{{0, 0}, {320, 568}}"])
+
+
