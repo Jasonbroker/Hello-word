@@ -9,7 +9,7 @@
         <scene sceneID="MNc-jc-GTt">
             <objects>
                 <navigationController id="KrQ-7q-mtG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="tab_me_nor" id="Sd3-Nb-Sv0"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="mime" id="Sd3-Nb-Sv0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wfd-3m-KOn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -588,6 +588,7 @@
     <resources>
         <image name="1800126_10152272440319357_261758585_o" width="2048" height="1536"/>
         <image name="about.jpg" width="524" height="642"/>
+        <image name="mime" width="28" height="28"/>
         <image name="read" width="28" height="28"/>
         <image name="schedule" width="28" height="28"/>
         <image name="tab_me_nor" width="28" height="28"/>

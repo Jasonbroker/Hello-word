@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"%@", NSStringFromCGRect(self.tabBarController.tabBar.frame));
+//    NSLog(@"%@", NSStringFromCGRect(self.tabBarController.tabBar.frame));
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

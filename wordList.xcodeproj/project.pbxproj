@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		963A5997197649B800363D38 /* Version info.m in Sources */ = {isa = PBXBuildFile; fileRef = 963A5996197649B800363D38 /* Version info.m */; };
+		965929D6197A3EFB002CB5D2 /* ZCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 965929D5197A3EFB002CB5D2 /* ZCTabBarView.m */; };
+		965929D9197A3F7E002CB5D2 /* ZCNoHighLightBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 965929D8197A3F7E002CB5D2 /* ZCNoHighLightBtn.m */; };
+		965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965929DD197A7BDC002CB5D2 /* Reveal.framework */; };
 		96A2C554196A3D6E005AFA9C /* ZCScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2C553196A3D6E005AFA9C /* ZCScheduleTableViewController.m */; };
 		96A2C558196A41F3005AFA9C /* ZCVocListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A2C557196A41F3005AFA9C /* ZCVocListTableViewController.m */; };
 		96B3B9C4196ED43B00B765AF /* ZCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3B9C3196ED43B00B765AF /* ZCDetailViewController.m */; };
@@ -171,6 +174,11 @@
 
 /* Begin PBXFileReference section */
 		963A5996197649B800363D38 /* Version info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Version info.m"; sourceTree = "<group>"; };
+		965929D4197A3EFB002CB5D2 /* ZCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarView.h; sourceTree = "<group>"; };
+		965929D5197A3EFB002CB5D2 /* ZCTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTabBarView.m; sourceTree = "<group>"; };
+		965929D7197A3F7E002CB5D2 /* ZCNoHighLightBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNoHighLightBtn.h; sourceTree = "<group>"; };
+		965929D8197A3F7E002CB5D2 /* ZCNoHighLightBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNoHighLightBtn.m; sourceTree = "<group>"; };
+		965929DD197A7BDC002CB5D2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		96A2C552196A3D6E005AFA9C /* ZCScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCScheduleTableViewController.h; sourceTree = "<group>"; };
 		96A2C553196A3D6E005AFA9C /* ZCScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCScheduleTableViewController.m; sourceTree = "<group>"; };
 		96A2C556196A41F3005AFA9C /* ZCVocListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCVocListTableViewController.h; sourceTree = "<group>"; };
@@ -234,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,20 +256,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96A2C555196A3D7A005AFA9C /* Controllers */ = {
+		965929D3197A3263002CB5D2 /* main */ = {
 			isa = PBXGroup;
 			children = (
 				96BDFC2C1978E38300F60322 /* ZCbBaiscViewController.h */,
 				96BDFC2D1978E38300F60322 /* ZCbBaiscViewController.m */,
 				96B3B9D0196FF85D00B765AF /* ZCRootController.h */,
 				96B3B9D1196FF85D00B765AF /* ZCRootController.m */,
+				965929D4197A3EFB002CB5D2 /* ZCTabBarView.h */,
+				965929D5197A3EFB002CB5D2 /* ZCTabBarView.m */,
+				965929D7197A3F7E002CB5D2 /* ZCNoHighLightBtn.h */,
+				965929D8197A3F7E002CB5D2 /* ZCNoHighLightBtn.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		96A2C555196A3D7A005AFA9C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				965929D3197A3263002CB5D2 /* main */,
 				96D2BE5719686A5F0071E548 /* ViewController.h */,
 				96D2BE5819686A5F0071E548 /* ViewController.m */,
-				96B3B9D3196FF87900B765AF /* Vocabulary List 生词表 */,
 				96D858631973F1240070226F /* Schedule Controllers */,
+				96B3B9D3196FF87900B765AF /* Vocabulary List 生词表 */,
 				96BDFC5E197985DB00F60322 /* setting controller */,
 			);
-			name = Controllers;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		96B3B9BE196ECAA600B765AF /* Helper */ = {
@@ -337,7 +358,7 @@
 				96B3B9BE196ECAA600B765AF /* Helper */,
 				96D858681974F8B50070226F /* Lib */,
 				96B3B9CB196FAB1D00B765AF /* Model */,
-				96A2C555196A3D7A005AFA9C /* Controllers */,
+				96A2C555196A3D7A005AFA9C /* Classes */,
 				96D2BE5D19686A5F0071E548 /* Images.xcassets */,
 				96D2BE5019686A5F0071E548 /* Supporting Files */,
 			);
@@ -347,6 +368,7 @@
 		96D2BE5019686A5F0071E548 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				965929DD197A7BDC002CB5D2 /* Reveal.framework */,
 				96D2BE5119686A5F0071E548 /* Info.plist */,
 				96D2BE5219686A5F0071E548 /* main.m */,
 			);
@@ -588,6 +610,8 @@
 				96D2BE5319686A5F0071E548 /* main.m in Sources */,
 				96B3B9D2196FF85D00B765AF /* ZCRootController.m in Sources */,
 				96D858771974F8B50070226F /* SoundEffects.m in Sources */,
+				965929D6197A3EFB002CB5D2 /* ZCTabBarView.m in Sources */,
+				965929D9197A3F7E002CB5D2 /* ZCNoHighLightBtn.m in Sources */,
 				96B3B9C7196F5C7900B765AF /* ZCSettingsViewController.m in Sources */,
 				96A2C554196A3D6E005AFA9C /* ZCScheduleTableViewController.m in Sources */,
 				96A2C558196A41F3005AFA9C /* ZCVocListTableViewController.m in Sources */,
@@ -747,6 +771,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -782,6 +807,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -794,6 +820,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wordList",
+				);
 				INFOPLIST_FILE = wordList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -809,6 +839,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wordList",
+				);
 				INFOPLIST_FILE = wordList/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

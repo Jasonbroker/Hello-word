@@ -31,7 +31,15 @@
     
     _userMaxReadProgressNum = self.rootVC.userMaxReadingProgressMarker;
     
+    [self addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+
 }
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"%s", __func__);
+}
+
 
 - (void)viewDidDisappear:(BOOL)animated
 {
@@ -131,7 +139,8 @@
     
         detailVC.sectionNum = indexPath.section;
     
-        NSLog(@"%@", @(indexPath.section));
+//        NSLog(@"%@", @(indexPath.section));
+//    NSLog(@"%@", NSStringFromCGRect(detailVC.tabBarController.tabBar.frame));
 
 }
 

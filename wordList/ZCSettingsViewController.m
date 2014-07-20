@@ -45,7 +45,8 @@
         
         MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
         [self.navigationController.view addSubview:hud];
-        
+//        MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+//        [self.view addSubview:hud];
         // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
         // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
         hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
