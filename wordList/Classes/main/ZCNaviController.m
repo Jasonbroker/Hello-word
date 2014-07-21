@@ -7,6 +7,12 @@
 //
 
 #import "ZCNaviController.h"
+#import "ZCRootController.h"
+
+@interface ZCNaviController()
+
+
+@end
 
 @implementation ZCNaviController
 
@@ -14,6 +20,19 @@
 + (void)initialize
 {
     
+}
+//  new thing barhidden gesture
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.tabBarController.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+ 
+//    (ZCRootController *)self.tabBarController
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated

@@ -13,7 +13,6 @@
 #import "ZCFilePathManager.h"
 #import "ZCMessageSoundEffect.h"
 
-#warning ios shipei!!!!!!!!!!!!!!!
 // shimmering
 #import "FBShimmeringView.h"
 //test
@@ -81,7 +80,6 @@
     self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
     
     self.isFirstLoaded = YES;
-    
     
 }
 
@@ -177,6 +175,7 @@
     
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
+    
 //    [self.view addGestureRecognizer:swipeDown];
 }
 
@@ -283,7 +282,7 @@
 
 - (void)swipeDown2Reveal:(UIGestureRecognizer *)swipeDownRecognizer
 {
-    
+    /// for feature to come.
 }
 
 

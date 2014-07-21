@@ -96,7 +96,6 @@
     self.selectedIndex = button.tag;
 }
 
-
 /*
 #pragma mark - Navigation
 
