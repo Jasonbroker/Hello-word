@@ -8,6 +8,7 @@
 
 #import "ZCRootController.h"
 #import "ZCTabBarView.h"
+#import "ZCNoHighLightBtn.h"
 
 @interface ZCRootController ()<ZCTabBarViewDelegate>
 
@@ -51,6 +52,9 @@
     [self addObserver:self.viewControllers forKeyPath:@"self.frame" options:NSKeyValueObservingOptionOld context:nil];
     
 //    self.tabBarController.tabBar.frame
+        
+    
+    
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -92,7 +96,7 @@
 
 - (void)tabBarView:(ZCTabBarView *)tabBarView didSelectedButton:(UIButton *)button
 {
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
     self.selectedIndex = button.tag;
 }
 

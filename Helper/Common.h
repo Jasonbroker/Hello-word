@@ -22,6 +22,18 @@
 #define KUserReadingProgressMarkerKey @"userReadingProgressMarker"
 #define KUserMaxReadingProgressMarker @"userMaxReadingProgressMarker"
 
+/**
+ define cell height
+ */
+
+#define KcellHeight 60.0
+
+/**
+ define system font size
+ */
+#define KcellFontSize [UIFont systemFontOfSize:15.0f]
+
+
 /** import */
 
 #import "ZCbBaiscViewController.h"

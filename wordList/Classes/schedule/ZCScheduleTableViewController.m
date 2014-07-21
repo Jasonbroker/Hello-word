@@ -45,7 +45,7 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 
@@ -82,7 +82,7 @@
     return _wordLines;
 }
 
-- (ZCRootController *)rootVC
+- (ZCRootController *)rootVC   /**datacenter*/
 {
     if (!_rootVC) {
         _rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
@@ -129,6 +129,7 @@
 
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
@@ -138,7 +139,23 @@
 //    
 //}
 
+///**************************************    delegate    **************************************
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ZCScheduleDetailController *scheduleDetailVC = [[ZCScheduleDetailController alloc] init];
+    
+    [self.navigationController pushViewController:scheduleDetailVC animated:YES];
+    
+    scheduleDetailVC.sectionNum = indexPath.section;
+}
+
+
+
 ///**************************************        **************************************
+
+/**
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
         ZCScheduleDetailController *detailVC = segue.destinationViewController;
@@ -151,6 +168,6 @@
 //    NSLog(@"%@", NSStringFromCGRect(detailVC.tabBarController.tabBar.frame));
 
 }
-
+*/
 
 @end

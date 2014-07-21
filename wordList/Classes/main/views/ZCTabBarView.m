@@ -56,7 +56,7 @@
     
     for (int i = 0; i < btnNumber; i ++) {
         
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        ZCNoHighLightBtn *btn = [ZCNoHighLightBtn buttonWithType:UIButtonTypeCustom];
 //        sett background
                     [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.imageNames[i]] forState:UIControlStateNormal];
         
@@ -65,6 +65,10 @@
         btn.tag = i;
         
         [self addSubview:btn];
+        
+        if (self.subviews.count == 1) {
+            [self press:btn];
+        }
         
         [btn addTarget:self action:@selector(press:) forControlEvents:UIControlEventTouchDown];
     }
@@ -91,12 +95,12 @@
     }
     
 }
-///**************************************        **************************************
+///**************************************   press     **************************************
 - (void)press:(ZCNoHighLightBtn *)button
 {
     if(self.selectedBtn == button) return;
     
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
     if ([self.delegate respondsToSelector:@selector(tabBarView:didSelectedButton:)]) {
         [self.delegate tabBarView:self didSelectedButton:button];
     }
@@ -107,7 +111,6 @@
     
     self.selectedBtn = button;
 }
-
 
 @end
 

@@ -10,6 +10,9 @@
 #import "Common.h"
 #import "ZCFilePathManager.h"
 #import "ZCbBaiscViewController.h"
+
+static NSString *ID = @"wordCell";
+
 @interface ZCScheduleDetailController ()
 
 
@@ -18,16 +21,19 @@
 @end
 
 @implementation ZCScheduleDetailController
-
+///**************************************        **************************************
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
 //    NSLog(@"%@", NSStringFromCGRect(self.tabBarController.tabBar.frame));
     
-    // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
 
 //    self.tabBarController.tabBar.hidden =YES;
+    
+    //    register the cell
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 }
 
 - (NSDictionary *)words
@@ -61,12 +67,27 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"wordCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row + self.sectionNum *15 ];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row + self.sectionNum *KwordInSection ];
     cell.textLabel.text = [self.words valueForKey:key];
-    
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.font = KcellFontSize;
+    cell.selectionStyle= UITableViewCellSelectionStyleNone;
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return KcellHeight;
+}
+
+///**************************************     delegate   **************************************
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%@", indexPath);
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - controller will pop

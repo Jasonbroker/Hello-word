@@ -14,6 +14,7 @@
 		962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962BD7AA197C24CB00FD0156 /* Images.xcassets */; };
 		963A5997197649B800363D38 /* Version info.m in Sources */ = {isa = PBXBuildFile; fileRef = 963A5996197649B800363D38 /* Version info.m */; };
 		965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965929DD197A7BDC002CB5D2 /* Reveal.framework */; };
+		965B58DF197D33DC000289D2 /* ZCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 965B58DD197D33DC000289D2 /* ZCTableViewCell.m */; };
 		96738E38197C027D00592764 /* ZCNoHighLightBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E2F197C027D00592764 /* ZCNoHighLightBtn.m */; };
 		96738E39197C027D00592764 /* ZCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E31197C027D00592764 /* ZCTabBarView.m */; };
 		96738E3A197C027D00592764 /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E33197C027D00592764 /* ZCbBaiscViewController.m */; };
@@ -222,6 +223,8 @@
 		962BD7AA197C24CB00FD0156 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		963A5996197649B800363D38 /* Version info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Version info.m"; sourceTree = "<group>"; };
 		965929DD197A7BDC002CB5D2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		965B58DC197D33DC000289D2 /* ZCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTableViewCell.h; sourceTree = "<group>"; };
+		965B58DD197D33DC000289D2 /* ZCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTableViewCell.m; sourceTree = "<group>"; };
 		96738E2E197C027D00592764 /* ZCNoHighLightBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNoHighLightBtn.h; sourceTree = "<group>"; };
 		96738E2F197C027D00592764 /* ZCNoHighLightBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNoHighLightBtn.m; sourceTree = "<group>"; };
 		96738E30197C027D00592764 /* ZCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarView.h; sourceTree = "<group>"; };
@@ -326,6 +329,15 @@
 			path = Classes/model;
 			sourceTree = "<group>";
 		};
+		965B58DB197D339D000289D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				965B58DC197D33DC000289D2 /* ZCTableViewCell.h */,
+				965B58DD197D33DC000289D2 /* ZCTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		96738E2C197C027D00592764 /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,10 +377,10 @@
 		96738E43197C036300592764 /* schedule */ = {
 			isa = PBXGroup;
 			children = (
-				96738E44197C036300592764 /* ZCScheduleDetailController.h */,
-				96738E45197C036300592764 /* ZCScheduleDetailController.m */,
 				96738E46197C036300592764 /* ZCScheduleTableViewController.h */,
 				96738E47197C036300592764 /* ZCScheduleTableViewController.m */,
+				96738E44197C036300592764 /* ZCScheduleDetailController.h */,
+				96738E45197C036300592764 /* ZCScheduleDetailController.m */,
 			);
 			name = schedule;
 			path = Classes/schedule;
@@ -377,10 +389,11 @@
 		96738E4A197C03D000592764 /* unknownWords */ = {
 			isa = PBXGroup;
 			children = (
-				96738E4B197C03D000592764 /* ZCDetailViewController.h */,
-				96738E4C197C03D000592764 /* ZCDetailViewController.m */,
 				96738E4D197C03D000592764 /* ZCVocListTableViewController.h */,
 				96738E4E197C03D000592764 /* ZCVocListTableViewController.m */,
+				96738E4B197C03D000592764 /* ZCDetailViewController.h */,
+				96738E4C197C03D000592764 /* ZCDetailViewController.m */,
+				965B58DB197D339D000289D2 /* view */,
 			);
 			name = unknownWords;
 			path = Classes/unknownWords;
@@ -773,6 +786,7 @@
 				963A5997197649B800363D38 /* Version info.m in Sources */,
 				962BD7A6197C1B8C00FD0156 /* Dictionary.xcdatamodeld in Sources */,
 				96738E38197C027D00592764 /* ZCNoHighLightBtn.m in Sources */,
+				965B58DF197D33DC000289D2 /* ZCTableViewCell.m in Sources */,
 				96CBD206197B69DD00BE42CA /* UIImage+BoxBlur.m in Sources */,
 				96EC5ED21971489E00978262 /* NSString+Path.m in Sources */,
 				96D858771974F8B50070226F /* SoundEffects.m in Sources */,

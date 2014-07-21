@@ -11,6 +11,7 @@
 #import "NSString+Path.h"
 #import "ZCDetailViewController.h"
 #import "ZCFilePathManager.h"
+#import "ZCTableViewCell.h"
 
 
 @interface ZCVocListTableViewController ()
@@ -75,6 +76,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(add) name:@"click" object:nil];
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
 }
 
 
@@ -132,9 +135,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *ID = @"unknownWordsCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
+    ZCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    
+//    if (cell == nil) {
+//        cell = [[ZCTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+//    }
     cell.textLabel.text = self.unknownWords[indexPath.row];
+
     
     return cell;
 }
