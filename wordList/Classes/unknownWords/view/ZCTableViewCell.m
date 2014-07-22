@@ -16,15 +16,31 @@
 
 @implementation ZCTableViewCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
 
 - (void)awakeFromNib {
-    // Initialization code
+    
+    [self setup];
+}
+
+- (void)setup
+{
     self.backgroundLayer = [CALayer layer];
     self.backgroundLayer.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.2f ].CGColor;
     
     [self.contentView.layer addSublayer:_backgroundLayer];
-    
+//    self.textLabel.textColor = [UIColor redColor];
+    self.textLabel.numberOfLines = 0;
     self.textLabel.font = KcellFontSize;
+
 }
 
 - (void)layoutSublayersOfLayer:(CALayer *)layer

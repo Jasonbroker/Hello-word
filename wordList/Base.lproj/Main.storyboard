@@ -68,7 +68,6 @@
         <!--Schedule Detail Controller-->
         <scene sceneID="KCT-CN-I6b">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IHd-cB-KcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="OTf-CL-LVO" customClass="ZCScheduleDetailController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="z09-sT-ZaN">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
@@ -96,6 +95,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHd-cB-KcO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1216" y="1106"/>
         </scene>

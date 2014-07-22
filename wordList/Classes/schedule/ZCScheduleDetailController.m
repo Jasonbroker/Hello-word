@@ -10,8 +10,10 @@
 #import "Common.h"
 #import "ZCFilePathManager.h"
 #import "ZCbBaiscViewController.h"
+#import "ZCTableViewCell.h"
+#import "ZCUIColor+Extension.h"
 
-static NSString *ID = @"wordCell";
+static NSString *scheduleDetailCellIdentifier = @"wordCell";
 
 @interface ZCScheduleDetailController ()
 
@@ -21,7 +23,7 @@ static NSString *ID = @"wordCell";
 @end
 
 @implementation ZCScheduleDetailController
-///**************************************        **************************************
+///**************************************    life circle    **************************************
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -33,8 +35,10 @@ static NSString *ID = @"wordCell";
 //    self.tabBarController.tabBar.hidden =YES;
     
     //    register the cell
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
+    [self.tableView registerClass:[ZCTableViewCell class] forCellReuseIdentifier:scheduleDetailCellIdentifier];
 }
+
+///**************************************    getter setter    **************************************
 
 - (NSDictionary *)words
 {
@@ -51,7 +55,7 @@ static NSString *ID = @"wordCell";
     return _words;
 }
 
-
+///**************************************  table view data source      **************************************
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
@@ -64,7 +68,7 @@ static NSString *ID = @"wordCell";
     return KwordInSection;
 }
 
-
+#if 0
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
@@ -75,6 +79,27 @@ static NSString *ID = @"wordCell";
     cell.selectionStyle= UITableViewCellSelectionStyleNone;
     return cell;
 }
+#endif
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:scheduleDetailCellIdentifier forIndexPath:indexPath];
+    
+    if (cell == nil) {
+        cell = [[ZCTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:scheduleDetailCellIdentifier];
+    }
+    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row + self.sectionNum *KwordInSection];
+    cell.textLabel.text = [self.words valueForKey:key];
+    
+    cell.textLabel.textColor = [UIColor cyclicColor4Index:indexPath.row];
+
+    cell.selectionStyle= UITableViewCellSelectionStyleNone;
+    return cell;
+}
+
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -88,22 +113,6 @@ static NSString *ID = @"wordCell";
     NSLog(@"%@", indexPath);
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-#pragma mark - controller will pop
-///********************************   pop    *******************************//
-#warning Frankly, I do not like this. Wont pop again this time..
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-//    ZCDetailViewController *detailVC = segue.destinationViewController;
-//    
-//    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//    
-//    // at this time the view has not been created yet.
-//    //    detailVC.wordLabel.text = self.unknownWords[indexPath.row];
-//    
-//    detailVC.word = self.wordsInSection[indexPath.row];
-    
 }
 
 
