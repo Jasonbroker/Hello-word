@@ -15,6 +15,7 @@
 		963A5997197649B800363D38 /* Version info.m in Sources */ = {isa = PBXBuildFile; fileRef = 963A5996197649B800363D38 /* Version info.m */; };
 		965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965929DD197A7BDC002CB5D2 /* Reveal.framework */; };
 		965B58DF197D33DC000289D2 /* ZCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 965B58DD197D33DC000289D2 /* ZCTableViewCell.m */; };
+		965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 965F332D197E3401005BBA14 /* ZCUIColor+Extension.m */; };
 		96738E38197C027D00592764 /* ZCNoHighLightBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E2F197C027D00592764 /* ZCNoHighLightBtn.m */; };
 		96738E39197C027D00592764 /* ZCTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E31197C027D00592764 /* ZCTabBarView.m */; };
 		96738E3A197C027D00592764 /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E33197C027D00592764 /* ZCbBaiscViewController.m */; };
@@ -225,6 +226,8 @@
 		965929DD197A7BDC002CB5D2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		965B58DC197D33DC000289D2 /* ZCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTableViewCell.h; sourceTree = "<group>"; };
 		965B58DD197D33DC000289D2 /* ZCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTableViewCell.m; sourceTree = "<group>"; };
+		965F332C197E3401005BBA14 /* ZCUIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZCUIColor+Extension.h"; sourceTree = "<group>"; };
+		965F332D197E3401005BBA14 /* ZCUIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZCUIColor+Extension.m"; sourceTree = "<group>"; };
 		96738E2E197C027D00592764 /* ZCNoHighLightBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNoHighLightBtn.h; sourceTree = "<group>"; };
 		96738E2F197C027D00592764 /* ZCNoHighLightBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNoHighLightBtn.m; sourceTree = "<group>"; };
 		96738E30197C027D00592764 /* ZCTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTabBarView.h; sourceTree = "<group>"; };
@@ -336,6 +339,15 @@
 				965B58DD197D33DC000289D2 /* ZCTableViewCell.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		965F332B197E3401005BBA14 /* UIcolor randomcolor */ = {
+			isa = PBXGroup;
+			children = (
+				965F332C197E3401005BBA14 /* ZCUIColor+Extension.h */,
+				965F332D197E3401005BBA14 /* ZCUIColor+Extension.m */,
+			);
+			path = "UIcolor randomcolor";
 			sourceTree = "<group>";
 		};
 		96738E2C197C027D00592764 /* main */ = {
@@ -524,6 +536,7 @@
 		96D858681974F8B50070226F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				965F332B197E3401005BBA14 /* UIcolor randomcolor */,
 				96CBD200197B69DD00BE42CA /* ZCRealtimeBlur */,
 				96D858AD19753A2F0070226F /* FBShimmering */,
 				96D858691974F8B50070226F /* MBProgressHUD */,
@@ -773,6 +786,7 @@
 				96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */,
 				962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */,
 				96738E54197C040800592764 /* ZCSettingsViewController.m in Sources */,
+				965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */,
 				96D858781974F8B50070226F /* ZCMessageSoundEffect.m in Sources */,
 				96738E3B197C027D00592764 /* ZCNaviController.m in Sources */,
 				96738E4F197C03D000592764 /* ZCDetailViewController.m in Sources */,
