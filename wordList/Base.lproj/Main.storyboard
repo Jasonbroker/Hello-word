@@ -297,7 +297,7 @@
         <!--self center-->
         <scene sceneID="6HF-iZ-r8A">
             <objects>
-                <viewController title="self center" id="6Rs-Ki-G82" sceneMemberID="viewController">
+                <viewController title="self center" id="6Rs-Ki-G82" customClass="ZCSelfCenterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gvF-4z-ct1"/>
                         <viewControllerLayoutGuide type="bottom" id="CmZ-Id-Ecb"/>
@@ -368,16 +368,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cp7-VH-WqC">
                                 <rect key="frame" x="25" y="226" width="430" height="180"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="NXH-eG-sal"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sJE-ss-Nf9" firstAttribute="leading" secondItem="6PC-IH-iEQ" secondAttribute="leading" id="DF5-fO-Ex4"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cp7-VH-WqC" secondAttribute="trailing" constant="25" id="ERN-hR-FdD"/>
-                            <constraint firstItem="cp7-VH-WqC" firstAttribute="leading" secondItem="6PC-IH-iEQ" secondAttribute="leading" constant="25" id="NMW-dU-3mx"/>
+                            <constraint firstItem="cp7-VH-WqC" firstAttribute="top" secondItem="sJE-ss-Nf9" secondAttribute="bottom" constant="12" id="QHz-TO-NaA"/>
                             <constraint firstItem="sJE-ss-Nf9" firstAttribute="top" secondItem="gvF-4z-ct1" secondAttribute="bottom" id="TfI-K0-Dw4"/>
                             <constraint firstItem="CmZ-Id-Ecb" firstAttribute="top" secondItem="cp7-VH-WqC" secondAttribute="bottom" constant="25" id="bqj-D0-RaQ"/>
                             <constraint firstAttribute="trailing" secondItem="sJE-ss-Nf9" secondAttribute="trailing" id="kCF-zb-D7n"/>
@@ -506,7 +502,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="0hg-t3-Jxo" kind="relationship" relationship="rootViewController" id="qYo-s4-1Ss"/>
+                        <segue destination="0hg-t3-Jxo" kind="relationship" relationship="rootViewController" id="psq-Yz-t9K"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4U0-dh-6th" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -524,21 +520,7 @@
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="HXL-mA-6bH">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Slide to start" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-hC-N5v">
-                                <rect key="frame" x="60" y="377" width="360" height="23.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
-                                <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Vy2-hC-N5v" secondAttribute="trailing" constant="60" id="2yu-CI-Dbs"/>
-                            <constraint firstItem="7VO-2X-CAg" firstAttribute="top" secondItem="Vy2-hC-N5v" secondAttribute="bottom" constant="30" id="Two-mL-f8a"/>
-                            <constraint firstItem="Vy2-hC-N5v" firstAttribute="leading" secondItem="HXL-mA-6bH" secondAttribute="leading" constant="60" id="VOi-xj-FUY"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Study" id="zDA-HE-Mjh">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="add" id="Snv-Fm-6Hg">
@@ -549,7 +531,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addBtn" destination="Snv-Fm-6Hg" id="55t-8b-PM2"/>
-                        <outlet property="wordLabel" destination="Vy2-hC-N5v" id="Ptt-Lg-Wsw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xE-e7-88n" userLabel="First Responder" sceneMemberID="firstResponder"/>

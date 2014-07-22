@@ -36,6 +36,9 @@ static NSString *scheduleDetailCellIdentifier = @"wordCell";
     
     //    register the cell
     [self.tableView registerClass:[ZCTableViewCell class] forCellReuseIdentifier:scheduleDetailCellIdentifier];
+#warning
+//    self.view.layer.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"reading_bg_3"]].CGColor;
+//    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reading_bg_3"]];
 }
 
 ///**************************************    getter setter    **************************************
@@ -91,8 +94,9 @@ static NSString *scheduleDetailCellIdentifier = @"wordCell";
         cell = [[ZCTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:scheduleDetailCellIdentifier];
     }
     NSString *key = [NSString stringWithFormat:@"%d", indexPath.row + self.sectionNum *KwordInSection];
+#warning
     cell.textLabel.text = [self.words valueForKey:key];
-    
+    cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor cyclicColor4Index:indexPath.row];
 
     cell.selectionStyle= UITableViewCellSelectionStyleNone;

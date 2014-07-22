@@ -8,12 +8,15 @@
 
 #import "ZCTabBarView.h"
 #import "ZCNoHighLightBtn.h"
+#import "UIImage+Tools.h"
 
 @interface ZCTabBarView()
 
 @property (nonatomic, strong) NSArray *imageNames;
 
 @property (nonatomic, strong) NSArray *selectedImageNames;
+
+
 
 @property (nonatomic, weak) ZCNoHighLightBtn *selectedBtn;
 @end
@@ -39,6 +42,52 @@
     return tabBarView;
 }
 
++ (instancetype)tabBarViewWithImage:(NSString *)image andSelectedImage:(NSString *)selectedImage frame:(CGRect)frame AndItemNumber:(int)itemNumber
+{
+    NSLog(@"%s", __func__);
+
+    ZCTabBarView *tabBarView = [[ZCTabBarView alloc] initWithFrame:frame];
+    
+    UIImage *bigNormalImage = [UIImage imageNamed:image];
+    
+    UIImage *bigSelectedImage = [UIImage imageNamed:selectedImage];
+    
+//    CGFloat screenScale = [UIScreen mainScreen].scale;
+    
+    CGFloat imageW = bigNormalImage.size.width / itemNumber;
+    CGFloat imageH = bigNormalImage.size.height;
+    
+    for (int i = 0; i <itemNumber; i ++) {
+        
+        ZCNoHighLightBtn *btn = [ZCNoHighLightBtn buttonWithType:UIButtonTypeCustom];
+        //        sett background
+        CGRect itemRect = CGRectMake(i*imageW, 0, imageW, imageH);
+        
+        
+        
+        [btn setImage:[bigNormalImage createImageWithRect:itemRect] forState:UIControlStateNormal];
+        
+        [btn setImage:[bigSelectedImage createImageWithRect:itemRect] forState:UIControlStateSelected];
+        
+        btn.tag = i;
+        
+        [tabBarView addSubview:btn];
+        
+        if (tabBarView.subviews.count == 1) {
+            
+            [tabBarView press:btn];
+        }
+        
+        [btn addTarget:self action:@selector(press:) forControlEvents:UIControlEventTouchDown];
+        
+    }
+    
+    [tabBarView setNeedsLayout];
+
+    return tabBarView;
+}
+
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     NSLog(@"%s", __func__);
@@ -58,15 +107,16 @@
         
         ZCNoHighLightBtn *btn = [ZCNoHighLightBtn buttonWithType:UIButtonTypeCustom];
 //        sett background
-                    [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.imageNames[i]] forState:UIControlStateNormal];
+        [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.imageNames[i]] forState:UIControlStateNormal];
         
-                    [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.selectedImageNames[i]] forState:UIControlStateSelected];
+        [btn setBackgroundImage:[UIImage imageNamed: (NSString *)self.selectedImageNames[i]] forState:UIControlStateSelected];
         
         btn.tag = i;
         
         [self addSubview:btn];
         
         if (self.subviews.count == 1) {
+            
             [self press:btn];
         }
         
@@ -78,6 +128,8 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    
+    NSLog(@"%s", __func__);
     
     CGFloat y = 0;
     
@@ -98,6 +150,8 @@
 ///**************************************   press     **************************************
 - (void)press:(ZCNoHighLightBtn *)button
 {
+    NSLog(@"want to cilick...");
+    
     if(self.selectedBtn == button) return;
     
 //    NSLog(@"%s", __func__);
@@ -110,6 +164,7 @@
     button.selected = YES;
     
     self.selectedBtn = button;
+    
 }
 
 @end

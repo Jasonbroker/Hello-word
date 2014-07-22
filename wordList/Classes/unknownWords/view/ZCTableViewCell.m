@@ -34,7 +34,7 @@
 - (void)setup
 {
     self.backgroundLayer = [CALayer layer];
-    self.backgroundLayer.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.2f ].CGColor;
+    self.backgroundLayer.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.15f ].CGColor;
     
     [self.contentView.layer addSublayer:_backgroundLayer];
 //    self.textLabel.textColor = [UIColor redColor];

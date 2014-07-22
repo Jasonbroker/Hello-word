@@ -30,6 +30,8 @@
 		96738E5B197C049000592764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E57197C049000592764 /* AppDelegate.m */; };
 		96738E5C197C049000592764 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96738E58197C049000592764 /* Info.plist */; };
 		96738E5D197C049000592764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E59197C049000592764 /* main.m */; };
+		96786BA3197E65FD00C15374 /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 96786BA2197E65FD00C15374 /* UIImage+Tools.m */; };
+		96786BDA197EB7B200C15374 /* ZCSelfCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96786BD9197EB7B200C15374 /* ZCSelfCenterViewController.m */; };
 		968D8CD4197CAFA700FF7C6C /* Words.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A3197C1B8C00FD0156 /* Words.m */; };
 		968D8CD5197CAFA700FF7C6C /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E33197C027D00592764 /* ZCbBaiscViewController.m */; };
 		968D8CD6197CAFA700FF7C6C /* ZCScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E47197C036300592764 /* ZCScheduleTableViewController.m */; };
@@ -255,6 +257,10 @@
 		96738E58197C049000592764 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96738E59197C049000592764 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96738E5A197C049000592764 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		96786BA1197E65FD00C15374 /* UIImage+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
+		96786BA2197E65FD00C15374 /* UIImage+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
+		96786BD8197EB7B200C15374 /* ZCSelfCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSelfCenterViewController.h; sourceTree = "<group>"; };
+		96786BD9197EB7B200C15374 /* ZCSelfCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSelfCenterViewController.m; sourceTree = "<group>"; };
 		968D8CFD197CAFA700FF7C6C /* wordList copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wordList copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968D8CFE197CAFA700FF7C6C /* wordList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "wordList copy-Info.plist"; path = "/OC/MyApp/Hello-word/wordList copy-Info.plist"; sourceTree = "<absolute>"; };
 		96CBD201197B69DD00BE42CA /* UIERealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIERealTimeBlurView.h; sourceTree = "<group>"; };
@@ -357,9 +363,7 @@
 				96738E33197C027D00592764 /* ZCbBaiscViewController.m */,
 				96738E34197C027D00592764 /* ZCNaviController.h */,
 				96738E35197C027D00592764 /* ZCNaviController.m */,
-				96738E36197C027D00592764 /* ZCRootController.h */,
-				96738E37197C027D00592764 /* ZCRootController.m */,
-				96738E2D197C027D00592764 /* views */,
+				96786BA4197E7E4600C15374 /* tableBar */,
 			);
 			name = main;
 			path = Classes/main;
@@ -414,6 +418,8 @@
 		96738E51197C040800592764 /* self center */ = {
 			isa = PBXGroup;
 			children = (
+				96786BD8197EB7B200C15374 /* ZCSelfCenterViewController.h */,
+				96786BD9197EB7B200C15374 /* ZCSelfCenterViewController.m */,
 				96738E52197C040800592764 /* ZCSettingsViewController.h */,
 				96738E53197C040800592764 /* ZCSettingsViewController.m */,
 			);
@@ -434,6 +440,16 @@
 			path = Classes/other;
 			sourceTree = "<group>";
 		};
+		96786BA4197E7E4600C15374 /* tableBar */ = {
+			isa = PBXGroup;
+			children = (
+				96738E2D197C027D00592764 /* views */,
+				96738E36197C027D00592764 /* ZCRootController.h */,
+				96738E37197C027D00592764 /* ZCRootController.m */,
+			);
+			name = tableBar;
+			sourceTree = "<group>";
+		};
 		96A2C555196A3D7A005AFA9C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +466,8 @@
 			children = (
 				96EC5EE2197158FB00978262 /* ZCFilePathManager.h */,
 				96EC5EE3197158FB00978262 /* ZCFilePathManager.m */,
+				96786BA1197E65FD00C15374 /* UIImage+Tools.h */,
+				96786BA2197E65FD00C15374 /* UIImage+Tools.m */,
 				96EC5EE51971678300978262 /* Common.h */,
 				96EC5ED01971489E00978262 /* NSString+Path.h */,
 				96EC5ED11971489E00978262 /* NSString+Path.m */,
@@ -498,10 +516,10 @@
 			children = (
 				96D2BE5A19686A5F0071E548 /* Main.storyboard */,
 				96A2C555196A3D7A005AFA9C /* Classes */,
+				96738E51197C040800592764 /* self center */,
 				96B3B9BE196ECAA600B765AF /* Helper */,
 				96D858681974F8B50070226F /* Lib */,
 				962BD79D197C1B8C00FD0156 /* model */,
-				96738E51197C040800592764 /* self center */,
 				96738E55197C049000592764 /* other */,
 				96D2BE5019686A5F0071E548 /* Supporting Files */,
 			);
@@ -792,7 +810,9 @@
 				96738E4F197C03D000592764 /* ZCDetailViewController.m in Sources */,
 				96738E39197C027D00592764 /* ZCTabBarView.m in Sources */,
 				96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */,
+				96786BA3197E65FD00C15374 /* UIImage+Tools.m in Sources */,
 				96738E40197C031F00592764 /* ViewController.m in Sources */,
+				96786BDA197EB7B200C15374 /* ZCSelfCenterViewController.m in Sources */,
 				96738E50197C03D000592764 /* ZCVocListTableViewController.m in Sources */,
 				962BD7A7197C1B8C00FD0156 /* Word.m in Sources */,
 				96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */,
@@ -997,7 +1017,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1034,7 +1054,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;

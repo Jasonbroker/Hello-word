@@ -78,6 +78,7 @@
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    self.navigationItem.title = @"unknown words";
 }
 
 
