@@ -25,4 +25,11 @@
         return [[NSBundle mainBundle] pathForResource:@"words.plist" ofType:nil];
 }
 
++ (NSString *)userProgressPath
+{
+    NSString * userProgressPath = [@"userProgressPath.plist" appendDocumentPath];
+    
+    return userProgressPath;
+}
+
 @end

@@ -18,5 +18,6 @@
 /** dictionary path */
 + (NSString *)wordsFilePath;
 
++ (NSString *)userProgressPath;
 
 @end
