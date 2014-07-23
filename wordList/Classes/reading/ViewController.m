@@ -131,16 +131,22 @@
     
     //    hide bars
     if (self.isFirstLoaded) {
-        sleep(0.5);
-#warning revise here.////// 
-        [self.navigationController setNavigationBarHidden:YES animated:YES];
         
-        [UIView animateWithDuration:0.2 animations:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW,  (int64_t)(0.5 * NSEC_PER_SEC)),dispatch_get_main_queue() , ^{
             
-            self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 49);
-        }];
-
+            [self.navigationController setNavigationBarHidden:YES animated:YES];
+            
+            [UIView animateWithDuration:0.2 animations:^{
+                
+                self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 49);
+            }];
+            
+        });
+        
         self.isFirstLoaded = NO;
+        
+        
+#warning revise here.//////
     }
     _shimmeringView.shimmering = YES;
     
@@ -218,57 +224,11 @@
     
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
-    
+//      open interface
 //    [self.view addGestureRecognizer:swipeDown];
 }
 
 #warning  all  the    massssssssssssssssssssssssssssssss massssma  mamsmmsmamsmamsamsmamsmamsamsmamsmamsmamsmamsamsmammsamm!!!!!!!!!!!!!!!!!!
-/**  swipe  */
-
-//- (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer
-//{
-//    NSLog(@"%d", swipeRecognizer.direction);
-//    
-//#warning  not good enough ...considering to change this part to a more comfortable implementation
-//    UIAlertView *alertLeft = [[UIAlertView alloc] initWithTitle:@"warning" message:@"已到达起始点！" delegate:self cancelButtonTitle: @"OK" otherButtonTitles: nil];
-//    UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
-//    
-//    if (swipeRecognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-//        _count ++;
-//        self.addBtn.enabled = YES;
-//        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-//        [self.wordLabel sizeToFit];
-//        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-//        
-//        NSLog(@"%@", self.wordLabel.text);
-//        
-//        if ((_count + 1)%KwordInSection == 0) {
-//            
-//            self.addBtn.enabled = NO;
-//            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nSlide to Start", _count/KwordInSection+1];
-//            }
-//        }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
-//            
-//            if (_count == 0) {
-//            //            show alert here
-//            NSLog(@" right swipe...");
-//            
-//            [alertLeft show];
-//            
-//            }else{
-//            
-//            _count --;
-//            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-//            self.wordLabel.text = word;
-//            [self.wordLabel sizeToFit];
-//            self.wordLabel.text = word;
-//            NSLog(@"%@", self.wordLabel.text);
-//            NSLog(@"%d", _count);
-//        }
-//    }
-//    
-//    
-//}
 ///**************************************    swipe    **************************************
 
 - (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer

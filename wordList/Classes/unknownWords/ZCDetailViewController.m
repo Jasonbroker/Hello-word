@@ -16,14 +16,44 @@
 
 @implementation ZCDetailViewController
 
-- (void)viewDidLoad
+- (void)loadView
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.wordLabel.text = self.word;
+    self.wordLabel = [[UILabel alloc] init];
     
+    self.wordLabel.numberOfLines = 0;
+    
+    [self.view addSubview:self.wordLabel];
+    
+//    self.wordLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
+//    NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
+    
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-180-[_wordLabel]" options:0 metrics:nil views:dict]];
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
+
 }
+
+- (void)viewWillLayoutSubviews
+{
+    self.wordLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
+    
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-200-[_wordLabel]" options:0 metrics:nil views:dict]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-80-[_wordLabel]-80-|" options:0 metrics:nil views:dict]];
+}
+
+//- (void)viewDidLoad
+//{
+//    [super viewDidLoad];
+//    // Do any additional setup after loading the view.
+//    
+//    self.wordLabel.text = self.word;
+//    
+//}
+
 
 
 @end

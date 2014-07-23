@@ -39,10 +39,10 @@
 
     //   load btn....
     
-    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
+//    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
 //    second method
     
-//    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImage:self.normalImage andSelectedImage:self.selectedImage frame:frame AndItemNumber:4];
+    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImage:self.normalImage andSelectedImage:self.selectedImage frame:frame AndItemNumber:4];
     
     customTabBar.center = CGPointMake(0, 0);
     customTabBar.layer.anchorPoint = CGPointMake(0, 0);
@@ -55,8 +55,6 @@
     [self addObserver:self.viewControllers forKeyPath:@"self.frame" options:NSKeyValueObservingOptionOld context:nil];
     
 //    self.tabBarController.tabBar.frame
-        
-    
     
 }
 

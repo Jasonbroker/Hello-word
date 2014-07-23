@@ -168,14 +168,29 @@
 //    }
 }
 
-//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return UITableViewCellEditingStyleDelete;
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    ZCDetailViewController *detailVC = [[ZCDetailViewController alloc] init];
+    detailVC.view.backgroundColor = [UIColor whiteColor];
+    
+    detailVC.word = self.unknownWords[indexPath.row];
+
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
+    
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
 
 #pragma mark - controller will push
 ///********************************   push    *******************************//
-#warning Frankly, I do not like this kind of push. user only want to know a little bit detail of the word, however poping to another controller will make them think that the word is really a big case. I will try to fix this part by adding a pull detail view instead, which takes more time to design.
+
+/**
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     ZCDetailViewController *detailVC = segue.destinationViewController;
@@ -188,7 +203,7 @@
     detailVC.word = self.unknownWords[indexPath.row];
     
 }
-
+*/
 
 @end
 

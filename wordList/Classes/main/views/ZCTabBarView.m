@@ -78,7 +78,7 @@
             [tabBarView press:btn];
         }
         
-        [btn addTarget:self action:@selector(press:) forControlEvents:UIControlEventTouchDown];
+        [btn addTarget:tabBarView action:@selector(press:) forControlEvents:UIControlEventTouchDown];
         
     }
     
@@ -150,11 +150,8 @@
 ///**************************************   press     **************************************
 - (void)press:(ZCNoHighLightBtn *)button
 {
-    NSLog(@"want to cilick...");
-    
     if(self.selectedBtn == button) return;
     
-//    NSLog(@"%s", __func__);
     if ([self.delegate respondsToSelector:@selector(tabBarView:didSelectedButton:)]) {
         [self.delegate tabBarView:self didSelectedButton:button];
     }
