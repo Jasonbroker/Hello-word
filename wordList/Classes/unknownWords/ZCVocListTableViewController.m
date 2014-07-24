@@ -173,10 +173,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     ZCDetailViewController *detailVC = [[ZCDetailViewController alloc] init];
-    detailVC.view.backgroundColor = [UIColor whiteColor];
+    
+//    detailVC.view.backgroundColor = [UIColor whiteColor];
+
+    //  load view--- view did load
+//    when push view controller it will lay out subviews
     
     detailVC.word = self.unknownWords[indexPath.row];
-
+    
+//    detailVC.wordLabel.text
+    
     [self.navigationController pushViewController:detailVC animated:YES];
     
     

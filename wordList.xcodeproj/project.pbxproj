@@ -84,6 +84,8 @@
 		96EC5ED21971489E00978262 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5ED11971489E00978262 /* NSString+Path.m */; };
 		96EC5EDE19714DE800978262 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5EDD19714DE800978262 /* words.plist */; };
 		96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5EE3197158FB00978262 /* ZCFilePathManager.m */; };
+		96F2B95D19800D3A00C84B97 /* ZCSelfInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */; };
+		96F2B95F19800D9100C84B97 /* ZCSelfInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,6 +296,9 @@
 		96EC5EE2197158FB00978262 /* ZCFilePathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCFilePathManager.h; path = Helper/ZCFilePathManager.h; sourceTree = "<group>"; };
 		96EC5EE3197158FB00978262 /* ZCFilePathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCFilePathManager.m; path = Helper/ZCFilePathManager.m; sourceTree = "<group>"; };
 		96EC5EE51971678300978262 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Helper/Common.h; sourceTree = "<group>"; };
+		96F2B95B19800D3A00C84B97 /* ZCSelfInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSelfInfoView.h; sourceTree = "<group>"; };
+		96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSelfInfoView.m; sourceTree = "<group>"; };
+		96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCSelfInfoView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +423,7 @@
 		96738E51197C040800592764 /* self center */ = {
 			isa = PBXGroup;
 			children = (
+				96F2B95A19800D3A00C84B97 /* views */,
 				96786BD8197EB7B200C15374 /* ZCSelfCenterViewController.h */,
 				96786BD9197EB7B200C15374 /* ZCSelfCenterViewController.m */,
 				96738E52197C040800592764 /* ZCSettingsViewController.h */,
@@ -608,6 +614,16 @@
 			path = FBShimmering;
 			sourceTree = "<group>";
 		};
+		96F2B95A19800D3A00C84B97 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				96F2B95B19800D3A00C84B97 /* ZCSelfInfoView.h */,
+				96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */,
+				96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -740,6 +756,7 @@
 			files = (
 				96D858761974F8B50070226F /* messageSent.aiff in Resources */,
 				962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */,
+				96F2B95F19800D9100C84B97 /* ZCSelfInfoView.xib in Resources */,
 				96D2BE5C19686A5F0071E548 /* Main.storyboard in Resources */,
 				96738E5C197C049000592764 /* Info.plist in Resources */,
 				96EC5ECD197141A200978262 /* Version info.txt in Resources */,
@@ -822,6 +839,7 @@
 				96738E38197C027D00592764 /* ZCNoHighLightBtn.m in Sources */,
 				965B58DF197D33DC000289D2 /* ZCTableViewCell.m in Sources */,
 				96CBD206197B69DD00BE42CA /* UIImage+BoxBlur.m in Sources */,
+				96F2B95D19800D3A00C84B97 /* ZCSelfInfoView.m in Sources */,
 				96EC5ED21971489E00978262 /* NSString+Path.m in Sources */,
 				96D858771974F8B50070226F /* SoundEffects.m in Sources */,
 				96738E5B197C049000592764 /* AppDelegate.m in Sources */,

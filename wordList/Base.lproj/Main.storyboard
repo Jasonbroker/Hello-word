@@ -101,51 +101,6 @@
             </objects>
             <point key="canvasLocation" x="621" y="1720"/>
         </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="vph-EY-dGa">
-            <objects>
-                <viewController id="4Op-p9-tYT" customClass="ZCDetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cv3-AK-G3x"/>
-                        <viewControllerLayoutGuide type="bottom" id="ZMl-gF-DL2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bcA-hl-aOW">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="400" translatesAutoresizingMaskIntoConstraints="NO" id="Oqr-e9-ChA">
-                                <rect key="frame" x="40" y="94" width="400" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="h7B-oi-T6r"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="25"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Oqr-e9-ChA" firstAttribute="top" secondItem="cv3-AK-G3x" secondAttribute="bottom" constant="30" id="GLi-jv-hck"/>
-                            <constraint firstItem="Oqr-e9-ChA" firstAttribute="leading" secondItem="bcA-hl-aOW" secondAttribute="leading" constant="40" id="iNt-ab-x63"/>
-                            <constraint firstAttribute="trailing" secondItem="Oqr-e9-ChA" secondAttribute="trailing" constant="40" id="z8S-VG-y0e"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="wordLabel" destination="Oqr-e9-ChA" id="nIz-qM-bsM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KXZ-ZX-uui" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1216" y="1720"/>
-        </scene>
         <!--Settings-->
         <scene sceneID="7cp-e5-Sbq">
             <objects>
@@ -351,31 +306,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="i2f-9D-fye" kind="presentation" id="xgh-fk-qNZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1At-1H-wzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="107" y="2396"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xco-jz-h45">
-            <objects>
-                <viewController id="i2f-9D-fye" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TWJ-Mu-pvZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="cAI-sE-Crt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Gkd-in-jeV">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PDd-DN-1hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="117" y="3032"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gh3-Ua-UKC">

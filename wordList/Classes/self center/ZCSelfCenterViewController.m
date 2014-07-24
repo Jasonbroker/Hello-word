@@ -7,6 +7,7 @@
 //
 
 #import "ZCSelfCenterViewController.h"
+#import "ZCSelfInfoView.h"
 
 @interface ZCSelfCenterViewController ()
 
@@ -18,6 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"self center";
+    
+    
 
 }
 
