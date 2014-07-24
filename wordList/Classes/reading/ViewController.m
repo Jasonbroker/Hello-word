@@ -93,7 +93,7 @@
     NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_wordLabel]-100-|" options:0 metrics:nil views:dict]];
     
 //    [self.view setNeedsLayout];
 
@@ -114,7 +114,7 @@
     [super viewWillLayoutSubviews];
     
     CGRect shimmeringFrame = self.view.bounds;
-    shimmeringFrame.origin.y = shimmeringFrame.size.height * 0.68;
+    shimmeringFrame.origin.y = shimmeringFrame.size.height * 0.65;
     shimmeringFrame.size.height = shimmeringFrame.size.height * 0.32;
     _shimmeringView.frame = shimmeringFrame;
     

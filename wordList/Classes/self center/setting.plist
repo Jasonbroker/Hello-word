@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Word to be learned every day</string>
+			<key>detail</key>
+			<string>15</string>
+			<key>warningColor</key>
+			<false/>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Reset all data</string>
+			<key>center</key>
+			<true/>
+			<key>warningColor</key>
+			<true/>
+			<key>callFunction</key>
+			<string>reset</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>About</string>
+			<key>center</key>
+			<true/>
+			<key>accessory</key>
+			<true/>
+			<key>warningColor</key>
+			<false/>
+			<key>push</key>
+			<string>ZCAboutViewController</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Log out</string>
+			<key>center</key>
+			<true/>
+			<key>warningColor</key>
+			<true/>
+			<key>callFunction</key>
+			<string>logout</string>
+		</dict>
+	</array>
+</array>
+</plist>

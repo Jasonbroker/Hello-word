@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962833451980F35700EE85E7 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 962833441980F35700EE85E7 /* setting.plist */; };
+		9628334B1980F9D900EE85E7 /* ZCSelfCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962833481980F9D900EE85E7 /* ZCSelfCenterViewController.m */; };
+		9628334C1980F9D900EE85E7 /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628334A1980F9D900EE85E7 /* ZCSettingsViewController.m */; };
+		9628334F1981035D00EE85E7 /* ZCsettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628334E1981035D00EE85E7 /* ZCsettingCell.m */; };
 		962BD7A6197C1B8C00FD0156 /* Dictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 962BD79E197C1B8C00FD0156 /* Dictionary.xcdatamodeld */; };
 		962BD7A7197C1B8C00FD0156 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A1197C1B8C00FD0156 /* Word.m */; };
 		962BD7A8197C1B8C00FD0156 /* Words.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A3197C1B8C00FD0156 /* Words.m */; };
 		962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */; };
 		962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962BD7AA197C24CB00FD0156 /* Images.xcassets */; };
 		963A5997197649B800363D38 /* Version info.m in Sources */ = {isa = PBXBuildFile; fileRef = 963A5996197649B800363D38 /* Version info.m */; };
+		96457AC31981137200E00932 /* ZCAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96457AC21981137200E00932 /* ZCAboutViewController.m */; };
 		965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965929DD197A7BDC002CB5D2 /* Reveal.framework */; };
 		965B58DF197D33DC000289D2 /* ZCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 965B58DD197D33DC000289D2 /* ZCTableViewCell.m */; };
 		965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 965F332D197E3401005BBA14 /* ZCUIColor+Extension.m */; };
@@ -26,19 +31,16 @@
 		96738E49197C036300592764 /* ZCScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E47197C036300592764 /* ZCScheduleTableViewController.m */; };
 		96738E4F197C03D000592764 /* ZCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E4C197C03D000592764 /* ZCDetailViewController.m */; };
 		96738E50197C03D000592764 /* ZCVocListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E4E197C03D000592764 /* ZCVocListTableViewController.m */; };
-		96738E54197C040800592764 /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E53197C040800592764 /* ZCSettingsViewController.m */; };
 		96738E5B197C049000592764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E57197C049000592764 /* AppDelegate.m */; };
 		96738E5C197C049000592764 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96738E58197C049000592764 /* Info.plist */; };
 		96738E5D197C049000592764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E59197C049000592764 /* main.m */; };
 		96786BA3197E65FD00C15374 /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 96786BA2197E65FD00C15374 /* UIImage+Tools.m */; };
-		96786BDA197EB7B200C15374 /* ZCSelfCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96786BD9197EB7B200C15374 /* ZCSelfCenterViewController.m */; };
 		968D8CD4197CAFA700FF7C6C /* Words.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A3197C1B8C00FD0156 /* Words.m */; };
 		968D8CD5197CAFA700FF7C6C /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E33197C027D00592764 /* ZCbBaiscViewController.m */; };
 		968D8CD6197CAFA700FF7C6C /* ZCScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E47197C036300592764 /* ZCScheduleTableViewController.m */; };
 		968D8CD7197CAFA700FF7C6C /* ZCRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E37197C027D00592764 /* ZCRootController.m */; };
 		968D8CD8197CAFA700FF7C6C /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B319753A2F0070226F /* FBShimmeringView.m */; };
 		968D8CD9197CAFA700FF7C6C /* ZCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */; };
-		968D8CDA197CAFA700FF7C6C /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E53197C040800592764 /* ZCSettingsViewController.m */; };
 		968D8CDB197CAFA700FF7C6C /* ZCMessageSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858731974F8B50070226F /* ZCMessageSoundEffect.m */; };
 		968D8CDC197CAFA700FF7C6C /* ZCNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E35197C027D00592764 /* ZCNaviController.m */; };
 		968D8CDD197CAFA700FF7C6C /* ZCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E4C197C03D000592764 /* ZCDetailViewController.m */; };
@@ -218,6 +220,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		962833441980F35700EE85E7 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
+		962833471980F9D900EE85E7 /* ZCSelfCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSelfCenterViewController.h; sourceTree = "<group>"; };
+		962833481980F9D900EE85E7 /* ZCSelfCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSelfCenterViewController.m; sourceTree = "<group>"; };
+		962833491980F9D900EE85E7 /* ZCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSettingsViewController.h; sourceTree = "<group>"; };
+		9628334A1980F9D900EE85E7 /* ZCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSettingsViewController.m; sourceTree = "<group>"; };
+		9628334D1981035D00EE85E7 /* ZCsettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCsettingCell.h; sourceTree = "<group>"; };
+		9628334E1981035D00EE85E7 /* ZCsettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCsettingCell.m; sourceTree = "<group>"; };
 		962BD79F197C1B8C00FD0156 /* Dictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dictionary.xcdatamodel; sourceTree = "<group>"; };
 		962BD7A0197C1B8C00FD0156 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 		962BD7A1197C1B8C00FD0156 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
@@ -227,6 +236,8 @@
 		962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDataCenter.m; sourceTree = "<group>"; };
 		962BD7AA197C24CB00FD0156 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		963A5996197649B800363D38 /* Version info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Version info.m"; sourceTree = "<group>"; };
+		96457AC11981137200E00932 /* ZCAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAboutViewController.h; sourceTree = "<group>"; };
+		96457AC21981137200E00932 /* ZCAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAboutViewController.m; sourceTree = "<group>"; };
 		965929DD197A7BDC002CB5D2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		965B58DC197D33DC000289D2 /* ZCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTableViewCell.h; sourceTree = "<group>"; };
 		965B58DD197D33DC000289D2 /* ZCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTableViewCell.m; sourceTree = "<group>"; };
@@ -252,8 +263,6 @@
 		96738E4C197C03D000592764 /* ZCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDetailViewController.m; sourceTree = "<group>"; };
 		96738E4D197C03D000592764 /* ZCVocListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCVocListTableViewController.h; sourceTree = "<group>"; };
 		96738E4E197C03D000592764 /* ZCVocListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCVocListTableViewController.m; sourceTree = "<group>"; };
-		96738E52197C040800592764 /* ZCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSettingsViewController.h; sourceTree = "<group>"; };
-		96738E53197C040800592764 /* ZCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSettingsViewController.m; sourceTree = "<group>"; };
 		96738E56197C049000592764 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96738E57197C049000592764 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		96738E58197C049000592764 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -261,8 +270,6 @@
 		96738E5A197C049000592764 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		96786BA1197E65FD00C15374 /* UIImage+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
 		96786BA2197E65FD00C15374 /* UIImage+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
-		96786BD8197EB7B200C15374 /* ZCSelfCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSelfCenterViewController.h; sourceTree = "<group>"; };
-		96786BD9197EB7B200C15374 /* ZCSelfCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSelfCenterViewController.m; sourceTree = "<group>"; };
 		968D8CFD197CAFA700FF7C6C /* wordList copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wordList copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968D8CFE197CAFA700FF7C6C /* wordList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "wordList copy-Info.plist"; path = "/OC/MyApp/Hello-word/wordList copy-Info.plist"; sourceTree = "<absolute>"; };
 		96CBD201197B69DD00BE42CA /* UIERealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIERealTimeBlurView.h; sourceTree = "<group>"; };
@@ -328,6 +335,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		962833461980F9D900EE85E7 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				962833471980F9D900EE85E7 /* ZCSelfCenterViewController.h */,
+				962833481980F9D900EE85E7 /* ZCSelfCenterViewController.m */,
+				962833491980F9D900EE85E7 /* ZCSettingsViewController.h */,
+				9628334A1980F9D900EE85E7 /* ZCSettingsViewController.m */,
+				96457AC11981137200E00932 /* ZCAboutViewController.h */,
+				96457AC21981137200E00932 /* ZCAboutViewController.m */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
 		962BD79D197C1B8C00FD0156 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,11 +443,9 @@
 		96738E51197C040800592764 /* self center */ = {
 			isa = PBXGroup;
 			children = (
+				962833461980F9D900EE85E7 /* vc */,
 				96F2B95A19800D3A00C84B97 /* views */,
-				96786BD8197EB7B200C15374 /* ZCSelfCenterViewController.h */,
-				96786BD9197EB7B200C15374 /* ZCSelfCenterViewController.m */,
-				96738E52197C040800592764 /* ZCSettingsViewController.h */,
-				96738E53197C040800592764 /* ZCSettingsViewController.m */,
+				962833441980F35700EE85E7 /* setting.plist */,
 			);
 			name = "self center";
 			path = "Classes/self center";
@@ -620,6 +638,8 @@
 				96F2B95B19800D3A00C84B97 /* ZCSelfInfoView.h */,
 				96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */,
 				96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */,
+				9628334D1981035D00EE85E7 /* ZCsettingCell.h */,
+				9628334E1981035D00EE85E7 /* ZCsettingCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -755,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D858761974F8B50070226F /* messageSent.aiff in Resources */,
+				962833451980F35700EE85E7 /* setting.plist in Resources */,
 				962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */,
 				96F2B95F19800D9100C84B97 /* ZCSelfInfoView.xib in Resources */,
 				96D2BE5C19686A5F0071E548 /* Main.storyboard in Resources */,
@@ -786,7 +807,6 @@
 				968D8CD7197CAFA700FF7C6C /* ZCRootController.m in Sources */,
 				968D8CD8197CAFA700FF7C6C /* FBShimmeringView.m in Sources */,
 				968D8CD9197CAFA700FF7C6C /* ZCDataCenter.m in Sources */,
-				968D8CDA197CAFA700FF7C6C /* ZCSettingsViewController.m in Sources */,
 				968D8CDB197CAFA700FF7C6C /* ZCMessageSoundEffect.m in Sources */,
 				968D8CDC197CAFA700FF7C6C /* ZCNaviController.m in Sources */,
 				968D8CDD197CAFA700FF7C6C /* ZCDetailViewController.m in Sources */,
@@ -815,12 +835,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				962BD7A8197C1B8C00FD0156 /* Words.m in Sources */,
+				96457AC31981137200E00932 /* ZCAboutViewController.m in Sources */,
 				96738E3A197C027D00592764 /* ZCbBaiscViewController.m in Sources */,
+				9628334C1980F9D900EE85E7 /* ZCSettingsViewController.m in Sources */,
 				96738E49197C036300592764 /* ZCScheduleTableViewController.m in Sources */,
 				96738E3C197C027D00592764 /* ZCRootController.m in Sources */,
 				96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */,
 				962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */,
-				96738E54197C040800592764 /* ZCSettingsViewController.m in Sources */,
 				965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */,
 				96D858781974F8B50070226F /* ZCMessageSoundEffect.m in Sources */,
 				96738E3B197C027D00592764 /* ZCNaviController.m in Sources */,
@@ -829,8 +850,9 @@
 				96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */,
 				96786BA3197E65FD00C15374 /* UIImage+Tools.m in Sources */,
 				96738E40197C031F00592764 /* ViewController.m in Sources */,
-				96786BDA197EB7B200C15374 /* ZCSelfCenterViewController.m in Sources */,
 				96738E50197C03D000592764 /* ZCVocListTableViewController.m in Sources */,
+				9628334B1980F9D900EE85E7 /* ZCSelfCenterViewController.m in Sources */,
+				9628334F1981035D00EE85E7 /* ZCsettingCell.m in Sources */,
 				962BD7A7197C1B8C00FD0156 /* Word.m in Sources */,
 				96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */,
 				96738E5D197C049000592764 /* main.m in Sources */,

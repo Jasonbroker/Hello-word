@@ -18,7 +18,7 @@
 
 + (instancetype)selfInfoView
 {
-    return [[NSBundle mainBundle] loadNibNamed:@"ZCSelfInfoView" owner:nil options:nil];
+    return [[[NSBundle mainBundle] loadNibNamed:@"ZCSelfInfoView" owner:nil options:nil] lastObject];
 }
 
 

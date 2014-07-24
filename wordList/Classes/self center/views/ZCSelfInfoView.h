@@ -15,4 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *wordsRemaining;
 @property (weak, nonatomic) IBOutlet UILabel *unknownWords;
 
++ (instancetype)selfInfoView;
+
 @end
