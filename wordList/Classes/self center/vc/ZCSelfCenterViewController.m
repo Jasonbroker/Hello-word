@@ -9,8 +9,9 @@
 #import "ZCSelfCenterViewController.h"
 #import "ZCSelfInfoView.h"
 #import "ZCSettingsViewController.h"
+#import "ZCLoginViewController.h"
 
-@interface ZCSelfCenterViewController ()
+@interface ZCSelfCenterViewController ()<ZCSelfInfoViewDelgate, ZCLoginViewControllerDelegate>
 
 // self info
 @property (nonatomic, strong)ZCSelfInfoView *selfInfoView;
@@ -30,16 +31,18 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting"] style:UIBarButtonItemStyleBordered target:self action:@selector(pushSetting:)];
     
-
+    self.selfInfoView.myDelegate = self;
 
 }
 
 -(void)viewWillLayoutSubviews
 {
     self.selfInfoView.translatesAutoresizingMaskIntoConstraints = NO;
-    NSDictionary *dict = NSDictionaryOfVariableBindings(_selfInfoView);
+    id topGuide = self.topLayoutGuide;
+    
+    NSDictionary *dict = NSDictionaryOfVariableBindings(_selfInfoView, topGuide);
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat: @"H:|-0-[_selfInfoView]-0-|"options:0 metrics:nil views:dict]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-64-[_selfInfoView(150)]" options:0 metrics:nil views:dict]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[topGuide]-[_selfInfoView(150)]" options:0 metrics:nil views:dict]];
     
 
 }
@@ -62,11 +65,35 @@
     
     settingVC.plistName = @"setting.plist";
     
+    settingVC.title = @"settings";
+    
     [self.navigationController pushViewController:settingVC animated:YES];
+}
+
+
+///**************************************   delegate implementation     **************************************
+
+- (void)viewloginOrRegister:(ZCSelfInfoView *)selfInfoView
+{
+    NSLog(@" will log....");
+    
+    ZCLoginViewController *loginVC = [[ZCLoginViewController alloc] init];
     
     
+    [self presentViewController: loginVC animated:YES completion:^{
+        loginVC.myDelegate = self;
+
+    }];
+}
+
+//   dismiss
+- (void)loginDone:(ZCLoginViewController *)login withName:(NSString *)name andPassword:(NSString *)password
+{
+    NSLog(@"%@", name);
+    NSLog(@"%@", password);
+    NSLog(@"%@", login.name);
     
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

@@ -30,6 +30,7 @@
     [self.view addSubview:_about];
     
 //    self.about.backgroundColor = [UIColor redColor];
+    
 
 }
 

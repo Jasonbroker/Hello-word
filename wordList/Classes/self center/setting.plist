@@ -6,6 +6,8 @@
 		<dict>
 			<key>title</key>
 			<string>Word to be learned every day</string>
+			<key>callFunction</key>
+			<string>numNeedLearn</string>
 			<key>detail</key>
 			<string>15</string>
 			<key>warningColor</key>

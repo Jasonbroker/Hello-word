@@ -40,6 +40,8 @@
 
 - (IBAction)Login:(UIButton *)sender {
     
-    
+    if ([self.myDelegate respondsToSelector:@selector(viewloginOrRegister:)]) {
+        [self.myDelegate viewloginOrRegister:self];
+    }
 }
 @end

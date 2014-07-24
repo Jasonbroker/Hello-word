@@ -16,9 +16,8 @@ static NSString *settingID = @"settingIdentifier";
 
 @interface ZCSettingsViewController ()<UIActionSheetDelegate, UITabBarControllerDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UITableViewCell *reset;
-
 @property (nonatomic, strong)NSArray *dataList;
+
 @end
 
 @implementation ZCSettingsViewController
@@ -101,6 +100,8 @@ static NSString *settingID = @"settingIdentifier";
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     NSDictionary *dict = self.dataList[indexPath.section][indexPath.row];
+    
+//  push vc..
     if ([dict valueForKey:@"push"]) {
         
         Class class = NSClassFromString([dict valueForKey:@"push"]);
@@ -113,13 +114,49 @@ static NSString *settingID = @"settingIdentifier";
         
         [self.navigationController pushViewController:vc animated:YES];
     }
+    
+//     action
+    
+    if ([dict valueForKey:@"callFunction"]) {
+        SEL func = NSSelectorFromString([dict valueForKey:@"callFunction"]);
+        
+        if ([self respondsToSelector:func]) {
+            
+# pragma clang diagnostic push
+# pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            [self performSelector:func];
+# pragma clang diagnostic pop
+        }
+    }
+}
+///**************************************    actions    **************************************
+- (void)numNeedLearn
+{
+#warning wait for update
+    NSLog(@"wait for update");
+}
+
+- (void)reset
+{
+            UIActionSheet *resetSheet = [[UIActionSheet alloc] initWithTitle:@"RESET will wipe all your data!" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:@"RESET" otherButtonTitles:nil];
+    
+            [resetSheet showInView:self.view];
+
+}
+
+- (void)logout
+{
+#warning wait for update
+    
+    NSLog(@"wait for update");
+}
 //    if (indexPath.section == 1) {
 //        UIActionSheet *reset = [[UIActionSheet alloc] initWithTitle:@"RESET will wipe all your data!" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:@"RESET" otherButtonTitles:nil];
 //        
 //        [reset showInView:self.view];
 //    }
 
-}
+
 
 #pragma mark - reset data
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex

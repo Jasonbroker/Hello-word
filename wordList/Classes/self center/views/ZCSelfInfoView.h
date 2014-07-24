@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZCSelfInfoView;
+
+@protocol ZCSelfInfoViewDelgate <NSObject>
+
+-(void)viewloginOrRegister:(ZCSelfInfoView *)selfInfoView;
+
+
+@end
+
 @interface ZCSelfInfoView : UIView
 @property (weak, nonatomic) IBOutlet UIView *iconView;
 - (IBAction)Login:(UIButton *)sender;
@@ -15,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *wordsRemaining;
 @property (weak, nonatomic) IBOutlet UILabel *unknownWords;
 
+@property id <ZCSelfInfoViewDelgate> myDelegate;
+//  for init
 + (instancetype)selfInfoView;
 
 @end
