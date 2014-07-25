@@ -83,6 +83,10 @@
 		96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B119753A2F0070226F /* FBShimmeringLayer.m */; };
 		96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B319753A2F0070226F /* FBShimmeringView.m */; };
 		96DCF12319812FE300FC39EF /* ZCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF12219812FE300FC39EF /* ZCLoginViewController.m */; };
+		96DCF1421981F23900FC39EF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13A1981F23900FC39EF /* README.md */; };
+		96DCF1431981F23900FC39EF /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */; };
+		96DCF1441981F23900FC39EF /* UIImage+BlurredFrame.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */; };
+		96DCF1451981F23900FC39EF /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */; };
 		96EC5ECD197141A200978262 /* Version info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5ECC197141A200978262 /* Version info.txt */; };
 		96EC5ED21971489E00978262 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5ED11971489E00978262 /* NSString+Path.m */; };
 		96EC5EDE19714DE800978262 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5EDD19714DE800978262 /* words.plist */; };
@@ -299,6 +303,12 @@
 		96D858B319753A2F0070226F /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
 		96DCF12119812FE300FC39EF /* ZCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCLoginViewController.h; sourceTree = "<group>"; };
 		96DCF12219812FE300FC39EF /* ZCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCLoginViewController.m; sourceTree = "<group>"; };
+		96DCF13A1981F23900FC39EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96DCF13B1981F23900FC39EF /* UIImage+BlurredFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurredFrame.h"; sourceTree = "<group>"; };
+		96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurredFrame.m"; sourceTree = "<group>"; };
+		96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIImage+BlurredFrame.podspec"; sourceTree = "<group>"; };
+		96DCF13E1981F23900FC39EF /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		96EC5ECC197141A200978262 /* Version info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Version info.txt"; sourceTree = "<group>"; };
 		96EC5ED01971489E00978262 /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Path.h"; path = "Helper/NSString+Path.h"; sourceTree = "<group>"; };
 		96EC5ED11971489E00978262 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Path.m"; path = "Helper/NSString+Path.m"; sourceTree = "<group>"; };
@@ -583,6 +593,7 @@
 		96D858681974F8B50070226F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				96DCF1371981F23900FC39EF /* UIImage-BlurredFrame */,
 				965F332B197E3401005BBA14 /* UIcolor randomcolor */,
 				96CBD200197B69DD00BE42CA /* ZCRealtimeBlur */,
 				96D858AD19753A2F0070226F /* FBShimmering */,
@@ -635,6 +646,19 @@
 				96D858B319753A2F0070226F /* FBShimmeringView.m */,
 			);
 			path = FBShimmering;
+			sourceTree = "<group>";
+		};
+		96DCF1371981F23900FC39EF /* UIImage-BlurredFrame */ = {
+			isa = PBXGroup;
+			children = (
+				96DCF13A1981F23900FC39EF /* README.md */,
+				96DCF13B1981F23900FC39EF /* UIImage+BlurredFrame.h */,
+				96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */,
+				96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */,
+				96DCF13E1981F23900FC39EF /* UIImage+ImageEffects.h */,
+				96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */,
+			);
+			path = "UIImage-BlurredFrame";
 			sourceTree = "<group>";
 		};
 		96F2B95A19800D3A00C84B97 /* views */ = {
@@ -779,6 +803,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DCF1441981F23900FC39EF /* UIImage+BlurredFrame.podspec in Resources */,
 				96D858761974F8B50070226F /* messageSent.aiff in Resources */,
 				962833451980F35700EE85E7 /* setting.plist in Resources */,
 				962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */,
@@ -841,10 +866,13 @@
 			files = (
 				962BD7A8197C1B8C00FD0156 /* Words.m in Sources */,
 				96457AC31981137200E00932 /* ZCAboutViewController.m in Sources */,
+				96DCF1451981F23900FC39EF /* UIImage+ImageEffects.m in Sources */,
 				96738E3A197C027D00592764 /* ZCbBaiscViewController.m in Sources */,
 				9628334C1980F9D900EE85E7 /* ZCSettingsViewController.m in Sources */,
 				96738E49197C036300592764 /* ZCScheduleTableViewController.m in Sources */,
 				96738E3C197C027D00592764 /* ZCRootController.m in Sources */,
+				96DCF1421981F23900FC39EF /* README.md in Sources */,
+				96DCF1431981F23900FC39EF /* UIImage+BlurredFrame.m in Sources */,
 				96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */,
 				962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */,
 				965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */,
