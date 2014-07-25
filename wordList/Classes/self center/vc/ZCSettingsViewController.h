@@ -10,4 +10,6 @@
 
 @interface ZCSettingsViewController : UITableViewController
 
+@property (nonatomic, strong) NSString *plistName;
+
 @end

@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962833451980F35700EE85E7 /* setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 962833441980F35700EE85E7 /* setting.plist */; };
+		9628334B1980F9D900EE85E7 /* ZCSelfCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 962833481980F9D900EE85E7 /* ZCSelfCenterViewController.m */; };
+		9628334C1980F9D900EE85E7 /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628334A1980F9D900EE85E7 /* ZCSettingsViewController.m */; };
+		9628334F1981035D00EE85E7 /* ZCsettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628334E1981035D00EE85E7 /* ZCsettingCell.m */; };
 		962BD7A6197C1B8C00FD0156 /* Dictionary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 962BD79E197C1B8C00FD0156 /* Dictionary.xcdatamodeld */; };
 		962BD7A7197C1B8C00FD0156 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A1197C1B8C00FD0156 /* Word.m */; };
 		962BD7A8197C1B8C00FD0156 /* Words.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A3197C1B8C00FD0156 /* Words.m */; };
 		962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */; };
 		962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962BD7AA197C24CB00FD0156 /* Images.xcassets */; };
 		963A5997197649B800363D38 /* Version info.m in Sources */ = {isa = PBXBuildFile; fileRef = 963A5996197649B800363D38 /* Version info.m */; };
+		96457AC31981137200E00932 /* ZCAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96457AC21981137200E00932 /* ZCAboutViewController.m */; };
 		965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965929DD197A7BDC002CB5D2 /* Reveal.framework */; };
 		965B58DF197D33DC000289D2 /* ZCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 965B58DD197D33DC000289D2 /* ZCTableViewCell.m */; };
 		965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 965F332D197E3401005BBA14 /* ZCUIColor+Extension.m */; };
@@ -26,17 +31,16 @@
 		96738E49197C036300592764 /* ZCScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E47197C036300592764 /* ZCScheduleTableViewController.m */; };
 		96738E4F197C03D000592764 /* ZCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E4C197C03D000592764 /* ZCDetailViewController.m */; };
 		96738E50197C03D000592764 /* ZCVocListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E4E197C03D000592764 /* ZCVocListTableViewController.m */; };
-		96738E54197C040800592764 /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E53197C040800592764 /* ZCSettingsViewController.m */; };
 		96738E5B197C049000592764 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E57197C049000592764 /* AppDelegate.m */; };
 		96738E5C197C049000592764 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96738E58197C049000592764 /* Info.plist */; };
 		96738E5D197C049000592764 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E59197C049000592764 /* main.m */; };
+		96786BA3197E65FD00C15374 /* UIImage+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 96786BA2197E65FD00C15374 /* UIImage+Tools.m */; };
 		968D8CD4197CAFA700FF7C6C /* Words.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A3197C1B8C00FD0156 /* Words.m */; };
 		968D8CD5197CAFA700FF7C6C /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E33197C027D00592764 /* ZCbBaiscViewController.m */; };
 		968D8CD6197CAFA700FF7C6C /* ZCScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E47197C036300592764 /* ZCScheduleTableViewController.m */; };
 		968D8CD7197CAFA700FF7C6C /* ZCRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E37197C027D00592764 /* ZCRootController.m */; };
 		968D8CD8197CAFA700FF7C6C /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B319753A2F0070226F /* FBShimmeringView.m */; };
 		968D8CD9197CAFA700FF7C6C /* ZCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */; };
-		968D8CDA197CAFA700FF7C6C /* ZCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E53197C040800592764 /* ZCSettingsViewController.m */; };
 		968D8CDB197CAFA700FF7C6C /* ZCMessageSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858731974F8B50070226F /* ZCMessageSoundEffect.m */; };
 		968D8CDC197CAFA700FF7C6C /* ZCNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E35197C027D00592764 /* ZCNaviController.m */; };
 		968D8CDD197CAFA700FF7C6C /* ZCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96738E4C197C03D000592764 /* ZCDetailViewController.m */; };
@@ -78,10 +82,17 @@
 		96D8587A1974FA9E0070226F /* alert.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 96D858791974FA9E0070226F /* alert.aiff */; };
 		96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B119753A2F0070226F /* FBShimmeringLayer.m */; };
 		96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B319753A2F0070226F /* FBShimmeringView.m */; };
+		96DCF12319812FE300FC39EF /* ZCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF12219812FE300FC39EF /* ZCLoginViewController.m */; };
+		96DCF1421981F23900FC39EF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13A1981F23900FC39EF /* README.md */; };
+		96DCF1431981F23900FC39EF /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */; };
+		96DCF1441981F23900FC39EF /* UIImage+BlurredFrame.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */; };
+		96DCF1451981F23900FC39EF /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */; };
 		96EC5ECD197141A200978262 /* Version info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5ECC197141A200978262 /* Version info.txt */; };
 		96EC5ED21971489E00978262 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5ED11971489E00978262 /* NSString+Path.m */; };
 		96EC5EDE19714DE800978262 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96EC5EDD19714DE800978262 /* words.plist */; };
 		96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5EE3197158FB00978262 /* ZCFilePathManager.m */; };
+		96F2B95D19800D3A00C84B97 /* ZCSelfInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */; };
+		96F2B95F19800D9100C84B97 /* ZCSelfInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +225,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		962833441980F35700EE85E7 /* setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = setting.plist; sourceTree = "<group>"; };
+		962833471980F9D900EE85E7 /* ZCSelfCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSelfCenterViewController.h; sourceTree = "<group>"; };
+		962833481980F9D900EE85E7 /* ZCSelfCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSelfCenterViewController.m; sourceTree = "<group>"; };
+		962833491980F9D900EE85E7 /* ZCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSettingsViewController.h; sourceTree = "<group>"; };
+		9628334A1980F9D900EE85E7 /* ZCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSettingsViewController.m; sourceTree = "<group>"; };
+		9628334D1981035D00EE85E7 /* ZCsettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCsettingCell.h; sourceTree = "<group>"; };
+		9628334E1981035D00EE85E7 /* ZCsettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCsettingCell.m; sourceTree = "<group>"; };
 		962BD79F197C1B8C00FD0156 /* Dictionary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dictionary.xcdatamodel; sourceTree = "<group>"; };
 		962BD7A0197C1B8C00FD0156 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 		962BD7A1197C1B8C00FD0156 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
@@ -223,6 +241,8 @@
 		962BD7A5197C1B8C00FD0156 /* ZCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDataCenter.m; sourceTree = "<group>"; };
 		962BD7AA197C24CB00FD0156 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		963A5996197649B800363D38 /* Version info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Version info.m"; sourceTree = "<group>"; };
+		96457AC11981137200E00932 /* ZCAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCAboutViewController.h; sourceTree = "<group>"; };
+		96457AC21981137200E00932 /* ZCAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCAboutViewController.m; sourceTree = "<group>"; };
 		965929DD197A7BDC002CB5D2 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		965B58DC197D33DC000289D2 /* ZCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCTableViewCell.h; sourceTree = "<group>"; };
 		965B58DD197D33DC000289D2 /* ZCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCTableViewCell.m; sourceTree = "<group>"; };
@@ -248,13 +268,13 @@
 		96738E4C197C03D000592764 /* ZCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDetailViewController.m; sourceTree = "<group>"; };
 		96738E4D197C03D000592764 /* ZCVocListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCVocListTableViewController.h; sourceTree = "<group>"; };
 		96738E4E197C03D000592764 /* ZCVocListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCVocListTableViewController.m; sourceTree = "<group>"; };
-		96738E52197C040800592764 /* ZCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSettingsViewController.h; sourceTree = "<group>"; };
-		96738E53197C040800592764 /* ZCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSettingsViewController.m; sourceTree = "<group>"; };
 		96738E56197C049000592764 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96738E57197C049000592764 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		96738E58197C049000592764 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96738E59197C049000592764 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96738E5A197C049000592764 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		96786BA1197E65FD00C15374 /* UIImage+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
+		96786BA2197E65FD00C15374 /* UIImage+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
 		968D8CFD197CAFA700FF7C6C /* wordList copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wordList copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		968D8CFE197CAFA700FF7C6C /* wordList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "wordList copy-Info.plist"; path = "/OC/MyApp/Hello-word/wordList copy-Info.plist"; sourceTree = "<absolute>"; };
 		96CBD201197B69DD00BE42CA /* UIERealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIERealTimeBlurView.h; sourceTree = "<group>"; };
@@ -281,6 +301,14 @@
 		96D858B119753A2F0070226F /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
 		96D858B219753A2F0070226F /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
 		96D858B319753A2F0070226F /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		96DCF12119812FE300FC39EF /* ZCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCLoginViewController.h; sourceTree = "<group>"; };
+		96DCF12219812FE300FC39EF /* ZCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCLoginViewController.m; sourceTree = "<group>"; };
+		96DCF13A1981F23900FC39EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96DCF13B1981F23900FC39EF /* UIImage+BlurredFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurredFrame.h"; sourceTree = "<group>"; };
+		96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurredFrame.m"; sourceTree = "<group>"; };
+		96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIImage+BlurredFrame.podspec"; sourceTree = "<group>"; };
+		96DCF13E1981F23900FC39EF /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		96EC5ECC197141A200978262 /* Version info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Version info.txt"; sourceTree = "<group>"; };
 		96EC5ED01971489E00978262 /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Path.h"; path = "Helper/NSString+Path.h"; sourceTree = "<group>"; };
 		96EC5ED11971489E00978262 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Path.m"; path = "Helper/NSString+Path.m"; sourceTree = "<group>"; };
@@ -288,6 +316,9 @@
 		96EC5EE2197158FB00978262 /* ZCFilePathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZCFilePathManager.h; path = Helper/ZCFilePathManager.h; sourceTree = "<group>"; };
 		96EC5EE3197158FB00978262 /* ZCFilePathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZCFilePathManager.m; path = Helper/ZCFilePathManager.m; sourceTree = "<group>"; };
 		96EC5EE51971678300978262 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Helper/Common.h; sourceTree = "<group>"; };
+		96F2B95B19800D3A00C84B97 /* ZCSelfInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSelfInfoView.h; sourceTree = "<group>"; };
+		96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSelfInfoView.m; sourceTree = "<group>"; };
+		96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCSelfInfoView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +348,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		962833461980F9D900EE85E7 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				962833471980F9D900EE85E7 /* ZCSelfCenterViewController.h */,
+				962833481980F9D900EE85E7 /* ZCSelfCenterViewController.m */,
+				962833491980F9D900EE85E7 /* ZCSettingsViewController.h */,
+				9628334A1980F9D900EE85E7 /* ZCSettingsViewController.m */,
+				96457AC11981137200E00932 /* ZCAboutViewController.h */,
+				96457AC21981137200E00932 /* ZCAboutViewController.m */,
+				96DCF12119812FE300FC39EF /* ZCLoginViewController.h */,
+				96DCF12219812FE300FC39EF /* ZCLoginViewController.m */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
 		962BD79D197C1B8C00FD0156 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,9 +403,7 @@
 				96738E33197C027D00592764 /* ZCbBaiscViewController.m */,
 				96738E34197C027D00592764 /* ZCNaviController.h */,
 				96738E35197C027D00592764 /* ZCNaviController.m */,
-				96738E36197C027D00592764 /* ZCRootController.h */,
-				96738E37197C027D00592764 /* ZCRootController.m */,
-				96738E2D197C027D00592764 /* views */,
+				96786BA4197E7E4600C15374 /* tableBar */,
 			);
 			name = main;
 			path = Classes/main;
@@ -414,8 +458,9 @@
 		96738E51197C040800592764 /* self center */ = {
 			isa = PBXGroup;
 			children = (
-				96738E52197C040800592764 /* ZCSettingsViewController.h */,
-				96738E53197C040800592764 /* ZCSettingsViewController.m */,
+				962833461980F9D900EE85E7 /* vc */,
+				96F2B95A19800D3A00C84B97 /* views */,
+				962833441980F35700EE85E7 /* setting.plist */,
 			);
 			name = "self center";
 			path = "Classes/self center";
@@ -434,6 +479,16 @@
 			path = Classes/other;
 			sourceTree = "<group>";
 		};
+		96786BA4197E7E4600C15374 /* tableBar */ = {
+			isa = PBXGroup;
+			children = (
+				96738E2D197C027D00592764 /* views */,
+				96738E36197C027D00592764 /* ZCRootController.h */,
+				96738E37197C027D00592764 /* ZCRootController.m */,
+			);
+			name = tableBar;
+			sourceTree = "<group>";
+		};
 		96A2C555196A3D7A005AFA9C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +505,8 @@
 			children = (
 				96EC5EE2197158FB00978262 /* ZCFilePathManager.h */,
 				96EC5EE3197158FB00978262 /* ZCFilePathManager.m */,
+				96786BA1197E65FD00C15374 /* UIImage+Tools.h */,
+				96786BA2197E65FD00C15374 /* UIImage+Tools.m */,
 				96EC5EE51971678300978262 /* Common.h */,
 				96EC5ED01971489E00978262 /* NSString+Path.h */,
 				96EC5ED11971489E00978262 /* NSString+Path.m */,
@@ -498,10 +555,10 @@
 			children = (
 				96D2BE5A19686A5F0071E548 /* Main.storyboard */,
 				96A2C555196A3D7A005AFA9C /* Classes */,
+				96738E51197C040800592764 /* self center */,
 				96B3B9BE196ECAA600B765AF /* Helper */,
 				96D858681974F8B50070226F /* Lib */,
 				962BD79D197C1B8C00FD0156 /* model */,
-				96738E51197C040800592764 /* self center */,
 				96738E55197C049000592764 /* other */,
 				96D2BE5019686A5F0071E548 /* Supporting Files */,
 			);
@@ -536,6 +593,7 @@
 		96D858681974F8B50070226F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				96DCF1371981F23900FC39EF /* UIImage-BlurredFrame */,
 				965F332B197E3401005BBA14 /* UIcolor randomcolor */,
 				96CBD200197B69DD00BE42CA /* ZCRealtimeBlur */,
 				96D858AD19753A2F0070226F /* FBShimmering */,
@@ -588,6 +646,31 @@
 				96D858B319753A2F0070226F /* FBShimmeringView.m */,
 			);
 			path = FBShimmering;
+			sourceTree = "<group>";
+		};
+		96DCF1371981F23900FC39EF /* UIImage-BlurredFrame */ = {
+			isa = PBXGroup;
+			children = (
+				96DCF13A1981F23900FC39EF /* README.md */,
+				96DCF13B1981F23900FC39EF /* UIImage+BlurredFrame.h */,
+				96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */,
+				96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */,
+				96DCF13E1981F23900FC39EF /* UIImage+ImageEffects.h */,
+				96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */,
+			);
+			path = "UIImage-BlurredFrame";
+			sourceTree = "<group>";
+		};
+		96F2B95A19800D3A00C84B97 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				96F2B95B19800D3A00C84B97 /* ZCSelfInfoView.h */,
+				96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */,
+				96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */,
+				9628334D1981035D00EE85E7 /* ZCsettingCell.h */,
+				9628334E1981035D00EE85E7 /* ZCsettingCell.m */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -720,8 +803,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96DCF1441981F23900FC39EF /* UIImage+BlurredFrame.podspec in Resources */,
 				96D858761974F8B50070226F /* messageSent.aiff in Resources */,
+				962833451980F35700EE85E7 /* setting.plist in Resources */,
 				962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */,
+				96F2B95F19800D9100C84B97 /* ZCSelfInfoView.xib in Resources */,
 				96D2BE5C19686A5F0071E548 /* Main.storyboard in Resources */,
 				96738E5C197C049000592764 /* Info.plist in Resources */,
 				96EC5ECD197141A200978262 /* Version info.txt in Resources */,
@@ -751,7 +837,6 @@
 				968D8CD7197CAFA700FF7C6C /* ZCRootController.m in Sources */,
 				968D8CD8197CAFA700FF7C6C /* FBShimmeringView.m in Sources */,
 				968D8CD9197CAFA700FF7C6C /* ZCDataCenter.m in Sources */,
-				968D8CDA197CAFA700FF7C6C /* ZCSettingsViewController.m in Sources */,
 				968D8CDB197CAFA700FF7C6C /* ZCMessageSoundEffect.m in Sources */,
 				968D8CDC197CAFA700FF7C6C /* ZCNaviController.m in Sources */,
 				968D8CDD197CAFA700FF7C6C /* ZCDetailViewController.m in Sources */,
@@ -780,20 +865,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				962BD7A8197C1B8C00FD0156 /* Words.m in Sources */,
+				96457AC31981137200E00932 /* ZCAboutViewController.m in Sources */,
+				96DCF1451981F23900FC39EF /* UIImage+ImageEffects.m in Sources */,
 				96738E3A197C027D00592764 /* ZCbBaiscViewController.m in Sources */,
+				9628334C1980F9D900EE85E7 /* ZCSettingsViewController.m in Sources */,
 				96738E49197C036300592764 /* ZCScheduleTableViewController.m in Sources */,
 				96738E3C197C027D00592764 /* ZCRootController.m in Sources */,
+				96DCF1421981F23900FC39EF /* README.md in Sources */,
+				96DCF1431981F23900FC39EF /* UIImage+BlurredFrame.m in Sources */,
 				96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */,
 				962BD7A9197C1B8C00FD0156 /* ZCDataCenter.m in Sources */,
-				96738E54197C040800592764 /* ZCSettingsViewController.m in Sources */,
 				965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */,
 				96D858781974F8B50070226F /* ZCMessageSoundEffect.m in Sources */,
 				96738E3B197C027D00592764 /* ZCNaviController.m in Sources */,
+				96DCF12319812FE300FC39EF /* ZCLoginViewController.m in Sources */,
 				96738E4F197C03D000592764 /* ZCDetailViewController.m in Sources */,
 				96738E39197C027D00592764 /* ZCTabBarView.m in Sources */,
 				96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */,
+				96786BA3197E65FD00C15374 /* UIImage+Tools.m in Sources */,
 				96738E40197C031F00592764 /* ViewController.m in Sources */,
 				96738E50197C03D000592764 /* ZCVocListTableViewController.m in Sources */,
+				9628334B1980F9D900EE85E7 /* ZCSelfCenterViewController.m in Sources */,
+				9628334F1981035D00EE85E7 /* ZCsettingCell.m in Sources */,
 				962BD7A7197C1B8C00FD0156 /* Word.m in Sources */,
 				96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */,
 				96738E5D197C049000592764 /* main.m in Sources */,
@@ -802,6 +895,7 @@
 				96738E38197C027D00592764 /* ZCNoHighLightBtn.m in Sources */,
 				965B58DF197D33DC000289D2 /* ZCTableViewCell.m in Sources */,
 				96CBD206197B69DD00BE42CA /* UIImage+BoxBlur.m in Sources */,
+				96F2B95D19800D3A00C84B97 /* ZCSelfInfoView.m in Sources */,
 				96EC5ED21971489E00978262 /* NSString+Path.m in Sources */,
 				96D858771974F8B50070226F /* SoundEffects.m in Sources */,
 				96738E5B197C049000592764 /* AppDelegate.m in Sources */,
@@ -997,7 +1091,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1034,7 +1128,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;

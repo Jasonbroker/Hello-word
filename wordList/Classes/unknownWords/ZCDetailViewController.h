@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZCbBaiscViewController.h"
 
 @interface ZCDetailViewController : UIViewController
 /** will be updated into a model */
 @property (nonatomic ,strong) NSString *word;
 
-@property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+@property (strong, nonatomic) UILabel *wordLabel;
 
 @end

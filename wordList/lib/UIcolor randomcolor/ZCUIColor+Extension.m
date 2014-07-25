@@ -46,4 +46,9 @@
     
 }
 
++ (UIColor *)iOS7Blue
+{
+    return [UIColor colorWithRed:34.0/255.0f green:95.0/225.0f blue:255.0/255.0f alpha:1.0f];
+}
+
 @end

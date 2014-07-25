@@ -15,6 +15,9 @@
 @property (nonatomic, strong)NSArray *imageSet;
 
 @property (nonatomic, strong)NSArray *selectedImageSet;
+//second
+@property (nonatomic, copy)NSString *normalImage;
+@property (nonatomic, copy)NSString *selectedImage;
 
 @end
 
@@ -26,20 +29,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     CGRect frame = self.tabBar.frame;
-#warning refine here~~
+#warning refine here~ ~
     
 //    self.tabBar.center = CGPointMake(0, 64);
 //    self.tabBar.layer.anchorPoint = CGPointMake(0, 0);
 //    self.tabBar.barTintColor = [UIColor redColor];
 //    self.tabBar.backgroundColor = [UIColor redColor];
 //    self.tabBar.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.0f];
+
+    //   load btn....
     
+//    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
+//    second method
     
-    
-    
-    NSLog(@"%p", self);
-    
-    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
+    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImage:self.normalImage andSelectedImage:self.selectedImage frame:frame AndItemNumber:4];
     
     customTabBar.center = CGPointMake(0, 0);
     customTabBar.layer.anchorPoint = CGPointMake(0, 0);
@@ -52,8 +55,6 @@
     [self addObserver:self.viewControllers forKeyPath:@"self.frame" options:NSKeyValueObservingOptionOld context:nil];
     
 //    self.tabBarController.tabBar.frame
-        
-    
     
 }
 
@@ -92,23 +93,22 @@
     return _selectedImageSet;
 }
 
+- (NSString *)normalImage
+{
+    return @"normalTab";
+}
+
+- (NSString *)selectedImage
+{
+    return @"selectedTab";
+}
 ///**************************************   delegate     **************************************
 
 - (void)tabBarView:(ZCTabBarView *)tabBarView didSelectedButton:(UIButton *)button
 {
-//    NSLog(@"%s", __func__);
     self.selectedIndex = button.tag;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

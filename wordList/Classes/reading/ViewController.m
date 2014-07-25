@@ -23,9 +23,13 @@
 
 @property (nonatomic, strong)NSMutableArray *unknownWords;
 
-@property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+@property (strong, nonatomic) UILabel *wordLabel;
+
+@property (strong, nonatomic) FBShimmeringView *shimmeringView;
 
 @property (nonatomic, strong)NSDictionary *wordsInSection;
+
+
 
 - (IBAction)AddVList:(UIBarButtonItem *)sender;
 
@@ -47,6 +51,7 @@
 //    NSLog(@"%@", [ZCFilePathManager unknownWordFilePath]);
 //    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
 //    background image
+    
     if (iPhone4inch) {
         UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reading_bg_4"]];
         
@@ -58,20 +63,41 @@
         [self.view addSubview:bg];
     }
     
+//    autolayout
+//wordLabel
+    _wordLabel = [[UILabel alloc] init];
+    _wordLabel.text = @"Slide to Start";
+    _wordLabel.textColor = [UIColor whiteColor];
+    //    _wordLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:18];
+    _wordLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:35];
+    _wordLabel.numberOfLines = 0;
+    
+    _wordLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    _wordLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:_wordLabel];
+    //    self.wordLabel_
     
     // shimmering view
-    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
+    _shimmeringView = [[FBShimmeringView alloc] initWithFrame:self.view.bounds];
     
-    [self.view addSubview:shimmeringView];
+    [self.view addSubview:_shimmeringView];
     
-    [self.wordLabel removeFromSuperview];
-    [shimmeringView addSubview:_wordLabel];
+    _shimmeringView.contentView = _wordLabel;
+    _shimmeringView.shimmeringOpacity = 0.5;
+    _shimmeringView.shimmeringPauseDuration = 0.1;
     
-    _wordLabel.textAlignment = NSTextAlignmentCenter;
-    shimmeringView.contentView = _wordLabel;
-    shimmeringView.shimmeringOpacity = 0.5;
+    _shimmeringView.shimmeringSpeed = 160;
     
-    shimmeringView.shimmering = YES;
+    _shimmeringView.shimmeringOpacity = 0.4;
+    
+    NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
+    
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_wordLabel]-100-|" options:0 metrics:nil views:dict]];
+    
+//    [self.view setNeedsLayout];
+
+    
     
     NSString *path = [ZCFilePathManager userProgressPath];
     
@@ -80,6 +106,18 @@
     self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
     
     self.isFirstLoaded = YES;
+    
+}
+
+- (void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    
+    CGRect shimmeringFrame = self.view.bounds;
+    shimmeringFrame.origin.y = shimmeringFrame.size.height * 0.65;
+    shimmeringFrame.size.height = shimmeringFrame.size.height * 0.32;
+    _shimmeringView.frame = shimmeringFrame;
+    
     
 }
 
@@ -93,20 +131,31 @@
     
     //    hide bars
     if (self.isFirstLoaded) {
-        sleep(0.5);
-        [self.navigationController setNavigationBarHidden:YES animated:YES];
         
-        [UIView animateWithDuration:0.2 animations:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW,  (int64_t)(0.5 * NSEC_PER_SEC)),dispatch_get_main_queue() , ^{
             
-            self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 49);
-        }];
+            [self.navigationController setNavigationBarHidden:YES animated:YES];
+            
+            [UIView animateWithDuration:0.2 animations:^{
+                
+                self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 49);
+            }];
+            
+        });
         
         self.isFirstLoaded = NO;
+        
+        
+#warning revise here.//////
     }
-
+    _shimmeringView.shimmering = YES;
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    _shimmeringView.shimmering = NO;
+}
 
 ////****************************************    getter   setter ****************************************
 #pragma mark - setter getter
@@ -175,57 +224,11 @@
     
     [self.view addGestureRecognizer:swipeLeft];
     [self.view addGestureRecognizer:swipeRight];
-    
+//      open interface
 //    [self.view addGestureRecognizer:swipeDown];
 }
 
 #warning  all  the    massssssssssssssssssssssssssssssss massssma  mamsmmsmamsmamsamsmamsmamsamsmamsmamsmamsmamsamsmammsamm!!!!!!!!!!!!!!!!!!
-/**  swipe  */
-
-//- (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer
-//{
-//    NSLog(@"%d", swipeRecognizer.direction);
-//    
-//#warning  not good enough ...considering to change this part to a more comfortable implementation
-//    UIAlertView *alertLeft = [[UIAlertView alloc] initWithTitle:@"warning" message:@"已到达起始点！" delegate:self cancelButtonTitle: @"OK" otherButtonTitles: nil];
-//    UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
-//    
-//    if (swipeRecognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-//        _count ++;
-//        self.addBtn.enabled = YES;
-//        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-//        [self.wordLabel sizeToFit];
-//        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-//        
-//        NSLog(@"%@", self.wordLabel.text);
-//        
-//        if ((_count + 1)%KwordInSection == 0) {
-//            
-//            self.addBtn.enabled = NO;
-//            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nSlide to Start", _count/KwordInSection+1];
-//            }
-//        }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
-//            
-//            if (_count == 0) {
-//            //            show alert here
-//            NSLog(@" right swipe...");
-//            
-//            [alertLeft show];
-//            
-//            }else{
-//            
-//            _count --;
-//            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-//            self.wordLabel.text = word;
-//            [self.wordLabel sizeToFit];
-//            self.wordLabel.text = word;
-//            NSLog(@"%@", self.wordLabel.text);
-//            NSLog(@"%d", _count);
-//        }
-//    }
-//    
-//    
-//}
 ///**************************************    swipe    **************************************
 
 - (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer

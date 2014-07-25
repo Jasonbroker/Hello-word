@@ -144,6 +144,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     ZCScheduleDetailController *scheduleDetailVC = [[ZCScheduleDetailController alloc] init];
     
     [self.navigationController pushViewController:scheduleDetailVC animated:YES];

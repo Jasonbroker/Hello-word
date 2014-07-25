@@ -7,6 +7,7 @@
 //
 
 #import "ZCDetailViewController.h"
+#import "ZCUIColor+Extension.h"
 
 @interface ZCDetailViewController ()
 
@@ -16,14 +17,53 @@
 
 @implementation ZCDetailViewController
 
+- (void)loadView
+{
+    NSLog(@"%s", __func__);
+    self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.wordLabel = [[UILabel alloc] init];
+    
+    self.wordLabel.numberOfLines = 0;
+    
+    self.wordLabel.textColor = [UIColor iOS7Blue];
+    self.wordLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
+    
+    [self.view addSubview:self.wordLabel];
+    
+    
+//    self.wordLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
+//    NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
+    
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-180-[_wordLabel]" options:0 metrics:nil views:dict]];
+//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
+
+}
+
+- (void)viewWillLayoutSubviews
+{
+        NSLog(@"%s", __func__);
+    self.wordLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
+    
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-200-[_wordLabel]" options:0 metrics:nil views:dict]];
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
+    
+//    this can be set up before push
+    self.wordLabel.text = self.word;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    self.wordLabel.text = self.word;
-    
+        NSLog(@"%s", __func__);
 }
+
 
 
 @end
