@@ -42,6 +42,8 @@
     index = index % [UIColor cyclicColors].count;
     UIColor *color = [UIColor cyclicColors][index];
     
+    
+    
     return color;
     
 }

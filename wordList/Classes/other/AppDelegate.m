@@ -10,9 +10,12 @@
 #import "ZCRootController.h"
 #import "ZCFilePathManager.h"
 #import "Common.h"
+//  data center
+#import "ZCDataCenter.h"
+#import "ZCWord.h"
 
 @interface AppDelegate ()
-            
+
 
 @end
 
@@ -26,7 +29,10 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
 //
-//    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
+    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
+    
+    
+    
 //    NSLog(@"%@", application.windows);
 //
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"root"]];

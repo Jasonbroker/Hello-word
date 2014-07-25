@@ -29,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     CGRect frame = self.tabBar.frame;
-#warning refine here~ ~
+#warning refine here~ ~s
     
 //    self.tabBar.center = CGPointMake(0, 64);
 //    self.tabBar.layer.anchorPoint = CGPointMake(0, 0);
@@ -101,6 +101,15 @@
 - (NSString *)selectedImage
 {
     return @"selectedTab";
+}
+
+- (ZCDataCenter *)dataCenter
+{
+    if (_dataCenter == nil) {
+        
+        _dataCenter = [[ZCDataCenter alloc] init];
+    }
+    return _dataCenter;
 }
 ///**************************************   delegate     **************************************
 

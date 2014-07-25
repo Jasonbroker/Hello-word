@@ -13,10 +13,13 @@
 #import "ZCFilePathManager.h"
 #import "ZCMessageSoundEffect.h"
 
+
+
 // shimmering
 #import "FBShimmeringView.h"
 //test
-#import "UIERealTimeBlurView.h"
+#import "ZCWord.h"
+
 
 @interface ViewController ()
 
@@ -48,9 +51,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    NSLog(@"%@", [ZCFilePathManager unknownWordFilePath]);
-//    NSLog(@"%@", NSStringFromCGRect([UIScreen mainScreen].bounds));
-//    background image
     
     if (iPhone4inch) {
         UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reading_bg_4"]];
@@ -106,6 +106,10 @@
     self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
     
     self.isFirstLoaded = YES;
+    
+    
+#warning test
+//    NSLog(@"%@", [self.rootVC.dataCenter.words[1] spelling]);
     
 }
 
