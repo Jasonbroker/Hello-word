@@ -28,11 +28,6 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-//
-    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
-    
-    
-    
 //    NSLog(@"%@", application.windows);
 //
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"root"]];
@@ -55,6 +50,14 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
+    NSUserDefaults *readingProgress = [NSUserDefaults standardUserDefaults];
+    
+    [readingProgress setObject:@(rootVC.dataCenter.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+    
+    [readingProgress synchronize];
+    
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -67,20 +70,16 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-#warning 我了个去，死活写不进去。。。
-    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
-    NSUserDefaults *readingProgress = [NSUserDefaults standardUserDefaults];
     
-    [readingProgress setObject:@(rootVC.dataCenter.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+#warning can not write it in 。。。
     
-    
-    [readingProgress synchronize];
     
 #warning anyway, 我是不想这么干的。。。
     
 //    NSDictionary *wordCount = [NSDictionary dictionaryWithObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
     
-    NSDictionary *wordCount = [NSDictionary dictionaryWithObjectsAndKeys:@(rootVC.dataCenter.userReadingProgressMarker),KUserReadingProgressMarkerKey,@(rootVC.dataCenter.userMaxReadingProgressMarker), KUserMaxReadingProgressMarker, nil];
+    NSDictionary *wordCount = [NSDictionary dictionaryWithObjectsAndKeys:@(rootVC.dataCenter.userReadingProgressMarker),KUserReadingProgressMarkerKey,@(rootVC.dataCenter.userMaxReadingProgressMarker), KUserMaxReadingProgressMarkerKey, nil];
     
     [wordCount writeToFile:[ZCFilePathManager userProgressPath] atomically:YES];
 

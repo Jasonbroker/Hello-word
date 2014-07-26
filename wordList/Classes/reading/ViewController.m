@@ -7,8 +7,8 @@
 //
 #import "ZCRootController.h"
 #import "ViewController.h"
-#import "ZCScheduleTableViewController.h"
-#import "ZCVocListTableViewController.h"
+//#import "ZCScheduleTableViewController.h"
+//#import "ZCVocListTableViewController.h"
 #import "Common.h"
 #import "ZCFilePathManager.h"
 #import "ZCMessageSoundEffect.h"

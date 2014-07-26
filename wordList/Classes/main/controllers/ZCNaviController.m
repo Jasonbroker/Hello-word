@@ -7,7 +7,7 @@
 //
 
 #import "ZCNaviController.h"
-#import "ZCRootController.h"
+//#import "ZCRootController.h"
 
 @interface ZCNaviController()
 
@@ -26,14 +26,13 @@
 {
     [super viewDidLoad];
     
-    [self.tabBarController.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew context:nil];
+//    [self.tabBarController.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew context:nil];
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
- 
-//    (ZCRootController *)self.tabBarController
-}
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+//{
+
+//}
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {

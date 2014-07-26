@@ -49,4 +49,24 @@
     return _unknownWords;
 }
 
+- (int)userMaxReadingProgressMarker
+{
+#warning need code..
+    return 0;
+}
+
+- (int)userReadingProgressMarker
+{
+    return 0;
+}
+
+//- (NSArray *)userMaxReadingProgressMarkerAtIndexes:(NSIndexSet *)indexes
+//{
+//    return [NSArray array];
+//}
+
+
+
+
+
 @end
