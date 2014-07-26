@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "ZCDataCenter.h"
-#import "ZCWord.h"
 
 @interface ZCRootController : UITabBarController
 

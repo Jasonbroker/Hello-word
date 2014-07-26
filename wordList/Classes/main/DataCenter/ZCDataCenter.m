@@ -10,6 +10,16 @@
 #import "ZCWord.h"
 @implementation ZCDataCenter
 
+static id instance;
++ (ZCDataCenter *)sharedData
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[ZCDataCenter alloc] init];
+    });
+    return instance;
+}
+
 
 - (NSArray *)words
 {
@@ -59,6 +69,8 @@
 {
     return 0;
 }
+
+
 
 //- (NSArray *)userMaxReadingProgressMarkerAtIndexes:(NSIndexSet *)indexes
 //{

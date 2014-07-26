@@ -23,9 +23,7 @@
 
 @property (nonatomic, assign) int count;
 
-//@property (nonatomic, strong) NSArray *lineNumber;
 
-@property (nonatomic, strong)NSArray *wordLines;
 
 
 

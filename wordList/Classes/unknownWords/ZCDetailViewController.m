@@ -33,15 +33,15 @@
     
     [self.view addSubview:self.wordLabel];
     
-    
-//    self.wordLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    
-//    NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
-    
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-180-[_wordLabel]" options:0 metrics:nil views:dict]];
-//    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
-
 }
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    NSLog(@"%s", __func__);
+}
+
 
 - (void)viewWillLayoutSubviews
 {
@@ -54,15 +54,12 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_wordLabel]-50-|" options:0 metrics:nil views:dict]];
     
 //    this can be set up before push
-    self.wordLabel.text = self.word;
+    self.wordLabel.text = self.word.spelling;
+    
+//    test
+    NSLog(@"%@, %@", self.word.derivatives, self.word.meaning);
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-        NSLog(@"%s", __func__);
-}
 
 
 

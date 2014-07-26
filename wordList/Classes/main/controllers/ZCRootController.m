@@ -9,6 +9,7 @@
 #import "ZCRootController.h"
 #import "ZCTabBarView.h"
 #import "ZCNoHighLightBtn.h"
+#import "ZCDataCenter.h"
 
 @interface ZCRootController ()<ZCTabBarViewDelegate>
 
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     CGRect frame = self.tabBar.frame;
 #warning refine here~ ~s

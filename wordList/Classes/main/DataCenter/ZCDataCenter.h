@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Singleton.h"
 
 @interface ZCDataCenter : NSObject
 /**
@@ -35,6 +36,11 @@
 @property (nonatomic, assign) int userMaxReadingProgressMarker;
 
 @property (nonatomic, assign) BOOL wordIsAdded;
+
+
+//single_h(ZCDataCenter)
++ (ZCDataCenter *)sharedData;
+
 
 
 @end

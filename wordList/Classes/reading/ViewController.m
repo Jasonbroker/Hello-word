@@ -5,7 +5,7 @@
 //  Created by Jason Zhou on 7/6/14.
 //  Copyright (c) 2014 Jason Zhou. All rights reserved.
 //
-#import "ZCRootController.h"
+
 #import "ViewController.h"
 //#import "ZCScheduleTableViewController.h"
 //#import "ZCVocListTableViewController.h"
@@ -13,7 +13,8 @@
 #import "ZCFilePathManager.h"
 #import "ZCMessageSoundEffect.h"
 
-
+#warning test
+#import "ZCDataCenter.h"
 
 // shimmering
 #import "FBShimmeringView.h"
@@ -32,15 +33,18 @@
 
 @property (nonatomic, strong)NSDictionary *wordsInSection;
 
+@property (nonatomic, assign)BOOL isFirstLoaded;
 
+@property (nonatomic, strong)ZCDataCenter *dataCenter;
+
+@property (nonatomic, strong)NSArray *words;
 
 - (IBAction)AddVList:(UIBarButtonItem *)sender;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addBtn;
 
-@property (nonatomic, strong)ZCRootController *rootVC;
+//@property (nonatomic, strong)ZCRootController *rootVC;
 
-@property (nonatomic, assign)BOOL isFirstLoaded;
 
 @end
 
@@ -160,7 +164,7 @@
 
 ////****************************************    getter   setter ****************************************
 #pragma mark - setter getter
-
+/**
 - (ZCRootController *)rootVC
 {
     if (_rootVC == nil) {
@@ -168,35 +172,27 @@
     }
     return _rootVC;
 }
+*/
 
-- (NSArray *)wordLines
+- (ZCDataCenter *)dataCenter
 {
-    if (_wordLines == nil) {
-        
-        NSArray *wordLines = self.rootVC.dataCenter.words;
-        
-        _wordLines = wordLines;
+    if (_dataCenter == nil) {
+        _dataCenter = [ZCDataCenter sharedData];
     }
-    return _wordLines;
+    
+    return _dataCenter;
 }
 
-
-//- (NSDictionary *)wordLines
-//{
-//    if (_wordLines == nil) {
-//        NSString *path = [ZCFilePathManager wordsFilePath];
-//        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-//            
-//            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-//            _wordLines = dict;
-//        }else{
-//            NSLog(@"ERROR at %@.....", path);
-//        }
-//    }
-//    return _wordLines;
-//}
+- (NSArray *)words
+{
+    if (_words == nil) {
+        _words = _dataCenter.words;
+    }
+    return _words;
+}
 
 // may change after my new method.....
+/**
 - (NSMutableArray *)unknownWords
 {
     if (_unknownWords == nil) {
@@ -220,7 +216,7 @@
     
     return _unknownWords;
 }
-
+*/
 
 ///**************************************    gestures    **************************************
 #pragma mark - gestures swipe  left anf right ... tap to move forward
@@ -261,8 +257,8 @@
         
         //        to remember the max word index which the user read
         
-        if (_count > _rootVC.dataCenter.userMaxReadingProgressMarker) {
-            _rootVC.dataCenter.userMaxReadingProgressMarker = _count;
+        if (_count > _dataCenter.userMaxReadingProgressMarker) {
+            _dataCenter.userMaxReadingProgressMarker = _count;
         }
         
         self.addBtn.enabled = YES;
@@ -270,7 +266,7 @@
 
         
 #warning @@##if data is good enough, just add the datas here.
-        self.wordLabel.text = [self.wordLines[self.count] spelling];
+        self.wordLabel.text = [self.words[self.count] spelling];
         
         [self.wordLabel sizeToFit];
         
@@ -292,14 +288,14 @@
             
             _count --;
 //            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-            self.wordLabel.text = self.wordLabel.text = [self.wordLines[self.count] spelling];
+            self.wordLabel.text = self.wordLabel.text = [self.words[self.count] spelling];
             [self.wordLabel sizeToFit];
 //            self.wordLabel.text = word;
 //            NSLog(@"%@", self.wordLabel.text);
         }
     }
     
-    self.rootVC.dataCenter.userReadingProgressMarker = _count;
+    self.dataCenter.userReadingProgressMarker = _count;
 }
 
 #warning  ZZC - reserve for updating the new dict!
@@ -325,13 +321,13 @@
     
     _count ++;
 //    record the user progress.
-    if (_count > _rootVC.dataCenter.userMaxReadingProgressMarker) {
-        _rootVC.dataCenter.userMaxReadingProgressMarker = _count;
+    if (_count > _dataCenter.userMaxReadingProgressMarker) {
+        _dataCenter.userMaxReadingProgressMarker = _count;
     }
-        self.rootVC.dataCenter.userReadingProgressMarker = _count;
+        self.dataCenter.userReadingProgressMarker = _count;
 
     self.addBtn.enabled = YES;
-    self.wordLabel.text = self.wordLabel.text = [self.wordLines[self.count] spelling];
+    self.wordLabel.text = self.wordLabel.text = [self.words[self.count] spelling];
     [self.wordLabel sizeToFit];
 
 //    NSLog(@"%@", self.wordLabel.text);
@@ -378,16 +374,16 @@
 
 - (IBAction)AddVList:(UIBarButtonItem *)sender {
     
-    if (![self.rootVC.dataCenter.unknownWords containsObject:self.rootVC.dataCenter.words[_count]]) {
+    if (![self.dataCenter.unknownWords containsObject:self.dataCenter.words[_count]]) {
         
         [ZCMessageSoundEffect playMessageSentSound];
 //        NSLog(@"%@", [self.rootVC.dataCenter.words[_count] spelling]);
         
-        self.rootVC.dataCenter.wordIsAdded = YES;
+        self.dataCenter.wordIsAdded = YES;
         
-        [self.rootVC.dataCenter.unknownWords addObject:self.rootVC.dataCenter.words[_count]];
+        [self.dataCenter.unknownWords addObject:self.dataCenter.words[_count]];
         
-        NSLog(@"%d   hahhahhahaha", self.rootVC.dataCenter.unknownWords.count);
+        NSLog(@"%d   hahhahhahaha", self.dataCenter.unknownWords.count);
         
 
     
