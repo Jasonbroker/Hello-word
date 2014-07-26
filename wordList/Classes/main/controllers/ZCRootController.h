@@ -17,10 +17,4 @@
 @property (nonatomic, strong) ZCDataCenter *dataCenter;
 
 
-#warning will delete this code then
-@property (nonatomic, assign) int userReadingProgressMarker;
-
-@property (nonatomic, assign) int userMaxReadingProgressMarker;
-
-
 @end

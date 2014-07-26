@@ -71,7 +71,7 @@
     ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
     NSUserDefaults *readingProgress = [NSUserDefaults standardUserDefaults];
     
-    [readingProgress setObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+    [readingProgress setObject:@(rootVC.dataCenter.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
     
     
     [readingProgress synchronize];
@@ -80,11 +80,11 @@
     
 //    NSDictionary *wordCount = [NSDictionary dictionaryWithObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
     
-    NSDictionary *wordCount = [NSDictionary dictionaryWithObjectsAndKeys:@(rootVC.userReadingProgressMarker),KUserReadingProgressMarkerKey,@(rootVC.userMaxReadingProgressMarker), KUserMaxReadingProgressMarker, nil];
+    NSDictionary *wordCount = [NSDictionary dictionaryWithObjectsAndKeys:@(rootVC.dataCenter.userReadingProgressMarker),KUserReadingProgressMarkerKey,@(rootVC.dataCenter.userMaxReadingProgressMarker), KUserMaxReadingProgressMarker, nil];
     
     [wordCount writeToFile:[ZCFilePathManager userProgressPath] atomically:YES];
 
-    NSLog(@"%@。。。。。%d。。", @(rootVC.userReadingProgressMarker), rootVC.userMaxReadingProgressMarker);
+    NSLog(@"%@。。。。。%d。。", @(rootVC.dataCenter.userReadingProgressMarker), rootVC.dataCenter.userMaxReadingProgressMarker);
 
     
 }

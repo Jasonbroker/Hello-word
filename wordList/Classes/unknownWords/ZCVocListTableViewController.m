@@ -12,11 +12,13 @@
 #import "ZCDetailViewController.h"
 #import "ZCFilePathManager.h"
 #import "ZCTableViewCell.h"
-
+#import "ZCRootController.h"
 
 @interface ZCVocListTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *unknownWords;
+
+@property (nonatomic, strong) ZCRootController *rootVC;
 
 //@property (nonatomic, strong) ZCDataCenter *dataCenter;
 
@@ -74,48 +76,76 @@
     
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(add) name:@"click" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(add) name:@"click" object:nil];
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     self.navigationItem.title = @"unknown words";
+
+//    self.unknownWords = self.rootVC.dataCenter.unknownWords;
+//    first load the data..
+//    [self unknownWords];
+    
+//    [self.tableView reloadData];
 }
 
 
 - (void)viewWillAppear:(BOOL)animated
 {
-
+    NSLog(@"%d~~~~%d", _rootVC.dataCenter.unknownWords.count, _unknownWords.count);
+    
+#warning neeeeeeddddd refine here! reuse the data!
+//    if (_unknownWords.count != _rootVC.dataCenter.unknownWords.count) {
+//        
+//        [self unknownWords];
+//
+        [self.tableView reloadData];
+//    }
 }
 
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
+//- (void)dealloc
+//{
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//}
 
 ///**************************************   notification     **************************************///
 
-- (void)add
-{
-    NSLog(@"recieved!!!!");
-    self.unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
-    
-    [self.tableView reloadData];
-}
+//- (void)add
+//{
+//    NSLog(@"recieved!!!!");
+////    self.unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+//    
+//    [self.tableView reloadData];
+//}
 
 ///**************************************    getter    **************************************
 #pragma mark - load filepath
 
+- (ZCRootController *)rootVC   /**datacenter*/
+{
+    if (_rootVC == nil) {
+        _rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
+    }
+    return _rootVC;
+}
+
+
 - (NSMutableArray *)unknownWords
 {
     
-    if (!_unknownWords) {
+    if (_unknownWords == nil) {
         
-        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
-        NSLog(@"111111");
+//        _unknownWords = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
+        _unknownWords = self.rootVC.dataCenter.unknownWords;
+        
+        NSLog(@"%d .....", _unknownWords.count);
+        
     }
 
     return _unknownWords;
 }
+
+
 
 ///**************************************    data source    **************************************
 #pragma mark - Table view data source
@@ -142,7 +172,7 @@
 //    if (cell == nil) {
 //        cell = [[ZCTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
 //    }
-    cell.textLabel.text = self.unknownWords[indexPath.row];
+    cell.textLabel.text = [self.unknownWords[indexPath.row] spelling];
 
     
     return cell;
@@ -161,9 +191,11 @@
        NSLog(@"delete .. %d", indexPath.row);
     
     [self.unknownWords removeObjectAtIndex:indexPath.row];
-        
-        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
-    [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+    
+    _rootVC.dataCenter.unknownWords = _unknownWords;
+    
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+//    [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
     
 //    }
 }
@@ -179,7 +211,7 @@
     //  load view--- view did load
 //    when push view controller it will lay out subviews
     
-    detailVC.word = self.unknownWords[indexPath.row];
+    detailVC.word = [self.unknownWords[indexPath.row] spelling];
     
 //    detailVC.wordLabel.text
     

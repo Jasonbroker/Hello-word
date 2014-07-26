@@ -10,8 +10,7 @@
 
 @interface ZCScheduleDetailController : UITableViewController
 
-@property (nonatomic, assign) int sectionNum;
-//* prepare for change of the cell number 
-//@property (nonatomic, strong)NSMutableArray *wordsInSection;
+//* prepare for change of the cell number
+@property (nonatomic, strong)NSArray *wordsInSection;
 
 @end

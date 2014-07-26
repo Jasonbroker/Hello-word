@@ -12,13 +12,12 @@
 #import "ZCbBaiscViewController.h"
 #import "ZCTableViewCell.h"
 #import "ZCUIColor+Extension.h"
+#import "ZCWord.h"
 
 static NSString *scheduleDetailCellIdentifier = @"wordCell";
 
 @interface ZCScheduleDetailController ()
 
-
-@property (nonatomic, strong) NSDictionary *words;
 
 @end
 
@@ -27,12 +26,6 @@ static NSString *scheduleDetailCellIdentifier = @"wordCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-//    NSLog(@"%@", NSStringFromCGRect(self.tabBarController.tabBar.frame));
-    
-    // self.clearsSelectionOnViewWillAppear = NO;
-
-//    self.tabBarController.tabBar.hidden =YES;
     
     //    register the cell
     [self.tableView registerClass:[ZCTableViewCell class] forCellReuseIdentifier:scheduleDetailCellIdentifier];
@@ -43,20 +36,8 @@ static NSString *scheduleDetailCellIdentifier = @"wordCell";
 
 ///**************************************    getter setter    **************************************
 
-- (NSDictionary *)words
-{
-    if (!_words) {
-        NSString *path = [ZCFilePathManager wordsFilePath];
-        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-            
-            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-            _words = dict;
-        }else{
-            NSLog(@"ERROR at %@.....", path);
-        }
-    }
-    return _words;
-}
+
+
 
 ///**************************************  table view data source      **************************************
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -68,22 +49,9 @@ static NSString *scheduleDetailCellIdentifier = @"wordCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section. defined in common.m
-    return KwordInSection;
+//    return KwordInSection;
+    return self.wordsInSection.count;
 }
-
-#if 0
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row + self.sectionNum *KwordInSection ];
-    cell.textLabel.text = [self.words valueForKey:key];
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.font = KcellFontSize;
-    cell.selectionStyle= UITableViewCellSelectionStyleNone;
-    return cell;
-}
-#endif
-
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -93,9 +61,8 @@ static NSString *scheduleDetailCellIdentifier = @"wordCell";
     if (cell == nil) {
         cell = [[ZCTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:scheduleDetailCellIdentifier];
     }
-    NSString *key = [NSString stringWithFormat:@"%d", indexPath.row + self.sectionNum *KwordInSection];
-#warning
-    cell.textLabel.text = [self.words valueForKey:key];
+    
+    cell.textLabel.text = [self.wordsInSection[indexPath.row] spelling];
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor cyclicColor4Index:indexPath.row];
 

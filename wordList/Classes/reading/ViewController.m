@@ -96,8 +96,6 @@
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_wordLabel]-100-|" options:0 metrics:nil views:dict]];
     
 //    [self.view setNeedsLayout];
-
-    
     
     NSString *path = [ZCFilePathManager userProgressPath];
     
@@ -109,7 +107,7 @@
     
     
 #warning test
-//    NSLog(@"%@", [self.rootVC.dataCenter.words[1] spelling]);
+    NSLog(@"%@", [self.rootVC.dataCenter.words[1] spelling]);
     
 }
 
@@ -149,9 +147,8 @@
         
         self.isFirstLoaded = NO;
         
-        
-#warning revise here.//////
     }
+    
     _shimmeringView.shimmering = YES;
     
 }
@@ -163,6 +160,43 @@
 
 ////****************************************    getter   setter ****************************************
 #pragma mark - setter getter
+
+- (ZCRootController *)rootVC
+{
+    if (_rootVC == nil) {
+        _rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
+    }
+    return _rootVC;
+}
+
+- (NSArray *)wordLines
+{
+    if (_wordLines == nil) {
+        
+        NSArray *wordLines = self.rootVC.dataCenter.words;
+        
+        _wordLines = wordLines;
+    }
+    return _wordLines;
+}
+
+
+//- (NSDictionary *)wordLines
+//{
+//    if (_wordLines == nil) {
+//        NSString *path = [ZCFilePathManager wordsFilePath];
+//        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+//            
+//            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+//            _wordLines = dict;
+//        }else{
+//            NSLog(@"ERROR at %@.....", path);
+//        }
+//    }
+//    return _wordLines;
+//}
+
+// may change after my new method.....
 - (NSMutableArray *)unknownWords
 {
     if (_unknownWords == nil) {
@@ -187,28 +221,6 @@
     return _unknownWords;
 }
 
-- (NSDictionary *)wordLines
-{
-    if (!_wordLines) {
-        NSString *path = [ZCFilePathManager wordsFilePath];
-        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-            
-            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-            _wordLines = dict;
-        }else{
-            NSLog(@"ERROR at %@.....", path);
-        }
-    }
-    return _wordLines;
-}
-
-- (ZCRootController *)rootVC
-{
-    if (_rootVC == nil) {
-        _rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
-    }
-    return _rootVC;
-}
 
 ///**************************************    gestures    **************************************
 #pragma mark - gestures swipe  left anf right ... tap to move forward
@@ -249,12 +261,17 @@
         
         //        to remember the max word index which the user read
         
-        if (_count > _rootVC.userMaxReadingProgressMarker) {
-            _rootVC.userMaxReadingProgressMarker = _count;
+        if (_count > _rootVC.dataCenter.userMaxReadingProgressMarker) {
+            _rootVC.dataCenter.userMaxReadingProgressMarker = _count;
         }
         
         self.addBtn.enabled = YES;
-        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+//        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+
+        
+#warning @@##if data is good enough, just add the datas here.
+        self.wordLabel.text = [self.wordLines[self.count] spelling];
+        
         [self.wordLabel sizeToFit];
         
 //        NSLog(@"%@", self.wordLabel.text);
@@ -282,7 +299,7 @@
         }
     }
     
-    self.rootVC.userReadingProgressMarker = _count;
+    self.rootVC.dataCenter.userReadingProgressMarker = _count;
 }
 
 #warning  ZZC - reserve for updating the new dict!
@@ -308,10 +325,10 @@
     
     _count ++;
 //    record the user progress.
-    if (_count > _rootVC.userMaxReadingProgressMarker) {
-        _rootVC.userMaxReadingProgressMarker = _count;
+    if (_count > _rootVC.dataCenter.userMaxReadingProgressMarker) {
+        _rootVC.dataCenter.userMaxReadingProgressMarker = _count;
     }
-        self.rootVC.userReadingProgressMarker = _count;
+        self.rootVC.dataCenter.userReadingProgressMarker = _count;
 
     self.addBtn.enabled = YES;
     self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
@@ -359,30 +376,62 @@
 
 ///**************************************   add btn clicked  - notification send to third view controller     **************************************
 #pragma mark - click button to  add unknown words to the vocabulary list ^ _ ^
+
 - (IBAction)AddVList:(UIBarButtonItem *)sender {
-  
-    if (![self.unknownWords containsObject:self.wordLabel.text]) {
+    
+    if (![self.rootVC.dataCenter.unknownWords containsObject:self.rootVC.dataCenter.words[_count]]) {
         
         [ZCMessageSoundEffect playMessageSentSound];
+//        NSLog(@"%@", [self.rootVC.dataCenter.words[_count] spelling]);
         
-        [self.unknownWords addObject:self.wordLabel.text];
+        [self.rootVC.dataCenter.unknownWords addObject:self.rootVC.dataCenter.words[_count]];
         
-        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+        NSLog(@"%d   hahhahhahaha", self.rootVC.dataCenter.unknownWords.count);
+        
+//        NSLog(@"%@", self.rootVC.dataCenter.unknownWords[0]);
+        
+//        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
         
         //    send notification
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"click" object:nil];
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"click" object:nil];
         
-//        NSLog(@"%@", self.unknownWords);
+        //        NSLog(@"%@", self.unknownWords);
         
     }else{
-//        alert
+        //        alert
         [ZCMessageSoundEffect playAlertSound];
     }
     
-
+    
 }
 
+
+//- (IBAction)AddVList:(UIBarButtonItem *)sender {
+//  
+//    if (![self.unknownWords containsObject:self.wordLabel.text]) {
+//        
+//        [ZCMessageSoundEffect playMessageSentSound];
+//        
+//        [self.unknownWords addObject:self.wordLabel.text];
+//        
+//        
+//        
+//        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+//        
+//        //    send notification
+//        
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"click" object:nil];
+//        
+////        NSLog(@"%@", self.unknownWords);
+//        
+//    }else{
+////        alert
+//        [ZCMessageSoundEffect playAlertSound];
+//    }
+//    
+//
+//}
 
 
 

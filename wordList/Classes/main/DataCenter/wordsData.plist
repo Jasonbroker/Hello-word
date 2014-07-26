@@ -14,6 +14,16 @@
 	</dict>
 	<dict>
 		<key>spelling</key>
+		<string>init</string>
+		<key>meaning</key>
+		<string>初始化</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal conputer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
 		<string>computer</string>
 		<key>meaning</key>
 		<string>计算机</string>

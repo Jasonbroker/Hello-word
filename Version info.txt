@@ -100,5 +100,6 @@ bug fixed:
 
 1. right and left swipe function well.
 
+2014 version 0.9.7 dataCenter added.
 
 
