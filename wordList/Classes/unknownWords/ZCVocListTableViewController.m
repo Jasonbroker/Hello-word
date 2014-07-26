@@ -41,10 +41,6 @@
  the word will be added to the documents. At this time, view for voc list havnt init yet;
  
  
- 
- 
- 
- 
  the view did load
  
  getter will be called and load the file data;
@@ -92,15 +88,18 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    NSLog(@"%d~~~~%d", _rootVC.dataCenter.unknownWords.count, _unknownWords.count);
+//    NSLog(@"%d~~~~%d", _rootVC.dataCenter.unknownWords.count, _unknownWords.count);
     
-#warning neeeeeeddddd refine here! reuse the data!
-//    if (_unknownWords.count != _rootVC.dataCenter.unknownWords.count) {
-//        
-//        [self unknownWords];
-//
+    if (self.rootVC.dataCenter.wordIsAdded) {
+        
         [self.tableView reloadData];
-//    }
+        
+        NSLog(@"reload data");
+        
+        self.rootVC.dataCenter.wordIsAdded = NO;
+    }
+
+
 }
 
 //- (void)dealloc

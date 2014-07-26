@@ -34,5 +34,7 @@
 
 @property (nonatomic, assign) int userMaxReadingProgressMarker;
 
+@property (nonatomic, assign) BOOL wordIsAdded;
+
 
 @end

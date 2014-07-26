@@ -107,7 +107,7 @@
     
     
 #warning test
-    NSLog(@"%@", [self.rootVC.dataCenter.words[1] spelling]);
+//    NSLog(@"%@", [self.rootVC.dataCenter.words[1] spelling]);
     
 }
 
@@ -291,10 +291,10 @@
         }else{
             
             _count --;
-            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-            self.wordLabel.text = word;
+//            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+            self.wordLabel.text = self.wordLabel.text = [self.wordLines[self.count] spelling];
             [self.wordLabel sizeToFit];
-            self.wordLabel.text = word;
+//            self.wordLabel.text = word;
 //            NSLog(@"%@", self.wordLabel.text);
         }
     }
@@ -331,9 +331,8 @@
         self.rootVC.dataCenter.userReadingProgressMarker = _count;
 
     self.addBtn.enabled = YES;
-    self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
+    self.wordLabel.text = self.wordLabel.text = [self.wordLines[self.count] spelling];
     [self.wordLabel sizeToFit];
-    self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
 
 //    NSLog(@"%@", self.wordLabel.text);
     if (_count%KwordInSection == 0 ) {
@@ -354,7 +353,7 @@
 
 - (void)pinch:(UIPinchGestureRecognizer *)pinchRecognizer
 {
-    if (pinchRecognizer.scale > 1.3f) {
+    if (pinchRecognizer.scale > 1.2f) {
         [self.navigationController setNavigationBarHidden:YES animated:YES];
         
         [UIView animateWithDuration:0.25 animations:^{
@@ -362,7 +361,7 @@
             self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, 49);
         }];
         
-    }else if(pinchRecognizer.scale < 0.7f){
+    }else if(pinchRecognizer.scale < 0.8f){
         [self.navigationController setNavigationBarHidden:NO animated:YES];
         
         [UIView animateWithDuration:0.2 animations:^{
@@ -384,20 +383,14 @@
         [ZCMessageSoundEffect playMessageSentSound];
 //        NSLog(@"%@", [self.rootVC.dataCenter.words[_count] spelling]);
         
+        self.rootVC.dataCenter.wordIsAdded = YES;
+        
         [self.rootVC.dataCenter.unknownWords addObject:self.rootVC.dataCenter.words[_count]];
         
         NSLog(@"%d   hahhahhahaha", self.rootVC.dataCenter.unknownWords.count);
         
-//        NSLog(@"%@", self.rootVC.dataCenter.unknownWords[0]);
-        
-//        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
-        
-        //    send notification
-        
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"click" object:nil];
-        
-        //        NSLog(@"%@", self.unknownWords);
-        
+
+    
     }else{
         //        alert
         [ZCMessageSoundEffect playAlertSound];
@@ -405,33 +398,6 @@
     
     
 }
-
-
-//- (IBAction)AddVList:(UIBarButtonItem *)sender {
-//  
-//    if (![self.unknownWords containsObject:self.wordLabel.text]) {
-//        
-//        [ZCMessageSoundEffect playMessageSentSound];
-//        
-//        [self.unknownWords addObject:self.wordLabel.text];
-//        
-//        
-//        
-//        [self.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
-//        
-//        //    send notification
-//        
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"click" object:nil];
-//        
-////        NSLog(@"%@", self.unknownWords);
-//        
-//    }else{
-////        alert
-//        [ZCMessageSoundEffect playAlertSound];
-//    }
-//    
-//
-//}
 
 
 
