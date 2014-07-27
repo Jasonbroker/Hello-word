@@ -36,9 +36,8 @@
     
     self.selfInfoView.unknownWords.text = [NSString stringWithFormat:@"%@", @([ZCDataCenter sharedData].unknownWords.count)];
     self.selfInfoView.wordsLearned.text = [NSString stringWithFormat:@"%@", @([ZCDataCenter sharedData].userMaxReadingProgressMarker)];
-    self.selfInfoView.unknownWords.text = [NSString stringWithFormat:@"%@", @(11)];
     
-    
+    self.selfInfoView.unknownWords.text = [NSString stringWithFormat:@"%@", @([ZCDataCenter sharedData].words.count - [ZCDataCenter sharedData].userMaxReadingProgressMarker)];
     
     self.selfInfoView.myDelegate = self;
 

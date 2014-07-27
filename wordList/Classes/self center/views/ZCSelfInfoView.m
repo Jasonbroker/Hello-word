@@ -43,6 +43,7 @@
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
 /**
     self.unknownWords.translatesAutoresizingMaskIntoConstraints = NO;
     self.wordsLearned.translatesAutoresizingMaskIntoConstraints = NO;

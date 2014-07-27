@@ -222,6 +222,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vQe-Ls-zJf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="g1P-g1-FHl" kind="relationship" relationship="viewControllers" id="BXg-4Z-upu"/>
