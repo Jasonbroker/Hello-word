@@ -20,7 +20,7 @@
 
 @property (nonatomic, strong)ZCDataCenter *dataCenter;
 
-@property (nonatomic, assign)int userMaxReadProgressNum;
+@property (nonatomic, assign)NSInteger userMaxReadProgressNum;
 
 @end
 
@@ -66,25 +66,6 @@ NSLog(@"%@", [self.dataCenter.words[0] spelling]);
 
 ///**************************************   getter     **************************************
 
-/**
-- (NSDictionary *)wordLines
-{
-    if (!_wordLines) {
-                NSLog(@"%s.....", __func__);
-        NSString *path = [ZCFilePathManager wordsFilePath];
-
-        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-            
-            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-            _wordLines = dict;
-        }else{
-            NSLog(@"ERROR at %@.....", path);
-        }
-    }
-
-    return _wordLines;
-}
-*/
 
 - (ZCDataCenter *)dataCenter
 {
@@ -102,7 +83,7 @@ NSLog(@"%@", [self.dataCenter.words[0] spelling]);
 
     // Return the number of sections.
     
-    NSLog(@"%d", self.dataCenter.words.count);
+    NSLog(@"%lu", (unsigned long)self.dataCenter.words.count);
     
     return self.dataCenter.words.count/KwordInSection + 1;
     
@@ -123,7 +104,7 @@ NSLog(@"%@", [self.dataCenter.words[0] spelling]);
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat: @"Section %d", indexPath.section +1];;
+    cell.textLabel.text = [NSString stringWithFormat: @"Section %@", @(indexPath.section +1)];;
     
     // Configure the cell...
     if(self.dataCenter.userMaxReadingProgressMarker/KwordInSection < indexPath.section)
@@ -157,7 +138,7 @@ NSLog(@"%@", [self.dataCenter.words[0] spelling]);
     
     NSMutableArray *arrayM4CellDatasource = [NSMutableArray arrayWithCapacity:0];
 
-    int allWordsCount = self.dataCenter.words.count;
+    NSInteger allWordsCount = self.dataCenter.words.count;
     
     int count;
     

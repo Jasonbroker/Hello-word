@@ -12,19 +12,20 @@
 
 -(UIImage *)croppedImageAtFrame:(CGRect)frame
 {
-    CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], frame);
-    UIImage *cropped = [UIImage imageWithCGImage:imageRef];
-    CGImageRelease(imageRef);
-    return cropped;
+    frame = CGRectMake(frame.origin.x * self.scale, frame.origin.y * self.scale, frame.size.width * self.scale, frame.size.height * self.scale);
+    CGImageRef sourceImageRef = [self CGImage];
+    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, frame);
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:[self scale] orientation:[self imageOrientation]];
+    CGImageRelease(newImageRef);
+    return newImage;
 }
 
-
-#pragma mark - Merge two Images
+#pragma mark - Marge two Images
 
 - (UIImage *) addImageToImage:(UIImage *)img atRect:(CGRect)cropRect{
     
     CGSize size = CGSizeMake(self.size.width, self.size.height);
-    UIGraphicsBeginImageContext(size);
+    UIGraphicsBeginImageContextWithOptions(size, NO, self.scale);
     
     CGPoint pointImg1 = CGPointMake(0,0);
     [self drawAtPoint:pointImg1];

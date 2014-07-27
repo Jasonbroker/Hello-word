@@ -8,6 +8,8 @@
 
 #import "ZCDataCenter.h"
 #import "ZCWord.h"
+#import "Common.h"
+#import "ZCFilePathManager.h"
 @implementation ZCDataCenter
 
 static id instance;
@@ -51,33 +53,51 @@ static id instance;
 {
     if (_unknownWords == nil) {
         
-        NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:0];
+
         
-        _unknownWords = arrayM;
+        if ([[NSFileManager defaultManager] fileExistsAtPath:[ZCFilePathManager unknownWordFilePath]]) {
+ 
+#warning        test here..
+            NSLog(@"read unknownwords");
+            
+
+            _unknownWords = [NSKeyedUnarchiver unarchiveObjectWithFile:[ZCFilePathManager unknownWordFilePath]];
+            
+            
+        }else{
+            
+            NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:0];
+            
+            _unknownWords = arrayM;
+        }
+        
+        return _unknownWords;
+        
     }
     
     return _unknownWords;
 }
 
-- (int)userMaxReadingProgressMarker
+- (NSInteger)userMaxReadingProgressMarker
 {
-#warning need code..
-    return 0;
+    
+    if (_userMaxReadingProgressMarker == 0 ) {
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        _userMaxReadingProgressMarker = [[defaults objectForKey:KUserMaxReadingProgressMarkerKey] integerValue];
+    }
+    return _userMaxReadingProgressMarker;
 }
 
-- (int)userReadingProgressMarker
+- (NSInteger)userReadingProgressMarker
 {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (_userReadingProgressMarker == 0) {
+        _userReadingProgressMarker = [[defaults objectForKey:KUserReadingProgressMarkerKey] integerValue];
+    }
     return 0;
 }
-
-
-
-//- (NSArray *)userMaxReadingProgressMarkerAtIndexes:(NSIndexSet *)indexes
-//{
-//    return [NSArray array];
-//}
-
-
 
 
 

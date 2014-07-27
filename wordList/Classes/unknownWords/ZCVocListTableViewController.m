@@ -112,7 +112,7 @@
         
         _unknownWords = self.dataCenter.unknownWords;
         
-        NSLog(@"%d .....", _unknownWords.count);
+        NSLog(@"%@ .....", @(_unknownWords.count));
         
     }
 

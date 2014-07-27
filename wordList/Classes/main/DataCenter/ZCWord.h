@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZCWord : NSObject
+@interface ZCWord : NSObject<NSCoding>
 
 @property (nonatomic, copy) NSString * spelling;
 

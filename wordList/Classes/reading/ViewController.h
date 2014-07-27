@@ -21,8 +21,6 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, assign) int count;
-
 
 
 

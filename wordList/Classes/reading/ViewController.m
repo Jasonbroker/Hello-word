@@ -7,13 +7,9 @@
 //
 
 #import "ViewController.h"
-//#import "ZCScheduleTableViewController.h"
-//#import "ZCVocListTableViewController.h"
 #import "Common.h"
-#import "ZCFilePathManager.h"
 #import "ZCMessageSoundEffect.h"
 
-#warning test
 #import "ZCDataCenter.h"
 
 // shimmering
@@ -38,6 +34,10 @@
 @property (nonatomic, strong)ZCDataCenter *dataCenter;
 
 @property (nonatomic, strong)NSArray *words;
+
+@property (nonatomic, assign) int userPrograss;
+
+@property (nonatomic, assign) int userMaxReadingCount;
 
 - (IBAction)AddVList:(UIBarButtonItem *)sender;
 
@@ -101,11 +101,9 @@
     
 //    [self.view setNeedsLayout];
     
-    NSString *path = [ZCFilePathManager userProgressPath];
+//    NSString *path = [ZCFilePathManager userProgressPath];
     
-    NSDictionary *userProgress = [NSDictionary dictionaryWithContentsOfFile:path];
-    
-    self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
+//    self.count = [[userProgress valueForKeyPath:KUserReadingProgressMarkerKey] integerValue];
     
     self.isFirstLoaded = YES;
     
@@ -160,6 +158,8 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     _shimmeringView.shimmering = NO;
+    
+    self.dataCenter.userReadingProgressMarker = _userPrograss;
 }
 
 ////****************************************    getter   setter ****************************************
@@ -190,33 +190,6 @@
     }
     return _words;
 }
-
-// may change after my new method.....
-/**
-- (NSMutableArray *)unknownWords
-{
-    if (_unknownWords == nil) {
-        
-        _unknownWords = [[NSMutableArray alloc] init];
-        
-        NSString *path = [ZCFilePathManager unknownWordFilePath];
-        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-            
-            NSMutableArray *arrayM = [NSMutableArray arrayWithContentsOfFile:[ZCFilePathManager unknownWordFilePath]];
-            
-            _unknownWords = arrayM;
-            
-        }else{
-            // create the file  22222222 :(
-            NSLog(@"no file~ ~");
-            [_unknownWords writeToFile:path atomically:YES];
-        
-        }
-    }
-    
-    return _unknownWords;
-}
-*/
 
 ///**************************************    gestures    **************************************
 #pragma mark - gestures swipe  left anf right ... tap to move forward
@@ -250,15 +223,19 @@
 #warning  not good enough ...considering to change this part to a more comfortable implementation
     UIAlertView *alertLeft = [[UIAlertView alloc] initWithTitle:@"warning" message:@"已到达起始点！" delegate:self cancelButtonTitle: @"OK" otherButtonTitles: nil];
     UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
+   
     
     if (swipeRecognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-        
-        _count ++;
+//init the userProgress
+        _userPrograss = self.dataCenter.userReadingProgressMarker;
+    
+        _userPrograss ++;
         
         //        to remember the max word index which the user read
         
-        if (_count > _dataCenter.userMaxReadingProgressMarker) {
-            _dataCenter.userMaxReadingProgressMarker = _count;
+        if (_userPrograss > _dataCenter.userMaxReadingProgressMarker) {
+#warning .......wrong retouch thererere
+            _dataCenter.userMaxReadingProgressMarker = _userPrograss;
         }
         
         self.addBtn.enabled = YES;
@@ -266,19 +243,19 @@
 
         
 #warning @@##if data is good enough, just add the datas here.
-        self.wordLabel.text = [self.words[self.count] spelling];
+        self.wordLabel.text = [self.words[self.userPrograss] spelling];
         
         [self.wordLabel sizeToFit];
         
 //        NSLog(@"%@", self.wordLabel.text);
         
-        if (_count%KwordInSection == 0 ) {
+        if (_userPrograss%KwordInSection == 0 ) {
             self.addBtn.enabled = NO;
             [alertRight show];
-            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nSlide to start", _count/KwordInSection+1];
+            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nSlide to start", _userPrograss/KwordInSection+1];
         }
     }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
-        if (_count == 0) {
+        if (_userPrograss == 0) {
             //            show alert here
             NSLog(@" right swipe...");
             
@@ -286,16 +263,16 @@
             
         }else{
             
-            _count --;
-//            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
-            self.wordLabel.text = self.wordLabel.text = [self.words[self.count] spelling];
+            _userPrograss --;
+//            NSString *word = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.userPrograss]];
+            self.wordLabel.text = self.wordLabel.text = [self.words[self.userPrograss] spelling];
             [self.wordLabel sizeToFit];
 //            self.wordLabel.text = word;
 //            NSLog(@"%@", self.wordLabel.text);
         }
     }
     
-    self.dataCenter.userReadingProgressMarker = _count;
+    self.dataCenter.userReadingProgressMarker = _userPrograss;
 }
 
 #warning  ZZC - reserve for updating the new dict!
@@ -319,22 +296,22 @@
 {
     UIAlertView *alertRight = [[UIAlertView alloc] initWithTitle:@"warning" message:@"Task is finished!" delegate:self cancelButtonTitle: @"continue" otherButtonTitles: nil];
     
-    _count ++;
+    _userPrograss ++;
 //    record the user progress.
-    if (_count > _dataCenter.userMaxReadingProgressMarker) {
-        _dataCenter.userMaxReadingProgressMarker = _count;
+    if (_userPrograss > _dataCenter.userMaxReadingProgressMarker) {
+        _dataCenter.userMaxReadingProgressMarker = _userPrograss;
     }
-        self.dataCenter.userReadingProgressMarker = _count;
+        self.dataCenter.userReadingProgressMarker = _userPrograss;
 
     self.addBtn.enabled = YES;
-    self.wordLabel.text = self.wordLabel.text = [self.words[self.count] spelling];
+    self.wordLabel.text = self.wordLabel.text = [self.words[self.userPrograss] spelling];
     [self.wordLabel sizeToFit];
 
 //    NSLog(@"%@", self.wordLabel.text);
-    if (_count%KwordInSection == 0 ) {
+    if (_userPrograss%KwordInSection == 0 ) {
         self.addBtn.enabled = NO;
         [alertRight show];
-        self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _count/KwordInSection+1];
+        self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _userPrograss/KwordInSection+1];
     }
 }
 
@@ -374,14 +351,14 @@
 
 - (IBAction)AddVList:(UIBarButtonItem *)sender {
     
-    if (![self.dataCenter.unknownWords containsObject:self.dataCenter.words[_count]]) {
+    if (![self.dataCenter.unknownWords containsObject:self.dataCenter.words[_userPrograss]]) {
         
         [ZCMessageSoundEffect playMessageSentSound];
-//        NSLog(@"%@", [self.rootVC.dataCenter.words[_count] spelling]);
+//        NSLog(@"%@", [self.rootVC.dataCenter.words[_userPrograss] spelling]);
         
         self.dataCenter.wordIsAdded = YES;
         
-        [self.dataCenter.unknownWords addObject:self.dataCenter.words[_count]];
+        [self.dataCenter.unknownWords addObject:self.dataCenter.words[_userPrograss]];
         
         NSLog(@"%d   hahhahhahaha", self.dataCenter.unknownWords.count);
         

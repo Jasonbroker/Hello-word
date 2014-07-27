@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ZCRootController.h"
 #import "ZCFilePathManager.h"
 #import "Common.h"
 //  data center
@@ -28,12 +27,6 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-//    NSLog(@"%@", application.windows);
-//
-//    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed: @"root"]];
-//    [rootVC.view addSubview:imageView];
-//    [rootVC.view sendSubviewToBack:imageView];
-
     
     
     return YES;
@@ -42,21 +35,25 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-//    UIApplication *app = [UIApplication sharedApplication];
-//    NSLog(@"%@", [application.windows[0] rootViewController]);
-    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
-    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
+    ZCDataCenter *dataCenter = [ZCDataCenter sharedData];
+    
     NSUserDefaults *readingProgress = [NSUserDefaults standardUserDefaults];
     
-    [readingProgress setObject:@(rootVC.dataCenter.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
+    [readingProgress setInteger:dataCenter.userReadingProgressMarker forKey:KUserReadingProgressMarkerKey];
+    [readingProgress setInteger:dataCenter.userMaxReadingProgressMarker forKey:KUserMaxReadingProgressMarkerKey];
     
     [readingProgress synchronize];
+#warning  use core data to revise here!
+//    [dataCenter.unknownWords writeToFile:[ZCFilePathManager unknownWordFilePath] atomically:YES];
+//   NSLog(@"~~~~~~~~~%d", [[NSFileManager defaultManager] fileExistsAtPath:[ZCFilePathManager unknownWordFilePath]]);
+//    NSLog(@"%@", [ZCFilePathManager unknownWordFilePath]);
+    [NSKeyedArchiver archiveRootObject: dataCenter.unknownWords toFile: [ZCFilePathManager unknownWordFilePath]];
     
     
 }
@@ -71,22 +68,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    
-#warning can not write it in 。。。
-    
-    
-#warning anyway, 我是不想这么干的。。。
-    
-//    NSDictionary *wordCount = [NSDictionary dictionaryWithObject:@(rootVC.userReadingProgressMarker) forKey:KUserReadingProgressMarkerKey];
-    ZCRootController *rootVC = (ZCRootController *)[application.windows[0] rootViewController];
-    
-    NSDictionary *wordCount = [NSDictionary dictionaryWithObjectsAndKeys:@(rootVC.dataCenter.userReadingProgressMarker),KUserReadingProgressMarkerKey,@(rootVC.dataCenter.userMaxReadingProgressMarker), KUserMaxReadingProgressMarkerKey, nil];
-    
-    [wordCount writeToFile:[ZCFilePathManager userProgressPath] atomically:YES];
-
-    NSLog(@"%@。。。。。%d。。", @(rootVC.dataCenter.userReadingProgressMarker), rootVC.dataCenter.userMaxReadingProgressMarker);
-
-    
+       
 }
 
 @end

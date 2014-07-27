@@ -31,9 +31,9 @@
 /** contains dictionarys which user added */
 @property (nonatomic, strong) NSMutableArray *unknownWords;
 
-@property (nonatomic, assign) int userReadingProgressMarker;
+@property (nonatomic, assign) NSInteger userReadingProgressMarker;
 
-@property (nonatomic, assign) int userMaxReadingProgressMarker;
+@property (nonatomic, assign) NSInteger userMaxReadingProgressMarker;
 
 @property (nonatomic, assign) BOOL wordIsAdded;
 

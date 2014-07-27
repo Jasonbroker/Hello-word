@@ -75,9 +75,6 @@
 		96D858B419753A2F0070226F /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B119753A2F0070226F /* FBShimmeringLayer.m */; };
 		96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D858B319753A2F0070226F /* FBShimmeringView.m */; };
 		96DCF12319812FE300FC39EF /* ZCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF12219812FE300FC39EF /* ZCLoginViewController.m */; };
-		96DCF1431981F23900FC39EF /* UIImage+BlurredFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */; };
-		96DCF1441981F23900FC39EF /* UIImage+BlurredFrame.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */; };
-		96DCF1451981F23900FC39EF /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */; };
 		96DCF1871982255900FC39EF /* ZCDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF1861982255900FC39EF /* ZCDataCenter.m */; };
 		96DCF18F1982259000FC39EF /* ZCbBaiscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF18A1982259000FC39EF /* ZCbBaiscViewController.m */; };
 		96DCF1901982259000FC39EF /* ZCNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DCF18C1982259000FC39EF /* ZCNaviController.m */; };
@@ -90,6 +87,7 @@
 		96EC5EE4197158FB00978262 /* ZCFilePathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EC5EE3197158FB00978262 /* ZCFilePathManager.m */; };
 		96F2B95D19800D3A00C84B97 /* ZCSelfInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */; };
 		96F2B95F19800D9100C84B97 /* ZCSelfInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */; };
+		BB01A89C8B8F4C7A8B981E1F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D858119EE446EAAC9C056 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,7 +263,6 @@
 		96786BA1197E65FD00C15374 /* UIImage+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tools.h"; sourceTree = "<group>"; };
 		96786BA2197E65FD00C15374 /* UIImage+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tools.m"; sourceTree = "<group>"; };
 		968D8CFD197CAFA700FF7C6C /* wordList copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wordList copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		968D8CFE197CAFA700FF7C6C /* wordList copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "wordList copy-Info.plist"; path = "/OC/MyApp/Hello-word/wordList copy-Info.plist"; sourceTree = "<absolute>"; };
 		96A7B6AE1983C2F600824388 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		96CBD201197B69DD00BE42CA /* UIERealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIERealTimeBlurView.h; sourceTree = "<group>"; };
 		96CBD202197B69DD00BE42CA /* UIERealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIERealTimeBlurView.m; sourceTree = "<group>"; };
@@ -293,11 +290,6 @@
 		96D858B319753A2F0070226F /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
 		96DCF12119812FE300FC39EF /* ZCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCLoginViewController.h; sourceTree = "<group>"; };
 		96DCF12219812FE300FC39EF /* ZCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCLoginViewController.m; sourceTree = "<group>"; };
-		96DCF13B1981F23900FC39EF /* UIImage+BlurredFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurredFrame.h"; sourceTree = "<group>"; };
-		96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurredFrame.m"; sourceTree = "<group>"; };
-		96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIImage+BlurredFrame.podspec"; sourceTree = "<group>"; };
-		96DCF13E1981F23900FC39EF /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		96DCF1851982255900FC39EF /* ZCDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCDataCenter.h; sourceTree = "<group>"; };
 		96DCF1861982255900FC39EF /* ZCDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCDataCenter.m; sourceTree = "<group>"; };
 		96DCF1891982259000FC39EF /* ZCbBaiscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCbBaiscViewController.h; sourceTree = "<group>"; };
@@ -319,6 +311,8 @@
 		96F2B95B19800D3A00C84B97 /* ZCSelfInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSelfInfoView.h; sourceTree = "<group>"; };
 		96F2B95C19800D3A00C84B97 /* ZCSelfInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSelfInfoView.m; sourceTree = "<group>"; };
 		96F2B95E19800D9100C84B97 /* ZCSelfInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZCSelfInfoView.xib; sourceTree = "<group>"; };
+		CE2D858119EE446EAAC9C056 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D201B70159C64B0FA29BEC9F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				965929DE197A7BDC002CB5D2 /* Reveal.framework in Frameworks */,
+				BB01A89C8B8F4C7A8B981E1F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +343,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164F945C452949CF8CC1DF38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D858119EE446EAAC9C056 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		962833461980F9D900EE85E7 /* vc */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,7 +533,8 @@
 				96D2BE6619686A5F0071E548 /* wordListTests */,
 				96D2BE4E19686A5F0071E548 /* Products */,
 				96EC5EDD19714DE800978262 /* words.plist */,
-				968D8CFE197CAFA700FF7C6C /* wordList copy-Info.plist */,
+				D201B70159C64B0FA29BEC9F /* Pods.xcconfig */,
+				164F945C452949CF8CC1DF38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -587,7 +591,6 @@
 		96D858681974F8B50070226F /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				96DCF1371981F23900FC39EF /* UIImage-BlurredFrame */,
 				965F332B197E3401005BBA14 /* UIcolor randomcolor */,
 				96CBD200197B69DD00BE42CA /* ZCRealtimeBlur */,
 				96D858AD19753A2F0070226F /* FBShimmering */,
@@ -640,18 +643,6 @@
 				96D858B319753A2F0070226F /* FBShimmeringView.m */,
 			);
 			path = FBShimmering;
-			sourceTree = "<group>";
-		};
-		96DCF1371981F23900FC39EF /* UIImage-BlurredFrame */ = {
-			isa = PBXGroup;
-			children = (
-				96DCF13B1981F23900FC39EF /* UIImage+BlurredFrame.h */,
-				96DCF13C1981F23900FC39EF /* UIImage+BlurredFrame.m */,
-				96DCF13D1981F23900FC39EF /* UIImage+BlurredFrame.podspec */,
-				96DCF13E1981F23900FC39EF /* UIImage+ImageEffects.h */,
-				96DCF13F1981F23900FC39EF /* UIImage+ImageEffects.m */,
-			);
-			path = "UIImage-BlurredFrame";
 			sourceTree = "<group>";
 		};
 		96DCF1841982253C00FC39EF /* DataCenter */ = {
@@ -716,9 +707,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96D2BE6D19686A5F0071E548 /* Build configuration list for PBXNativeTarget "wordList" */;
 			buildPhases = (
+				10EC5A87BC394F349475508D /* Check Pods Manifest.lock */,
 				96D2BE4919686A5F0071E548 /* Sources */,
 				96D2BE4A19686A5F0071E548 /* Frameworks */,
 				96D2BE4B19686A5F0071E548 /* Resources */,
+				A9E52BEA1BCB4B6D893EF847 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -822,7 +815,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96DCF1441981F23900FC39EF /* UIImage+BlurredFrame.podspec in Resources */,
 				96D858761974F8B50070226F /* messageSent.aiff in Resources */,
 				962833451980F35700EE85E7 /* setting.plist in Resources */,
 				962BD7AB197C24CB00FD0156 /* Images.xcassets in Resources */,
@@ -845,6 +837,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10EC5A87BC394F349475508D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E52BEA1BCB4B6D893EF847 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		968D8CD3197CAFA700FF7C6C /* Sources */ = {
@@ -882,10 +907,8 @@
 			files = (
 				962BD7A8197C1B8C00FD0156 /* Words.m in Sources */,
 				96457AC31981137200E00932 /* ZCAboutViewController.m in Sources */,
-				96DCF1451981F23900FC39EF /* UIImage+ImageEffects.m in Sources */,
 				9628334C1980F9D900EE85E7 /* ZCSettingsViewController.m in Sources */,
 				96738E49197C036300592764 /* ZCScheduleTableViewController.m in Sources */,
-				96DCF1431981F23900FC39EF /* UIImage+BlurredFrame.m in Sources */,
 				96D858B519753A2F0070226F /* FBShimmeringView.m in Sources */,
 				965F332E197E3401005BBA14 /* ZCUIColor+Extension.m in Sources */,
 				96D858781974F8B50070226F /* ZCMessageSoundEffect.m in Sources */,
@@ -1155,6 +1178,7 @@
 		};
 		96D2BE6E19686A5F0071E548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D201B70159C64B0FA29BEC9F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1164,7 +1188,7 @@
 					"$(PROJECT_DIR)/wordList",
 				);
 				INFOPLIST_FILE = wordList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "wordList/wordList-Bridging-Header.h";
@@ -1174,6 +1198,7 @@
 		};
 		96D2BE6F19686A5F0071E548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D201B70159C64B0FA29BEC9F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1183,7 +1208,7 @@
 					"$(PROJECT_DIR)/wordList",
 				);
 				INFOPLIST_FILE = wordList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "wordList/wordList-Bridging-Header.h";
