@@ -16,15 +16,10 @@
 
 + (UIColor *)randomColor
 {
-    static BOOL seeded = NO;
     
-    if (!seeded) {
-        seeded = YES;
-        srandom(time(NULL));
-    }
-    CGFloat red = (CGFloat)random()/(CGFloat)RAND_MAX;
-    CGFloat blue = (CGFloat)random()/(CGFloat)RAND_MAX;
-    CGFloat green = (CGFloat)random()/(CGFloat)RAND_MAX;
+    NSInteger red = arc4random_uniform(256);
+    NSInteger blue = arc4random_uniform(256);
+    NSInteger green = arc4random_uniform(256);
     
     return [UIColor colorWithRed:red green:green blue:blue alpha:1.0f]; 
     
@@ -37,10 +32,12 @@
     return @[hll_color(255, 117, 96, 1), hll_color(254, 89, 121, 1), hll_color(233, 71, 144, 1), hll_color(255, 103, 193, 1), hll_color(197, 130, 236, 1), hll_color(164, 158, 255, 1), hll_color(159, 182, 249, 1), hll_color(164, 158, 255, 1), hll_color(197, 130, 236, 1), hll_color(255, 103, 193, 1),  hll_color(233, 71, 144, 1)];
 }
 
-+(UIColor *)cyclicColor4Index:(int)index
++(UIColor *)cyclicColor4Index:(NSInteger)index
 {
     index = index % [UIColor cyclicColors].count;
     UIColor *color = [UIColor cyclicColors][index];
+    
+    
     
     return color;
     

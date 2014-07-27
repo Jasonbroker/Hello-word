@@ -21,16 +21,8 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, assign) int count;
-
-//@property (nonatomic, strong) NSArray *lineNumber;
-
-@property (nonatomic, strong)NSDictionary *wordLines;
 
 
-//@property (nonatomic, strong)ZCWords *words;
-
-//@property (nonatomic, weak) id<ZCViewControllerDelegate> myDelete;
 
 
 @end

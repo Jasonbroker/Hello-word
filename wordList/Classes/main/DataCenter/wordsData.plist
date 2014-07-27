@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal conputer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>init</string>
+		<key>meaning</key>
+		<string>初始化</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal conputer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+</array>
+</plist>

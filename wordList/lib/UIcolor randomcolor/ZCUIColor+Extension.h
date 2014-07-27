@@ -15,7 +15,7 @@
 /* the cyclic background colors */
 + (NSArray*)cyclicColors;
 
-+ (UIColor *)cyclicColor4Index:(int)index;
++ (UIColor *)cyclicColor4Index:(NSInteger)index;
 
 + (UIColor *)iOS7Blue;
 

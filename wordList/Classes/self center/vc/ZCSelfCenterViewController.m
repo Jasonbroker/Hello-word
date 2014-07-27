@@ -10,6 +10,7 @@
 #import "ZCSelfInfoView.h"
 #import "ZCSettingsViewController.h"
 #import "ZCLoginViewController.h"
+#import <BlurryModalSegue/BlurryModalSegue.h>
 
 @interface ZCSelfCenterViewController ()<ZCSelfInfoViewDelgate, ZCLoginViewControllerDelegate>
 
@@ -75,15 +76,18 @@
 
 - (void)viewloginOrRegister:(ZCSelfInfoView *)selfInfoView
 {
-    NSLog(@" will log....");
+    NSLog(@" will login....");
     
     ZCLoginViewController *loginVC = [[ZCLoginViewController alloc] init];
     
+    loginVC.myDelegate = self;
+    BlurryModalSegue *segue = [[BlurryModalSegue alloc] initWithIdentifier:@"login" source:self destination:loginVC];
     
-    [self presentViewController: loginVC animated:YES completion:^{
-        loginVC.myDelegate = self;
+    segue.backingImageBlurRadius = @(15);
+    segue.backingImageSaturationDeltaFactor = @(.45f);
+//    segue.backingImageTintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.1];
 
-    }];
+    [segue perform];
 }
 
 //   dismiss

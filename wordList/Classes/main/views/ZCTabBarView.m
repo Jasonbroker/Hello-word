@@ -101,7 +101,7 @@
 
 - (void)initTabBarbtn
 {
-    int btnNumber = self.imageNames.count;
+        NSInteger btnNumber = self.imageNames.count;
     
     for (int i = 0; i < btnNumber; i ++) {
         
@@ -137,7 +137,7 @@
     
     CGFloat h = self.bounds.size.height;
     
-    int btnNumber = self.subviews.count;
+    NSInteger btnNumber = self.subviews.count;
     for (int i = 0; i < btnNumber; i++ ) {
         
         UIView *btn = self.subviews[i];

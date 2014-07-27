@@ -8,21 +8,19 @@
 
 #import "ZCScheduleTableViewController.h"
 #import "ZCScheduleDetailController.h"
-#import "ZCFilePathManager.h"
 #import "Common.h"
-#import "ZCRootController.h"
 
-//test
-#import "UIERealTimeBlurView.h"
+#import "ZCDataCenter.h"
+#import "ZCWord.h"
 
 
 @interface ZCScheduleTableViewController ()
 
-@property (nonatomic, strong)NSDictionary *wordLines;
+//@property (nonatomic, strong)NSDictionary *wordLines;
 
-@property (nonatomic, strong)ZCRootController *rootVC;
+@property (nonatomic, strong)ZCDataCenter *dataCenter;
 
-@property (nonatomic, assign)int userMaxReadProgressNum;
+@property (nonatomic, assign)NSInteger userMaxReadProgressNum;
 
 @end
 
@@ -33,7 +31,10 @@
 {
     [super viewDidLoad];
     
-    _userMaxReadProgressNum = self.rootVC.userMaxReadingProgressMarker;
+NSLog(@"%@", [self.dataCenter.words[0] spelling]);
+    
+    
+    _userMaxReadProgressNum = self.dataCenter.userMaxReadingProgressMarker;
     
     [self addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
     
@@ -43,10 +44,10 @@
 
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-//    NSLog(@"%s", __func__);
-}
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+//{
+////    NSLog(@"%s", __func__);
+//}
 
 
 - (void)viewDidDisappear:(BOOL)animated
@@ -54,8 +55,8 @@
     
 //    self.tabBarController.tabBar.hidden = NO;
     
-    if (_userMaxReadProgressNum != self.rootVC.userMaxReadingProgressMarker) {
-        _userMaxReadProgressNum = self.rootVC.userMaxReadingProgressMarker;
+    if (_userMaxReadProgressNum != self.dataCenter.userMaxReadingProgressMarker) {
+        _userMaxReadProgressNum = self.dataCenter.userMaxReadingProgressMarker;
         NSLog(@"reload data");
         [self.tableView reloadData];
     }
@@ -64,30 +65,14 @@
 
 
 ///**************************************   getter     **************************************
-- (NSDictionary *)wordLines
+
+
+- (ZCDataCenter *)dataCenter
 {
-    if (!_wordLines) {
-                NSLog(@"%s.....", __func__);
-        NSString *path = [ZCFilePathManager wordsFilePath];
-
-        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-            
-            NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
-            _wordLines = dict;
-        }else{
-            NSLog(@"ERROR at %@.....", path);
-        }
+    if (_dataCenter == nil) {
+        _dataCenter = [ZCDataCenter sharedData];
     }
-
-    return _wordLines;
-}
-
-- (ZCRootController *)rootVC   /**datacenter*/
-{
-    if (!_rootVC) {
-        _rootVC = (ZCRootController *)[[UIApplication sharedApplication].windows[0] rootViewController];
-    }
-    return _rootVC;
+    return _dataCenter;
 }
 
 ///**************************************   data source     **************************************
@@ -97,7 +82,11 @@
 {
 
     // Return the number of sections.
-    return self.wordLines.count/KwordInSection + 1;
+    
+    NSLog(@"%lu", (unsigned long)self.dataCenter.words.count);
+    
+    return self.dataCenter.words.count/KwordInSection + 1;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -115,16 +104,20 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat: @"Section %d", indexPath.section +1];;
+    cell.textLabel.text = [NSString stringWithFormat: @"Section %@", @(indexPath.section +1)];;
     
-//    (_userMaxReadProgressNum/KwordInSection > indexPath.section) ? (cell.detailTextLabel.text = @"已读完") : (cell.detailTextLabel.text = @"未读");
     // Configure the cell...
-    if(_userMaxReadProgressNum/KwordInSection < indexPath.section)
+    if(self.dataCenter.userMaxReadingProgressMarker/KwordInSection < indexPath.section)
     {
+        
         cell.detailTextLabel.text = @"未读";
-    }else if(_userMaxReadProgressNum/KwordInSection == indexPath.section){
+        
+    }else if(self.dataCenter.userMaxReadingProgressMarker/KwordInSection == indexPath.section){
+        
         cell.detailTextLabel.text = @"Reading";
+        
     }else{
+        
         cell.detailTextLabel.text = @"已读";
 
     }
@@ -134,10 +127,6 @@
     return cell;
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
-//    
-//}
 
 ///**************************************    delegate    **************************************
 
@@ -147,9 +136,30 @@
     
     ZCScheduleDetailController *scheduleDetailVC = [[ZCScheduleDetailController alloc] init];
     
+    NSMutableArray *arrayM4CellDatasource = [NSMutableArray arrayWithCapacity:0];
+
+    NSInteger allWordsCount = self.dataCenter.words.count;
+    
+    int count;
+    
+    if (indexPath.section*KwordInSection-allWordsCount<0) {
+        count = allWordsCount % KwordInSection;
+    }else{
+        count = KwordInSection;
+    }
+    for (int i = 0 ; i < count ; i++) {
+        
+        NSLog(@"%@", [self.dataCenter.words[indexPath.section * KwordInSection + i] spelling]);
+        ZCWord *word = self.dataCenter.words[indexPath.section*KwordInSection + i];
+
+        [arrayM4CellDatasource addObject:word];
+    }
+
+    scheduleDetailVC.wordsInSection = (NSArray *)arrayM4CellDatasource;
+    
     [self.navigationController pushViewController:scheduleDetailVC animated:YES];
     
-    scheduleDetailVC.sectionNum = indexPath.section;
+    
 }
 
 

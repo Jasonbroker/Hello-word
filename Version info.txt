@@ -95,10 +95,16 @@ feature added:
 
 2. revise the all table view
 
+20140720
 
 bug fixed:
 
 1. right and left swipe function well.
 
+2014 version 0.9.7 dataCenter added.
+
+20140727
+
+lots of features added
 
 

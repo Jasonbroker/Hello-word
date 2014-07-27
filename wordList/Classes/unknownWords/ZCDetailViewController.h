@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZCWord.h"
 
 @interface ZCDetailViewController : UIViewController
 /** will be updated into a model */
-@property (nonatomic ,strong) NSString *word;
+@property (nonatomic ,strong) ZCWord *word;
 
 @property (strong, nonatomic) UILabel *wordLabel;
 
