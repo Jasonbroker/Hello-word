@@ -78,6 +78,7 @@ static id instance;
     return _unknownWords;
 }
 
+
 - (NSInteger)userMaxReadingProgressMarker
 {
     
@@ -86,15 +87,18 @@ static id instance;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         
         _userMaxReadingProgressMarker = [[defaults objectForKey:KUserMaxReadingProgressMarkerKey] integerValue];
+        
     }
     return _userMaxReadingProgressMarker;
 }
 
 - (NSInteger)userReadingProgressMarker
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if (_userReadingProgressMarker == 0) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
         _userReadingProgressMarker = [[defaults objectForKey:KUserReadingProgressMarkerKey] integerValue];
+        
     }
     return 0;
 }
