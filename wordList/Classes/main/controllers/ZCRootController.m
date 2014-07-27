@@ -37,8 +37,11 @@
 //    second method
     
     ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImage:self.normalImage andSelectedImage:self.selectedImage frame:frame AndItemNumber:4];
+    
     customTabBar.autoresizingMask = UIViewAutoresizingFlexibleHeight| UIViewAutoresizingFlexibleWidth;
+    
     customTabBar.center = CGPointMake(0, 0);
+    
     customTabBar.layer.anchorPoint = CGPointMake(0, 0);
     
     customTabBar.delegate = self;
