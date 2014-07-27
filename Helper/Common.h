@@ -6,8 +6,8 @@
 
 #ifdef DEBUG
 #define Mylog(...)      NSlog(__VA_ARGS__)
-#elif
-#define Mylog(...)
+//#elif
+//#define Mylog(...)
 #endif
 
 /**

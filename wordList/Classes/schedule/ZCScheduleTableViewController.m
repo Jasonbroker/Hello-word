@@ -50,8 +50,9 @@ NSLog(@"%@", [self.dataCenter.words[0] spelling]);
 //}
 
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:animated];
     
 //    self.tabBarController.tabBar.hidden = NO;
     

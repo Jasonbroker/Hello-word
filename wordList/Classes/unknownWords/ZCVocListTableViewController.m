@@ -81,6 +81,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 //    NSLog(@"%d~~~~%d", _rootVC.dataCenter.unknownWords.count, _unknownWords.count);
+    [super viewWillAppear:animated];
     
     if (self.dataCenter.wordIsAdded) {
         
@@ -158,7 +159,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-       NSLog(@"delete .. %d", indexPath.row);
+       NSLog(@"delete .. %@", @(indexPath.row));
     
     [self.unknownWords removeObjectAtIndex:indexPath.row];
     

@@ -19,7 +19,11 @@
 
 @interface ZCSelfInfoView : UIView
 @property (weak, nonatomic) IBOutlet UIView *iconView;
+
+
 - (IBAction)Login:(UIButton *)sender;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *wordsLearned;
 @property (weak, nonatomic) IBOutlet UILabel *wordsRemaining;
 @property (weak, nonatomic) IBOutlet UILabel *unknownWords;

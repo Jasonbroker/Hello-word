@@ -10,9 +10,11 @@
 #import "ZCWord.h"
 #import "Common.h"
 #import "ZCFilePathManager.h"
+
 @implementation ZCDataCenter
 
 static id instance;
+
 + (ZCDataCenter *)sharedData
 {
     static dispatch_once_t onceToken;

@@ -149,19 +149,17 @@ static NSString *settingID = @"settingIdentifier";
 #warning wait for update
     
     NSLog(@"wait for update");
+    
+    
 }
-//    if (indexPath.section == 1) {
-//        UIActionSheet *reset = [[UIActionSheet alloc] initWithTitle:@"RESET will wipe all your data!" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:@"RESET" otherButtonTitles:nil];
-//        
-//        [reset showInView:self.view];
-//    }
-
 
 
 #pragma mark - reset data
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 0) {
+      
+        [[NSFileManager defaultManager] removeItemAtPath:[ZCFilePathManager unknownWordFilePath] error:nil];
         
         MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
         [self.navigationController.view addSubview:hud];
@@ -177,7 +175,10 @@ static NSString *settingID = @"settingIdentifier";
         hud.labelText = @"Data Reset !";
         
         [hud show:YES];
+        
         [hud hide:YES afterDelay:3];
+        
+        hud.removeFromSuperViewOnHide = YES;
     
     }
     

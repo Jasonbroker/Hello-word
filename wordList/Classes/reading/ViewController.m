@@ -35,7 +35,7 @@
 
 @property (nonatomic, strong)NSArray *words;
 
-@property (nonatomic, assign) int userPrograss;
+@property (nonatomic, assign) NSInteger userPrograss;
 
 @property (nonatomic, assign) int userMaxReadingCount;
 
@@ -127,6 +127,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:animated];
     
     [self addSwipeGesture];
     [self addTapGesture];
@@ -157,6 +158,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:animated];
     _shimmeringView.shimmering = NO;
     
     self.dataCenter.userReadingProgressMarker = _userPrograss;
@@ -218,7 +220,7 @@
 
 - (void)swipe:(UISwipeGestureRecognizer *)swipeRecognizer
 {
-    NSLog(@"%d", swipeRecognizer.direction);
+    NSLog(@"%@", @(swipeRecognizer.direction));
     
 #warning  not good enough ...considering to change this part to a more comfortable implementation
     UIAlertView *alertLeft = [[UIAlertView alloc] initWithTitle:@"warning" message:@"已到达起始点！" delegate:self cancelButtonTitle: @"OK" otherButtonTitles: nil];
@@ -234,7 +236,7 @@
         //        to remember the max word index which the user read
         
         if (_userPrograss > _dataCenter.userMaxReadingProgressMarker) {
-#warning .......wrong retouch thererere
+
             _dataCenter.userMaxReadingProgressMarker = _userPrograss;
         }
         
@@ -242,7 +244,7 @@
 //        self.wordLabel.text = [self.wordLines valueForKey:[NSString stringWithFormat:@"%d", self.count]];
 
         
-#warning @@##if data is good enough, just add the datas here.
+#warning @@##if data is good enough, just add the data
         self.wordLabel.text = [self.words[self.userPrograss] spelling];
         
         [self.wordLabel sizeToFit];
@@ -252,7 +254,7 @@
         if (_userPrograss%KwordInSection == 0 ) {
             self.addBtn.enabled = NO;
             [alertRight show];
-            self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nSlide to start", _userPrograss/KwordInSection+1];
+            self.wordLabel.text = [NSString stringWithFormat:@"Day %@ \nSlide to start", @(_userPrograss/KwordInSection+1)];
         }
     }else if(swipeRecognizer.direction == UISwipeGestureRecognizerDirectionRight){
         if (_userPrograss == 0) {
@@ -311,7 +313,7 @@
     if (_userPrograss%KwordInSection == 0 ) {
         self.addBtn.enabled = NO;
         [alertRight show];
-        self.wordLabel.text = [NSString stringWithFormat:@"Day %d \nClick to Start", _userPrograss/KwordInSection+1];
+        self.wordLabel.text = [NSString stringWithFormat:@"Day %@ \nClick to Start", @(_userPrograss/KwordInSection+1)];
     }
 }
 
@@ -360,7 +362,7 @@
         
         [self.dataCenter.unknownWords addObject:self.dataCenter.words[_userPrograss]];
         
-        NSLog(@"%d   hahhahhahaha", self.dataCenter.unknownWords.count);
+        NSLog(@"%@   hahhahhahaha", @(self.dataCenter.unknownWords.count));
         
 
     

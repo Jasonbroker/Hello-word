@@ -32,20 +32,12 @@
     // Do any additional setup after loading the view.
     CGRect frame = self.tabBar.frame;
 #warning refine here~ ~s
-    
-//    self.tabBar.center = CGPointMake(0, 64);
-//    self.tabBar.layer.anchorPoint = CGPointMake(0, 0);
-//    self.tabBar.barTintColor = [UIColor redColor];
-//    self.tabBar.backgroundColor = [UIColor redColor];
-//    self.tabBar.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.0f];
 
-    //   load btn....
-    
 //    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
 //    second method
     
     ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImage:self.normalImage andSelectedImage:self.selectedImage frame:frame AndItemNumber:4];
-    
+    customTabBar.autoresizingMask = UIViewAutoresizingFlexibleHeight| UIViewAutoresizingFlexibleWidth;
     customTabBar.center = CGPointMake(0, 0);
     customTabBar.layer.anchorPoint = CGPointMake(0, 0);
     

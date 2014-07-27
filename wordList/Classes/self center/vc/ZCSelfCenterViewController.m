@@ -11,6 +11,7 @@
 #import "ZCSettingsViewController.h"
 #import "ZCLoginViewController.h"
 #import <BlurryModalSegue/BlurryModalSegue.h>
+#import "ZCDataCenter.h"
 
 @interface ZCSelfCenterViewController ()<ZCSelfInfoViewDelgate, ZCLoginViewControllerDelegate>
 
@@ -18,6 +19,7 @@
 @property (nonatomic, strong)ZCSelfInfoView *selfInfoView;
 
 @property (nonatomic, strong)CALayer *graphic;
+
 @end
 
 @implementation ZCSelfCenterViewController
@@ -28,9 +30,15 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"self center";
 
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting"] style:UIBarButtonItemStyleBordered target:self action:@selector(pushSetting:)];
+    
     [self.view addSubview:self.selfInfoView];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting"] style:UIBarButtonItemStyleBordered target:self action:@selector(pushSetting:)];
+    self.selfInfoView.unknownWords.text = [NSString stringWithFormat:@"%@", @([ZCDataCenter sharedData].unknownWords.count)];
+    self.selfInfoView.wordsLearned.text = [NSString stringWithFormat:@"%@", @([ZCDataCenter sharedData].userMaxReadingProgressMarker)];
+    self.selfInfoView.unknownWords.text = [NSString stringWithFormat:@"%@", @(11)];
+    
+    
     
     self.selfInfoView.myDelegate = self;
 
