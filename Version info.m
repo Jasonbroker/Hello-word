@@ -91,6 +91,8 @@ version updated to version 0.9.4
 new feature added
 
 swipe and tap gesture added and replaced the touch method
+ 
+get a new dict to release！
 
 */
 

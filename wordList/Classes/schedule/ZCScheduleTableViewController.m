@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     
-NSLog(@"%@", [self.dataCenter.words[0] spelling]);
+//NSLog(@"%@", [self.dataCenter.words[0] spelling]);
     
     
     _userMaxReadProgressNum = self.dataCenter.userMaxReadingProgressMarker;
@@ -84,7 +84,7 @@ NSLog(@"%@", [self.dataCenter.words[0] spelling]);
 
     // Return the number of sections.
     
-    NSLog(@"%lu", (unsigned long)self.dataCenter.words.count);
+//    NSLog(@"%@", @(self.dataCenter.words.count));
     
     return self.dataCenter.words.count/KwordInSection + 1;
     
@@ -143,7 +143,7 @@ NSLog(@"%@", [self.dataCenter.words[0] spelling]);
     
     int count;
     
-    if (indexPath.section*KwordInSection-allWordsCount<0) {
+    if ((indexPath.section + 1 )*KwordInSection-allWordsCount > 0) {
         count = allWordsCount % KwordInSection;
     }else{
         count = KwordInSection;

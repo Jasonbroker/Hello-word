@@ -356,7 +356,6 @@
     if (![self.dataCenter.unknownWords containsObject:self.dataCenter.words[_userPrograss]]) {
         
         [ZCMessageSoundEffect playMessageSentSound];
-//        NSLog(@"%@", [self.rootVC.dataCenter.words[_userPrograss] spelling]);
         
         self.dataCenter.wordIsAdded = YES;
         
