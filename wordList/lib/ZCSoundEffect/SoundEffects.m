@@ -17,7 +17,9 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
         SystemSoundID sound;
         AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:path], &sound);
-        AudioServicesPlaySystemSound(sound);
+//        AudioServicesPlaySystemSound(sound);
+        AudioServicesPlayAlertSound(sound);
+        
     }else{
         NSLog(@"Error: audio file not found at path: %@", path);
     }

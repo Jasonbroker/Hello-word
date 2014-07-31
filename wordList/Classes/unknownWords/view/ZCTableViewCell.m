@@ -48,7 +48,7 @@
     [super layoutSublayersOfLayer:layer];
     
     CGFloat x = self.textLabel.frame.origin.x;
-    CGFloat h = 1;
+    CGFloat h = 0.3f;
     CGFloat y = self.contentView.bounds.size.height - h;
     CGFloat w = self.bounds.size.width -x ;
     self.backgroundLayer.frame = CGRectMake(x, y, w, h);

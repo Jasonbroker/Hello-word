@@ -13,26 +13,25 @@
 
 @implementation ZCDataCenter
 
-static id instance;
+static id _instance;
 
 + (ZCDataCenter *)sharedData
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[ZCDataCenter alloc] init];
+        _instance = [[ZCDataCenter alloc] init];
     });
-    return instance;
+    return _instance;
 }
 
 
 - (NSArray *)words
 {
-    
     if (_words == nil) {
-        
-        NSArray *wordsFromPlist = [NSArray arrayWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"wordsData.plist" withExtension:nil]];
-        
-//        NSArray *wordsFromPlist = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"wordsData.plist" ofType:nil]];
+// 从服务器获取
+#warning need revise there......!!~~
+//        NSArray *wordsFromPlist = [NSArray arrayWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"wordsData.plist" withExtension:nil]];
+                NSArray *wordsFromPlist = [NSArray arrayWithContentsOfURL:[NSURL fileURLWithPath:@"/Users/Jason/Desktop/project/arrange.plist"]];
 
         NSMutableArray *wordsM = [NSMutableArray arrayWithCapacity:0];
         

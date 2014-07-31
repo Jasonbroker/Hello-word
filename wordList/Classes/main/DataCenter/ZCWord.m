@@ -23,7 +23,9 @@
     [encoder encodeObject:_meaning forKey:kmeaning];
     [encoder encodeObject:_usage forKey:kusage];
 }
-
+/**
+ decode
+ */
 - (instancetype)initWithCoder:(NSCoder *)decoder
 {
     self = [super init];

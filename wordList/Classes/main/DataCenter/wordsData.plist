@@ -82,5 +82,105 @@
 		<key>usage</key>
 		<string>Personal computer</string>
 	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>computer</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>15</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>16</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
+	<dict>
+		<key>spelling</key>
+		<string>17</string>
+		<key>meaning</key>
+		<string>计算机</string>
+		<key>derivatives</key>
+		<string>compute</string>
+		<key>usage</key>
+		<string>Personal computer</string>
+	</dict>
 </array>
 </plist>
