@@ -23,36 +23,26 @@
 
 @implementation ZCTabBarView
 ///**************************************   init view     **************************************
-+ (instancetype)tabBarViewWithImageSet:(NSArray *)image andHighLightedImageSet:(NSArray *)selectedImage frame:(CGRect)frame
+
+- (instancetype)initWithFrame:(CGRect)frame
 {
+    //    ZCLogFunc;
+    self = [super initWithFrame:frame];
     
-    
-//    ZCLogFunc;
-    ZCTabBarView *tabBarView = [[ZCTabBarView alloc] initWithFrame:frame];
-//    tabBarView.backgroundColor = [UIColor redColor];
-    
-    tabBarView.imageNames = image;
-    tabBarView.selectedImageNames = selectedImage;
-    
-    [tabBarView initTabBarbtn];
-    
-//    [tabBarView setTabBarBackground];
+    if (self) {
 
-
-    return tabBarView;
+    }
+    return self;
 }
 
-+ (instancetype)tabBarViewWithImage:(NSString *)image andSelectedImage:(NSString *)selectedImage frame:(CGRect)frame AndItemNumber:(int)itemNumber
+- (void)initWithViewWithImage:(NSString *)image andSelectedImage:(NSString *)selectedImage frame:(CGRect)frame AndItemNumber:(int)itemNumber
 {
-//    ZCLogFunc;
 
-    ZCTabBarView *tabBarView = [[ZCTabBarView alloc] initWithFrame:frame];
+//    ZCTabBarView *tabBarView = [[ZCTabBarView alloc] initWithFrame:frame];
     
     UIImage *bigNormalImage = [UIImage imageNamed:image];
     
     UIImage *bigSelectedImage = [UIImage imageNamed:selectedImage];
-    
-//    CGFloat screenScale = [UIScreen mainScreen].scale;
     
     CGFloat imageW = bigNormalImage.size.width / itemNumber;
     CGFloat imageH = bigNormalImage.size.height;
@@ -71,39 +61,51 @@
         
         btn.tag = i;
         
-        [tabBarView addSubview:btn];
+        [self addSubview:btn];
         
-        if (tabBarView.subviews.count == 1) {
+        if (self.subviews.count == 1) {
             
-            [tabBarView press:btn];
+            [self press:btn];
         }
         
-        [btn addTarget:tabBarView action:@selector(press:) forControlEvents:UIControlEventTouchDown];
+        [btn addTarget:self action:@selector(press:) forControlEvents:UIControlEventTouchDown];
+    
+//    [tabBarView setNeedsLayout];
         
     }
+
+}
+
++ (instancetype)tabBarViewWithImageSet:(NSArray *)image andHighLightedImageSet:(NSArray *)selectedImage frame:(CGRect)frame
+{
     
-    [tabBarView setNeedsLayout];
+    ZCTabBarView *tabBarView = [[ZCTabBarView alloc] init];
+//    tabBarView.backgroundColor = [UIColor redColor];
+    
+    tabBarView.imageNames = image;
+    tabBarView.selectedImageNames = selectedImage;
+    
+    [tabBarView initTabBarbtnWithNumber:tabBarView.imageNames.count];
+    
+//    [tabBarView setTabBarBackground];
+
+
+    return tabBarView;
+}
+
++ (instancetype)tabBarViewWithImage:(NSString *)image andSelectedImage:(NSString *)selectedImage frame:(CGRect)frame AndItemNumber:(int)itemNumber
+{
+    ZCTabBarView *tabBarView = [[ZCTabBarView alloc] initWithFrame:frame];
+    [tabBarView initWithViewWithImage:image andSelectedImage:selectedImage frame:frame AndItemNumber:itemNumber];
 
     return tabBarView;
 }
 
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (void)initTabBarbtnWithNumber:(NSInteger)num
 {
-//    ZCLogFunc;
-    self = [super initWithFrame:frame];
     
-    if (self) {
-        
-    }
-    return self;
-}
-
-- (void)initTabBarbtn
-{
-        NSInteger btnNumber = self.imageNames.count;
-    
-    for (int i = 0; i < btnNumber; i ++) {
+    for (int i = 0; i < num; i ++) {
         
         ZCNoHighLightBtn *btn = [ZCNoHighLightBtn buttonWithType:UIButtonTypeCustom];
 //        sett background

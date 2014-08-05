@@ -37,22 +37,31 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
+//        ViewController *wordViewVC = [[ViewController alloc] init];
+////        [self addChildViewController:wordViewVC];
+//        
+////        ZCScheduleTableViewController *scheduleVC = [[ZCScheduleTableViewController alloc] init];
+////        ZCNaviController *naviScheduleVC = [[ZCNaviController alloc] initWithRootViewController:scheduleVC];
+//        ZCNaviController *naviScheduleVC = [[ZCNaviController alloc] initWithRootViewController:[[ZCScheduleTableViewController alloc] init]];
+////        [self addChildViewController:naviScheduleVC];
+//        
+////        ZCVocListTableViewController *unknownWordVC = [[ZCVocListTableViewController alloc] init];
+//        ZCNaviController *naviUnknownWordVC = [[ZCNaviController alloc] initWithRootViewController:[[ZCVocListTableViewController alloc] init]];
+//
+////        [self addChildViewController:naviUnknownWordVC];
+//        
+////        ZCSelfCenterViewController *profileVC = [[ZCSelfCenterViewController alloc] init];
+//        ZCNaviController *naviProfileVC = [[ZCNaviController alloc] initWithRootViewController: [[ZCSelfCenterViewController alloc] init]];
+//        [self addChildViewController:naviProfileVC];
+        
         ViewController *wordViewVC = [[ViewController alloc] init];
-        [self addChildViewController:wordViewVC];
-        
-        ZCScheduleTableViewController *scheduleVC = [[ZCScheduleTableViewController alloc] init];
-        ZCNaviController *naviScheduleVC = [[ZCNaviController alloc] initWithRootViewController:scheduleVC];
-        [self addChildViewController:naviScheduleVC];
-        
-        ZCVocListTableViewController *unknownWordVC = [[ZCVocListTableViewController alloc] init];
-        ZCNaviController *naviUnknownWordVC = [[ZCNaviController alloc] initWithRootViewController:unknownWordVC];
-
-        [self addChildViewController:naviUnknownWordVC];
-        
-        ZCSelfCenterViewController *profileVC = [[ZCSelfCenterViewController alloc] init];
-        ZCNaviController *naviProfileVC = [[ZCNaviController alloc] initWithRootViewController:profileVC];
-
-        [self addChildViewController:naviProfileVC];
+        ZCNaviController *naviScheduleVC = [[ZCNaviController alloc] initWithRootViewController:[[ZCScheduleTableViewController alloc] init]];
+        ZCNaviController *naviUnknownWordVC = [[ZCNaviController alloc] initWithRootViewController:[[ZCVocListTableViewController alloc] init]];
+        ZCNaviController *naviProfileVC = [[ZCNaviController alloc] initWithRootViewController: [[ZCSelfCenterViewController alloc] init]];
+        NSArray *array = [NSArray arrayWithObjects:wordViewVC,naviScheduleVC,naviUnknownWordVC, naviProfileVC, nil];
+        [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            [self addChildViewController:obj];
+        }];
         
 #warning test theree /.
         ZCLog(@"init ............%@", self.tabBar.subviews);
@@ -145,19 +154,14 @@
 - (ZCTabBarView *)customTabBar
 {
     if (_customTabBar == nil) {
-        CGRect frame = self.tabBar.frame;
 #warning refine here~ ~s
-        
-        //    ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
+                CGRect frame = self.tabBar.bounds;
+//            ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImageSet:self.imageSet andHighLightedImageSet:self.selectedImageSet frame:frame];
         //    second method
         
         ZCTabBarView *customTabBar = [ZCTabBarView tabBarViewWithImage:self.normalImage andSelectedImage:self.selectedImage frame:frame AndItemNumber:4];
         
         //    customTabBar.autoresizingMask = UIViewAutoresizingFlexibleHeight| UIViewAutoresizingFlexibleWidth;
-        
-        customTabBar.center = CGPointMake(0, 0);
-        
-        customTabBar.layer.anchorPoint = CGPointMake(0, 0);
         
         customTabBar.delegate = self;
         
@@ -166,8 +170,6 @@
 
         
         [self.tabBar addSubview:customTabBar];
-        
-//        [self.tabBar bringSubviewToFront:customTabBar];
         
         _customTabBar = customTabBar;
         

@@ -81,29 +81,22 @@
     rightViewFrame = CGRectMake(viewFrame.size.width, 0, viewFrame.size.width, viewFrame.size.height);
     
     if (iPhone4inch) {
-//        self.bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reading_bg_4"]];
-//        self.bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"2.jpg"]];
-//                self.bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_4"]];  // for the all whole pic  bgOption_4
         self.bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgOption_4"]];
         
-        [self.view addSubview:_bg];
-        //
-    }else{
-//        self.bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reading_bg_3"]];
-                self.bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_3"]];
         
-        [self.view addSubview:_bg];
+    }else{
+        self.bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_3"]];
+    
     }
+    [self.view addSubview:_bg];
     
     [self.view addSubview:self.wordsView];
     
     [self.view addSubview:self.welcomeView];
     
     self.wordsView.alpha = 0;
-//    self.wordsView.alpha = 0;
 //    test
     
-//    self.welcomeView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1f];
     self.isFirstLoaded = YES;
     
 //    self.wordsView.translatesAutoresizingMaskIntoConstraints = NO;
