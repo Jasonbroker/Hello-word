@@ -133,7 +133,7 @@ static NSString *settingID = @"settingIdentifier";
 - (void)numNeedLearn
 {
 #warning wait for update
-    NSLog(@"wait for update");
+    ZCLog(@"wait for update");
 }
 
 - (void)reset
@@ -148,7 +148,7 @@ static NSString *settingID = @"settingIdentifier";
 {
 #warning wait for update
     
-    NSLog(@"wait for update");
+    ZCLog(@"wait for update");
     
     
 }

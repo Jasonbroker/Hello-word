@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6185.11" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PLO-N9-Qgi">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="430"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="hehe" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQG-Qu-Rx3">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="Fq3-mb-Op9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oef-zi-wPr">
+                    <rect key="frame" x="0.0" y="120" width="600" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="rs6-21-ALE"/>
+                    </constraints>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YQG-Qu-Rx3" secondAttribute="trailing" id="JJ4-bz-qS7"/>
+                <constraint firstAttribute="trailing" secondItem="Oef-zi-wPr" secondAttribute="trailing" id="Y8G-md-4Cl"/>
+                <constraint firstItem="Oef-zi-wPr" firstAttribute="top" secondItem="YQG-Qu-Rx3" secondAttribute="bottom" id="g9Y-CG-I67"/>
+                <constraint firstItem="Oef-zi-wPr" firstAttribute="leading" secondItem="PLO-N9-Qgi" secondAttribute="leading" id="oAw-65-cPW"/>
+                <constraint firstItem="YQG-Qu-Rx3" firstAttribute="top" secondItem="PLO-N9-Qgi" secondAttribute="top" id="tcH-EM-xGG"/>
+                <constraint firstItem="YQG-Qu-Rx3" firstAttribute="leading" secondItem="PLO-N9-Qgi" secondAttribute="leading" id="wsl-OR-7Fb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailsView" destination="Oef-zi-wPr" id="1ez-Xn-UZ3"/>
+                <outlet property="spellingView" destination="YQG-Qu-Rx3" id="8c0-9g-HBZ"/>
+            </connections>
+            <point key="canvasLocation" x="379" y="496"/>
+        </view>
+    </objects>
+</document>

@@ -59,7 +59,7 @@ static id _instance;
         if ([[NSFileManager defaultManager] fileExistsAtPath:[ZCFilePathManager unknownWordFilePath]]) {
  
 #warning        test here..
-            NSLog(@"read unknownwords");
+            ZCLog(@"read unknownwords");
             
 
             _unknownWords = [NSKeyedUnarchiver unarchiveObjectWithFile:[ZCFilePathManager unknownWordFilePath]];

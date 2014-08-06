@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ZCDataCenter.h"
-
-@interface ZCRootController : UITabBarController
+#import "ZCTabBarView.h"
+@interface ZCTabBarController : UITabBarController
 
 //  define a data center to manage All the data
 
 @property (nonatomic, strong) ZCDataCenter *dataCenter;
 
-
+@property (nonatomic, weak)ZCTabBarView *customTabBar;
 @end

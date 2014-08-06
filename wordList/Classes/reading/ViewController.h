@@ -12,13 +12,6 @@
 @class ViewController;
 @class ZCWords;
 
-@protocol ZCViewControllerDelegate <NSObject>
-
-- (void)viewController:(ViewController *)viewController AddNewWord:(NSString *)word;
-
-@end
-
-
 @interface ViewController : UIViewController
 
 

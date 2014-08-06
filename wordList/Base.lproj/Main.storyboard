@@ -163,29 +163,6 @@
             </objects>
             <point key="canvasLocation" x="-113" y="1050"/>
         </scene>
-        <!--Navi Controller-->
-        <scene sceneID="okl-HN-y9H">
-            <objects>
-                <navigationController id="g1P-g1-FHl" customClass="ZCNaviController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="q9f-ww-MTJ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SFB-7W-E7S">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Sdh-By-o6I">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="0hg-t3-Jxo" kind="relationship" relationship="rootViewController" id="psq-Yz-t9K"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4U0-dh-6th" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-145" y="292"/>
-        </scene>
         <!--Study-->
         <scene sceneID="Yc5-Zj-TsN">
             <objects>
@@ -199,6 +176,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" id="48u-gu-8qV"/>
                     <navigationItem key="navigationItem" title="Study" id="zDA-HE-Mjh">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="add" id="Snv-Fm-6Hg">
                             <connections>
@@ -206,13 +184,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="addBtn" destination="Snv-Fm-6Hg" id="55t-8b-PM2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xE-e7-88n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697" y="284"/>
+            <point key="canvasLocation" x="-163" y="294"/>
         </scene>
         <!--root-->
         <scene sceneID="jQp-IO-cVG">
@@ -226,15 +201,15 @@
                         <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="g1P-g1-FHl" kind="relationship" relationship="viewControllers" id="BXg-4Z-upu"/>
-                        <segue destination="E3Y-dA-cEL" kind="relationship" relationship="viewControllers" id="MPU-lf-MmW"/>
-                        <segue destination="6az-Zo-qmy" kind="relationship" relationship="viewControllers" id="JVQ-ZU-vjz"/>
-                        <segue destination="KrQ-7q-mtG" kind="relationship" relationship="viewControllers" id="XKx-jI-qkX"/>
+                        <segue destination="0hg-t3-Jxo" kind="relationship" relationship="viewControllers" id="UzP-e7-bLG"/>
+                        <segue destination="E3Y-dA-cEL" kind="relationship" relationship="viewControllers" id="29z-R8-Qjc"/>
+                        <segue destination="6az-Zo-qmy" kind="relationship" relationship="viewControllers" id="K9a-Qx-BmA"/>
+                        <segue destination="KrQ-7q-mtG" kind="relationship" relationship="viewControllers" id="1h2-zt-PbV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPH-Yu-cQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-934" y="1351"/>
+            <point key="canvasLocation" x="-1130" y="1255"/>
         </scene>
     </scenes>
 </document>

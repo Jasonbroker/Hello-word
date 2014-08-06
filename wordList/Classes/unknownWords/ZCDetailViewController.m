@@ -19,7 +19,7 @@
 
 - (void)loadView
 {
-    NSLog(@"%s", __func__);
+    ZCLog(@"%s", __func__);
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     self.view.backgroundColor = [UIColor whiteColor];
@@ -39,13 +39,13 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"%s", __func__);
+    ZCLog(@"%s", __func__);
 }
 
 
 - (void)viewWillLayoutSubviews
 {
-        NSLog(@"%s", __func__);
+        ZCLog(@"%s", __func__);
     self.wordLabel.translatesAutoresizingMaskIntoConstraints = NO;
     
     NSDictionary *dict = NSDictionaryOfVariableBindings(_wordLabel);
@@ -57,7 +57,7 @@
     self.wordLabel.text = self.word.spelling;
     
 //    test
-    NSLog(@"%@, %@", self.word.derivatives, self.word.meaning);
+    ZCLog(@"%@, %@", self.word.derivatives, self.word.meaning);
 }
 
 

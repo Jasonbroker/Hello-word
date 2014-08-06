@@ -27,7 +27,7 @@
 {
     
     
-    NSLog(@"%s", __func__);
+//    ZCLogFunc;
     ZCTabBarView *tabBarView = [[ZCTabBarView alloc] initWithFrame:frame];
 //    tabBarView.backgroundColor = [UIColor redColor];
     
@@ -44,7 +44,7 @@
 
 + (instancetype)tabBarViewWithImage:(NSString *)image andSelectedImage:(NSString *)selectedImage frame:(CGRect)frame AndItemNumber:(int)itemNumber
 {
-    NSLog(@"%s", __func__);
+//    ZCLogFunc;
 
     ZCTabBarView *tabBarView = [[ZCTabBarView alloc] initWithFrame:frame];
     
@@ -90,7 +90,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    NSLog(@"%s", __func__);
+//    ZCLogFunc;
     self = [super initWithFrame:frame];
     
     if (self) {
@@ -129,7 +129,7 @@
 {
     [super layoutSubviews];
     
-    NSLog(@"%s", __func__);
+//    ZCLogFunc;
     
     CGFloat y = 0;
     
@@ -159,6 +159,8 @@
     self.selectedBtn.selected = NO;
     
     button.selected = YES;
+    
+//    ZCLog(@"%d", button.tag);
     
     self.selectedBtn = button;
     

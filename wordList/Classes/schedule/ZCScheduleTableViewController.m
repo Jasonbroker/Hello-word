@@ -9,10 +9,11 @@
 #import "ZCScheduleTableViewController.h"
 #import "ZCScheduleDetailController.h"
 #import "Common.h"
-
+#import "ZCTableViewCell.h"
 #import "ZCDataCenter.h"
 #import "ZCWord.h"
 
+static NSString *identifier = @"scheduleCell";
 
 @interface ZCScheduleTableViewController ()
 
@@ -41,7 +42,7 @@
 //    UIERealTimeBlurView *blurView = [[UIERealTimeBlurView alloc] initWithFrame:CGRectMake(0, 110, 200, 200)];
 //    
 //    [self.navigationController.view addSubview:blurView];
-
+    [self.tableView registerClass:[ZCTableViewCell class] forCellReuseIdentifier:identifier];
 }
 
 //- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -58,7 +59,7 @@
     
     if (_userMaxReadProgressNum != self.dataCenter.userMaxReadingProgressMarker) {
         _userMaxReadProgressNum = self.dataCenter.userMaxReadingProgressMarker;
-        NSLog(@"reload data");
+        ZCLog(@"reload data");
         [self.tableView reloadData];
     }
     
@@ -101,9 +102,8 @@
 {
     
     
-    static NSString *identifier = @"scheduleCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    ZCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     cell.textLabel.text = [NSString stringWithFormat: @"Section %@", @(indexPath.section +1)];;
     
@@ -150,7 +150,7 @@
     }
     for (int i = 0 ; i < count ; i++) {
         
-        NSLog(@"%@", [self.dataCenter.words[indexPath.section * KwordInSection + i] spelling]);
+        ZCLog(@"%@", [self.dataCenter.words[indexPath.section * KwordInSection + i] spelling]);
         ZCWord *word = self.dataCenter.words[indexPath.section*KwordInSection + i];
 
         [arrayM4CellDatasource addObject:word];

@@ -1,10 +1,13 @@
 //
-//  UIImage+Tools.m
-//  网易彩票
 //
-//  Created by apple on 19/07/14.
-//  Copyright (c) 2014年 itcast. All rights reserved.
 //
+//
+//
+//
+//
+//
+//
+
 
 #import "UIImage+Tools.h"
 
@@ -31,5 +34,13 @@
     
     return image;
 }
+
+//- (UIImage *)createOvalImageWithRect:(CGRect)rect
+//{
+//    CGImageRef imageRef = CGImageCreateWithImageInRect(self.CGImage, rect);
+//    
+//    return  image;
+//    
+//}
 
 @end

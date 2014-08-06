@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  wordList
+//
+//  Created by Jason Zhou on 7/20/14.
+//  Copyright (c) 2014 Jason Zhou. All rights reserved.
+//
+
+#ifndef wordList_PrefixHeader_pch
+#define wordList_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Common.h"
+
+#ifdef  DEBUG
+#define ZCLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZCLog(...)
+#endif
+//#define iOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+/**
+ *   log function
+ */
+
+#define LogFunc         Log(@"%s", __func__)
+#define ZCLogObj(obj)         Log(@"%@", obj)
+#define ZCLogFrame(view)      Log(@"%@", NSStringFromCGRect(view.frame))
+#define ZCLogBounds(view)     Log(@"%@", NSStringFromCGRect(view.bounds))
+
+#define KUserReadingProgressMarkerKey @"userReadingProgressMarker"
+#define KUserMaxReadingProgressMarkerKey @"userMaxReadingProgressMarker"
+
+
+
+
+#endif

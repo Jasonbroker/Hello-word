@@ -36,9 +36,11 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    NSLog(@"%s", __func__);
+//    ZCLogFunc
+    if (self.viewControllers.count > 0) {
     
-    viewController.hidesBottomBarWhenPushed = YES;
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
 //    with this super, you can not push viewcontroller
     [super pushViewController:viewController animated:YES];
 }

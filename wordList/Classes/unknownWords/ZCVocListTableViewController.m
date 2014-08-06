@@ -63,15 +63,19 @@
 
 
 ///**************************************    life circle    **************************************
+static NSString *ID = @"unknownWordsCell";
+
 #pragma mark - life cycle
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
     
-    NSLog(@"%@", [NSString documentPath]);
+    ZCLog(@"%@", [NSString documentPath]);
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    [self.tableView registerClass:[ZCTableViewCell class] forCellReuseIdentifier: ID];
     
     self.navigationItem.title = @"unknown words";
 
@@ -80,14 +84,14 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-//    NSLog(@"%d~~~~%d", _rootVC.dataCenter.unknownWords.count, _unknownWords.count);
+//    ZCLog(@"%d~~~~%d", _rootVC.dataCenter.unknownWords.count, _unknownWords.count);
     [super viewWillAppear:animated];
     
     if (self.dataCenter.wordIsAdded) {
         
         [self.tableView reloadData];
         
-        NSLog(@"reload data");
+        ZCLog(@"reload data");
         
         self.dataCenter.wordIsAdded = NO;
     }
@@ -113,7 +117,7 @@
         
         _unknownWords = self.dataCenter.unknownWords;
         
-        NSLog(@"%@ .....", @(_unknownWords.count));
+        ZCLog(@"%@ .....", @(_unknownWords.count));
         
     }
 
@@ -140,7 +144,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *ID = @"unknownWordsCell";
     
     ZCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
     
@@ -159,7 +162,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-       NSLog(@"delete .. %@", @(indexPath.row));
+       ZCLog(@"delete .. %@", @(indexPath.row));
     
     [self.unknownWords removeObjectAtIndex:indexPath.row];
     

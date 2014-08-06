@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZCTabBarController.h"
 #import "ZCFilePathManager.h"
 #import "Common.h"
 //  data center
@@ -24,8 +25,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [application.windows[0] ba];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     self.window.backgroundColor = [UIColor whiteColor];
+    ZCTabBarController *tabBarVC = [[ZCTabBarController alloc] init];
+    
+    self.window.rootViewController = tabBarVC;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     
     
     

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZCNoHighLightBtn.h"
 
 @class ZCTabBarView;
-@class ZCNoHighLightBtn;
+
+
 @protocol ZCTabBarViewDelegate <NSObject>
 
 - (void)tabBarView:(ZCTabBarView *)tabBarView didSelectedButton:(ZCNoHighLightBtn *)button;

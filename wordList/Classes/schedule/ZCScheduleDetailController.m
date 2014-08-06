@@ -80,7 +80,7 @@ static NSString *scheduleDetailCellIdentifier = @"wordCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%@", indexPath);
+    ZCLog(@"%@", indexPath);
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
