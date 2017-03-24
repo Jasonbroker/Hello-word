@@ -29,9 +29,7 @@ static id _instance;
 {
     if (_words == nil) {
 // 从服务器获取
-#warning need revise there......!!~~
-//        NSArray *wordsFromPlist = [NSArray arrayWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"wordsData.plist" withExtension:nil]];
-                NSArray *wordsFromPlist = [NSArray arrayWithContentsOfURL:[NSURL fileURLWithPath:@"/Users/Jason/Desktop/project/arrange.plist"]];
+        NSArray *wordsFromPlist = [NSArray arrayWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"wordsData" withExtension:@"plist"]];
 
         NSMutableArray *wordsM = [NSMutableArray arrayWithCapacity:0];
         

@@ -107,10 +107,7 @@ bug fixed:
 
 lots of features added
 
-
-inter   net
-
-inter national
+localazition
 
 
 

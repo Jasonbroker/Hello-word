@@ -4,27 +4,32 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-BlurryModalSegue.xcscheme</key>
+		<key>BlurryModalSegue.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MZAppearance.xcscheme</key>
+		<key>MZAppearance.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-UIImage+BlurredFrame.xcscheme</key>
+		<key>Pods-wordList.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-pop.xcscheme</key>
+		<key>RCLighting.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>UIImage+BlurredFrame.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1FA02527663646409909C4C6</key>
+		<key>10C4559521B7984855F7556C44F4A976</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>28309B7126274F82875D518F</key>
+		<key>14B617B9862CB8CF0CD3F2F088A205E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>65D8585418D3446CBDE6C9B4</key>
+		<key>877DF046855C4733AC181C21C9F41B49</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A0A03111B0EE40F5A838CDE9</key>
+		<key>D077A913329BD3807983FABC1C5DEB79</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4E793F44A704F1DAFA52165</key>
+		<key>E4208A93EAD6C05FA054C7AD959F9F07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEB9608772E0E39E24185E5DCAABDCEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

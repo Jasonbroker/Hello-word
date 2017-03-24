@@ -158,15 +158,10 @@
 ////****************************************    getter   setter ****************************************
 #pragma mark - setter getter
 
-- (ZCWordsView *)wordsView
-{
+- (ZCWordsView *)wordsView {
     if (_wordsView == nil) {
-//        _wordsView = [ZCWordsView wordsView];
-//
         _wordsView = [[ZCWordsView alloc] init];
-//                _wordsView = [[ZCWordsView alloc] initWithFrame:<#(CGRect)#>];
         self.wordsView.spellingView.text = [self.words[0] spelling];
-//
         self.wordsView.detailsView.text = [NSString stringWithFormat:@"%@\n%@",[self.words[0] meaning], [self.words[0] usage]];
         
         _wordsView.myDelegate = self;
@@ -175,8 +170,7 @@
     return  _wordsView;
 }
 
-- (ZCWelcomeView *)welcomeView
-{
+- (ZCWelcomeView *)welcomeView {
     if (_welcomeView == nil) {
         
         _welcomeView = [[ZCWelcomeView alloc] initWithFrame:self.view.bounds];
@@ -317,17 +311,10 @@
                 [self showWordView];
                 
             } completion:^(BOOL finished) {
-                
-//                [self showWordView];
                 self.welcomeView.frame = rightViewFrame;
 
-        ZCLog(@"after show word view welcom view frame = %@", NSStringFromCGRect(self.welcomeView.frame));
-         ZCLog(@"after show word view word view frame = %@", NSStringFromCGRect(self.welcomeView.frame));
-        
-
-#warning comfirm the wordview.hidden == No;
-                
-//                self.wordsView.hidden = NO;
+                ZCLog(@"after show word view welcom view frame = %@", NSStringFromCGRect(self.welcomeView.frame));
+                ZCLog(@"after show word view word view frame = %@", NSStringFromCGRect(self.welcomeView.frame));
                 
             }];
         }
@@ -440,7 +427,7 @@
         return;
     }
     
-    ///   judge if to hidr btn!
+    ///   judge if to hide btn!
     if ([self.dataCenter.unknownWords containsObject:self.dataCenter.words[_userPrograss]]) {
         self.wordsView.addBtn.hidden = YES;
     }else {self.wordsView.addBtn.hidden = NO;}
@@ -674,9 +661,7 @@
     
 }
 
-- (void)showWordView
-{
-    
+- (void)showWordView {
     ZCLog(@"show wordView");
 //    animations first
     _distinationPoint = self.wordsView.center;
@@ -707,8 +692,7 @@
 //    self.welcomeView.frame = rightViewFrame;
 }
 
-- (void)showTabBar
-{
+- (void)showTabBar {
     ZCLog(@"%s", __func__);
     ZCLog(@"%@", NSStringFromCGPoint(self.tabBarController.tabBar.center));
     
@@ -719,19 +703,10 @@
 }
 
 
-- (void)hideTabBar
-{
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW,  (int64_t)(0.5 * NSEC_PER_SEC)),dispatch_get_main_queue() , ^{
-    
-        //            [self.navigationController setNavigationBarHidden:YES animated:YES];
-        
+- (void)hideTabBar {
         [UIView animateWithDuration:0.2 animations:^{
-            
             self.tabBarController.tabBar.transform = CGAffineTransformMakeTranslation(0, self.tabBarController.tabBar.bounds.size.height);
         }];
-        
-//    });
-
 }
 
 
